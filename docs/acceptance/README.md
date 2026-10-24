@@ -4,7 +4,8 @@ This directory contains the 2026-10-25 macOS release verification and historical
 
 | File | What it covers | Status |
 | --- | --- | --- |
-| [macos-release-verification.md](macos-release-verification.md) | Release package integrity, complete verify, visual review and two consecutive comparisons, all five Chrome/CLI acceptance scripts | Current local release verification; GitHub upload/CI pending owner confirmation |
+| [github-release-verification.md](github-release-verification.md) | Public repository, attribution, first Linux CI and fresh GitHub clone verification | First CI and fresh-clone verify passed; release target v0.1.0 prerelease |
+| [macos-release-verification.md](macos-release-verification.md) | Release package integrity, complete verify, visual review and two consecutive comparisons, all five Chrome/CLI acceptance scripts | Current local release verification; upload and first CI results recorded separately |
 | [visual-review-20261025.md](visual-review-20261025.md) | Per-file decisions for 45 baseline updates | Reviewed before update; two subsequent complete visual runs passed |
 | [AT-coverage.md](AT-coverage.md) | Every specification item (AT-xx), the tests that cover it, and what is partial or not implemented | Current as of the last Codex build; update when tests change |
 | [browser-acceptance.md](browser-acceptance.md) | Real-Chrome application flows, viewports and themes | Run on the 665/686 builds |

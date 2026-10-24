@@ -31,14 +31,14 @@ Developer test release `0.1.0`. It is meant to be run locally, reviewed and exte
 - Email notification outbox and preferences: bilingual templates, current-access checks, lease recovery, bounded retries and SMTP configuration. Local SMTP integration is tested; account/visitor mail uses encrypted queued credentials; daily review summaries have configurable timezone/hour and per-day deduplication. Real external delivery and browser editing of notification preferences remain unverified.
 - Stateless HTTP MCP endpoint at `/mcp`, authenticated with scoped personal tokens or OAuth access tokens; reading, commenting, and submitting remain subject to document AI settings and role checks.
 
-Full target acceptance is incomplete. [docs/acceptance/AT-coverage.md](docs/acceptance/AT-coverage.md) lists every specification item and its test coverage; [docs/acceptance/browser-acceptance.md](docs/acceptance/browser-acceptance.md) and [docs/acceptance/cli-acceptance.md](docs/acceptance/cli-acceptance.md) record the real-browser and CLI runs (the CLI report predates the redesign and should be re-run). PostgreSQL, module owners, automatic publication, backup/restore, audit logging and the AT-44 editor architecture are deferred. Real external OAuth, PDF rendering, container deployment and physical-device behaviour require their own evidence. JPEG trailing-data rejection and the email lockout tradeoff are intentional. Publication of pending work by a removed editor still needs a product decision.
+Full target acceptance is incomplete. [docs/acceptance/AT-coverage.md](docs/acceptance/AT-coverage.md) lists every specification item and its test coverage; [docs/acceptance/browser-acceptance.md](docs/acceptance/browser-acceptance.md) and [docs/acceptance/cli-acceptance.md](docs/acceptance/cli-acceptance.md) record the real-browser and CLI runs (the CLI report was re-run successfully on the release tree; the complete current record is in [docs/acceptance/macos-release-verification.md](docs/acceptance/macos-release-verification.md)). PostgreSQL, module owners, automatic publication, backup/restore, audit logging and the AT-44 editor architecture are deferred. Real external OAuth, PDF rendering, container deployment and physical-device behaviour require their own evidence. JPEG trailing-data rejection and the email lockout tradeoff are intentional. Publication of pending work by a removed editor still needs a product decision.
 
 ## Run locally
 
 Requirements: Node.js 24 and pnpm 11.
 
 ```sh
-pnpm install
+pnpm install --frozen-lockfile
 pnpm dev
 ```
 
@@ -68,7 +68,7 @@ pnpm verify
 
 `pnpm verify` runs ESLint, the unsafe-rendering scan, light/dark contrast checks, TypeScript, tests and the production web build, stopping on the first failing step. Its test suite includes real-Chrome CSS/layout tests (Playwright Chromium, or a local Google Chrome when Chromium is not installed); they do not replace real application workflow acceptance. Read `docs/acceptance/browser-acceptance.md` for executed application flows and exclusions; jsdom or API coverage does not constitute browser acceptance.
 
-Visual regression (`pnpm test:visual`) builds the app first, then compares 176 screenshots in `outputs/visual-baseline` using Google Chrome with a single worker. Baselines are macOS Chrome renders; after an intentional UI change run `pnpm test:visual:update`, review the image diffs, and commit the new baselines.
+Visual regression (`pnpm test:visual`) builds the app first, then compares 176 screenshots in `outputs/visual-baseline` using Google Chrome with a single worker. Baselines are macOS Chrome renders; after an intentional UI change, compare the existing baselines and review each image diff before running `pnpm test:visual:update`, then require two consecutive `pnpm test:visual` passes before committing the new baselines.
 
 For a non-development server, set a unique `SECRET_KEY` of at least 32 characters and create the first administrator explicitly:
 

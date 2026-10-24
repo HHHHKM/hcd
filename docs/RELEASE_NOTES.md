@@ -4,7 +4,7 @@
 
 > 本版本由 **Claude（Anthropic）与 Codex（OpenAI）共同完成**，在项目负责人 **Alkaid** 的指挥下接力进行：Codex 写产品代码与测试，Claude 做独立审查、写修复与界面规格、重做前端视觉，并在本版本修完 686 包遗留的缺陷。详见 [AUTHORS.md](../AUTHORS.md)。
 
-**一句话状态：** Codex 已在 macOS 上完成冻结锁文件安装、完整 verify（114 个文件 / 686 项测试）、45 张基线逐张审阅与更新、连续两轮完整视觉回归，以及五个真实 Chrome / CLI 验收脚本。各最终命令均退出 0；失败轮次和环境限制完整保留在第 3.3 节。GitHub 上传、首轮 CI、远端全新克隆复验尚未进行，负责人已确认上传目标 HHHHKM/hcd、Private 和版权声明；未部署服务器。
+**一句话状态：** Codex 已在 macOS 上完成冻结锁文件安装、完整 verify（114 个文件 / 686 项测试）、45 张基线逐张审阅与更新、连续两轮完整视觉回归，以及五个真实 Chrome / CLI 验收脚本。各最终命令均退出 0；失败轮次和环境限制完整保留在第 3.3 节。GitHub 上传、首轮 Linux CI 和远端全新克隆复验均已完成；仓库先建 Private，随后按 Alkaid 的明确指示公开。未部署服务器。
 
 ---
 
@@ -80,7 +80,18 @@
 
 详见 [macOS 复验记录](acceptance/macos-release-verification.md)、[45 张基线逐张审阅表](acceptance/visual-review-20261025.md) 和 [原始日志与 JSON](acceptance/macos-release-20261025-logs)。
 
-**尚未执行：** GitHub 建仓/推送、`v0.1.0` prerelease、首轮 Actions、远端全新克隆复验；负责人已确认仓库 HHHHKM/hcd、Private，以及包含 Alkaid 的版权声明；正在准备上传。真实服务器部署、真实 PDF/SMTP/飞书/OAuth 仍未进行。
+**GitHub 状态见 3.4。** 真实服务器部署、真实 PDF/SMTP/飞书/OAuth 仍未进行。
+
+### 3.4 GitHub 上传与首轮 CI（2026-10-25）
+
+- 仓库为 [HHHHKM/hcd](https://github.com/HHHHKM/hcd)：先创建 Private，后经 Alkaid 明确授权切换为 Public。
+- 首次提交 `571b97f` 以 Alkaid 署名，并保留 Claude、Codex 两条共同作者 trailer；版权包含 Alkaid and HCD contributors。
+- [首轮 Linux CI](https://github.com/HHHHKM/hcd/actions/runs/40121985155) 为 **success**：114 个测试文件、686 项测试通过，构建成功；既有三条构建警告与额外 Actions/依赖弃用提示均保留。
+- 从 GitHub 在全新目录克隆，冻结锁文件安装及完整 verify 再次通过。GitHub README 图片、署名和文档入口已核对。
+- 首次推送因缺少 workflow scope 被拒绝；负责人补充授权后，原提交成功推送，CI 配置和断言未删改。一次 CI 观察请求遇到网络 EOF，正式 CI 结果仍为 success。
+- 发布目标为 `v0.1.0` 带注释标签与 prerelease；本次收尾提交只更新文档与验收日志。Release 说明沿用本文，已知限制和全部失败轮次继续保留。
+
+详见 [GitHub 发布验收](acceptance/github-release-verification.md)。
 
 ## 4. Codex 在 Mac 上的执行顺序（请严格按序，并如实记录每一步的结果）
 

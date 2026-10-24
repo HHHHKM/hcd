@@ -51,7 +51,7 @@
 
 - 构建保留原有两条 Zod 注释警告和一条主包超过 500 kB 警告，未调低检查阈值。
 - 所有邮件、飞书、OAuth 验证仅使用本地夹具；未部署服务器、未接入真实外部服务。
-- GitHub 仓库、首次提交、v0.1.0 prerelease、首轮 CI、远端全新克隆复验：尚未执行，负责人已确认仓库 HHHHKM/hcd、Private，以及包含 Alkaid 的版权声明；正在准备上传。
+- GitHub 上传、首轮 CI 和远端全新克隆复验已完成；仓库按 Alkaid 最新指示公开。v0.1.0 prerelease 随本次发布提交建立，详见 [GitHub 发布验收](github-release-verification.md)。
 
 ## 最终本机验收结果
 

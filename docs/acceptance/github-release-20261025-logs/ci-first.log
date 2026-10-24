@@ -1,0 +1,981 @@
+verify	Set up job	﻿2026-10-24T18:43:12.1861032Z Current runner version: '2.338.0'
+verify	Set up job	2026-10-24T18:43:12.1897615Z ##[group]Runner Image Provisioner
+verify	Set up job	2026-10-24T18:43:12.1899209Z Hosted Compute Agent
+verify	Set up job	2026-10-24T18:43:12.1900414Z Version: 20261012.601
+verify	Set up job	2026-10-24T18:43:12.1901894Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+verify	Set up job	2026-10-24T18:43:12.1903391Z Build Date: 2026-10-12T17:48:21Z
+verify	Set up job	2026-10-24T18:43:12.1904717Z Worker ID: {feeaa992-79bf-4669-855f-5531d4379ddf}
+verify	Set up job	2026-10-24T18:43:12.1906010Z Region: westcentralus
+verify	Set up job	2026-10-24T18:43:12.1907197Z Cloud: Azure
+verify	Set up job	2026-10-24T18:43:12.1908176Z ##[endgroup]
+verify	Set up job	2026-10-24T18:43:12.1910940Z ##[group]Operating System
+verify	Set up job	2026-10-24T18:43:12.1912201Z Ubuntu
+verify	Set up job	2026-10-24T18:43:12.1913167Z 24.04.5
+verify	Set up job	2026-10-24T18:43:12.1914213Z LTS
+verify	Set up job	2026-10-24T18:43:12.1915165Z ##[endgroup]
+verify	Set up job	2026-10-24T18:43:12.1916265Z ##[group]Runner Image
+verify	Set up job	2026-10-24T18:43:12.1917569Z Image: ubuntu-24.04
+verify	Set up job	2026-10-24T18:43:12.1918616Z Version: 20261012.334.1
+verify	Set up job	2026-10-24T18:43:12.1920866Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+verify	Set up job	2026-10-24T18:43:12.1923932Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+verify	Set up job	2026-10-24T18:43:12.1925724Z ##[endgroup]
+verify	Set up job	2026-10-24T18:43:12.1928005Z ##[group]GITHUB_TOKEN Permissions
+verify	Set up job	2026-10-24T18:43:12.1931416Z Contents: read
+verify	Set up job	2026-10-24T18:43:12.1933051Z Metadata: read
+verify	Set up job	2026-10-24T18:43:12.1934222Z Packages: read
+verify	Set up job	2026-10-24T18:43:12.1935244Z ##[endgroup]
+verify	Set up job	2026-10-24T18:43:12.1938326Z Secret source: Actions
+verify	Set up job	2026-10-24T18:43:12.1939926Z Cache mode: write
+verify	Set up job	2026-10-24T18:43:12.1941738Z Prepare workflow directory
+verify	Set up job	2026-10-24T18:43:12.2577352Z Prepare all required actions
+verify	Set up job	2026-10-24T18:43:12.2708784Z Getting action download info
+verify	Set up job	2026-10-24T18:43:12.6912454Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+verify	Set up job	2026-10-24T18:43:12.7918860Z Download action repository 'pnpm/action-setup@v4' (SHA:b906affcce14559ad1aafd4ab0e942779e9f58b1)
+verify	Set up job	2026-10-24T18:43:13.5414819Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+verify	Set up job	2026-10-24T18:43:13.7429242Z Complete job name: verify
+verify	Run actions/checkout@v4	﻿2026-10-24T18:43:13.8193080Z ##[group]Run actions/checkout@v4
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8194551Z with:
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8195421Z   repository: HHHHKM/hcd
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8204323Z   token: ***
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8205219Z   ssh-strict: true
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8206126Z   ssh-user: git
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8207002Z   persist-credentials: true
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8208133Z   clean: true
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8209131Z   sparse-checkout-cone-mode: true
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8210200Z   fetch-depth: 1
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8211420Z   fetch-tags: false
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8212214Z   show-progress: true
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8213073Z   lfs: false
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8213985Z   submodules: false
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8215986Z   set-safe-directory: true
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8217179Z   allow-unsafe-pr-checkout: false
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.8218736Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9351975Z Syncing repository: HHHHKM/hcd
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9356167Z ##[group]Getting Git version info
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9357512Z Working directory is '/home/runner/work/hcd/hcd'
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9377522Z [command]/usr/bin/git version
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9501766Z git version 2.55.0
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9561514Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9590801Z Temporarily overriding HOME='/home/runner/work/_temp/58265c8a-5531-49f2-a96d-b9f0d340f739' before making global git config changes
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9594779Z Adding repository directory to the temporary git global config as a safe directory
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9597727Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/hcd/hcd
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9640208Z Deleting the contents of '/home/runner/work/hcd/hcd'
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9643804Z ##[group]Initializing the repository
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9645774Z [command]/usr/bin/git init /home/runner/work/hcd/hcd
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9760265Z hint: Using 'master' as the name for the initial branch. This default branch name
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9768285Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9771086Z hint: to use in all of your new repositories, which will suppress this warning,
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9772757Z hint: call:
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9773603Z hint:
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9774567Z hint: 	git config --global init.defaultBranch <name>
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9775744Z hint:
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9776842Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9778587Z hint: 'development'. The just-created branch can be renamed via this command:
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9780023Z hint:
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9780943Z hint: 	git branch -m <name>
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9781811Z hint:
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9782913Z hint: Disable this message with "git config set advice.defaultBranchName false"
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9784695Z Initialized empty Git repository in /home/runner/work/hcd/hcd/.git/
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9787374Z [command]/usr/bin/git remote add origin https://github.com/HHHHKM/hcd
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9864468Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9882650Z ##[group]Disabling automatic garbage collection
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9905595Z [command]/usr/bin/git config --local gc.auto 0
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9946188Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9964889Z ##[group]Setting up auth
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9966468Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Run actions/checkout@v4	2026-10-24T18:43:13.9974888Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Run actions/checkout@v4	2026-10-24T18:43:14.0424157Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Run actions/checkout@v4	2026-10-24T18:43:14.0514837Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Run actions/checkout@v4	2026-10-24T18:43:14.0891095Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Run actions/checkout@v4	2026-10-24T18:43:14.0895185Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Run actions/checkout@v4	2026-10-24T18:43:14.1126657Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+verify	Run actions/checkout@v4	2026-10-24T18:43:14.1171198Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T18:43:14.1173712Z ##[group]Fetching the repository
+verify	Run actions/checkout@v4	2026-10-24T18:43:14.1183433Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +571b97f7a87a4f1e47a3e55d07ac23a0f2fb4e98:refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.3425943Z From https://github.com/HHHHKM/hcd
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.3427802Z  * [new ref]         571b97f7a87a4f1e47a3e55d07ac23a0f2fb4e98 -> origin/main
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.3436766Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.3439255Z ##[group]Determining the checkout info
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.3442332Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.3446788Z [command]/usr/bin/git sparse-checkout disable
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.3501653Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.3537494Z ##[group]Checking out the ref
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.3541559Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.5156697Z Switched to a new branch 'main'
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.5168456Z branch 'main' set up to track 'origin/main'.
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.5190156Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.5243779Z [command]/usr/bin/git log -1 --format=%H
+verify	Run actions/checkout@v4	2026-10-24T18:43:15.5274169Z 571b97f7a87a4f1e47a3e55d07ac23a0f2fb4e98
+verify	Run pnpm/action-setup@v4	﻿2026-10-24T18:43:15.5598614Z ##[group]Run pnpm/action-setup@v4
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:15.5599795Z with:
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:15.5600835Z   dest: ~/setup-pnpm
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:15.5601786Z   run_install: null
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:15.5602609Z   cache: false
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:15.5603477Z   cache_dependency_path: pnpm-lock.yaml
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:15.5604574Z   package_json_file: package.json
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:15.5605814Z   standalone: false
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:15.5606635Z ##[endgroup]
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:15.7169688Z ##[group]Running self-installer...
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:16.3874828Z (node:2119) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:16.3878805Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:16.6427816Z Progress: resolved 1, reused 0, downloaded 0, added 0
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:16.6565772Z Packages: +1
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:16.6572352Z +
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:17.0842532Z Progress: resolved 1, reused 0, downloaded 1, added 1, done
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:17.1162317Z 
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:17.1177380Z dependencies:
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:17.1178248Z + pnpm 11.25.0 (12.15.0 is available)
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:17.1198654Z 
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:17.1460912Z Done in 1.1s
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:17.1610122Z ##[endgroup]
+verify	Run pnpm/action-setup@v4	2026-10-24T18:43:17.1611698Z Installation Completed!
+verify	Run actions/setup-node@v4	﻿2026-10-24T18:43:17.1842040Z ##[group]Run actions/setup-node@v4
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.1842327Z with:
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.1842516Z   node-version: 24
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.1842716Z   cache: pnpm
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.1842910Z   always-auth: false
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.1843120Z   check-latest: false
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.1845848Z   token: ***
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.1846045Z env:
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.1846297Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.1846605Z ##[endgroup]
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.3315572Z Found in cache @ /opt/hostedtoolcache/node/24.21.0/x64
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.3318389Z (node:2132) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.3319992Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.3322218Z ##[group]Environment details
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.8381109Z node: v24.21.0
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.8398324Z npm: 11.19.0
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.8398832Z yarn: 1.22.22
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.8399851Z ##[endgroup]
+verify	Run actions/setup-node@v4	2026-10-24T18:43:17.8447151Z [command]/home/runner/setup-pnpm/node_modules/.bin/pnpm store path --silent
+verify	Run actions/setup-node@v4	2026-10-24T18:43:18.5226423Z /home/runner/setup-pnpm/node_modules/.bin/store/v11
+verify	Run actions/setup-node@v4	2026-10-24T18:43:18.7114336Z pnpm cache is not found
+verify	Run pnpm install --frozen-lockfile	﻿2026-10-24T18:43:18.7262833Z ##[group]Run pnpm install --frozen-lockfile
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:18.7263457Z ^[[36;1mpnpm install --frozen-lockfile^[[0m
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:18.7515784Z shell: /usr/bin/bash -e {0}
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:18.7516058Z env:
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:18.7516309Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:18.7516620Z ##[endgroup]
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:19.3243851Z Scope: all 6 workspace projects
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:19.4612643Z ? Verifying lockfile against supply-chain policies (487 entries)...
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:19.4911728Z Lockfile is up to date, resolution step is skipped
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:19.6478640Z Progress: resolved 1, reused 0, downloaded 0, added 0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:19.7003510Z Packages: +437
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:19.7004709Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:20.6556546Z Progress: resolved 437, reused 0, downloaded 0, added 0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:22.1008055Z Progress: resolved 437, reused 0, downloaded 1, added 0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:23.1051921Z Progress: resolved 437, reused 0, downloaded 52, added 0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:24.1019843Z Progress: resolved 437, reused 0, downloaded 63, added 0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:24.1363196Z Packages are hard linked from the content-addressable store to the virtual store.
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:24.1378075Z   Content-addressable store is at: /home/runner/setup-pnpm/node_modules/.bin/store/v11
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:24.1383144Z   Virtual store is at:             node_modules/.pnpm
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:24.3842042Z ✓ Lockfile passes supply-chain policies (487 entries in 4.9s)
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:25.1052195Z Progress: resolved 437, reused 0, downloaded 182, added 8
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:26.1037180Z Progress: resolved 437, reused 0, downloaded 437, added 54
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:26.3952485Z Progress: resolved 437, reused 0, downloaded 437, added 437, done
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:26.6258037Z .../node_modules/better-sqlite3 install$ prebuild-install || node-gyp rebuild --release
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:26.6439944Z .../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:26.7299406Z .../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:26.7940067Z .../node_modules/better-sqlite3 install: (node:2231) [DEP0176] DeprecationWarning: fs.R_OK is deprecated, use fs.constants.R_OK instead
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:26.7942618Z .../node_modules/better-sqlite3 install: (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.1393611Z .../node_modules/better-sqlite3 install: Done
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2406591Z 
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2407417Z dependencies:
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2408100Z + @fastify/cookie 11.1.3
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2408861Z + @fastify/multipart 9.2.1
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2409653Z + @fastify/static 8.3.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2410393Z + @modelcontextprotocol/client 2.3.1
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2411547Z + @modelcontextprotocol/server 2.3.1
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2412224Z + @noble/hashes 2.4.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2412897Z + @tiptap/core 3.32.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2413524Z + @tiptap/pm 3.32.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2414102Z + @tiptap/react 3.32.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2414744Z + @tiptap/starter-kit 3.32.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2415365Z + better-sqlite3 12.11.1
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2415942Z + fastify 5.12.7
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2416476Z + fflate 0.8.3
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2418611Z + i18next 25.10.10
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2419359Z + kysely 0.28.18
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2419919Z + nodemailer 7.0.13
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2420477Z + parse5 7.3.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2421340Z + pg 8.23.1
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2424860Z + pino 9.14.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2425646Z + playwright 1.64.1
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2427331Z + react 19.3.1
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2427941Z + react-dom 19.3.1
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2428501Z + react-i18next 16.6.6
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2430012Z + react-router 8.5.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2430785Z + zod 4.6.7
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2431133Z 
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2431398Z devDependencies:
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2431928Z + @playwright/test 1.64.1
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2432550Z + @types/better-sqlite3 7.6.13
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2433134Z + @types/jsdom 30.0.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2437762Z + @types/node 24.19.2
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2438322Z + @types/nodemailer 7.0.12
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2438892Z + @types/pg 8.23.1
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2439408Z + @types/react 19.3.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2439959Z + @types/react-dom 19.3.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2440786Z + @vitejs/plugin-react 5.2.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2441398Z + eslint 10.13.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2442000Z + eslint-plugin-react-hooks 7.1.1
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2442652Z + fast-check 4.10.2
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2443159Z + jsdom 30.1.3
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2443686Z + prettier 3.9.10
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2444205Z + tsx 4.23.15
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2444721Z + typescript 5.9.3
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2445284Z + typescript-eslint 8.72.0
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2445795Z + vite 7.3.7
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2446231Z + vitest 3.2.7
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2446539Z 
+verify	Run pnpm install --frozen-lockfile	2026-10-24T18:43:27.2829838Z Done in 8.4s using pnpm v11.25.0
+verify	Run pnpm exec playwright install --with-deps chromium	﻿2026-10-24T18:43:27.3578030Z ##[group]Run pnpm exec playwright install --with-deps chromium
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:27.3578530Z ^[[36;1mpnpm exec playwright install --with-deps chromium^[[0m
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:27.3646413Z shell: /usr/bin/bash -e {0}
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:27.3646820Z env:
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:27.3647225Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:27.3647632Z ##[endgroup]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.4251491Z Installing dependencies...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.4435481Z Switching to root user to install dependencies...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.6683515Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.7019019Z Get:3 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.7274174Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.7356665Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.7432256Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.7514661Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.8203155Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [589 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.8472544Z Get:8 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [12.4 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.8526359Z Get:9 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [652 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.9611566Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1400 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.9742631Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [310 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.9762525Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1706 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.9922376Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [342 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:28.9952663Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1805 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:29.0064361Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [411 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:29.1143645Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1146 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:29.1188234Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [231 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:29.1208879Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1222 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:29.1278648Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [246 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:29.1753333Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1713 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:29.1983138Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [392 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:32.2792761Z Fetched 12.6 MB in 1s (8377 kB/s)
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.1874846Z Reading package lists...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.2121875Z Reading package lists...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.3879961Z Building dependency tree...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.3888502Z Reading state information...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5224949Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5226200Z libasound2t64 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5241778Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5243175Z libatk-bridge2.0-0t64 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5244237Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5245306Z libatk1.0-0t64 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5249766Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5253499Z libatspi2.0-0t64 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5254512Z libcairo2 is already the newest version (1.18.0-3build1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5281441Z libcairo2 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5301341Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5311466Z libcups2t64 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5321535Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5322441Z libdbus-1-3 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5323475Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5324395Z libdrm2 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5325254Z libgbm1 is already the newest version (25.2.8-0ubuntu0.24.04.4).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5326101Z libgbm1 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5326939Z libnspr4 is already the newest version (2:4.35-1.1build1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5327767Z libnspr4 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5328643Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5329781Z libpango-1.0-0 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5330846Z libx11-6 is already the newest version (2:1.8.7-1ubuntu0.1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5331696Z libx11-6 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5332486Z libxcb1 is already the newest version (1.15-1ubuntu2).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5333280Z libxcb1 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5334155Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5335051Z libxcomposite1 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5335936Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5336791Z libxdamage1 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5337634Z libxext6 is already the newest version (2:1.3.4-1build2).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5338453Z libxext6 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5339295Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5346856Z libxfixes3 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5347735Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5348520Z libxkbcommon0 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5349270Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5349994Z libxrandr2 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5351077Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5352117Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5352934Z libfontconfig1 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5353781Z libfreetype6 is already the newest version (2.13.2+dfsg-1ubuntu0.2).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5354621Z libfreetype6 set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5355483Z fonts-liberation is already the newest version (1:2.1.5-3).
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5356344Z fonts-liberation set to manually installed.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5357210Z The following additional packages will be installed:
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5358230Z   gir1.2-glib-2.0 libglib2.0-bin libglib2.0-data libnss3-tools
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5359223Z   xfonts-encodings xfonts-utils xserver-common
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5359922Z Suggested packages:
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5360498Z   low-memory-monitor
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5361449Z Recommended packages:
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5362176Z   fonts-ipafont-mincho fonts-tlwg-loma xfonts-base
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5478098Z The following NEW packages will be installed:
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5479321Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5484873Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5485715Z   xfonts-utils
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5488717Z The following packages will be upgraded:
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5490671Z   gir1.2-glib-2.0 libglib2.0-0t64 libglib2.0-bin libglib2.0-data libnss3
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5494738Z   libnss3-tools xserver-common xvfb
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5659247Z 8 upgraded, 9 newly installed, 0 to remove and 91 not upgraded.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5660210Z Need to get 25.9 MB of archives.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5661413Z After this operation, 79.5 MB of additional disk space will be used.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.5662561Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:33.6303613Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.0348411Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-data all 2.80.0-6ubuntu3.10 [50.2 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.0821038Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-bin amd64 2.80.0-6ubuntu3.10 [97.9 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.1351792Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 gir1.2-glib-2.0 amd64 2.80.0-6ubuntu3.10 [183 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.1842002Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-0t64 amd64 2.80.0-6ubuntu3.10 [1548 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.2584905Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.4015774Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.4510049Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.5373402Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.7167534Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libnss3 amd64 2:3.98-1ubuntu0.3 [1445 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.8058855Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libnss3-tools amd64 2:3.98-1ubuntu0.3 [615 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.8651805Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.9198497Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:34.9683879Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.0206084Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.0727728Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 xserver-common all 2:21.1.12-1ubuntu1.9 [35.0 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.1205413Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 xvfb amd64 2:21.1.12-1ubuntu1.9 [877 kB]
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.3786977Z Fetched 25.9 MB in 2s (16.4 MB/s)
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4016662Z Selecting previously unselected package fonts-ipafont-gothic.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4278807Z (Reading database ... 
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4279450Z (Reading database ... 5%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4280059Z (Reading database ... 10%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4280834Z (Reading database ... 15%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4282553Z (Reading database ... 20%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4283024Z (Reading database ... 25%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4283489Z (Reading database ... 30%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4283960Z (Reading database ... 35%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4284436Z (Reading database ... 40%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4284872Z (Reading database ... 45%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4285333Z (Reading database ... 50%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.4321923Z (Reading database ... 55%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.5289965Z (Reading database ... 60%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:35.8434322Z (Reading database ... 65%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:36.0341823Z (Reading database ... 70%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:36.2275119Z (Reading database ... 75%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:36.3419432Z (Reading database ... 80%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:36.4820023Z (Reading database ... 85%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:36.6308061Z (Reading database ... 90%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:36.7451413Z (Reading database ... 95%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:36.7452218Z (Reading database ... 100%
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:36.7453165Z (Reading database ... 203540 files and directories currently installed.)
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:36.7487520Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:36.7597223Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.0116162Z Preparing to unpack .../01-libglib2.0-data_2.80.0-6ubuntu3.10_all.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.0139639Z Unpacking libglib2.0-data (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.0467568Z Preparing to unpack .../02-libglib2.0-bin_2.80.0-6ubuntu3.10_amd64.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.0485909Z Unpacking libglib2.0-bin (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.0951705Z Preparing to unpack .../03-gir1.2-glib-2.0_2.80.0-6ubuntu3.10_amd64.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.0969946Z Unpacking gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.1360038Z Preparing to unpack .../04-libglib2.0-0t64_2.80.0-6ubuntu3.10_amd64.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.1427312Z Unpacking libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.1852273Z Selecting previously unselected package fonts-freefont-ttf.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.1975793Z Preparing to unpack .../05-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.1982779Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.2802765Z Selecting previously unselected package fonts-tlwg-loma-otf.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.2926894Z Preparing to unpack .../06-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.2934799Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.3141826Z Selecting previously unselected package fonts-unifont.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.3258064Z Preparing to unpack .../07-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.3270166Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.4371415Z Selecting previously unselected package fonts-wqy-zenhei.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.4499513Z Preparing to unpack .../08-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.4598063Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.9398010Z Preparing to unpack .../09-libnss3_2%3a3.98-1ubuntu0.3_amd64.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.9417991Z Unpacking libnss3:amd64 (2:3.98-1ubuntu0.3) over (2:3.98-1ubuntu0.2) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.9924640Z Preparing to unpack .../10-libnss3-tools_2%3a3.98-1ubuntu0.3_amd64.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:37.9950965Z Unpacking libnss3-tools (2:3.98-1ubuntu0.3) over (2:3.98-1ubuntu0.2) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.0335586Z Selecting previously unselected package xfonts-encodings.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.0461891Z Preparing to unpack .../11-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.0468367Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.0771543Z Selecting previously unselected package xfonts-utils.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.0887461Z Preparing to unpack .../12-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.0897959Z Unpacking xfonts-utils (1:7.7+6build3) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.1191856Z Selecting previously unselected package xfonts-cyrillic.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.1317810Z Preparing to unpack .../13-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.1324236Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.1667898Z Selecting previously unselected package xfonts-scalable.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.1793226Z Preparing to unpack .../14-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.1799725Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.2152670Z Preparing to unpack .../15-xserver-common_2%3a21.1.12-1ubuntu1.9_all.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.2171058Z Unpacking xserver-common (2:21.1.12-1ubuntu1.9) over (2:21.1.12-1ubuntu1.8) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.2633691Z Preparing to unpack .../16-xvfb_2%3a21.1.12-1ubuntu1.9_amd64.deb ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.3345516Z Unpacking xvfb (2:21.1.12-1ubuntu1.9) over (2:21.1.12-1ubuntu1.8) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.3880460Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.3988353Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4004560Z Setting up libnss3:amd64 (2:3.98-1ubuntu0.3) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4022178Z Setting up libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.10) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4122688Z Setting up libglib2.0-data (2.80.0-6ubuntu3.10) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4140490Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4155292Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4170472Z Setting up gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.10) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4187324Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4249669Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4266499Z Setting up xserver-common (2:21.1.12-1ubuntu1.9) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4292351Z Setting up libnss3-tools (2:3.98-1ubuntu0.3) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4308676Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4325204Z Setting up xvfb (2:21.1.12-1ubuntu1.9) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4342151Z Setting up libglib2.0-bin (2.80.0-6ubuntu3.10) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4358643Z Setting up xfonts-utils (1:7.7+6build3) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4394927Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4694873Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.4971691Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.5268839Z Processing triggers for man-db (2.12.0-4build2) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.5287419Z Not building database; man-db/auto-update is not 'true'.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:38.5299084Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.1670725Z 
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.1671531Z Running kernel seems to be up-to-date.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.1671921Z 
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.1672086Z Restarting services...
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.2117118Z  systemctl restart packagekit.service php8.3-fpm.service polkit.service udisks2.service
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.4362909Z 
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.4365558Z Service restarts being deferred:
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.4407334Z  systemctl restart ModemManager.service
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.4408913Z  systemctl restart networkd-dispatcher.service
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.4410913Z 
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.4413961Z No containers need to be restarted.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.4414544Z 
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.4415045Z No user sessions are running outdated binaries.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.4417046Z 
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:39.4417802Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:40.3160432Z Downloading Chrome for Testing 156.0.8078.4 (playwright chromium v1248) from https://cdn.playwright.dev/builds/cft/156.0.8078.4/linux64/chrome-linux64.zip
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:40.7786398Z |                                                                                |   0% of 191.1 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:41.0327368Z |■■■■■■■■                                                                        |  10% of 191.1 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:41.1476612Z |■■■■■■■■■■■■■■■■                                                                |  20% of 191.1 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:41.2948971Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 191.1 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:41.3886195Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 191.1 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:41.5239906Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 191.1 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:41.6132733Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 191.1 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:41.7734020Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 191.1 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:41.8633345Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 191.1 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:42.0183722Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 191.1 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:42.1162527Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 191.1 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:46.5157528Z Chrome for Testing 156.0.8078.4 (playwright chromium v1248) downloaded to /home/runner/.cache/ms-playwright/chromium-1248
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:46.5172607Z Downloading FFmpeg (playwright ffmpeg v1013) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1013/ffmpeg-linux.zip
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:46.9717059Z |                                                                                |   0% of 2.2 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.0237985Z |■■■■■■■■                                                                        |  10% of 2.2 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.0430192Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.2 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.0591441Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.2 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.0752500Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.2 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.0781429Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.2 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.0838366Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.2 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.0944679Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.2 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.0973498Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.2 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.1106164Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.2 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.1123716Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.2 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.1872300Z FFmpeg (playwright ffmpeg v1013) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1013
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.1875885Z Downloading Chrome Headless Shell 156.0.8078.4 (playwright chromium-headless-shell v1248) from https://cdn.playwright.dev/builds/cft/156.0.8078.4/linux64/chrome-headless-shell-linux64.zip
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.6463618Z |                                                                                |   0% of 120 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.8298708Z |■■■■■■■■                                                                        |  10% of 120 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:47.9358333Z |■■■■■■■■■■■■■■■■                                                                |  20% of 120 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:48.0121129Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 120 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:48.1235268Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 120 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:48.1871890Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 120 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:48.2377166Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 120 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:48.3257079Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 120 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:48.3824349Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 120 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:48.4382256Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 120 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:48.5216719Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 120 MiB
+verify	Run pnpm exec playwright install --with-deps chromium	2026-10-24T18:43:52.0398149Z Chrome Headless Shell 156.0.8078.4 (playwright chromium-headless-shell v1248) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1248
+verify	Run pnpm verify	﻿2026-10-24T18:43:52.0926775Z ##[group]Run pnpm verify
+verify	Run pnpm verify	2026-10-24T18:43:52.0927235Z ^[[36;1mpnpm verify^[[0m
+verify	Run pnpm verify	2026-10-24T18:43:52.1048510Z shell: /usr/bin/bash -e {0}
+verify	Run pnpm verify	2026-10-24T18:43:52.1048916Z env:
+verify	Run pnpm verify	2026-10-24T18:43:52.1049321Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+verify	Run pnpm verify	2026-10-24T18:43:52.1049879Z ##[endgroup]
+verify	Run pnpm verify	2026-10-24T18:43:52.8666720Z $ pnpm lint && pnpm typecheck && pnpm test && pnpm build
+verify	Run pnpm verify	2026-10-24T18:43:53.5429598Z $ eslint packages/web/src src && node scripts/security-check.mjs && node scripts/check-contrast.mjs
+verify	Run pnpm verify	2026-10-24T18:43:56.7639277Z Security scan: no unsafe HTML rendering or eval in web source.
+verify	Run pnpm verify	2026-10-24T18:43:56.7927571Z WCAG AA: 27 text/background pairs passed in both light and dark themes.
+verify	Run pnpm verify	2026-10-24T18:43:57.2666124Z $ tsc --noEmit
+verify	Run pnpm verify	2026-10-24T18:44:09.2163197Z $ vitest run
+verify	Run pnpm verify	2026-10-24T18:44:09.5431180Z 
+verify	Run pnpm verify	2026-10-24T18:44:09.5452066Z ^[[1m^[[46m RUN ^[[49m^[[22m ^[[36mv3.2.7 ^[[39m^[[90m/home/runner/work/hcd/hcd^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:09.5467609Z 
+verify	Run pnpm verify	2026-10-24T18:44:12.2536060Z  ^[[32m✓^[[39m packages/cli/src/submission-receipts.test.ts ^[[2m(^[[22m^[[2m28 tests^[[22m^[[2m)^[[22m^[[33m 2131^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:12.2538966Z    ^[[33m^[[2m✓^[[22m^[[39m durable CLI submission receipts^[[2m > ^[[22mreleases the process lock after SIGKILL and replays the durable request across processes ^[[33m 369^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:12.2545926Z    ^[[33m^[[2m✓^[[22m^[[39m explicit receipt cancellation^[[2m > ^[[22msurvives process death before recovery completes and after withdrawal commits without issuing a new key ^[[33m 826^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:12.2549106Z    ^[[33m^[[2m✓^[[22m^[[39m frozen native submission formats^[[2m > ^[[22mreads and retries an existing large content receipt verbatim even if newer request limits would reject it ^[[33m 599^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.8917729Z  ^[[32m✓^[[39m packages/server/test/comment-selection.test.ts ^[[2m(^[[22m^[[2m12 tests^[[22m^[[2m)^[[22m^[[33m 13617^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.8932795Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mAT-08 stores a marked Unicode table selection with UTF-16 ranges and keeps module/unanchored comments valid ^[[33m 1047^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.8952738Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mAT-08 relocates ranges after publication and preserves text_changed/block_deleted/lost states and one lost notification ^[[33m 1418^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.8955939Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mAT-08 uses exact context to select repeated marked text and preserves combining characters ^[[33m 1202^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.8976829Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mAT-08 validates old selections in their actual source version before migrating or rejecting stale modules ^[[33m 1169^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.8983140Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mAT-08 rejects fabricated fields, quotes, contexts and nodes without silently creating module comments ^[[33m 915^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.8986114Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mAT-11 enforces viewer, session, PAT scope, document restriction and AI gates before accepting selections ^[[33m 922^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.8989842Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mbinds an AI request to the relocated module when a selected block moved after the reader loaded it ^[[33m 1150^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.8993076Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mAT-32 limits verified guest selections to the exact snapshot exposed by a pinned share link ^[[33m 1147^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.8996024Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mAT-32 projects published selections and their contexts into pinned v1 without changing stored v2 anchors ^[[33m 1132^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.8999846Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mAT-32 strips unmatched future quotes, contexts and unavailable node IDs from public pinned responses while preserving only visible discussion bodies and guest replies ^[[33m 1208^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.9003434Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mAT-32 does not invent a reverse location after publication has already removed a deleted block ID ^[[33m 1149^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:26.9006186Z    ^[[33m^[[2m✓^[[22m^[[39m comment selection integrity through the real API^[[2m > ^[[22mAT-32 projects a newly created old-pin guest selection when the current-version share reads it ^[[33m 1157^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6288139Z  ^[[32m✓^[[39m packages/server/test/oauth.test.ts ^[[2m(^[[22m^[[2m18 tests^[[22m^[[2m)^[[22m^[[33m 11207^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6290219Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 publishes trusted discovery metadata and MCP challenges without requiring cookies ^[[33m 790^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6293446Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 validates clients, exact callbacks, PKCE, resources and scopes before redirecting ^[[33m 690^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6296305Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 requires matching browser, session, CSRF marker, selected documents and one-use consent ^[[33m 711^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6299709Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 binds codes to client, redirect, verifier and resource; refresh credentials never authenticate API/MCP ^[[33m 682^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6303091Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 serializes concurrent code redemption and commits family revocation on replay ^[[33m 666^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6308709Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 rotates refreshes, prevents scope escalation and revokes the whole family on concurrent reuse ^[[33m 672^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6313791Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 never extends absolute authorization lifetime and rejects expired requests/codes ^[[33m 674^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6342499Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 intersects document scope, current membership, AI switch and never allows owner actions ^[[33m 676^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6352932Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 lists one authorization per family and revokes by personal settings or protocol ^[[33m 677^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6355564Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 keeps private drafts out of token reads and preserves them when the client submits ^[[33m 721^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6358201Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 rechecks OAuth credentials when serving an already issued signed asset URL ^[[33m 683^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6361458Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 requires both AI-task and submit scope plus current role for task claims/completion ^[[33m 688^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6364048Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 revokes access, refreshes and outstanding codes when a password is reset ^[[33m 735^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6366464Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 does not resurrect authorizations when a disabled account is re-enabled ^[[33m 736^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6368765Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 binds an inspected consent request to the signed-in user ^[[33m 738^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:44:38.6371665Z    ^[[33m^[[2m✓^[[22m^[[39m OAuth authorization and token lifecycle^[[2m > ^[[22mAT-37 supports cached client metadata documents with exact IDs and no redirects on fetch failure ^[[33m 661^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9366153Z  ^[[32m✓^[[39m packages/server/test/ai-tasks.test.ts ^[[2m(^[[22m^[[2m24 tests^[[22m^[[2m)^[[22m^[[33m 22788^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9368655Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-25 auto-approves human editor requests, while commenter and token requests require human approval ^[[33m 942^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9371495Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-26 records AI-disabled requests as a system reply without creating a task ^[[33m 844^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9374029Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mallows only one concurrent claim and conceals credentials from task readers ^[[33m 867^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9376868Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mrequires a linked submission and completes idempotently with one system reply and notification ^[[33m 873^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9382431Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-23 rejects task changes outside the approved scope: metadata ^[[33m 828^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9386709Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-23 rejects task changes outside the approved scope: unrelated module ^[[33m 829^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9394217Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-23 rejects task changes outside the approved scope: module reorder ^[[33m 823^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9396621Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-23 rejects task changes outside the approved scope: module deletion ^[[33m 831^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9399019Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-23 rejects task changes outside the approved scope: module insertion ^[[33m 832^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9401578Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-23 rejects task changes outside the approved scope: document ID ^[[33m 827^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9404107Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mretains the claimed baseline after publication and refuses a caller-selected newer base ^[[33m 1212^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9406822Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-24 expires leases, fences every late write, and stops after three attempts with durable audit history ^[[33m 930^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9409229Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mrechecks AI, membership, scope and revocation on worker writes ^[[33m 841^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9412206Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mprevents personal tokens from reading, replacing or deleting private browser drafts ^[[33m 816^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9414699Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mvalidates task linkage on retries and rejects withdrawn work on completion ^[[33m 826^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9417412Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-22 computes and reads previews without changing stored reviews and denies mutation with preview scope ^[[33m 1081^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9420258Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-29 requires a suggestion before resolve completion and human adoption never publishes ^[[33m 1140^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9423130Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-29 rejects a stale suggestion after revision changes ^[[33m 1085^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9425376Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-29 rejects a stale suggestion after withdrawal changes ^[[33m 1149^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9427592Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-29 rejects a stale suggestion after version changes ^[[33m 1096^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9429912Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-29 rejects a stale suggestion after replacement preview changes ^[[33m 1106^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9432611Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-29 does not hide invalid AI values behind other unresolved conflicts ^[[33m 1084^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9435106Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mlimits cross-document task discovery to current AI scope and membership ^[[33m 826^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:01.9437710Z    ^[[33m^[[2m✓^[[22m^[[39m AI task leases, submissions and read-only previews^[[2m > ^[[22mAT-29 cannot reuse a suggestion after claim expiry and rejects invalid candidate values ^[[33m 1097^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:11.6139696Z  ^[[32m✓^[[39m packages/cli/src/mcp-relay.test.ts ^[[2m(^[[22m^[[2m11 tests^[[22m^[[2m)^[[22m^[[33m 9086^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:11.6141621Z    ^[[33m^[[2m✓^[[22m^[[39m mdoc SDK MCP relay^[[2m > ^[[22mAT-30 A2 initializes MCP directly with a device-authorized base32 PAT ^[[33m 800^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:11.6143093Z    ^[[33m^[[2m✓^[[22m^[[39m mdoc SDK MCP relay^[[2m > ^[[22mAT-30 A2 relays an SDK tool call end to end using a device-authorized PAT ^[[33m 818^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:11.6144892Z    ^[[33m^[[2m✓^[[22m^[[39m mdoc SDK MCP relay^[[2m > ^[[22mAT-30 matches real SDK HTTP reads, tool errors and resources through the relay ^[[33m 821^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:11.6147126Z    ^[[33m^[[2m✓^[[22m^[[39m mdoc SDK MCP relay^[[2m > ^[[22mAT-30 executes HTML reads, comment replies and own-submission withdrawal through the SDK ^[[33m 863^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:11.6148978Z    ^[[33m^[[2m✓^[[22m^[[39m mdoc SDK MCP relay^[[2m > ^[[22mAT-30 runs AI task claims, linked submissions, completion, failure and read-only previews through the SDK relay ^[[33m 1012^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:11.6150928Z    ^[[33m^[[2m✓^[[22m^[[39m mdoc SDK MCP relay^[[2m > ^[[22mAT-30 forwards resolve suggestions with their claim and preserves the human adoption boundary ^[[33m 995^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:11.6155894Z    ^[[33m^[[2m✓^[[22m^[[39m mdoc SDK MCP relay^[[2m > ^[[22mAT-30 submits strict operations and module HTML with stable receipts through the SDK ^[[33m 728^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:11.6158491Z    ^[[33m^[[2m✓^[[22m^[[39m mdoc SDK MCP relay^[[2m > ^[[22mAT-30 rechecks revoked credentials and keeps failures on one request from corrupting concurrent calls ^[[33m 697^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:11.6163234Z    ^[[33m^[[2m✓^[[22m^[[39m mdoc SDK MCP relay^[[2m > ^[[22mAT-30 works as a real stdio child process with clean JSON-RPC stdout and closes on EOF ^[[33m 1644^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:11.6164366Z    ^[[33m^[[2m✓^[[22m^[[39m mdoc SDK MCP relay^[[2m > ^[[22mAT-30 fails initialization cleanly for revoked credentials ^[[33m 702^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:18.5915194Z  ^[[32m✓^[[39m packages/server/test/feishu.test.ts ^[[2m(^[[22m^[[2m11 tests^[[22m^[[2m)^[[22m^[[33m 6468^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:18.5919982Z    ^[[33m^[[2m✓^[[22m^[[39m Feishu integration delivery^[[2m > ^[[22mAT-35 stores encrypted owner-only configuration without disclosing secrets and prevents arbitrary network destinations ^[[33m 869^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:18.5924082Z    ^[[33m^[[2m✓^[[22m^[[39m Feishu integration delivery^[[2m > ^[[22mAT-35 queues transactionally, signs webhook cards and deduplicates a mention across recipients ^[[33m 742^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:18.5925879Z    ^[[33m^[[2m✓^[[22m^[[39m Feishu integration delivery^[[2m > ^[[22mAT-35 cancels pending events when their configuration changes or source is no longer actionable ^[[33m 730^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:18.5928395Z    ^[[33m^[[2m✓^[[22m^[[39m Feishu integration delivery^[[2m > ^[[22mAT-35 maps private recipients by current email, caches identities for a day and rechecks membership before delivery ^[[33m 721^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:18.5931193Z    ^[[33m^[[2m✓^[[22m^[[39m Feishu integration delivery^[[2m > ^[[22mAT-35 treats HTTP 200 business errors as failures and persists bounded retries without upstream secret text ^[[33m 690^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:18.5934076Z    ^[[33m^[[2m✓^[[22m^[[39m Feishu integration delivery^[[2m > ^[[22mAT-35 does not send tampered ciphertext and sends test messages only through the explicit owner endpoint ^[[33m 662^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:18.5939101Z    ^[[33m^[[2m✓^[[22m^[[39m Feishu integration delivery^[[2m > ^[[22mAT-35 stops a private delivery when configuration or recipient changes while obtaining the token ^[[33m 678^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:18.5942256Z    ^[[33m^[[2m✓^[[22m^[[39m Feishu integration delivery^[[2m > ^[[22mAT-35 recovers an expired lease without letting the previous worker send or overwrite the new result ^[[33m 676^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:18.5944339Z    ^[[33m^[[2m✓^[[22m^[[39m Feishu integration delivery^[[2m > ^[[22mAT-35 queues AI requests for the group even without private notification recipients and deduplicates later notifications ^[[33m 662^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:32.8973132Z  ^[[32m✓^[[39m packages/server/test/concurrent-publication.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 13809^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:32.8974897Z    ^[[33m^[[2m✓^[[22m^[[39m SQLite publication across independent HTTP workers^[[2m > ^[[22mAT-12: competing open previews publish once and return PREVIEW_STALE to the loser ^[[33m 2959^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:32.8976742Z    ^[[33m^[[2m✓^[[22m^[[39m SQLite publication across independent HTTP workers^[[2m > ^[[22mAT-05 returns the same committed version to simultaneous requests for one preview ^[[33m 2464^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:32.8978549Z    ^[[33m^[[2m✓^[[22m^[[39m SQLite publication across independent HTTP workers^[[2m > ^[[22mAT-04: an open preview with an older head returns exactly PREVIEW_STALE without writes ^[[33m 1663^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:32.8980363Z    ^[[33m^[[2m✓^[[22m^[[39m SQLite publication across independent HTTP workers^[[2m > ^[[22mAT-11 rechecks owner permission when membership changes before the publication lock ^[[33m 1602^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:32.8983360Z    ^[[33m^[[2m✓^[[22m^[[39m SQLite publication across independent HTTP workers^[[2m > ^[[22mAT-11 rejects a session revoked after initial authorization without publication writes ^[[33m 1618^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:32.8986496Z    ^[[33m^[[2m✓^[[22m^[[39m SQLite publication across independent HTTP workers^[[2m > ^[[22mAT-11 rejects 'disabled account' changed after initial authorization without publication writes ^[[33m 1748^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:32.8989706Z    ^[[33m^[[2m✓^[[22m^[[39m SQLite publication across independent HTTP workers^[[2m > ^[[22mAT-11 rejects 'removed administrator status' changed after initial authorization without publication writes ^[[33m 1753^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:41.8828409Z  ^[[32m✓^[[39m packages/server/test/app.test.ts ^[[2m(^[[22m^[[2m10 tests^[[22m^[[2m)^[[22m^[[33m 8475^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:41.8831238Z    ^[[33m^[[2m✓^[[22m^[[39m HCD service^[[2m > ^[[22mAT-19 does not create demo accounts unless seeding is explicitly enabled ^[[33m 895^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:41.8833420Z    ^[[33m^[[2m✓^[[22m^[[39m HCD service^[[2m > ^[[22mAT-11 requires a same-origin request marker for cookie mutations ^[[33m 675^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:41.8835249Z    ^[[33m^[[2m✓^[[22m^[[39m HCD service^[[2m > ^[[22mAT-11 responds with 404 when submission, preview, task, or comment records do not exist ^[[33m 712^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:41.8837707Z    ^[[33m^[[2m✓^[[22m^[[39m HCD service^[[2m > ^[[22mAT-11 requires submission author, current editor role, and PAT submit scope within the subject document for withdrawal ^[[33m 777^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:41.8839700Z    ^[[33m^[[2m✓^[[22m^[[39m HCD service^[[2m > ^[[22mAT-05 stores drafts and makes idempotent submissions that publish once ^[[33m 1057^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:41.8842361Z    ^[[33m^[[2m✓^[[22m^[[39m HCD service^[[2m > ^[[22mAT-03 detects overlapping submissions and requires a revisioned resolution ^[[33m 1224^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:41.8846665Z    ^[[33m^[[2m✓^[[22m^[[39m HCD service^[[2m > ^[[22mAT-09 sanitizes HTML imports and confirms them as an immutable import version ^[[33m 690^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:41.8849116Z    ^[[33m^[[2m✓^[[22m^[[39m HCD service^[[2m > ^[[22mAT-21 limits personal tokens to their read, comment, or submit scope ^[[33m 662^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:41.8852309Z    ^[[33m^[[2m✓^[[22m^[[39m HCD service^[[2m > ^[[22mAT-26 keeps AI off by default and routes requested tasks through owner approval ^[[33m 743^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:41.8854379Z    ^[[33m^[[2m✓^[[22m^[[39m HCD service^[[2m > ^[[22mAT-04 marks superseded previews stale and restores a historical snapshot through publish ^[[33m 1039^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:42.4485760Z  ^[[32m✓^[[39m packages/cli/src/submission-plan.test.ts ^[[2m(^[[22m^[[2m15 tests^[[22m^[[2m)^[[22m^[[32m 230^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7198270Z  ^[[32m✓^[[39m packages/server/test/cli-auth.test.ts ^[[2m(^[[22m^[[2m12 tests^[[22m^[[2m)^[[22m^[[33m 8782^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7204981Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mkeeps the display code separate from secrets and approves a normal scoped PAT ^[[33m 793^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7210192Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mrepeats the same approved credential after a lost response without issuing duplicates ^[[33m 699^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7212480Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mpreserves the consent binding and same delivery credential across an application restart ^[[33m 875^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7213856Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mAT-11 requires session review, rejects token approval and guards browser origins and CSRF ^[[33m 679^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7215149Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mdurably binds consent to the first user and exact session, including simultaneous reads ^[[33m 815^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7216378Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mAT-11 validates scope, document and expiry selections before issuing any token ^[[33m 682^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7217635Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mdenies without minting a token and expires delivery secrets without revoking issued tokens ^[[33m 684^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7218855Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mrate-limits both new device requests and early polling with retry hints ^[[33m 678^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7220036Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mAT-21 enforces live PAT scopes, document allowlists, AI setting and membership ^[[33m 673^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7222218Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mAT-21 rechecks reset, disabled account, revoked token and deleted approving session before redelivery ^[[33m 829^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7223651Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mAT-21 revokes only the calling bearer, rejects targets, and remains usable after permissions disappear ^[[33m 690^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:51.7225396Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization^[[2m > ^[[22mAT-21 revokes an OAuth access token and its entire refresh family using the same self-only endpoint ^[[33m 683^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:59.6767125Z  ^[[32m✓^[[39m packages/server/test/accounts-members.test.ts ^[[2m(^[[22m^[[2m8 tests^[[22m^[[2m)^[[22m^[[33m 7463^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:59.6768873Z    ^[[33m^[[2m✓^[[22m^[[39m accounts and membership^[[2m > ^[[22mAT-11 stores invite hashes and atomically redeems one-use seven-day invitations ^[[33m 927^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:59.6770337Z    ^[[33m^[[2m✓^[[22m^[[39m accounts and membership^[[2m > ^[[22mAT-11 replaces reset links and resets only the password while revoking old sessions ^[[33m 903^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:59.6772248Z    ^[[33m^[[2m✓^[[22m^[[39m accounts and membership^[[2m > ^[[22mAT-11 restricts administrator actions and immediately invalidates disabled users sessions and PATs ^[[33m 875^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:59.6773757Z    ^[[33m^[[2m✓^[[22m^[[39m accounts and membership^[[2m > ^[[22mAT-11 manages space members while protecting the last owner against deletion and demotion ^[[33m 754^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:59.6775237Z    ^[[33m^[[2m✓^[[22m^[[39m accounts and membership^[[2m > ^[[22mAT-11 lists inherited document roles and prevents member changes through non-owners or PATs ^[[33m 753^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:59.6776715Z    ^[[33m^[[2m✓^[[22m^[[39m accounts and membership^[[2m > ^[[22mAT-11 returns effective roles consistently in document and space lists after membership changes ^[[33m 829^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:59.6778604Z    ^[[33m^[[2m✓^[[22m^[[39m accounts and membership^[[2m > ^[[22mAT-11 requires ownership transfer before disabling the final active owner ^[[33m 678^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:45:59.6781601Z    ^[[33m^[[2m✓^[[22m^[[39m administrator CLI invitations^[[2m > ^[[22mAT-11 creates a bootstrap administrator and issues redeemable reset links without storing raw tokens ^[[33m 1742^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:05.2680238Z  ^[[32m✓^[[39m packages/server/test/guests.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 5092^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:05.2683400Z    ^[[33m^[[2m✓^[[22m^[[39m verified guest sharing^[[2m > ^[[22mAT-33 requires verification on every commenter resource and binds single-use codes and sessions to the exact link ^[[33m 829^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:05.2686189Z    ^[[33m^[[2m✓^[[22m^[[39m verified guest sharing^[[2m > ^[[22mAT-33 keeps failure counts through resends and process restarts and locks the email across links after five failures ^[[33m 830^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:05.2688206Z    ^[[33m^[[2m✓^[[22m^[[39m verified guest sharing^[[2m > ^[[22mAT-25 creates external comments and replies, strips member mentions and requires approval for guest AI requests ^[[33m 714^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:05.2689979Z    ^[[33m^[[2m✓^[[22m^[[39m verified guest sharing^[[2m > ^[[22mAT-33 invalidates challenges and sessions immediately when links expire or are revoked ^[[33m 690^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:05.2691883Z    ^[[33m^[[2m✓^[[22m^[[39m verified guest sharing^[[2m > ^[[22mAT-32 protects raw signed URLs with the guest session and rechecks session and link revocation at render time ^[[33m 708^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:05.2693619Z    ^[[33m^[[2m✓^[[22m^[[39m verified guest sharing^[[2m > ^[[22mAT-33 does not expose hidden comments, accepts only valid identity fields and expires challenges ^[[33m 691^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:05.2695263Z    ^[[33m^[[2m✓^[[22m^[[39m AT-32 migrates legacy comment and AI authors without losing discussion state ^[[33m 630^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:05.6487096Z  ^[[32m✓^[[39m packages/core/src/merge.test.ts ^[[2m(^[[22m^[[2m20 tests^[[22m^[[2m)^[[22m^[[32m 83^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:12.0586187Z  ^[[32m✓^[[39m packages/server/test/exports.test.ts ^[[2m(^[[22m^[[2m8 tests^[[22m^[[2m)^[[22m^[[33m 5892^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:12.0590315Z    ^[[33m^[[2m✓^[[22m^[[39m durable document exports^[[2m > ^[[22mAT-36 freezes a published snapshot and serves only signed attachment URLs on the render domain ^[[33m 883^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:12.0592961Z    ^[[33m^[[2m✓^[[22m^[[39m durable document exports^[[2m > ^[[22mAT-36 freezes clean pending changes, excludes an entire conflicting submission and enforces view-pending permission ^[[33m 833^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:12.0595454Z    ^[[33m^[[2m✓^[[22m^[[39m durable document exports^[[2m > ^[[22mAT-36 exports a reimportable ZIP and rejects obsolete pending-version combinations ^[[33m 731^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:12.0597459Z    ^[[33m^[[2m✓^[[22m^[[39m durable document exports^[[2m > ^[[22mAT-36 rechecks account, membership and originating PAT revocation before serving or processing ^[[33m 679^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:12.0599544Z    ^[[33m^[[2m✓^[[22m^[[39m durable document exports^[[2m > ^[[22mAT-36 bounds queue size, recovers an interrupted job and expires files and frozen content ^[[33m 687^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:12.0604814Z    ^[[33m^[[2m✓^[[22m^[[39m durable document exports^[[2m > ^[[22mAT-36 treats PDF responses as bounded binary artifacts and fails clearly without a configured exporter ^[[33m 707^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:12.0611869Z    ^[[33m^[[2m✓^[[22m^[[39m durable document exports^[[2m > ^[[22mAT-36 keeps only the current worker result when an expired PDF lease is reclaimed ^[[33m 679^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:12.0614246Z    ^[[33m^[[2m✓^[[22m^[[39m durable document exports^[[2m > ^[[22mAT-36 rejects cross-document assets and oversized PDF output, and cancels revoked access during rendering ^[[33m 690^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:19.1626323Z  ^[[32m✓^[[39m packages/server/test/mcp.test.ts ^[[2m(^[[22m^[[2m9 tests^[[22m^[[2m)^[[22m^[[33m 6602^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:19.1628209Z    ^[[33m^[[2m✓^[[22m^[[39m stateless MCP HTTP transport^[[2m > ^[[22mAT-30 B10 charges one HTTP request and one tool call without charging internal API reads ^[[33m 939^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:19.1629880Z    ^[[33m^[[2m✓^[[22m^[[39m stateless MCP HTTP transport^[[2m > ^[[22mAT-30 B10 external callers cannot forge the internal rate-limit bypass ^[[33m 800^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:19.1631790Z    ^[[33m^[[2m✓^[[22m^[[39m stateless MCP HTTP transport^[[2m > ^[[22mAT-21 requires a real PAT even for discovery and rejects foreign origins or cookie fallback ^[[33m 677^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:19.1633647Z    ^[[33m^[[2m✓^[[22m^[[39m stateless MCP HTTP transport^[[2m > ^[[22mAT-22 negotiates protocol, accepts notifications, supports batches and advertises no official-version mutations ^[[33m 684^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:19.1635499Z    ^[[33m^[[2m✓^[[22m^[[39m stateless MCP HTTP transport^[[2m > ^[[22mAT-30 reads official documents, modules, outlines, versions and comments without disclosing private drafts ^[[33m 703^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:19.1637730Z    ^[[33m^[[2m✓^[[22m^[[39m stateless MCP HTTP transport^[[2m > ^[[22mAT-22 persists comments and idempotent submissions through API scope checks without publishing ^[[33m 763^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:19.1641761Z    ^[[33m^[[2m✓^[[22m^[[39m stateless MCP HTTP transport^[[2m > ^[[22mAT-21 / AT-26 enforces document restrictions and the AI switch for every document operation ^[[33m 684^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:19.1644190Z    ^[[33m^[[2m✓^[[22m^[[39m stateless MCP HTTP transport^[[2m > ^[[22mAT-21 rechecks revoked, expired and disabled-user PATs on every request ^[[33m 661^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:19.1651388Z    ^[[33m^[[2m✓^[[22m^[[39m stateless MCP HTTP transport^[[2m > ^[[22mAT-30 validates transport, JSON-RPC envelopes, tool names and structured input ^[[33m 689^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:20.0302388Z  ^[[32m✓^[[39m packages/core/src/changes.test.ts ^[[2m(^[[22m^[[2m19 tests^[[22m^[[2m)^[[22m^[[33m 543^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:25.0404016Z  ^[[32m✓^[[39m packages/cli/src/device-auth-integration.test.ts ^[[2m(^[[22m^[[2m6 tests^[[22m^[[2m)^[[22m^[[33m 4444^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:25.0406295Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization over the real HTTP API^[[2m > ^[[22mrecovers a lost approved poll, saves one scoped credential privately and revokes it through logout ^[[33m 943^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:25.0408720Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization over the real HTTP API^[[2m > ^[[22mkeeps the existing credential byte-for-byte when the device request is denied ^[[33m 706^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:25.0411876Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization over the real HTTP API^[[2m > ^[[22mexits an expired device request without issuing or writing a credential ^[[33m 712^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:25.0413431Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization over the real HTTP API^[[2m > ^[[22mretains failed revocations and protects a replacement login while an older logout is waiting ^[[33m 703^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:25.0414876Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization over the real HTTP API^[[2m > ^[[22mA2 rejects a malformed explicit PAT before contacting the account endpoint ^[[33m 672^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:25.0417451Z    ^[[33m^[[2m✓^[[22m^[[39m CLI device authorization over the real HTTP API^[[2m > ^[[22mdoes not expose credentials or terminal controls from a malicious account-validation error ^[[33m 707^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:31.9164709Z  ^[[32m✓^[[39m packages/server/test/snapshot-submissions.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 6387^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:31.9166999Z    ^[[33m^[[2m✓^[[22m^[[39m complete JSON submission compatibility^[[2m > ^[[22mAT-05 stores permanent operations and preserves nested IDs and content through publication and retries ^[[33m 1046^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:31.9171466Z    ^[[33m^[[2m✓^[[22m^[[39m complete JSON submission compatibility^[[2m > ^[[22mAT-05 replays an existing frozen CLI receipt after a lost response without assigning new IDs ^[[33m 975^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:31.9173693Z    ^[[33m^[[2m✓^[[22m^[[39m complete JSON submission compatibility^[[2m > ^[[22mmerges same-anchor JSON insertions in creation order, including legacy stored snapshots ^[[33m 960^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:31.9175850Z    ^[[33m^[[2m✓^[[22m^[[39m complete JSON submission compatibility^[[2m > ^[[22mAT-03 returns operation conflicts for JSON edits and validates owner resolutions before publishing ^[[33m 916^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:31.9178095Z    ^[[33m^[[2m✓^[[22m^[[39m complete JSON submission compatibility^[[2m > ^[[22mrejects invalid references, duplicate IDs and unsupported changes without changing drafts or submissions ^[[33m 676^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:31.9180736Z    ^[[33m^[[2m✓^[[22m^[[39m complete JSON submission compatibility^[[2m > ^[[22mAT-27 keeps incompatible legacy snapshots intact, excludes them from exports and requires explicit discard ^[[33m 904^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:31.9184542Z    ^[[33m^[[2m✓^[[22m^[[39m complete JSON submission compatibility^[[2m > ^[[22minvalidates prior merge previews once during migration while preserving restores and immutable records ^[[33m 909^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:39.2593179Z  ^[[32m✓^[[39m packages/server/test/merge-acceptance.test.ts ^[[2m(^[[22m^[[2m6 tests^[[22m^[[2m)^[[22m^[[33m 6843^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:39.2596700Z    ^[[33m^[[2m✓^[[22m^[[39m collaborative merge acceptance through real HTTP^[[2m > ^[[22mAT-01 publishes both authors’ changes to different paragraphs without changing the original version ^[[33m 1327^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:39.2599195Z    ^[[33m^[[2m✓^[[22m^[[39m collaborative merge acceptance through real HTTP^[[2m > ^[[22mAT-02 / TM-3 marks separate edits in one paragraph as a same-field merge and publishes their combined text ^[[33m 1113^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:39.2601604Z    ^[[33m^[[2m✓^[[22m^[[39m collaborative merge acceptance through real HTTP^[[2m > ^[[22mAT-03 / TM-2 refuses an unresolved overlap and publishes the correct keep_current decision ^[[33m 1123^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:39.2604585Z    ^[[33m^[[2m✓^[[22m^[[39m collaborative merge acceptance through real HTTP^[[2m > ^[[22mAT-03 / TM-2 refuses an unresolved overlap and publishes the correct take_incoming decision ^[[33m 1103^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:39.2610485Z    ^[[33m^[[2m✓^[[22m^[[39m collaborative merge acceptance through real HTTP^[[2m > ^[[22mAT-03 / TM-2 refuses an unresolved overlap and publishes the correct manual decision ^[[33m 1093^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:39.2612995Z    ^[[33m^[[2m✓^[[22m^[[39m collaborative merge acceptance through real HTTP^[[2m > ^[[22mAT-07 restores into a new version, preserves history and pending work, and reevaluates that work against the restored head ^[[33m 1083^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:39.7687941Z  ^[[32m✓^[[39m packages/web/src/AnchorText.test.tsx ^[[2m(^[[22m^[[2m9 tests^[[22m^[[2m)^[[22m^[[32m 94^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:40.1498645Z  ^[[32m✓^[[39m packages/web/src/CliAuth.test.tsx ^[[2m(^[[22m^[[2m14 tests^[[22m^[[2m)^[[22m^[[32m 57^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:48.0015622Z  ^[[32m✓^[[39m packages/server/test/operation-review.test.ts ^[[2m(^[[22m^[[2m8 tests^[[22m^[[2m)^[[22m^[[33m 7368^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:48.0017402Z    ^[[33m^[[2m✓^[[22m^[[39m operation review integration^[[2m > ^[[22mAT-27 accepts and drops individual uncertain operations, persists outcomes and publishes only the chosen content ^[[33m 1083^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:48.0020148Z    ^[[33m^[[2m✓^[[22m^[[39m operation review integration^[[2m > ^[[22mAT-03 reveals the ordinary conflict after accepting identity, validates manual input and leaves unresolved submissions out of exports ^[[33m 1011^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:48.0022839Z    ^[[33m^[[2m✓^[[22m^[[39m operation review integration^[[2m > ^[[22mAT-03 invalidates a prior downstream resolution when an earlier choice changes and blocks direct publish ^[[33m 986^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:48.0024931Z    ^[[33m^[[2m✓^[[22m^[[39m operation review integration^[[2m > ^[[22mAT-06 validates structural placement and restores deleted content through the owner API ^[[33m 930^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:48.0026987Z    ^[[33m^[[2m✓^[[22m^[[39m operation review integration^[[2m > ^[[22mAT-04 recomputes publication and refuses a changed saved candidate ^[[33m 892^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:48.0029506Z    ^[[33m^[[2m✓^[[22m^[[39m operation review integration^[[2m > ^[[22mrejects duplicate, oversized and no-longer-pending review selections ^[[33m 662^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:48.0032676Z    ^[[33m^[[2m✓^[[22m^[[39m operation review integration^[[2m > ^[[22mpreserves insertion order across legacy full snapshots and operation submissions ^[[33m 911^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:48.0034662Z    ^[[33m^[[2m✓^[[22m^[[39m operation review integration^[[2m > ^[[22minvalidates open reviews once when upgrading from the previous merge schema ^[[33m 893^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:55.2146664Z  ^[[32m✓^[[39m packages/server/test/change-presentation.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 6717^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:55.2148837Z    ^[[33m^[[2m✓^[[22m^[[39m saved change presentation^[[2m > ^[[22mshows ordered original operations even when the final submission snapshot is unchanged ^[[33m 1060^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:55.2153938Z    ^[[33m^[[2m✓^[[22m^[[39m saved change presentation^[[2m > ^[[22mdistinguishes original proposals and outcomes from actual candidate changes after whole-submission rollback ^[[33m 1004^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:55.2156811Z    ^[[33m^[[2m✓^[[22m^[[39m saved change presentation^[[2m > ^[[22mrecords manual candidate text and preserves the saved comparison after publication changes the current version ^[[33m 952^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:55.2158855Z    ^[[33m^[[2m✓^[[22m^[[39m saved change presentation^[[2m > ^[[22mshows exclusion after a synthetic document-level drop even if earlier operation outcomes say applied ^[[33m 910^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:55.2160336Z    ^[[33m^[[2m✓^[[22m^[[39m saved change presentation^[[2m > ^[[22mhandles legacy details, incompatible historical snapshots, and absent old preview presentation explicitly ^[[33m 917^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:55.2162857Z    ^[[33m^[[2m✓^[[22m^[[39m saved change presentation^[[2m > ^[[22mcreates restore and historical comparisons from the chosen immutable snapshots ^[[33m 886^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:46:55.2165286Z    ^[[33m^[[2m✓^[[22m^[[39m saved change presentation^[[2m > ^[[22mdoes not reveal proposal detail to viewers or revoked token readers ^[[33m 987^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:01.8042864Z  ^[[32m✓^[[39m packages/server/test/submission-input.test.ts ^[[2m(^[[22m^[[2m8 tests^[[22m^[[2m)^[[22m^[[33m 6089^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:01.8062834Z    ^[[33m^[[2m✓^[[22m^[[39m operation and module HTML submissions^[[2m > ^[[22mAT-05 strictly applies operations and returns identical generated IDs after retries and concurrent requests ^[[33m 820^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:01.8066244Z    ^[[33m^[[2m✓^[[22m^[[39m operation and module HTML submissions^[[2m > ^[[22mAT-05 preserves the original full-JSON normalized-hash retry contract for pre-migration submissions ^[[33m 717^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:01.8092787Z    ^[[33m^[[2m✓^[[22m^[[39m operation and module HTML submissions^[[2m > ^[[22mAT-27 rejects invalid before values, duplicate temporary IDs, mixed inputs and uncertain caller labels atomically ^[[33m 708^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:01.8110795Z    ^[[33m^[[2m✓^[[22m^[[39m operation and module HTML submissions^[[2m > ^[[22mAT-27 updates a single HTML module while retaining other modules and recovering a missing block ID ^[[33m 693^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:01.8113681Z    ^[[33m^[[2m✓^[[22m^[[39m operation and module HTML submissions^[[2m > ^[[22mAT-27 inserts new HTML modules in request order after a common anchor and deletes only explicit modules ^[[33m 683^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:01.8116601Z    ^[[33m^[[2m✓^[[22m^[[39m operation and module HTML submissions^[[2m > ^[[22mAT-27 rejects ambiguous module identity, foreign/duplicate nodes, multiple roots, scripts and unknown HTML ^[[33m 690^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:01.8119499Z    ^[[33m^[[2m✓^[[22m^[[39m operation and module HTML submissions^[[2m > ^[[22mAT-27 requires human confirmation of uncertain identity recovery before preview/export or publication ^[[33m 1036^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:01.8122569Z    ^[[33m^[[2m✓^[[22m^[[39m operation and module HTML submissions^[[2m > ^[[22mAT-23 enforces AI task scope for operations even when an out-of-scope change is reverted in the same request ^[[33m 742^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:02.8339662Z  ^[[32m✓^[[39m packages/core/src/spec-html-property.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[33m 704^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:02.8341803Z    ^[[33m^[[2m✓^[[22m^[[39m Spec HTML property acceptance^[[2m > ^[[22mAT-13 round trips valid random documents containing every block type without changing their source ^[[33m 703^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:04.3518861Z  ^[[32m✓^[[39m packages/cli/src/index.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 1180^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:04.3521132Z    ^[[33m^[[2m✓^[[22m^[[39m AT-36 polls export jobs, preserves binary downloads and never forwards the PAT to the render URL ^[[33m 1072^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:07.1426529Z  ^[[32m✓^[[39m packages/server/test/render-origin.test.ts ^[[2m(^[[22m^[[2m6 tests^[[22m^[[2m)^[[22m^[[33m 2304^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:07.1428387Z    ^[[33m^[[2m✓^[[22m^[[39m isolated raw rendering^[[2m > ^[[22mAT-09 preserves static source privately and keeps raw HTML off the application origin ^[[33m 815^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:07.1430082Z    ^[[33m^[[2m✓^[[22m^[[39m isolated raw rendering^[[2m > ^[[22mAT-09 rechecks share revocation at render time and round-trips raw assets through ZIP ^[[33m 718^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:07.1431848Z    ^[[33m^[[2m✓^[[22m^[[39m isolated raw rendering^[[2m > ^[[22mAT-09 denies discarded preview URLs and makes malformed signatures fail closed ^[[33m 719^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:08.5291494Z Will submit 0 added, 1 modified, 0 deleted and 0 moved module(s) against v1.
+verify	Run pnpm verify	2026-10-24T18:47:08.5749144Z Retrying the exact saved request; newer local edits are not included.
+verify	Run pnpm verify	2026-10-24T18:47:09.6093731Z Will submit 0 added, 1 modified, 0 deleted and 0 moved module(s) against v1.
+verify	Run pnpm verify	2026-10-24T18:47:09.6094598Z Local warnings (1):
+verify	Run pnpm verify	2026-10-24T18:47:09.6095480Z 1 identity match(es) require owner review; raw module HTML will be reconciled by the server.
+verify	Run pnpm verify	2026-10-24T18:47:09.6201105Z Retrying the exact saved request; newer local edits are not included.
+verify	Run pnpm verify	2026-10-24T18:47:11.3020359Z  ^[[32m✓^[[39m packages/cli/src/native-submission-integration.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[33m 3658^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:11.3022694Z    ^[[33m^[[2m✓^[[22m^[[39m native CLI submissions against the HCD API^[[2m > ^[[22mAT-28 preserves identity and the frozen certain request through a lost response and newer invalid files ^[[33m 1242^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:11.3024924Z    ^[[33m^[[2m✓^[[22m^[[39m native CLI submissions against the HCD API^[[2m > ^[[22mAT-28 preserves identity and the frozen uncertain request through a lost response and newer invalid files ^[[33m 1016^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:11.3027322Z    ^[[33m^[[2m✓^[[22m^[[39m native CLI submissions against the HCD API^[[2m > ^[[22mAT-28 reuses a frozen legacy JSON request before the newer parser rejects its unchanged source files ^[[33m 708^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:11.3030170Z    ^[[33m^[[2m✓^[[22m^[[39m native CLI submissions against the HCD API^[[2m > ^[[22mAT-28 keeps a previewable working copy but rejects uncertain module reorders before creating a receipt or submission ^[[33m 691^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:14.1528817Z  ^[[32m✓^[[39m packages/server/test/pinned-comments.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[33m 2357^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:14.1531234Z    ^[[33m^[[2m✓^[[22m^[[39m AT-32 B2 filters pinned threads and member replies by creation version while keeping every guest-thread reply ^[[33m 1219^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:14.1533395Z    ^[[33m^[[2m✓^[[22m^[[39m AT-32 B2 upgrades legacy comments using guest pins or their creation-time published version without losing data ^[[33m 1136^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:14.6296377Z  ^[[32m✓^[[39m packages/web/src/VersionComparison.test.tsx ^[[2m(^[[22m^[[2m11 tests^[[22m^[[2m)^[[22m^[[32m 63^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:18.1494624Z  ^[[32m✓^[[39m packages/server/test/share-links.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 3031^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:18.1503704Z    ^[[33m^[[2m✓^[[22m^[[39m read-only document sharing^[[2m > ^[[22mAT-32 creates high-entropy one-time links, pins published versions and requires a document owner ^[[33m 1206^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:18.1505996Z    ^[[33m^[[2m✓^[[22m^[[39m read-only document sharing^[[2m > ^[[22mAT-32 renders current versions, exposes only open discussions and revokes every route immediately ^[[33m 1139^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:18.1508393Z    ^[[33m^[[2m✓^[[22m^[[39m read-only document sharing^[[2m > ^[[22mAT-32 rejects impossible pins, malformed inputs, unsupported commenter links, and expiry ^[[33m 685^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:24.6926725Z  ^[[32m✓^[[39m packages/server/test/b-auth.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 6040^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:24.6929224Z    ^[[33m^[[2m✓^[[22m^[[39m B3/B6/B7 account authentication fixes^[[2m > ^[[22mB3 persists a three-per-hour email reset limit across app instances ^[[33m 856^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:24.6931705Z    ^[[33m^[[2m✓^[[22m^[[39m B3/B6/B7 account authentication fixes^[[2m > ^[[22mB3 adds durable reset counters to an old database without losing accounts or content ^[[33m 717^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:24.6933030Z    ^[[33m^[[2m✓^[[22m^[[39m B3/B6/B7 account authentication fixes^[[2m > ^[[22mB6 logs out every browser session while leaving personal tokens usable ^[[33m 776^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:24.6934334Z    ^[[33m^[[2m✓^[[22m^[[39m B3/B6/B7 account authentication fixes^[[2m > ^[[22mAT-11 B6 rejects bearer tokens for logout-all and enforces the write request guard ^[[33m 682^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:24.6935614Z    ^[[33m^[[2m✓^[[22m^[[39m B3/B6/B7 account authentication fixes^[[2m > ^[[22mB7 rejects an incorrect current password without changing credentials ^[[33m 901^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:24.6936854Z    ^[[33m^[[2m✓^[[22m^[[39m B3/B6/B7 account authentication fixes^[[2m > ^[[22mB7 counts wrong current passwords toward the existing login failure limit ^[[33m 1038^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:24.6939172Z    ^[[33m^[[2m✓^[[22m^[[39m B3/B6/B7 account authentication fixes^[[2m > ^[[22mB7 keeps the current session, removes other sessions, and invalidates reset links after success ^[[33m 1069^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:29.2662215Z  ^[[32m✓^[[39m packages/server/test/import-source.test.ts ^[[2m(^[[22m^[[2m5 tests^[[22m^[[2m)^[[22m^[[33m 4024^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:29.2664309Z    ^[[33m^[[2m✓^[[22m^[[39m preserved imports and structured draft publication^[[2m > ^[[22mreturns the exact preserved HTML only as a non-renderable attachment ^[[33m 799^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:29.2666715Z    ^[[33m^[[2m✓^[[22m^[[39m preserved imports and structured draft publication^[[2m > ^[[22mAT-11 applies document authorization and scopes while denying every PAT access to raw originals ^[[33m 736^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:29.2668723Z    ^[[33m^[[2m✓^[[22m^[[39m preserved imports and structured draft publication^[[2m > ^[[22msaves every editable block, publishes through review, and leaves the original and v1 unchanged ^[[33m 1084^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:29.2670836Z    ^[[33m^[[2m✓^[[22m^[[39m preserved imports and structured draft publication^[[2m > ^[[22mrejects nonexistent draft base versions and deletes discarded drafts ^[[33m 723^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:47:29.2673627Z    ^[[33m^[[2m✓^[[22m^[[39m preserved imports and structured draft publication^[[2m > ^[[22mAT-43 recognizes metric and timeline groups in ordinary HTML and reports excessive nesting ^[[33m 681^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:00.3277103Z  ^[[32m✓^[[39m packages/server/test/history-performance.test.ts ^[[2m(^[[22m^[[2m9 tests^[[22m^[[2m)^[[22m^[[33m 30566^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:00.3278955Z    ^[[33m^[[2m✓^[[22m^[[39m historical comparison performance^[[2m > ^[[22mB4 keeps health responsive during 5000-paragraph comparison and caches its immutable result ^[[33m 4704^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:00.3281164Z    ^[[33m^[[2m✓^[[22m^[[39m historical comparison performance^[[2m > ^[[22mB4 keeps health responsive while preparing a large restore review presentation ^[[33m 4350^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:00.3282992Z    ^[[33m^[[2m✓^[[22m^[[39m historical comparison performance^[[2m > ^[[22mB4 rechecks document access after the compare worker finishes ^[[33m 4267^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:00.3284198Z    ^[[33m^[[2m✓^[[22m^[[39m historical comparison performance^[[2m > ^[[22mB4 rechecks document access after the restore worker finishes ^[[33m 4107^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:00.3285340Z    ^[[33m^[[2m✓^[[22m^[[39m historical comparison performance^[[2m > ^[[22mB4 rejects a revoked session after the compare worker finishes ^[[33m 4166^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:00.3286502Z    ^[[33m^[[2m✓^[[22m^[[39m historical comparison performance^[[2m > ^[[22mB4 rejects a revoked session after the restore worker finishes ^[[33m 4044^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:00.3288606Z    ^[[33m^[[2m✓^[[22m^[[39m historical comparison performance^[[2m > ^[[22mB4 rejects a revoked session after the prepare worker finishes ^[[33m 2068^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:00.3293126Z    ^[[33m^[[2m✓^[[22m^[[39m historical comparison performance^[[2m > ^[[22mB4 rejects a revoked session after the save worker finishes ^[[33m 1921^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:00.3296987Z    ^[[33m^[[2m✓^[[22m^[[39m historical comparison performance^[[2m > ^[[22mB4 limits comparison to ten requests per user per minute independently of normal reads ^[[33m 937^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:01.7309345Z  ^[[32m✓^[[39m packages/server/test/chart-module-html.test.ts ^[[2m(^[[22m^[[2m8 tests^[[22m^[[2m)^[[22m^[[33m 865^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:01.7311866Z    ^[[33m^[[2m✓^[[22m^[[39m inert chart data in module HTML submissions^[[2m > ^[[22maccepts chart changes through the API with exact retries and rejects malicious variants atomically ^[[33m 804^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:04.7318429Z  ^[[32m✓^[[39m packages/server/test/security-mail.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[33m 2496^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:04.7355206Z    ^[[33m^[[2m✓^[[22m^[[39m account security emails^[[2m > ^[[22mAT-34 queues encrypted invitation secrets atomically, prioritizes them over notification backlogs and erases them after delivery ^[[33m 898^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:04.7358265Z    ^[[33m^[[2m✓^[[22m^[[39m account security emails^[[2m > ^[[22muses the same public reset response for unknown, active, disabled and pending accounts with rate limits ^[[33m 862^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:04.7361359Z    ^[[33m^[[2m✓^[[22m^[[39m account security emails^[[2m > ^[[22mAT-34 cancels expired or replaced credentials and retries tampered encrypted payloads without leaking secrets ^[[33m 703^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:07.7793599Z  ^[[32m✓^[[39m packages/server/test/archive.test.ts ^[[2m(^[[22m^[[2m5 tests^[[22m^[[2m)^[[22m^[[33m 2539^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:07.7795849Z    ^[[33m^[[2m✓^[[22m^[[39m HCD archive import and export^[[2m > ^[[22mAT-36 stages images, confirms atomically and preserves a complete export/reimport round trip ^[[33m 915^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:07.7799192Z    ^[[33m^[[2m✓^[[22m^[[39m HCD archive import and export^[[2m > ^[[22mAT-09 rejects mismatched module content and asset hashes without creating imports ^[[33m 771^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:07.7802078Z    ^[[33m^[[2m✓^[[22m^[[39m HCD archive import and export^[[2m > ^[[22mAT-11 rechecks permission at confirmation and prevents scoped tokens from reading imports ^[[33m 794^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:09.0595309Z  ^[[32m✓^[[39m packages/cli/src/local-preview.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 932^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:09.0597174Z    ^[[33m^[[2m✓^[[22m^[[39m local working-copy preview^[[2m > ^[[22mruns mdoc preview --no-open against edited checkout files without a browser ^[[33m 646^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:12.2684899Z  ^[[32m✓^[[39m packages/server/test/assets.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 2718^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:12.2687249Z    ^[[33m^[[2m✓^[[22m^[[39m document image assets^[[2m > ^[[22mAT-11 deduplicates content on disk while enforcing document and token access ^[[33m 881^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:12.2689785Z    ^[[33m^[[2m✓^[[22m^[[39m document image assets^[[2m > ^[[22mAT-09 rejects disguised images and oversized files and sanitizes SVG markup and references ^[[33m 706^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:12.2692981Z    ^[[33m^[[2m✓^[[22m^[[39m document image assets^[[2m > ^[[22mAT-36 publishes attached images through review, rejects cross-document references, and embeds bytes in HTML export ^[[33m 1130^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:12.9128742Z  ^[[32m✓^[[39m packages/core/src/diff-performance.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 336^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:13.7495146Z  ^[[32m✓^[[39m packages/core/src/snapshot-ops.test.ts ^[[2m(^[[22m^[[2m14 tests^[[22m^[[2m)^[[22m^[[33m 503^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:13.7497138Z    ^[[33m^[[2m✓^[[22m^[[39m ID-preserving snapshot conversion^[[2m > ^[[22mround trips randomized insert/delete/reorder/move/edit combinations deterministically ^[[33m 414^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:17.7590313Z  ^[[32m✓^[[39m packages/server/test/outbox.test.ts ^[[2m(^[[22m^[[2m5 tests^[[22m^[[2m)^[[22m^[[33m 3506^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:17.7592859Z    ^[[33m^[[2m✓^[[22m^[[39m transactional email outbox^[[2m > ^[[22mAT-34 / AT-15 queues in the business transaction and renders localized, escaped messages without private payloads ^[[33m 779^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:17.7594360Z    ^[[33m^[[2m✓^[[22m^[[39m transactional email outbox^[[2m > ^[[22mAT-34 persists exponential retry times and stops after six failures without storing SMTP secrets ^[[33m 693^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:17.7595735Z    ^[[33m^[[2m✓^[[22m^[[39m transactional email outbox^[[2m > ^[[22mAT-34 leaves unconfigured mail untouched and cancels disabled, unauthorized or opted-out recipients ^[[33m 675^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:17.7597085Z    ^[[33m^[[2m✓^[[22m^[[39m transactional email outbox^[[2m > ^[[22mAT-34 recovers expired leases and prevents stale workers from overwriting a newer claim ^[[33m 689^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:17.7598396Z    ^[[33m^[[2m✓^[[22m^[[39m transactional email outbox^[[2m > ^[[22mAT-34 saves only the current user preferences, rejects unknown flags and disallows PAT changes ^[[33m 669^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:18.1412573Z  ^[[32m✓^[[39m packages/cli/src/device-login.test.ts ^[[2m(^[[22m^[[2m9 tests^[[22m^[[2m)^[[22m^[[32m 147^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:21.5926560Z  ^[[32m✓^[[39m packages/cli/src/cancellation-integration.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[33m 2933^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:21.5951785Z    ^[[33m^[[2m✓^[[22m^[[39m CLI cancellation with the HCD API^[[2m > ^[[22mrecovers a lost response and truthfully settles a pending submission ^[[33m 1454^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:21.5979729Z    ^[[33m^[[2m✓^[[22m^[[39m CLI cancellation with the HCD API^[[2m > ^[[22mrecovers a lost response and truthfully settles a published submission ^[[33m 1475^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:24.5079807Z  ^[[32m✓^[[39m packages/server/test/notifications.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 2415^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:24.5082308Z    ^[[33m^[[2m✓^[[22m^[[39m discussion notifications^[[2m > ^[[22mAT-34 deduplicates mentions, excludes self and outsiders, and notifies active thread participants ^[[33m 942^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:24.5084888Z    ^[[33m^[[2m✓^[[22m^[[39m discussion notifications^[[2m > ^[[22mAT-34 isolates read state by user, validates requests, and denies PAT access to the inbox ^[[33m 790^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:24.5087397Z    ^[[33m^[[2m✓^[[22m^[[39m discussion notifications^[[2m > ^[[22mAT-34 requires current comment permission for deleting a prior comment and preserves a tombstone ^[[33m 682^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:27.6439156Z  ^[[32m✓^[[39m packages/server/test/digests.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[33m 2652^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:27.6441916Z    ^[[33m^[[2m✓^[[22m^[[39m daily review summaries^[[2m > ^[[22mAT-34 queues once per local day at the configured hour across restarts and aggregates all eligible documents ^[[33m 699^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:27.6444576Z    ^[[33m^[[2m✓^[[22m^[[39m daily review summaries^[[2m > ^[[22mAT-34 rechecks current permissions, pending status, preferences and disabled accounts at delivery ^[[33m 628^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:27.6446123Z    ^[[33m^[[2m✓^[[22m^[[39m daily review summaries^[[2m > ^[[22mAT-34 escapes titles, omits submission contents, localizes emails and expires stale summaries ^[[33m 631^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:27.6447552Z    ^[[33m^[[2m✓^[[22m^[[39m daily review summaries^[[2m > ^[[22mAT-34 respects the daily preference before scheduling and handles daylight saving repetition with one date key ^[[33m 692^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:31.1370399Z  ^[[32m✓^[[39m packages/server/test/logging-auth-lifecycle.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[33m 3006^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:31.1372858Z    ^[[33m^[[2m✓^[[22m^[[39m B5 records the cookie actor before logout deletes the session ^[[33m 806^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:31.1374843Z    ^[[33m^[[2m✓^[[22m^[[39m B5 records the new session actor after accepting an invitation or reset link ^[[33m 694^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:31.1376048Z    ^[[33m^[[2m✓^[[22m^[[39m B5 records the guest actor on first successful verification before a guest cookie exists ^[[33m 728^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:31.1377048Z    ^[[33m^[[2m✓^[[22m^[[39m B5 uses LOG_LEVEL when explicitly configured and is silent by default in tests ^[[33m 776^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:33.7727021Z  ^[[32m✓^[[39m packages/server/test/token-usage.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 2143^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:33.7728222Z    ^[[33m^[[2m✓^[[22m^[[39m B8 records token last-used time and IP once per minute ^[[33m 790^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:33.7731880Z    ^[[33m^[[2m✓^[[22m^[[39m B8 upgrades existing token rows without losing token data ^[[33m 644^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:33.7733303Z    ^[[33m^[[2m✓^[[22m^[[39m B8 writes token usage only after sixty seconds even across a calendar minute boundary ^[[33m 709^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:34.1150188Z  ^[[32m✓^[[39m packages/web/src/editor-model.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[32m 39^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:36.5267893Z  ^[[32m✓^[[39m packages/server/test/maintenance.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 1938^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:36.5269870Z    ^[[33m^[[2m✓^[[22m^[[39m credential maintenance^[[2m > ^[[22mremoves expired sessions and attempts without touching content or active credentials ^[[33m 684^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:36.5272039Z    ^[[33m^[[2m✓^[[22m^[[39m credential maintenance^[[2m > ^[[22merases consumed secrets but preserves in-flight leases and delivery audit records ^[[33m 619^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:36.5274211Z    ^[[33m^[[2m✓^[[22m^[[39m credential maintenance^[[2m > ^[[22mretains active lockouts and cooldowns while cleaning revoked guest credentials and expired identity caches ^[[33m 634^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:39.2697493Z  ^[[32m✓^[[39m packages/server/test/import-images.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 2253^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:39.2699492Z    ^[[33m^[[2m✓^[[22m^[[39m inline image import^[[2m > ^[[22mAT-18 previews deduplicated inline images privately, preserves captions and exports after confirmation ^[[33m 872^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:39.2701426Z    ^[[33m^[[2m✓^[[22m^[[39m inline image import^[[2m > ^[[22mAT-09 sanitizes SVG and reports external, missing, invalid and unrelated asset references ^[[33m 697^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:39.2702785Z    ^[[33m^[[2m✓^[[22m^[[39m inline image import^[[2m > ^[[22mrevokes preview assets when an import is discarded ^[[33m 683^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:43.3889756Z  ^[[32m✓^[[39m packages/web/src/E4-computed-polish.test.ts ^[[2m(^[[22m^[[2m5 tests^[[22m^[[2m)^[[22m^[[33m 3597^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:43.3892409Z    ^[[33m^[[2m✓^[[22m^[[39m E4 rich editor focus has a visible outer ring and pressed controls retain accent in dark mode ^[[33m 515^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:43.3894057Z    ^[[33m^[[2m✓^[[22m^[[39m E4 nested editor cards and tables use soft cards and row separators ^[[33m 404^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:43.3895735Z    ^[[33m^[[2m✓^[[22m^[[39m E4 notification preferences remain operable switches with an empty-state card ^[[33m 438^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:43.3897405Z    ^[[33m^[[2m✓^[[22m^[[39m E4 authorization scopes are check rows and supporting state surfaces remain rounded ^[[33m 464^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:43.3899276Z    ^[[33m^[[2m✓^[[22m^[[39m E4 terminal code stays one exact text value and fits inside the identity card at narrow widths ^[[33m 1217^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:44.6723351Z  ^[[32m✓^[[39m packages/core/src/diff-property.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[33m 978^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:44.6726150Z    ^[[33m^[[2m✓^[[22m^[[39m coupled structure diff properties^[[2m > ^[[22mAT-14 round trips independent tables, charts and lists with reordered, moved, added and removed identities ^[[33m 976^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:45.0740314Z  ^[[32m✓^[[39m packages/web/src/ChangeList.test.tsx ^[[2m(^[[22m^[[2m6 tests^[[22m^[[2m)^[[22m^[[32m 47^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:46.8317810Z  ^[[32m✓^[[39m packages/server/test/anchors.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[33m 1277^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:46.8323560Z    ^[[33m^[[2m✓^[[22m^[[39m published comment anchors^[[2m > ^[[22mAT-08 relocates on publish, records deleted/lost states, notifies once, and allows owner relocation ^[[33m 1275^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:47.7786568Z  ^[[32m✓^[[39m packages/web/src/i18n.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[33m 435^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:47.7788552Z    ^[[33m^[[2m✓^[[22m^[[39m AT-15 C3 uses existing dot-separated translation keys and removes inline bilingual choices ^[[33m 360^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:49.0893600Z  ^[[32m✓^[[39m packages/cli/src/change-format.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 1009^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:49.0898537Z    ^[[33m^[[2m✓^[[22m^[[39m runs real CLI diff commands with readable output and standalone JSON modes ^[[33m 1004^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:49.3762472Z  ^[[32m✓^[[39m packages/server/test/oauth-client.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 24^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:49.6427927Z  ^[[32m✓^[[39m packages/render/src/index.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[32m 38^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:49.9821489Z  ^[[32m✓^[[39m packages/core/src/ops.test.ts ^[[2m(^[[22m^[[2m6 tests^[[22m^[[2m)^[[22m^[[32m 25^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:52.6442978Z  ^[[32m✓^[[39m packages/server/test/logging.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 2172^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:52.6462305Z    ^[[33m^[[2m✓^[[22m^[[39m B5 logs a route template without secrets, bodies or query strings ^[[33m 775^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:52.6469647Z    ^[[33m^[[2m✓^[[22m^[[39m B5 never logs share or invite secrets and emits only one entry per request ^[[33m 693^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:52.6472145Z    ^[[33m^[[2m✓^[[22m^[[39m B5 records the authenticated actor on the outer MCP request ^[[33m 703^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:53.0095937Z  ^[[32m✓^[[39m packages/core/src/spec-html.test.ts ^[[2m(^[[22m^[[2m10 tests^[[22m^[[2m)^[[22m^[[32m 47^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:53.3041193Z  ^[[32m✓^[[39m packages/core/src/model.test.ts ^[[2m(^[[22m^[[2m11 tests^[[22m^[[2m)^[[22m^[[32m 17^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:56.2737419Z  ^[[32m✓^[[39m packages/server/test/proxy.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 2475^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:56.2739022Z    ^[[33m^[[2m✓^[[22m^[[39m A1 proxy client login failures do not lock out another client ^[[33m 1619^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:58.5558552Z  ^[[32m✓^[[39m packages/server/test/comment-permissions.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[33m 1785^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:58.5561113Z    ^[[33m^[[2m✓^[[22m^[[39m AT-11 B9 lets an active participant resolve and reopen but rejects nonparticipants, deleted participation and viewers ^[[33m 953^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:58.5563447Z    ^[[33m^[[2m✓^[[22m^[[39m AT-11 B9 requires explicit comment scope for tokens even when their owner or participant has submit scope ^[[33m 831^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:59.8143612Z  ^[[32m✓^[[39m packages/cli/src/credentials.test.ts ^[[2m(^[[22m^[[2m5 tests^[[22m^[[2m)^[[22m^[[33m 1040^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:48:59.8145763Z    ^[[33m^[[2m✓^[[22m^[[39m private CLI credential storage^[[2m > ^[[22mdoes not replace secrets while another process holds the credential lock ^[[33m 1009^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:00.1262449Z  ^[[32m✓^[[39m packages/core/src/nested-list-ops.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[32m 26^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:00.4948322Z  ^[[32m✓^[[39m packages/web/src/BlockRead.test.tsx ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 41^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:00.7860254Z  ^[[32m✓^[[39m packages/core/src/reconcile.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[32m 13^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:03.5267432Z  ^[[32m✓^[[39m packages/web/src/E4-notification-layout.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[33m 2227^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:03.5271654Z    ^[[33m^[[2m✓^[[22m^[[39m E4 keeps notification header and pointer controls inside the viewport under the blurred topbar ^[[33m 1406^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:03.5273674Z    ^[[33m^[[2m✓^[[22m^[[39m E4 keeps the member menu inside a right-aligned discussion composer ^[[33m 820^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:03.8779224Z  ^[[32m✓^[[39m packages/core/src/text.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[32m 22^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:04.0827178Z  ^[[32m✓^[[39m packages/web/src/E4-visual-polish.test.ts ^[[2m(^[[22m^[[2m5 tests^[[22m^[[2m)^[[22m^[[32m 5^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:05.0412223Z  ^[[32m✓^[[39m packages/server/test/smtp.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[33m 722^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:05.0422114Z    ^[[33m^[[2m✓^[[22m^[[39m SMTP transport^[[2m > ^[[22msends a notification only to the configured local SMTP fixture ^[[33m 720^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:05.3807783Z  ^[[32m✓^[[39m packages/core/src/diff.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[32m 25^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:06.2653619Z  ^[[32m✓^[[39m packages/web/src/comment-location.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[32m 96^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:06.5697062Z  ^[[32m✓^[[39m packages/core/src/import-patterns.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 15^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:06.8501152Z  ^[[32m✓^[[39m packages/core/src/anchors.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 6^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:07.1683974Z  ^[[32m✓^[[39m packages/web/src/DiscussionThreads.test.tsx ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[32m 33^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:09.4856166Z  ^[[32m✓^[[39m packages/web/src/reading-layout.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[33m 1817^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:09.4857905Z    ^[[33m^[[2m✓^[[22m^[[39m C8 preserves at least 680px of reading text with desktop discussions open ^[[33m 950^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:09.4860470Z    ^[[33m^[[2m✓^[[22m^[[39m C7 highlights guest quote text without adding a block outline in the browser ^[[33m 865^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:10.4628641Z  ^[[32m✓^[[39m packages/server/test/change-worker.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 772^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:10.4630773Z    ^[[33m^[[2m✓^[[22m^[[39m bounded change worker^[[2m > ^[[22mB4 bounds cache bytes and does not retain oversized results ^[[33m 304^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:10.8319981Z  ^[[32m✓^[[39m packages/exporter/src/app.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[32m 119^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:12.1579767Z  ^[[32m✓^[[39m packages/server/test/mcp-list-scope.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[33m 840^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:12.1582273Z    ^[[33m^[[2m✓^[[22m^[[39m AT-21 B10 preserves document-read scope checks when listing documents without per-document reads ^[[33m 839^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:12.7636441Z  ^[[32m✓^[[39m packages/web/src/BlockEditor.test.tsx ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[32m 101^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:14.0731955Z  ^[[32m✓^[[39m packages/server/test/rate-limit.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[33m 819^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:14.0734604Z    ^[[33m^[[2m✓^[[22m^[[39m request limits^[[2m > ^[[22mlimits file operations across sessions and limits public share lookup requests ^[[33m 816^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:14.3137077Z  ^[[32m✓^[[39m packages/web/src/design-tokens.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[32m 39^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:14.5191247Z  ^[[32m✓^[[39m packages/web/src/inline-codec.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[32m 5^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:15.7881091Z  ^[[32m✓^[[39m packages/server/test/version-authors.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[33m 784^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:15.7882893Z    ^[[33m^[[2m✓^[[22m^[[39m B1 returns the author name in both version history APIs ^[[33m 783^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:17.0392481Z  ^[[32m✓^[[39m packages/web/src/lint-rules.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[33m 1051^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:17.0395858Z    ^[[33m^[[2m✓^[[22m^[[39m AT-09 C1 enforces unsafe HTML and hook-order ESLint rules at the frontend source boundary ^[[33m 1049^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:17.2539066Z  ^[[32m✓^[[39m packages/web/src/web-structure.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[32m 8^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:17.5754441Z  ^[[32m✓^[[39m packages/web/src/app/error-translation.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[32m 6^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:17.7733963Z  ^[[32m✓^[[39m packages/server/test/startup.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[32m 3^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:19.8098930Z  ^[[32m✓^[[39m packages/web/src/SharedDocument.test.tsx ^[[2m(^[[22m^[[2m22 tests^[[22m^[[2m)^[[22m^[[33m 872^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:23.5687785Z  ^[[32m✓^[[39m packages/web/src/App-comment-selection.test.tsx ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 2399^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:23.5690245Z    ^[[33m^[[2m✓^[[22m^[[39m quoted comments in the application (synthetic DOM)^[[2m > ^[[22mcarries a formatted Unicode/newline selection through composition, posting and exact highlight navigation ^[[33m 579^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:23.5692797Z    ^[[33m^[[2m✓^[[22m^[[39m responsive reading controls (synthetic DOM)^[[2m > ^[[22mwithholds title editing in phone settings and saves a retained desktop draft after resizing ^[[33m 1088^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:25.0688590Z  ^[[32m✓^[[39m packages/web/src/comment-selection-dom.test.tsx ^[[2m(^[[22m^[[2m13 tests^[[22m^[[2m)^[[22m^[[33m 519^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:26.3150321Z  ^[[32m✓^[[39m packages/web/src/comment-selection.test.tsx ^[[2m(^[[22m^[[2m13 tests^[[22m^[[2m)^[[22m^[[32m 262^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:28.6505606Z  ^[[32m✓^[[39m packages/web/src/app/App-routing.test.tsx ^[[2m(^[[22m^[[2m11 tests^[[22m^[[2m)^[[22m^[[33m 1206^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:29.7479895Z  ^[[32m✓^[[39m packages/web/src/E4-danger-actions.test.tsx ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 169^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:31.7119952Z  ^[[32m✓^[[39m packages/web/src/App-toolbar.test.tsx ^[[2m(^[[22m^[[2m6 tests^[[22m^[[2m)^[[22m^[[33m 897^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:31.7123473Z    ^[[33m^[[2m✓^[[22m^[[39m C5 the application hides secondary toolbar actions until More is opened ^[[33m 314^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:33.3089542Z  ^[[32m✓^[[39m packages/web/src/app/App-route-gaps.test.tsx ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 528^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:34.8782839Z  ^[[32m✓^[[39m packages/web/src/app/C2-route-timing.test.tsx ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[33m 510^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:36.5143595Z  ^[[32m✓^[[39m packages/web/src/app/C2-space-routes.test.tsx ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 576^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:36.5145612Z    ^[[33m^[[2m✓^[[22m^[[39m C2 space navigation filters documents and restores the selected space after refresh and Back ^[[33m 356^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:37.4653069Z  ^[[32m✓^[[39m packages/web/src/PasswordSettings.test.tsx ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 89^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:40.3295537Z  ^[[32m✓^[[39m packages/web/src/App-sidebar-layout.test.tsx ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[33m 1525^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:40.3297598Z    ^[[33m^[[2m✓^[[22m^[[39m C8 shows compact sidebar navigation as fully visible named icons at 805px without clipped label text ^[[33m 1524^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:41.8568320Z  ^[[32m✓^[[39m packages/web/src/App-outline-preference.test.tsx ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[33m 470^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:41.8571084Z    ^[[33m^[[2m✓^[[22m^[[39m C8 remembers both open and collapsed outline choices after remounting the application ^[[33m 377^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:42.8023121Z  ^[[32m✓^[[39m packages/web/src/E1-hook-dependencies.test.tsx ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[32m 79^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:43.8662398Z  ^[[32m✓^[[39m packages/web/src/DocumentToolbar.test.tsx ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[32m 207^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:45.2833676Z  ^[[32m✓^[[39m packages/web/src/App-account-settings.test.tsx ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 343^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:46.5978711Z  ^[[32m✓^[[39m packages/web/src/app/App-theme.test.tsx ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[32m 250^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:47.5104952Z  ^[[32m✓^[[39m packages/web/src/LogoutAllSessions.test.tsx ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[32m 66^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:48.6092726Z  ^[[32m✓^[[39m packages/web/src/DiscussionThreads-menu.test.tsx ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[32m 241^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:49.5801123Z  ^[[32m✓^[[39m packages/web/src/E4-display-markup.test.tsx ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[32m 85^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:50.6493241Z  ^[[32m✓^[[39m packages/web/src/DiscussionThreads-actions.test.tsx ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[32m 204^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:51.5591974Z  ^[[32m✓^[[39m packages/web/src/Administration-i18n.test.tsx ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[32m 45^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:52.4867296Z  ^[[32m✓^[[39m packages/web/src/ShareLinks-i18n.test.tsx ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[32m 78^[[2mms^[[22m^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:52.5161326Z 
+verify	Run pnpm verify	2026-10-24T18:49:52.5188338Z ^[[2m Test Files ^[[22m ^[[1m^[[32m114 passed^[[39m^[[22m^[[90m (114)^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:52.5198845Z ^[[2m      Tests ^[[22m ^[[1m^[[32m686 passed^[[39m^[[22m^[[90m (686)^[[39m
+verify	Run pnpm verify	2026-10-24T18:49:52.5203775Z ^[[2m   Start at ^[[22m 18:44:09
+verify	Run pnpm verify	2026-10-24T18:49:52.5212564Z ^[[2m   Duration ^[[22m 342.97s^[[2m (transform 2.45s, setup 0ms, collect 25.35s, tests 281.80s, environment 13.65s, prepare 6.74s)^[[22m
+verify	Run pnpm verify	2026-10-24T18:49:52.5228910Z 
+verify	Run pnpm verify	2026-10-24T18:49:53.1239139Z $ tsc -b && vite build
+verify	Run pnpm verify	2026-10-24T18:50:04.8655269Z ^[[36mvite v7.3.7 ^[[32mbuilding client environment for production...^[[36m^[[39m
+verify	Run pnpm verify	2026-10-24T18:50:04.9571016Z transforming...
+verify	Run pnpm verify	2026-10-24T18:50:06.5025300Z ^[[33mnode_modules/.pnpm/zod@4.6.7/node_modules/zod/v4/core/regexes.js (74:0): A comment
+verify	Run pnpm verify	2026-10-24T18:50:06.5026302Z 
+verify	Run pnpm verify	2026-10-24T18:50:06.5027713Z "/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+verify	Run pnpm verify	2026-10-24T18:50:06.5029168Z  * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+verify	Run pnpm verify	2026-10-24T18:50:06.5030832Z  * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+verify	Run pnpm verify	2026-10-24T18:50:06.5031750Z 
+verify	Run pnpm verify	2026-10-24T18:50:06.5033862Z in "node_modules/.pnpm/zod@4.6.7/node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.^[[39m
+verify	Run pnpm verify	2026-10-24T18:50:06.5095680Z ^[[33mnode_modules/.pnpm/zod@4.6.7/node_modules/zod/v4/core/util.js (400:0): A comment
+verify	Run pnpm verify	2026-10-24T18:50:06.5096474Z 
+verify	Run pnpm verify	2026-10-24T18:50:06.5108238Z "// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+verify	Run pnpm verify	2026-10-24T18:50:06.5110013Z 
+verify	Run pnpm verify	2026-10-24T18:50:06.5112330Z in "node_modules/.pnpm/zod@4.6.7/node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.^[[39m
+verify	Run pnpm verify	2026-10-24T18:50:08.7623975Z ^[[32m✓^[[39m 416 modules transformed.
+verify	Run pnpm verify	2026-10-24T18:50:09.1141699Z rendering chunks...
+verify	Run pnpm verify	2026-10-24T18:50:09.5515279Z computing gzip size...
+verify	Run pnpm verify	2026-10-24T18:50:09.5862768Z ^[[2mdist/^[[22m^[[32mindex.html                                  ^[[39m^[[1m^[[2m  0.58 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   0.35 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5864488Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mChangeList-Cp9Dedh3.css              ^[[39m^[[1m^[[2m  3.12 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   0.95 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5881715Z ^[[33m
+verify	Run pnpm verify	2026-10-24T18:50:09.5882997Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mCliAuth-drGPNd1c.css                 ^[[39m^[[1m^[[2m  3.28 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   0.98 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5887071Z (!) Some chunks are larger than 500 kB after minification. Consider:
+verify	Run pnpm verify	2026-10-24T18:50:09.5888226Z - Using dynamic import() to code-split the application
+verify	Run pnpm verify	2026-10-24T18:50:09.5889991Z - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+verify	Run pnpm verify	2026-10-24T18:50:09.5892339Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.^[[39m
+verify	Run pnpm verify	2026-10-24T18:50:09.5902553Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mAdministration-DFptuD80.css          ^[[39m^[[1m^[[2m  3.49 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   0.89 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5904748Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mVersionComparison-080JTVOj.css       ^[[39m^[[1m^[[2m  4.33 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   1.05 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5906969Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mDocumentEditor-1nSNImoe.css          ^[[39m^[[1m^[[2m  5.55 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   1.36 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5909118Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mindex-X7o1VWGJ.css                   ^[[39m^[[1m^[[2m137.22 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  22.47 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5911644Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mSubmissionDetails-DiBRm0gc.js        ^[[39m^[[1m^[[2m  2.29 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   0.98 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5914035Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mNotificationPreferences-CvZ1y99Y.js  ^[[39m^[[1m^[[2m  2.30 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   0.95 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5916244Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mReviewChanges-C2KIUAaj.js            ^[[39m^[[1m^[[2m  2.34 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   0.97 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5918332Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mExportPanel-O9NmfejT.js              ^[[39m^[[1m^[[2m  3.93 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   1.58 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5920360Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mAiTasks-w5c2T4Xy.js                  ^[[39m^[[1m^[[2m  5.24 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   1.99 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5922728Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mShareLinks-DPpEGE6V.js               ^[[39m^[[1m^[[2m  5.28 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   1.85 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5924823Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mOAuthConsent-BDnR-6U_.js             ^[[39m^[[1m^[[2m  5.64 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   2.16 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5927166Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mVersionComparison-DaunoauP.js        ^[[39m^[[1m^[[2m  8.87 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   2.73 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5929282Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mChangeList-CQgV8fdh.js               ^[[39m^[[1m^[[2m  9.01 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   2.56 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5931609Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mCliAuth-DgxknL4C.js                  ^[[39m^[[1m^[[2m 12.01 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   4.03 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5933715Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mAdministration-pCpYNsgI.js           ^[[39m^[[1m^[[2m 14.59 kB^[[22m^[[1m^[[22m^[[2m │ gzip:   4.26 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5935839Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mDocumentEditor-C66qXAwo.js           ^[[39m^[[1m^[[2m424.30 kB^[[22m^[[1m^[[22m^[[2m │ gzip: 133.46 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5937894Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mindex-JrsinTA6.js                    ^[[39m^[[1m^[[33m647.18 kB^[[39m^[[22m^[[2m │ gzip: 202.69 kB^[[22m
+verify	Run pnpm verify	2026-10-24T18:50:09.5939148Z ^[[32m✓ built in 4.68s^[[39m
+verify	Post Run actions/setup-node@v4	﻿2026-10-24T18:50:09.6788642Z Post job cleanup.
+verify	Post Run actions/setup-node@v4	2026-10-24T18:50:09.8062109Z (node:7043) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Post Run actions/setup-node@v4	2026-10-24T18:50:09.8064023Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Post Run actions/setup-node@v4	2026-10-24T18:50:09.8382698Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/hcd/hcd --files-from manifest.txt --use-compress-program zstdmt
+verify	Post Run actions/setup-node@v4	2026-10-24T18:50:11.4240082Z (node:7043) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+verify	Post Run actions/setup-node@v4	2026-10-24T18:50:12.4152870Z Sent 33423360 of 54391316 (61.4%), 31.9 MBs/sec
+verify	Post Run actions/setup-node@v4	2026-10-24T18:50:13.0047740Z Sent 54391316 of 54391316 (100.0%), 32.6 MBs/sec
+verify	Post Run actions/setup-node@v4	2026-10-24T18:50:13.1989998Z Cache saved with the key: node-cache-Linux-x64-pnpm-1403995fd5a33f0f3fb0d851fe6814b7496415903d2fa9b948748271a4b4710c
+verify	Post Run pnpm/action-setup@v4	﻿2026-10-24T18:50:13.2142641Z Post job cleanup.
+verify	Post Run pnpm/action-setup@v4	2026-10-24T18:50:13.3678870Z Pruning is unnecessary.
+verify	Post Run actions/checkout@v4	﻿2026-10-24T18:50:13.3907855Z Post job cleanup.
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.4981372Z [command]/usr/bin/git version
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.5034276Z git version 2.55.0
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.5095379Z Temporarily overriding HOME='/home/runner/work/_temp/34782c72-cb5d-40d2-9933-bb6e75d1e47a' before making global git config changes
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.5097082Z Adding repository directory to the temporary git global config as a safe directory
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.5121558Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/hcd/hcd
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.5187185Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.5249330Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.5948664Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.5987235Z http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.6061931Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.6102834Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.6672459Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Post Run actions/checkout@v4	2026-10-24T18:50:13.6802097Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Complete job	﻿2026-10-24T18:50:13.7537999Z Cleaning up orphan processes
+verify	Complete job	2026-10-24T18:50:13.7954347Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, pnpm/action-setup@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
