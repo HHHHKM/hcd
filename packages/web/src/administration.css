@@ -1,0 +1,194 @@
+.administration-modal {
+  width: min(850px, calc(100vw - 32px));
+  padding-bottom: var(--space-24);
+}
+.administration-modal > :not(.modal-top) {
+  margin-left: var(--space-24);
+  margin-right: var(--space-24);
+}
+.admin-tabs {
+  display: flex;
+  gap: var(--space-8);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: var(--space-20);
+  padding: var(--space-4);
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--fill);
+}
+.admin-tabs button {
+  padding: var(--space-10);
+  font-size: var(--font-size-12);
+  color: var(--muted-ink);
+  min-height: var(--space-36);
+  border-radius: var(--radius-s);
+}
+.admin-tabs button.active {
+  color: var(--ink);
+  border: 0;
+  background: var(--paper);
+  box-shadow: var(--shadow-card);
+}
+.admin-list {
+  list-style: none;
+  padding: 0;
+}
+.admin-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-15);
+  padding: var(--space-15) 0;
+  border-bottom: 1px solid var(--hairline);
+  min-height: var(--space-44);
+  font-size: var(--font-size-14);
+}
+.admin-list small {
+  display: block;
+  color: var(--muted-ink);
+  margin-top: var(--space-4);
+}
+.admin-row-actions {
+  display: flex;
+  gap: var(--space-7);
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.admin-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+}
+.administration-modal label {
+  display: grid;
+  gap: var(--space-7);
+  font-size: var(--font-size-12);
+  margin: var(--space-12) 0;
+}
+.administration-modal input:not([type='checkbox']),
+.administration-modal select {
+  padding: var(--space-9);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  min-height: var(--space-36);
+  background: var(--paper);
+  color: var(--ink);
+  min-width: 0;
+}
+.administration-modal .admin-checkbox {
+  display: flex;
+  gap: var(--space-7);
+  align-items: center;
+}
+.admin-checkbox input {
+  width: 15px;
+  height: 15px;
+}
+.admin-invite {
+  border: 0;
+  padding: var(--space-16);
+  border-radius: var(--radius-l);
+  background: var(--surface-raised);
+  margin-bottom: var(--space-20);
+}
+.admin-invite h3 {
+  font-size: var(--font-size-14);
+}
+.admin-note {
+  font-size: var(--font-size-12);
+  line-height: 1.7;
+  color: var(--muted-ink);
+}
+.admin-link {
+  padding: var(--space-12);
+  background: var(--fill);
+  border: 0;
+  border-radius: var(--radius-m);
+  font-size: var(--font-size-12);
+}
+.admin-link > button {
+  margin-top: var(--space-8);
+}
+.admin-link small {
+  display: block;
+}
+.admin-add-member {
+  display: grid;
+  gap: var(--space-4);
+  border-top: 1px solid var(--line);
+  margin-top: var(--space-18);
+  padding-top: var(--space-10);
+}
+@media (max-width: 640px) {
+  .admin-list li {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .admin-row-actions {
+    justify-content: flex-start;
+  }
+  .admin-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.admin-confirm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-8);
+  padding: var(--space-12);
+  border-radius: var(--radius-m);
+  background: var(--fill);
+  font-size: var(--font-size-13);
+}
+.space-integrations {
+  margin: var(--space-24);
+  padding: var(--space-20);
+  border: 0;
+  border-radius: var(--radius-l);
+  background: var(--surface-raised);
+}
+.space-integrations h3 {
+  margin-top: 0;
+}
+.space-integrations form {
+  display: grid;
+  gap: var(--space-12);
+}
+.space-integrations label {
+  display: grid;
+  gap: var(--space-6);
+  font-size: var(--font-size-12);
+}
+.space-integrations input,
+.space-integrations select {
+  width: 100%;
+  min-width: 0;
+  padding: var(--space-9);
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  min-height: var(--space-36);
+}
+.space-integrations .admin-confirm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+}
+
+.administration-modal .danger-action,
+.admin-confirm .danger-action {
+  color: var(--danger);
+}
+.admin-list small {
+  font-size: var(--font-size-13);
+  color: var(--faint-ink);
+}
+.admin-list li > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}

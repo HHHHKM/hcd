@@ -1,0 +1,21 @@
+Command: pnpm exec tsx ../../../work/check-visual-code.ts
+Started UTC: 2026-10-24T17:53:10.936801+00:00
+AssertionError [ERR_ASSERTION]: visual fixture must display the same complete code on every run
++ actual - expected
+
+  [
++   'ABCD-GM76'
+-   'ABCD-EFGH'
+  ]
+
+    at <anonymous> (/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/check-visual-code.ts:17:11) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [Array],
+  expected: [Array],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Exit code: 1
+Ended UTC: 2026-10-24T17:53:12.217571+00:00

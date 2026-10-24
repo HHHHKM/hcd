@@ -1,0 +1,2442 @@
+{
+  "config": {
+    "argv": [
+      "/Users/h/.local/store/v11/links/@/node/24.21.0/7c2af6d0211936cfaec99a95a53053dc7f0b6c530d8ccd7d2f853b9f3aa01498/node_modules/node/bin/node",
+      "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/node_modules/playwright/cli.js",
+      "test",
+      "-c",
+      "playwright.visual.config.ts",
+      "--update-snapshots"
+    ],
+    "configFile": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/playwright.visual.config.ts",
+    "rootDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/visual",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/E3-complete-visual-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.visual.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/E3-complete-visual-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/visual",
+        "snapshotDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/visual",
+        "testIgnore": [],
+        "testMatch": "**/*.visual.ts",
+        "timeout": 30000,
+        "use": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome",
+          "baseURL": "http://127.0.0.1:4173",
+          "locale": "zh-CN",
+          "timezoneId": "Asia/Taipei",
+          "colorScheme": "light",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "outputs/E3-complete-visual-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "changed",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "tsx scripts/visual-server.ts",
+      "url": "http://127.0.0.1:4173/healthz",
+      "reuseExistingServer": false,
+      "timeout": 30000,
+      "gracefulShutdown": {
+        "signal": "SIGTERM",
+        "timeout": 5000
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "import-upload.visual.ts",
+      "file": "import-upload.visual.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "E4 import upload surface 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1024,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:58:46.019Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "import-upload-computed-style",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjRUMTc6NTg6NDcuMjExWiIsCiAgIndpZHRoIjogMTQ0MCwKICAidGhlbWUiOiAibGlnaHQiLAogICJtZWFzdXJlZCI6IHsKICAgICJ3aWR0aCI6IDUwNCwKICAgICJoZWlnaHQiOiA3NiwKICAgICJ4IjogNDY4LAogICAgInkiOiA0MTMuNSwKICAgICJib3JkZXJTdHlsZSI6ICJkYXNoZWQiLAogICAgImJvcmRlcldpZHRoIjogIjFweCIsCiAgICAiYm9yZGVyQ29sb3IiOiAicmdiKDIxMCwgMjEwLCAyMTUpIiwKICAgICJib3JkZXJSYWRpdXMiOiAiMTZweCIsCiAgICAiYmFja2dyb3VuZENvbG9yIjogInJnYmEoMTIwLCAxMjAsIDEyOCwgMC4xMikiLAogICAgInBhZGRpbmciOiAiMjRweCIsCiAgICAibWluSGVpZ2h0IjogIjM2cHgiLAogICAgImZvbnRTaXplIjogIjE0cHgiLAogICAgImV4cGVjdGVkUmFkaXVzIjogIjE2cHgiLAogICAgImV4cGVjdGVkRmlsbCI6ICIjNzg3ODgwMWYiLAogICAgImV4cGVjdGVkQmFja2dyb3VuZCI6ICJyZ2JhKDEyMCwgMTIwLCAxMjgsIDAuMTIpIiwKICAgICJ2aWV3cG9ydCI6IDE0NDAsCiAgICAic2Nyb2xsV2lkdGgiOiAxNDQwCiAgfSwKICAiZXh0ZXJuYWwiOiBbXSwKICAiZXJyb3JzIjogW10sCiAgInF1b3RhcyI6IFtdLAogICJyZXF1aXJlbWVudCI6ICJDT0RFWF9VSV9HVUlERS5tZCBFNCDCpzg6IGRhc2hlZCB1cGxvYWQgYXJlYSB3aXRoIGxhcmdlIHJhZGl1cyBhbmQgc2hhbGxvdyBmaWxsLiIsCiAgImZpeHR1cmUiOiAiUmVhbCBjcmVhdGVBcHAsIGRpc3Bvc2FibGUgU1FMaXRlLCBhY3R1YWwgZGlzdCBhbmQgaW5zdGFsbGVkIENocm9tZS4iCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20c46a0e3e6f6932d195-997d45fc5d86e7e06e68",
+          "file": "import-upload.visual.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "E4 import upload surface 390 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 833,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:58:47.339Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "import-upload-computed-style",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjRUMTc6NTg6NDguMDkwWiIsCiAgIndpZHRoIjogMzkwLAogICJ0aGVtZSI6ICJsaWdodCIsCiAgIm1lYXN1cmVkIjogewogICAgIndpZHRoIjogMzEwLAogICAgImhlaWdodCI6IDc2LAogICAgIngiOiA0MCwKICAgICJ5IjogNDIyLjUsCiAgICAiYm9yZGVyU3R5bGUiOiAiZGFzaGVkIiwKICAgICJib3JkZXJXaWR0aCI6ICIxcHgiLAogICAgImJvcmRlckNvbG9yIjogInJnYigyMTAsIDIxMCwgMjE1KSIsCiAgICAiYm9yZGVyUmFkaXVzIjogIjE2cHgiLAogICAgImJhY2tncm91bmRDb2xvciI6ICJyZ2JhKDEyMCwgMTIwLCAxMjgsIDAuMTIpIiwKICAgICJwYWRkaW5nIjogIjI0cHgiLAogICAgIm1pbkhlaWdodCI6ICIzNnB4IiwKICAgICJmb250U2l6ZSI6ICIxNHB4IiwKICAgICJleHBlY3RlZFJhZGl1cyI6ICIxNnB4IiwKICAgICJleHBlY3RlZEZpbGwiOiAiIzc4Nzg4MDFmIiwKICAgICJleHBlY3RlZEJhY2tncm91bmQiOiAicmdiYSgxMjAsIDEyMCwgMTI4LCAwLjEyKSIsCiAgICAidmlld3BvcnQiOiAzOTAsCiAgICAic2Nyb2xsV2lkdGgiOiAzOTAKICB9LAogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlcXVpcmVtZW50IjogIkNPREVYX1VJX0dVSURFLm1kIEU0IMKnODogZGFzaGVkIHVwbG9hZCBhcmVhIHdpdGggbGFyZ2UgcmFkaXVzIGFuZCBzaGFsbG93IGZpbGwuIiwKICAiZml4dHVyZSI6ICJSZWFsIGNyZWF0ZUFwcCwgZGlzcG9zYWJsZSBTUUxpdGUsIGFjdHVhbCBkaXN0IGFuZCBpbnN0YWxsZWQgQ2hyb21lLiIKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20c46a0e3e6f6932d195-c362c426a8780dee7cb3",
+          "file": "import-upload.visual.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "E4 import upload surface 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 845,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:58:48.178Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "import-upload-computed-style",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjRUMTc6NTg6NDguOTEzWiIsCiAgIndpZHRoIjogMTQ0MCwKICAidGhlbWUiOiAiZGFyayIsCiAgIm1lYXN1cmVkIjogewogICAgIndpZHRoIjogNTA0LAogICAgImhlaWdodCI6IDc2LAogICAgIngiOiA0NjgsCiAgICAieSI6IDQxMy41LAogICAgImJvcmRlclN0eWxlIjogImRhc2hlZCIsCiAgICAiYm9yZGVyV2lkdGgiOiAiMXB4IiwKICAgICJib3JkZXJDb2xvciI6ICJyZ2IoNzIsIDcyLCA3NCkiLAogICAgImJvcmRlclJhZGl1cyI6ICIxNnB4IiwKICAgICJiYWNrZ3JvdW5kQ29sb3IiOiAicmdiYSgxMTgsIDExOCwgMTI4LCAwLjI0KSIsCiAgICAicGFkZGluZyI6ICIyNHB4IiwKICAgICJtaW5IZWlnaHQiOiAiMzZweCIsCiAgICAiZm9udFNpemUiOiAiMTRweCIsCiAgICAiZXhwZWN0ZWRSYWRpdXMiOiAiMTZweCIsCiAgICAiZXhwZWN0ZWRGaWxsIjogIiM3Njc2ODAzZCIsCiAgICAiZXhwZWN0ZWRCYWNrZ3JvdW5kIjogInJnYmEoMTE4LCAxMTgsIDEyOCwgMC4yNCkiLAogICAgInZpZXdwb3J0IjogMTQ0MCwKICAgICJzY3JvbGxXaWR0aCI6IDE0NDAKICB9LAogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlcXVpcmVtZW50IjogIkNPREVYX1VJX0dVSURFLm1kIEU0IMKnODogZGFzaGVkIHVwbG9hZCBhcmVhIHdpdGggbGFyZ2UgcmFkaXVzIGFuZCBzaGFsbG93IGZpbGwuIiwKICAiZml4dHVyZSI6ICJSZWFsIGNyZWF0ZUFwcCwgZGlzcG9zYWJsZSBTUUxpdGUsIGFjdHVhbCBkaXN0IGFuZCBpbnN0YWxsZWQgQ2hyb21lLiIKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20c46a0e3e6f6932d195-7726f90173cd1a52bc1b",
+          "file": "import-upload.visual.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "E4 import upload surface 390 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 816,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:58:49.029Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "import-upload-computed-style",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjRUMTc6NTg6NDkuNzQ4WiIsCiAgIndpZHRoIjogMzkwLAogICJ0aGVtZSI6ICJkYXJrIiwKICAibWVhc3VyZWQiOiB7CiAgICAid2lkdGgiOiAzMTAsCiAgICAiaGVpZ2h0IjogNzYsCiAgICAieCI6IDQwLAogICAgInkiOiA0MjIuNSwKICAgICJib3JkZXJTdHlsZSI6ICJkYXNoZWQiLAogICAgImJvcmRlcldpZHRoIjogIjFweCIsCiAgICAiYm9yZGVyQ29sb3IiOiAicmdiKDcyLCA3MiwgNzQpIiwKICAgICJib3JkZXJSYWRpdXMiOiAiMTZweCIsCiAgICAiYmFja2dyb3VuZENvbG9yIjogInJnYmEoMTE4LCAxMTgsIDEyOCwgMC4yNCkiLAogICAgInBhZGRpbmciOiAiMjRweCIsCiAgICAibWluSGVpZ2h0IjogIjM2cHgiLAogICAgImZvbnRTaXplIjogIjE0cHgiLAogICAgImV4cGVjdGVkUmFkaXVzIjogIjE2cHgiLAogICAgImV4cGVjdGVkRmlsbCI6ICIjNzY3NjgwM2QiLAogICAgImV4cGVjdGVkQmFja2dyb3VuZCI6ICJyZ2JhKDExOCwgMTE4LCAxMjgsIDAuMjQpIiwKICAgICJ2aWV3cG9ydCI6IDM5MCwKICAgICJzY3JvbGxXaWR0aCI6IDM5MAogIH0sCiAgImV4dGVybmFsIjogW10sCiAgImVycm9ycyI6IFtdLAogICJxdW90YXMiOiBbXSwKICAicmVxdWlyZW1lbnQiOiAiQ09ERVhfVUlfR1VJREUubWQgRTQgwqc4OiBkYXNoZWQgdXBsb2FkIGFyZWEgd2l0aCBsYXJnZSByYWRpdXMgYW5kIHNoYWxsb3cgZmlsbC4iLAogICJmaXh0dXJlIjogIlJlYWwgY3JlYXRlQXBwLCBkaXNwb3NhYmxlIFNRTGl0ZSwgYWN0dWFsIGRpc3QgYW5kIGluc3RhbGxlZCBDaHJvbWUuIgp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20c46a0e3e6f6932d195-feda42d7f6a9441448c6",
+          "file": "import-upload.visual.ts",
+          "line": 9,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "ui-surfaces.visual.ts",
+      "file": "ui-surfaces.visual.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "E4 component surfaces 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 87542,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-notifications-1440-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-notification-preferences-1440-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-share-page-1440-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-cli-consent-1440-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-ai-tasks-1440-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-ai-confirm-1440-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-reading-chart-1440-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-settings-tokens-1440-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-toast-1440-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "selection (1)",
+                      "duration": 225
+                    },
+                    {
+                      "title": "rich-editor (2)",
+                      "duration": 1180
+                    },
+                    {
+                      "title": "notifications (3)",
+                      "duration": 659
+                    },
+                    {
+                      "title": "notification-preferences (3)",
+                      "duration": 1342
+                    },
+                    {
+                      "title": "share-modal (4)",
+                      "duration": 1013
+                    },
+                    {
+                      "title": "share-revoke (4)",
+                      "duration": 1053
+                    },
+                    {
+                      "title": "share-expired (4)",
+                      "duration": 164
+                    },
+                    {
+                      "title": "share-page (4)",
+                      "duration": 496
+                    },
+                    {
+                      "title": "mentions (5)",
+                      "duration": 317
+                    },
+                    {
+                      "title": "selection-summary (5)",
+                      "duration": 288
+                    },
+                    {
+                      "title": "admin-accounts (6)",
+                      "duration": 995
+                    },
+                    {
+                      "title": "admin-confirm (6)",
+                      "duration": 1024
+                    },
+                    {
+                      "title": "integrations (6)",
+                      "duration": 971
+                    },
+                    {
+                      "title": "cli-consent (7)",
+                      "duration": 1290
+                    },
+                    {
+                      "title": "oauth-consent (7)",
+                      "duration": 962
+                    },
+                    {
+                      "title": "forgot-password (7)",
+                      "duration": 148
+                    },
+                    {
+                      "title": "invite (7)",
+                      "duration": 153
+                    },
+                    {
+                      "title": "reset (7)",
+                      "duration": 149
+                    },
+                    {
+                      "title": "import-upload (8)",
+                      "duration": 190
+                    },
+                    {
+                      "title": "import-preview (8)",
+                      "duration": 284
+                    },
+                    {
+                      "title": "ai-tasks (8)",
+                      "duration": 1425
+                    },
+                    {
+                      "title": "ai-confirm (8)",
+                      "duration": 1459
+                    },
+                    {
+                      "title": "review (9)",
+                      "duration": 266
+                    },
+                    {
+                      "title": "review-preview (9)",
+                      "duration": 484
+                    },
+                    {
+                      "title": "submission-changes (9)",
+                      "duration": 1082
+                    },
+                    {
+                      "title": "submission-document (9)",
+                      "duration": 1131
+                    },
+                    {
+                      "title": "version-comparison (9)",
+                      "duration": 975
+                    },
+                    {
+                      "title": "reading-chart (10)",
+                      "duration": 530
+                    },
+                    {
+                      "title": "reading-timeline (10)",
+                      "duration": 199
+                    },
+                    {
+                      "title": "reading-columns (10)",
+                      "duration": 198
+                    },
+                    {
+                      "title": "reading-cards (10)",
+                      "duration": 215
+                    },
+                    {
+                      "title": "editing-blocks (10)",
+                      "duration": 62131
+                    },
+                    {
+                      "title": "editing-nested (10)",
+                      "duration": 1051
+                    },
+                    {
+                      "title": "settings-tokens (11)",
+                      "duration": 769
+                    },
+                    {
+                      "title": "settings-document (11)",
+                      "duration": 297
+                    },
+                    {
+                      "title": "global-error (11)",
+                      "duration": 194
+                    },
+                    {
+                      "title": "toast (11)",
+                      "duration": 703
+                    },
+                    {
+                      "title": "notification-empty (3)",
+                      "duration": 472
+                    }
+                  ],
+                  "startTime": "2026-10-24T17:58:49.859Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "surface-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlc3RyaWN0aW9ucyI6IFtdLAogICJub3RpZmljYXRpb25FbXB0eSI6ICJDaGVja2JveCBhbmQgbWFyay1yZWFkIGJ1dHRvbiBhcmUgZXhlcmNpc2VkIHdpdGggbm9ybWFsIHBvaW50ZXIgaW50ZXJhY3Rpb25zLiIKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52669bcfb36711a2a465-de40412fc155d5b5e6ce",
+          "file": "ui-surfaces.visual.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "E4 component surfaces 390 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 83899,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-notifications-390-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-notification-preferences-390-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-mentions-390-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-cli-consent-390-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-oauth-consent-390-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-ai-tasks-390-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-ai-confirm-390-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-settings-tokens-390-light.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-toast-390-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "selection (1)",
+                      "duration": 245
+                    },
+                    {
+                      "title": "rich-editor (2)",
+                      "duration": 1146
+                    },
+                    {
+                      "title": "notifications (3)",
+                      "duration": 426
+                    },
+                    {
+                      "title": "notification-preferences (3)",
+                      "duration": 1116
+                    },
+                    {
+                      "title": "share-modal (4)",
+                      "duration": 937
+                    },
+                    {
+                      "title": "share-revoke (4)",
+                      "duration": 988
+                    },
+                    {
+                      "title": "share-expired (4)",
+                      "duration": 144
+                    },
+                    {
+                      "title": "share-page (4)",
+                      "duration": 156
+                    },
+                    {
+                      "title": "mentions (5)",
+                      "duration": 450
+                    },
+                    {
+                      "title": "selection-summary (5)",
+                      "duration": 284
+                    },
+                    {
+                      "title": "admin-accounts (6)",
+                      "duration": 919
+                    },
+                    {
+                      "title": "admin-confirm (6)",
+                      "duration": 932
+                    },
+                    {
+                      "title": "integrations (6)",
+                      "duration": 942
+                    },
+                    {
+                      "title": "cli-consent (7)",
+                      "duration": 1131
+                    },
+                    {
+                      "title": "oauth-consent (7)",
+                      "duration": 1129
+                    },
+                    {
+                      "title": "forgot-password (7)",
+                      "duration": 125
+                    },
+                    {
+                      "title": "invite (7)",
+                      "duration": 134
+                    },
+                    {
+                      "title": "reset (7)",
+                      "duration": 117
+                    },
+                    {
+                      "title": "import-upload (8)",
+                      "duration": 139
+                    },
+                    {
+                      "title": "import-preview (8)",
+                      "duration": 233
+                    },
+                    {
+                      "title": "ai-tasks (8)",
+                      "duration": 1162
+                    },
+                    {
+                      "title": "ai-confirm (8)",
+                      "duration": 1199
+                    },
+                    {
+                      "title": "review (9)",
+                      "duration": 176
+                    },
+                    {
+                      "title": "review-preview (9)",
+                      "duration": 402
+                    },
+                    {
+                      "title": "submission-changes (9)",
+                      "duration": 987
+                    },
+                    {
+                      "title": "submission-document (9)",
+                      "duration": 1050
+                    },
+                    {
+                      "title": "version-comparison (9)",
+                      "duration": 946
+                    },
+                    {
+                      "title": "reading-chart (10)",
+                      "duration": 155
+                    },
+                    {
+                      "title": "reading-timeline (10)",
+                      "duration": 154
+                    },
+                    {
+                      "title": "reading-columns (10)",
+                      "duration": 146
+                    },
+                    {
+                      "title": "reading-cards (10)",
+                      "duration": 167
+                    },
+                    {
+                      "title": "editing-blocks (10)",
+                      "duration": 62049
+                    },
+                    {
+                      "title": "editing-nested (10)",
+                      "duration": 999
+                    },
+                    {
+                      "title": "settings-tokens (11)",
+                      "duration": 376
+                    },
+                    {
+                      "title": "settings-document (11)",
+                      "duration": 160
+                    },
+                    {
+                      "title": "global-error (11)",
+                      "duration": 143
+                    },
+                    {
+                      "title": "toast (11)",
+                      "duration": 447
+                    },
+                    {
+                      "title": "notification-empty (3)",
+                      "duration": 432
+                    }
+                  ],
+                  "startTime": "2026-10-24T18:00:17.408Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "surface-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlc3RyaWN0aW9ucyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAicmljaC1lZGl0b3IiLAogICAgICAid2lkdGgiOiAzOTAsCiAgICAgICJ0aGVtZSI6ICJsaWdodCIsCiAgICAgICJyZWFzb24iOiAiMzkwcHggc2NyZWVuc2hvdCByZXNpemVzIGEgZGVza3RvcC1vcGVuZWQgZWRpdG9yOyBmcmVzaCBtb2JpbGUgbmF2aWdhdGlvbiByZW1haW5zIHJlYWQtb25seS4iCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJlZGl0aW5nLWJsb2NrcyIsCiAgICAgICJ3aWR0aCI6IDM5MCwKICAgICAgInRoZW1lIjogImxpZ2h0IiwKICAgICAgInJlYXNvbiI6ICIzOTBweCBzY3JlZW5zaG90IHJlc2l6ZXMgYSBkZXNrdG9wLW9wZW5lZCBlZGl0b3I7IGZyZXNoIG1vYmlsZSBuYXZpZ2F0aW9uIHJlbWFpbnMgcmVhZC1vbmx5LiIKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImVkaXRpbmctbmVzdGVkIiwKICAgICAgIndpZHRoIjogMzkwLAogICAgICAidGhlbWUiOiAibGlnaHQiLAogICAgICAicmVhc29uIjogIjM5MHB4IHNjcmVlbnNob3QgcmVzaXplcyBhIGRlc2t0b3Atb3BlbmVkIGVkaXRvcjsgZnJlc2ggbW9iaWxlIG5hdmlnYXRpb24gcmVtYWlucyByZWFkLW9ubHkuIgogICAgfQogIF0sCiAgIm5vdGlmaWNhdGlvbkVtcHR5IjogIkNoZWNrYm94IGFuZCBtYXJrLXJlYWQgYnV0dG9uIGFyZSBleGVyY2lzZWQgd2l0aCBub3JtYWwgcG9pbnRlciBpbnRlcmFjdGlvbnMuIgp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52669bcfb36711a2a465-7a122f095935e8be1987",
+          "file": "ui-surfaces.visual.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "E4 component surfaces 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 85228,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-notifications-1440-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-notification-preferences-1440-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-cli-consent-1440-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-ai-tasks-1440-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-ai-confirm-1440-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-settings-tokens-1440-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-toast-1440-dark.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "selection (1)",
+                      "duration": 253
+                    },
+                    {
+                      "title": "rich-editor (2)",
+                      "duration": 1161
+                    },
+                    {
+                      "title": "notifications (3)",
+                      "duration": 671
+                    },
+                    {
+                      "title": "notification-preferences (3)",
+                      "duration": 545
+                    },
+                    {
+                      "title": "share-modal (4)",
+                      "duration": 998
+                    },
+                    {
+                      "title": "share-revoke (4)",
+                      "duration": 1030
+                    },
+                    {
+                      "title": "share-expired (4)",
+                      "duration": 150
+                    },
+                    {
+                      "title": "share-page (4)",
+                      "duration": 159
+                    },
+                    {
+                      "title": "mentions (5)",
+                      "duration": 299
+                    },
+                    {
+                      "title": "selection-summary (5)",
+                      "duration": 264
+                    },
+                    {
+                      "title": "admin-accounts (6)",
+                      "duration": 202
+                    },
+                    {
+                      "title": "admin-confirm (6)",
+                      "duration": 1010
+                    },
+                    {
+                      "title": "integrations (6)",
+                      "duration": 981
+                    },
+                    {
+                      "title": "cli-consent (7)",
+                      "duration": 1275
+                    },
+                    {
+                      "title": "oauth-consent (7)",
+                      "duration": 1204
+                    },
+                    {
+                      "title": "forgot-password (7)",
+                      "duration": 235
+                    },
+                    {
+                      "title": "invite (7)",
+                      "duration": 180
+                    },
+                    {
+                      "title": "reset (7)",
+                      "duration": 167
+                    },
+                    {
+                      "title": "import-upload (8)",
+                      "duration": 202
+                    },
+                    {
+                      "title": "import-preview (8)",
+                      "duration": 345
+                    },
+                    {
+                      "title": "ai-tasks (8)",
+                      "duration": 1374
+                    },
+                    {
+                      "title": "ai-confirm (8)",
+                      "duration": 1412
+                    },
+                    {
+                      "title": "review (9)",
+                      "duration": 298
+                    },
+                    {
+                      "title": "review-preview (9)",
+                      "duration": 446
+                    },
+                    {
+                      "title": "submission-changes (9)",
+                      "duration": 1054
+                    },
+                    {
+                      "title": "submission-document (9)",
+                      "duration": 1170
+                    },
+                    {
+                      "title": "version-comparison (9)",
+                      "duration": 992
+                    },
+                    {
+                      "title": "reading-chart (10)",
+                      "duration": 199
+                    },
+                    {
+                      "title": "reading-timeline (10)",
+                      "duration": 196
+                    },
+                    {
+                      "title": "reading-columns (10)",
+                      "duration": 199
+                    },
+                    {
+                      "title": "reading-cards (10)",
+                      "duration": 200
+                    },
+                    {
+                      "title": "editing-blocks (10)",
+                      "duration": 62125
+                    },
+                    {
+                      "title": "editing-nested (10)",
+                      "duration": 1067
+                    },
+                    {
+                      "title": "settings-tokens (11)",
+                      "duration": 604
+                    },
+                    {
+                      "title": "settings-document (11)",
+                      "duration": 234
+                    },
+                    {
+                      "title": "global-error (11)",
+                      "duration": 176
+                    },
+                    {
+                      "title": "toast (11)",
+                      "duration": 686
+                    },
+                    {
+                      "title": "notification-empty (3)",
+                      "duration": 438
+                    }
+                  ],
+                  "startTime": "2026-10-24T18:01:41.314Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "surface-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlc3RyaWN0aW9ucyI6IFtdLAogICJub3RpZmljYXRpb25FbXB0eSI6ICJDaGVja2JveCBhbmQgbWFyay1yZWFkIGJ1dHRvbiBhcmUgZXhlcmNpc2VkIHdpdGggbm9ybWFsIHBvaW50ZXIgaW50ZXJhY3Rpb25zLiIKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52669bcfb36711a2a465-29d6c94e4f259f9ea91c",
+          "file": "ui-surfaces.visual.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "E4 component surfaces 390 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 82628,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-notifications-390-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-notification-preferences-390-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-mentions-390-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-cli-consent-390-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-oauth-consent-390-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-ai-tasks-390-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-ai-confirm-390-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-settings-tokens-390-dark.png is re-generated, writing actual.\n"
+                    },
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/surface-toast-390-dark.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "selection (1)",
+                      "duration": 217
+                    },
+                    {
+                      "title": "rich-editor (2)",
+                      "duration": 1094
+                    },
+                    {
+                      "title": "notifications (3)",
+                      "duration": 388
+                    },
+                    {
+                      "title": "notification-preferences (3)",
+                      "duration": 315
+                    },
+                    {
+                      "title": "share-modal (4)",
+                      "duration": 956
+                    },
+                    {
+                      "title": "share-revoke (4)",
+                      "duration": 967
+                    },
+                    {
+                      "title": "share-expired (4)",
+                      "duration": 116
+                    },
+                    {
+                      "title": "share-page (4)",
+                      "duration": 139
+                    },
+                    {
+                      "title": "mentions (5)",
+                      "duration": 429
+                    },
+                    {
+                      "title": "selection-summary (5)",
+                      "duration": 255
+                    },
+                    {
+                      "title": "admin-accounts (6)",
+                      "duration": 921
+                    },
+                    {
+                      "title": "admin-confirm (6)",
+                      "duration": 949
+                    },
+                    {
+                      "title": "integrations (6)",
+                      "duration": 899
+                    },
+                    {
+                      "title": "cli-consent (7)",
+                      "duration": 1114
+                    },
+                    {
+                      "title": "oauth-consent (7)",
+                      "duration": 1122
+                    },
+                    {
+                      "title": "forgot-password (7)",
+                      "duration": 123
+                    },
+                    {
+                      "title": "invite (7)",
+                      "duration": 134
+                    },
+                    {
+                      "title": "reset (7)",
+                      "duration": 117
+                    },
+                    {
+                      "title": "import-upload (8)",
+                      "duration": 138
+                    },
+                    {
+                      "title": "import-preview (8)",
+                      "duration": 251
+                    },
+                    {
+                      "title": "ai-tasks (8)",
+                      "duration": 1124
+                    },
+                    {
+                      "title": "ai-confirm (8)",
+                      "duration": 1185
+                    },
+                    {
+                      "title": "review (9)",
+                      "duration": 157
+                    },
+                    {
+                      "title": "review-preview (9)",
+                      "duration": 389
+                    },
+                    {
+                      "title": "submission-changes (9)",
+                      "duration": 1007
+                    },
+                    {
+                      "title": "submission-document (9)",
+                      "duration": 1062
+                    },
+                    {
+                      "title": "version-comparison (9)",
+                      "duration": 932
+                    },
+                    {
+                      "title": "reading-chart (10)",
+                      "duration": 155
+                    },
+                    {
+                      "title": "reading-timeline (10)",
+                      "duration": 152
+                    },
+                    {
+                      "title": "reading-columns (10)",
+                      "duration": 148
+                    },
+                    {
+                      "title": "reading-cards (10)",
+                      "duration": 151
+                    },
+                    {
+                      "title": "editing-blocks (10)",
+                      "duration": 62050
+                    },
+                    {
+                      "title": "editing-nested (10)",
+                      "duration": 999
+                    },
+                    {
+                      "title": "settings-tokens (11)",
+                      "duration": 398
+                    },
+                    {
+                      "title": "settings-document (11)",
+                      "duration": 174
+                    },
+                    {
+                      "title": "global-error (11)",
+                      "duration": 125
+                    },
+                    {
+                      "title": "toast (11)",
+                      "duration": 407
+                    },
+                    {
+                      "title": "notification-empty (3)",
+                      "duration": 443
+                    }
+                  ],
+                  "startTime": "2026-10-24T18:03:06.552Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "surface-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlc3RyaWN0aW9ucyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAicmljaC1lZGl0b3IiLAogICAgICAid2lkdGgiOiAzOTAsCiAgICAgICJ0aGVtZSI6ICJkYXJrIiwKICAgICAgInJlYXNvbiI6ICIzOTBweCBzY3JlZW5zaG90IHJlc2l6ZXMgYSBkZXNrdG9wLW9wZW5lZCBlZGl0b3I7IGZyZXNoIG1vYmlsZSBuYXZpZ2F0aW9uIHJlbWFpbnMgcmVhZC1vbmx5LiIKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImVkaXRpbmctYmxvY2tzIiwKICAgICAgIndpZHRoIjogMzkwLAogICAgICAidGhlbWUiOiAiZGFyayIsCiAgICAgICJyZWFzb24iOiAiMzkwcHggc2NyZWVuc2hvdCByZXNpemVzIGEgZGVza3RvcC1vcGVuZWQgZWRpdG9yOyBmcmVzaCBtb2JpbGUgbmF2aWdhdGlvbiByZW1haW5zIHJlYWQtb25seS4iCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJlZGl0aW5nLW5lc3RlZCIsCiAgICAgICJ3aWR0aCI6IDM5MCwKICAgICAgInRoZW1lIjogImRhcmsiLAogICAgICAicmVhc29uIjogIjM5MHB4IHNjcmVlbnNob3QgcmVzaXplcyBhIGRlc2t0b3Atb3BlbmVkIGVkaXRvcjsgZnJlc2ggbW9iaWxlIG5hdmlnYXRpb24gcmVtYWlucyByZWFkLW9ubHkuIgogICAgfQogIF0sCiAgIm5vdGlmaWNhdGlvbkVtcHR5IjogIkNoZWNrYm94IGFuZCBtYXJrLXJlYWQgYnV0dG9uIGFyZSBleGVyY2lzZWQgd2l0aCBub3JtYWwgcG9pbnRlciBpbnRlcmFjdGlvbnMuIgp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52669bcfb36711a2a465-a25324d6b1b31389b446",
+          "file": "ui-surfaces.visual.ts",
+          "line": 21,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "ui.visual.ts",
+      "file": "ui.visual.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "home 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 938,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:29.764Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-d4f47eb8027510203c4f",
+          "file": "ui.visual.ts",
+          "line": 4,
+          "column": 3
+        },
+        {
+          "title": "reading 1680 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2021,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/reading-1680-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:31.074Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-e737a4e5b2723cd8d181",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1911,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/reading-1440-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:33.107Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-1d14d3fcc69642037ce1",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 1280 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1738,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/reading-1280-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:35.027Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-45bb2aa45636149a16d1",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 805 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1548,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/reading-805-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:36.775Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-01c3d1b8ec18ba1f9c8e",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 390 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1251,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/reading-390-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:38.331Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-0d8f99b65f3a81af9a5d",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "edit 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3919,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/edit-1440-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:39.589Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-2f7dc7a8f8624cce2b83",
+          "file": "ui.visual.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "review 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2054,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/review-1440-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:43.521Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-da97017142c5fe3b2004",
+          "file": "ui.visual.ts",
+          "line": 34,
+          "column": 3
+        },
+        {
+          "title": "history 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1417,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:45.587Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-87a4b22a68cf477523d0",
+          "file": "ui.visual.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "settings 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 929,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:47.010Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-3c0211036eaf904ae2bd",
+          "file": "ui.visual.ts",
+          "line": 48,
+          "column": 3
+        },
+        {
+          "title": "guest 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1825,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/guest-1440-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:47.949Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-254e39b749996344e464",
+          "file": "ui.visual.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "guest 390 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1247,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/guest-390-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:49.784Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-17add5947cbe87272c56",
+          "file": "ui.visual.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "login 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 830,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:51.038Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-1d0a688e20a1ee933ebb",
+          "file": "ui.visual.ts",
+          "line": 65,
+          "column": 3
+        },
+        {
+          "title": "more menu 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1853,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/more-1440-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:51.875Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-e4e2e6896d967143d93f",
+          "file": "ui.visual.ts",
+          "line": 73,
+          "column": 5
+        },
+        {
+          "title": "more menu 360 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1262,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/visual-baseline/more-360-light.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:53.736Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-b47dad6cc1a7676691d7",
+          "file": "ui.visual.ts",
+          "line": 73,
+          "column": 5
+        },
+        {
+          "title": "home 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 846,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:55.006Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-54c2da8e113f3360acc5",
+          "file": "ui.visual.ts",
+          "line": 4,
+          "column": 3
+        },
+        {
+          "title": "reading 1680 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1062,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:55.858Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-5f484f09ee7145d89b6e",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 987,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:56.926Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-df1cb2ec53f0280f1db6",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 1280 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 988,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:57.920Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-a9664bad97780876adcc",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 805 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 952,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:58.914Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-0bc37ad850524fbeb20b",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 390 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 891,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:04:59.874Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-a09f2ac7236d4eef5bbf",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "edit 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1564,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:05:00.770Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-f0b0d696e8f69f116343",
+          "file": "ui.visual.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "review 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1131,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:05:02.339Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-6c3a5388449a96e2383b",
+          "file": "ui.visual.ts",
+          "line": 34,
+          "column": 3
+        },
+        {
+          "title": "history 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1230,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:05:03.474Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-39796a3a258dffd6a120",
+          "file": "ui.visual.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "settings 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 867,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:05:04.713Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-ce93273d965c188caa87",
+          "file": "ui.visual.ts",
+          "line": 48,
+          "column": 3
+        },
+        {
+          "title": "guest 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1021,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:05:05.590Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-cff7029c6e548a43eabf",
+          "file": "ui.visual.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "guest 390 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 874,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:05:06.618Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-fc227277d9f6773e84f4",
+          "file": "ui.visual.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "login 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 841,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:05:07.498Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-7bfe8c255adf7cb80142",
+          "file": "ui.visual.ts",
+          "line": 65,
+          "column": 3
+        },
+        {
+          "title": "more menu 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1029,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:05:08.347Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-bc7d93941e6a5f23bacf",
+          "file": "ui.visual.ts",
+          "line": 73,
+          "column": 5
+        },
+        {
+          "title": "more menu 360 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 895,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:05:09.390Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-41956f3b54fdf30f3611",
+          "file": "ui.visual.ts",
+          "line": 73,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-24T17:58:44.708Z",
+    "duration": 385957.80299999996,
+    "expected": 38,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

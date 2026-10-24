@@ -1,0 +1,195 @@
+Command: pnpm install --frozen-lockfile
+Started UTC: 2026-10-24T17:44:34.350283+00:00
+Scope: all 6 workspace projects
+✓ Lockfile passes supply-chain policies (verified 9h ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +437
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[WARN] GET https://registry.npmjs.org/@tiptap/starter-kit/-/starter-kit-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@noble/hashes/-/hashes-2.4.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/better-sqlite3/-/better-sqlite3-12.11.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/react/-/react-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/fflate/-/fflate-0.8.3.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/kysely/-/kysely-0.28.18.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/i18next/-/i18next-25.10.10.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/nodemailer/-/nodemailer-7.0.13.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/parse5/-/parse5-7.3.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/pg/-/pg-8.23.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/playwright/-/playwright-1.64.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/pino/-/pino-9.14.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/react/-/react-19.3.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/react-dom/-/react-dom-19.3.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/react-router/-/react-router-8.5.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/react-i18next/-/react-i18next-16.6.6.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/zod/-/zod-4.6.7.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@playwright/test/-/test-1.64.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@types/jsdom/-/jsdom-30.0.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@types/better-sqlite3/-/better-sqlite3-7.6.13.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@types/node/-/node-24.19.2.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@types/nodemailer/-/nodemailer-7.0.12.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@types/pg/-/pg-8.23.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@types/react-dom/-/react-dom-19.3.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-5.2.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/eslint/-/eslint-10.13.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.1.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/fast-check/-/fast-check-4.10.2.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/jsdom/-/jsdom-30.1.3.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prettier/-/prettier-3.9.10.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/tsx/-/tsx-4.23.15.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/typescript-eslint/-/typescript-eslint-8.72.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/vite/-/vite-7.3.7.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/vitest/-/vitest-3.2.7.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/cookie/-/cookie-2.0.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/fastify-plugin/-/fastify-plugin-6.0.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/busboy/-/busboy-3.2.3.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/deepmerge/-/deepmerge-3.2.2.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/error/-/error-4.2.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/fastify-plugin/-/fastify-plugin-5.1.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/secure-json-parse/-/secure-json-parse-4.1.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/accept-negotiator/-/accept-negotiator-2.1.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/send/-/send-4.2.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.4.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/fastq/-/fastq-1.20.3.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/glob/-/glob-11.1.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@modelcontextprotocol/core/-/core-2.3.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/eventsource/-/eventsource-3.0.7.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/eventsource-parser/-/eventsource-parser-3.1.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/jose/-/jose-6.2.13.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/pkce-challenge/-/pkce-challenge-5.0.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-changeset/-/prosemirror-changeset-2.4.4.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-commands/-/prosemirror-commands-1.7.2.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-dropcursor/-/prosemirror-dropcursor-1.8.4.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-gapcursor/-/prosemirror-gapcursor-1.4.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-history/-/prosemirror-history-1.5.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-inputrules/-/prosemirror-inputrules-1.5.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-keymap/-/prosemirror-keymap-1.2.3.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-model/-/prosemirror-model-1.25.12.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-schema-list/-/prosemirror-schema-list-1.5.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-state/-/prosemirror-state-1.4.4.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+Progress: resolved 437, reused 0, downloaded 0, added 0
+[WARN] GET https://registry.npmjs.org/@tiptap/starter-kit/-/starter-kit-3.32.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@noble/hashes/-/hashes-2.4.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/better-sqlite3/-/better-sqlite3-12.11.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/react/-/react-3.32.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/fflate/-/fflate-0.8.3.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/kysely/-/kysely-0.28.18.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/i18next/-/i18next-25.10.10.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/nodemailer/-/nodemailer-7.0.13.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/parse5/-/parse5-7.3.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/pg/-/pg-8.23.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/playwright/-/playwright-1.64.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/pino/-/pino-9.14.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/react/-/react-19.3.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/react-dom/-/react-dom-19.3.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/react-router/-/react-router-8.5.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/react-i18next/-/react-i18next-16.6.6.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/zod/-/zod-4.6.7.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@playwright/test/-/test-1.64.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@types/jsdom/-/jsdom-30.0.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@types/better-sqlite3/-/better-sqlite3-7.6.13.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@types/node/-/node-24.19.2.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@types/nodemailer/-/nodemailer-7.0.12.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@types/pg/-/pg-8.23.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@types/react-dom/-/react-dom-19.3.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-5.2.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/eslint/-/eslint-10.13.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.1.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/fast-check/-/fast-check-4.10.2.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/jsdom/-/jsdom-30.1.3.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prettier/-/prettier-3.9.10.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/tsx/-/tsx-4.23.15.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/typescript-eslint/-/typescript-eslint-8.72.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/vite/-/vite-7.3.7.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/vitest/-/vitest-3.2.7.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/cookie/-/cookie-2.0.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/fastify-plugin/-/fastify-plugin-6.0.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/busboy/-/busboy-3.2.3.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/deepmerge/-/deepmerge-3.2.2.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/error/-/error-4.2.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/fastify-plugin/-/fastify-plugin-5.1.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/secure-json-parse/-/secure-json-parse-4.1.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/accept-negotiator/-/accept-negotiator-2.1.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/send/-/send-4.2.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.4.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/fastq/-/fastq-1.20.3.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/glob/-/glob-11.1.0.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/@modelcontextprotocol/core/-/core-2.3.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/eventsource/-/eventsource-3.0.7.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/eventsource-parser/-/eventsource-parser-3.1.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/jose/-/jose-6.2.13.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/pkce-challenge/-/pkce-challenge-5.0.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-changeset/-/prosemirror-changeset-2.4.4.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-commands/-/prosemirror-commands-1.7.2.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-dropcursor/-/prosemirror-dropcursor-1.8.4.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-gapcursor/-/prosemirror-gapcursor-1.4.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-history/-/prosemirror-history-1.5.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-inputrules/-/prosemirror-inputrules-1.5.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-keymap/-/prosemirror-keymap-1.2.3.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-model/-/prosemirror-model-1.25.12.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-schema-list/-/prosemirror-schema-list-1.5.1.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-state/-/prosemirror-state-1.4.4.tgz error (ENOTFOUND). Will retry in 1 minute. 1 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-tables/-/prosemirror-tables-1.8.5.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/cookie/-/cookie-11.1.3.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/multipart/-/multipart-9.2.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/static/-/static-8.3.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@modelcontextprotocol/client/-/client-2.3.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[ERROR] fetch failed
+
+TypeError: fetch failed
+    at Object.processResponse (file:///Users/h/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:82959:20)
+    at file:///Users/h/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/pnpm/dist/pnpm.mjs:83340:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[WARN] GET https://registry.npmjs.org/@modelcontextprotocol/server/-/server-2.3.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/fastify/-/fastify-5.12.7.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/core/-/core-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/pm/-/pm-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-transform/-/prosemirror-transform-1.12.2.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prosemirror-view/-/prosemirror-view-1.42.6.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@types/use-sync-external-store/-/use-sync-external-store-0.0.6.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/fast-equals/-/fast-equals-5.4.5.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.7.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-bubble-menu/-/extension-bubble-menu-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-floating-menu/-/extension-floating-menu-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-blockquote/-/extension-blockquote-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-bold/-/extension-bold-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-bullet-list/-/extension-bullet-list-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-code/-/extension-code-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-code-block/-/extension-code-block-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-document/-/extension-document-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-dropcursor/-/extension-dropcursor-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-gapcursor/-/extension-gapcursor-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-hard-break/-/extension-hard-break-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-heading/-/extension-heading-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-horizontal-rule/-/extension-horizontal-rule-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-italic/-/extension-italic-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-link/-/extension-link-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-list/-/extension-list-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-list-item/-/extension-list-item-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-list-keymap/-/extension-list-keymap-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-ordered-list/-/extension-ordered-list-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-paragraph/-/extension-paragraph-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-strike/-/extension-strike-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-text/-/extension-text-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extension-underline/-/extension-underline-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@tiptap/extensions/-/extensions-3.32.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/prebuild-install/-/prebuild-install-7.1.3.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/ajv-compiler/-/ajv-compiler-4.0.7.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/fast-json-stringify-compiler/-/fast-json-stringify-compiler-5.1.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/@fastify/proxy-addr/-/proxy-addr-5.1.2.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/abstract-logging/-/abstract-logging-2.0.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/avvio/-/avvio-9.3.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/fast-json-stringify/-/fast-json-stringify-7.1.2.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/find-my-way/-/find-my-way-9.10.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/light-my-request/-/light-my-request-6.8.0.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+[WARN] GET https://registry.npmjs.org/process-warning/-/process-warning-5.1.1.tgz error (ENOTFOUND). Will retry in 10 seconds. 2 retries left.
+
+Exit code: 1
+Ended UTC: 2026-10-24T17:45:44.825538+00:00

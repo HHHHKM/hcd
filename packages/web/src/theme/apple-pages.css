@@ -1,0 +1,376 @@
+/*
+ * Apple-inspired visual layer — standalone pages and forms:
+ * document home, sign-in, share/guest pages, settings and creation dialogs.
+ */
+
+/* ---------- Forms ---------- */
+html .auth-card label,
+html .create-modal label,
+html .settings-modal label,
+html .share-create-form label,
+html .guest-verification label,
+html .guest-comment-form label {
+  color: var(--muted-ink);
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-medium);
+}
+
+html .auth-card input:where(:not([type='checkbox'], [type='radio'])),
+html .create-modal input:where(:not([type='checkbox'], [type='radio'])),
+html .create-modal select,
+html .settings-modal input:not([type='checkbox']):not([type='radio']),
+html .settings-modal select,
+html .share-create-form select,
+html .new-share-link input,
+html .guest-verification input,
+html .guest-comment-form textarea,
+html .guest-comment-form select,
+html .import-modal input:not([type='checkbox']):not([type='radio']) {
+  min-height: 36px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: var(--font-size-14);
+  transition:
+    border-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+html .auth-card input:where(:not([type='checkbox'], [type='radio'])):focus-visible,
+html .create-modal :is(input:where(:not([type='checkbox'], [type='radio'])), select):focus-visible,
+html .settings-modal :is(input, select):focus-visible,
+html .guest-verification input:focus-visible,
+html .guest-comment-form :is(textarea, select):focus-visible {
+  border-color: var(--focus-ring);
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus-ring) 30%, transparent);
+}
+
+html .settings-section h3 {
+  font-size: var(--font-size-15);
+  font-weight: var(--weight-semibold);
+}
+
+html .settings-section {
+  border-color: var(--hairline);
+}
+
+html .new-token,
+html .app.dark .new-token {
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--success-surface);
+}
+
+html .error-banner {
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--danger-surface);
+  color: var(--danger);
+}
+
+/* ---------- Document home ---------- */
+html .docs-home {
+  padding-top: var(--space-50);
+}
+
+html .home-heading {
+  padding-bottom: var(--space-24);
+  border-bottom: 1px solid var(--hairline);
+}
+
+html .home-heading h1 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-34);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-display);
+}
+
+html .home-heading p {
+  color: var(--faint-ink);
+  font-size: var(--font-size-14);
+}
+
+html .doc-card-grid {
+  gap: var(--space-14);
+  padding-top: var(--space-24);
+}
+
+html .doc-card {
+  grid-template-columns: 40px 1fr 18px;
+  column-gap: var(--space-12);
+  padding: var(--space-16);
+  border: 0;
+  border-radius: var(--radius-l);
+  background: var(--paper);
+  box-shadow: var(--shadow-card);
+  transition:
+    box-shadow var(--duration-base) var(--ease-standard),
+    transform var(--duration-base) var(--ease-standard);
+}
+
+html .doc-card:hover {
+  border-color: var(--transparent);
+  background: var(--paper);
+  box-shadow: var(--shadow-float);
+  transform: translateY(-2px);
+}
+
+html .doc-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-m);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+html .doc-card-title {
+  color: var(--ink);
+  font-size: var(--font-size-15);
+  font-weight: var(--weight-semibold);
+}
+
+html .doc-card-meta {
+  color: var(--faint-ink);
+  font-size: var(--font-size-13);
+}
+
+html .empty-symbol {
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* ---------- Sign-in ---------- */
+html .auth-page,
+html .dark .auth-page {
+  background: var(--chrome);
+}
+
+html .auth-card {
+  width: min(400px, 100%);
+  padding: var(--space-40) var(--space-32) var(--space-32);
+  border: 0;
+  border-radius: var(--radius-xl);
+  background: var(--paper);
+  box-shadow: var(--shadow-sheet);
+}
+
+html .auth-eyebrow {
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+html .auth-card h1 {
+  margin: var(--space-6) 0 var(--space-8);
+  font-family: var(--font-display);
+  font-size: var(--font-size-28);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-display);
+}
+
+html .auth-description {
+  color: var(--faint-ink);
+  font-size: var(--font-size-14);
+}
+
+html .auth-submit {
+  height: 40px;
+  margin-top: var(--space-8);
+  font-size: var(--font-size-15);
+}
+
+html .demo-hint {
+  color: var(--faint-ink);
+}
+
+/* ---------- Shared (guest) page ---------- */
+html .shared-document-app {
+  background: var(--chrome);
+}
+
+html .shared-header {
+  height: var(--topbar-height);
+  border-bottom: 1px solid var(--hairline);
+  background: var(--chrome-translucent);
+  -webkit-backdrop-filter: var(--blur-chrome);
+  backdrop-filter: var(--blur-chrome);
+}
+
+html .shared-header > span {
+  color: var(--faint-ink);
+  font-size: var(--font-size-13);
+}
+
+html .shared-page {
+  margin: var(--space-24) auto var(--space-40);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+html .shared-page h1 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.028em;
+}
+
+html .shared-version {
+  color: var(--faint-ink);
+  font-size: var(--font-size-13);
+}
+
+html .shared-module {
+  border-top: 1px solid var(--hairline);
+  font-size: var(--font-size-16);
+  line-height: var(--leading-reading);
+}
+
+html .shared-module-index {
+  color: var(--faint-ink);
+  font-weight: var(--weight-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+html .shared-module h2 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-title);
+}
+
+html .shared-discussions {
+  border-top: 1px solid var(--hairline);
+}
+
+html .shared-discussions article {
+  border-bottom: 1px solid var(--hairline);
+  font-size: var(--font-size-14);
+}
+
+html .shared-comment-quote {
+  border-left: 0;
+  border-radius: var(--radius-xs);
+  background: var(--highlight);
+  color: var(--highlight-text);
+}
+
+html .shared-reply {
+  border-left: 2px solid var(--hairline);
+}
+
+html .guest-verification {
+  border: 0;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sheet);
+}
+
+html .share-create-form {
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--surface-raised);
+}
+
+html .new-share-link {
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--success-surface);
+}
+
+html .share-link-list li {
+  border-bottom: 1px solid var(--hairline);
+}
+
+/* ---------- Dark mode reconciliation ----------
+ * Legacy `.dark` rules (workspace-08.css, version-comparison.css) dim titles
+ * and input text to --faint-ink and paint headers with --dark. Restore full
+ * contrast here; delete these once the legacy rules are removed.
+ */
+html .dark :is(.auth-card h1, .home-heading h1, .history-heading h1, .history-row strong, .doc-card-title) {
+  color: var(--ink);
+}
+
+html .dark .home-heading {
+  background: var(--transparent);
+}
+
+html .dark :is(.auth-card, .doc-card) {
+  background: var(--paper);
+}
+
+html .dark :is(
+    .auth-card input:where(:not([type='checkbox'], [type='radio'])),
+    .create-modal input:where(:not([type='checkbox'], [type='radio'])),
+    .create-modal select,
+    .manual-resolution,
+    .module-title-edit
+  ) {
+  border-color: var(--line);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+html .dark .version-pair-metadata > div,
+html .dark .version-snapshot-banner {
+  background: var(--surface-raised);
+}
+
+/* Review queue count badge (legacy: red digits on the accent colour). */
+html .pending-pin {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 var(--space-6);
+  border-radius: var(--radius-pill);
+  background: var(--accent-fill);
+  color: var(--on-accent);
+  font-family: var(--font-body);
+  font-size: var(--font-size-12);
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--weight-semibold);
+}
+
+/* ---------- Small fixes for the layer ---------- */
+html .main-area:has(.version-history-page, .history-page) > .outline-toggle {
+  display: none;
+}
+
+html .mobile-reading-note {
+  margin: var(--space-8) var(--space-16) 0;
+  padding: var(--space-10) var(--space-14);
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--info-surface);
+  color: var(--ink);
+  font-size: var(--font-size-13);
+}
+
+@media (max-width: 980px) {
+  html .workspace-manage {
+    width: 32px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  html .shared-page {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  html .shared-module h2 {
+    font-size: var(--font-size-20);
+  }
+
+  html .shared-module .edit-heading {
+    font-size: var(--font-size-17);
+  }
+
+  html .mobile-reading-note {
+    margin: var(--space-8) 0 0;
+    border-radius: 0;
+  }
+}

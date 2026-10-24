@@ -1,0 +1,8 @@
+Command: pnpm exec tsx scripts/acceptance-browser.ts
+Started UTC: 2026-10-24T18:18:08.561442+00:00
+Waiting for the normal per-user quota window between acceptance batches.
+Waiting for the normal per-user quota window between acceptance batches.
+{"status":"passed","browser":"155.0.8059.85","observations":45,"blockedExternalRequests":0,"consoleMessages":["member: Failed to load resource: the server responded with a status of 401 (Unauthorized)","guest: Failed to load resource: the server responded with a status of 401 (Unauthorized)","other session: Failed to load resource: the server responded with a status of 401 (Unauthorized)","other session: Failed to load resource: the server responded with a status of 401 (Unauthorized)","member: Failed to load resource: the server responded with a status of 401 (Unauthorized)"],"pageErrors":[]}
+
+Exit code: 0
+Ended UTC: 2026-10-24T18:20:41.258571+00:00

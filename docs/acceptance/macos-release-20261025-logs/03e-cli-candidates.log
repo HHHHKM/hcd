@@ -1,0 +1,9 @@
+Command: pnpm exec tsx ../../../work/capture-cli-candidates.ts
+Started UTC: 2026-10-24T17:56:09.085963+00:00
+Stable CLI candidate 1440 light: PASS
+Stable CLI candidate 390 light: PASS
+Stable CLI candidate 1440 dark: PASS
+Stable CLI candidate 390 dark: PASS
+
+Exit code: 0
+Ended UTC: 2026-10-24T17:56:16.864368+00:00

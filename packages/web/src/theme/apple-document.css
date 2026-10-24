@@ -1,0 +1,568 @@
+/*
+ * Apple-inspired visual layer — the reading surface.
+ * The document is a white sheet floating on the grey window canvas; modules
+ * read like an article (no gutter rule), blocks are soft filled tiles.
+ */
+
+/* ---------- Canvas & sheet ---------- */
+html .document-page {
+  margin: var(--space-8) var(--space-16) var(--space-24);
+  padding: var(--space-50) var(--space-44) var(--space-72);
+  border-radius: var(--radius-xl);
+  background: var(--paper);
+  box-shadow: var(--shadow-card);
+}
+
+html .app.dark .document-page {
+  background: var(--paper);
+}
+
+html .outline-toggle.button {
+  align-self: flex-start;
+  height: 28px;
+  margin: var(--space-2) 0 0 var(--space-16);
+  padding: 0 var(--space-12);
+  font-size: var(--font-size-12);
+}
+
+/* ---------- Title block ---------- */
+html .doc-kicker {
+  gap: var(--space-8);
+  color: var(--faint-ink);
+  font-family: var(--font-body);
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+html .doc-kicker i {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--faint-ink);
+}
+
+html .kicker-mark {
+  color: var(--accent-fill);
+  font-size: var(--font-size-13);
+}
+
+html .more-inline,
+html .module-comment {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--faint-ink);
+}
+
+html .more-inline:hover,
+html .module-comment:hover {
+  background: var(--fill);
+  color: var(--ink);
+}
+
+html .doc-title-block {
+  margin-bottom: var(--space-44);
+  padding: var(--space-16) 0 var(--space-28);
+  border-bottom: 1px solid var(--hairline);
+}
+
+html .doc-title-block h1 {
+  font-family: var(--font-display);
+  font-size: var(--font-fluid-hero);
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.028em;
+  line-height: 1.08;
+}
+
+html .doc-title-block > p {
+  margin: var(--space-12) 0 var(--space-20);
+  color: var(--faint-ink);
+  font-size: var(--font-size-17);
+}
+
+html .doc-meta {
+  gap: var(--space-8);
+  color: var(--faint-ink);
+  font-size: var(--font-size-13);
+}
+
+html .doc-meta .avatar {
+  width: 24px;
+  height: 24px;
+}
+
+html .doc-meta b {
+  font-weight: var(--weight-semibold);
+}
+
+html .meta-separator {
+  height: 12px;
+  background: var(--hairline);
+}
+
+html .version-pill i {
+  background: var(--success);
+}
+
+html .version-pill b {
+  font-family: var(--font-body);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Modules ---------- */
+html .doc-module {
+  grid-template-columns: minmax(0, 1fr);
+  margin-bottom: var(--space-50);
+}
+
+html .module-gutter {
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 var(--space-6);
+  border-right: 0;
+}
+
+html .module-number {
+  padding-top: 0;
+  color: var(--faint-ink);
+  font-family: var(--font-body);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-semibold);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+html .module-line {
+  display: none;
+}
+
+html .module-body {
+  padding-left: 0;
+}
+
+html .module-title-row {
+  gap: var(--space-8);
+  margin-bottom: var(--space-18);
+}
+
+html .module-title-row h2 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-24);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-title);
+  line-height: 1.25;
+}
+
+html .module-content {
+  color: var(--ink);
+  font-size: var(--font-size-16);
+  line-height: var(--leading-reading);
+}
+
+html .module-content .edit-heading,
+html .shared-module .edit-heading,
+html .module-heading {
+  margin: var(--space-4) 0 var(--space-10);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: var(--font-size-18);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-title);
+  line-height: 1.35;
+}
+
+html .module-content p,
+html .module-paragraph {
+  max-width: none;
+  margin: 0 0 var(--space-14);
+}
+
+html .edited-dot {
+  border-radius: var(--radius-pill);
+  background: var(--warning-surface);
+  color: var(--warning);
+}
+
+html .edited-dot i {
+  background: var(--warning);
+}
+
+/* ---------- Blocks ---------- */
+html .kpi-grid {
+  gap: var(--space-12);
+  margin: var(--space-20) 0 var(--space-8);
+}
+
+html .kpi,
+html .app.dark .kpi {
+  padding: var(--space-16) var(--space-16) var(--space-14);
+  border: 0;
+  border-radius: var(--radius-l);
+  background: var(--surface-raised);
+}
+
+html .kpi span {
+  color: var(--faint-ink);
+  font-size: var(--font-size-13);
+}
+
+html .kpi strong {
+  margin: var(--space-6) 0 var(--space-4);
+  font-family: var(--font-display);
+  font-size: var(--font-size-30);
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+html .kpi small {
+  font-family: var(--font-body);
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-medium);
+  font-variant-numeric: tabular-nums;
+}
+
+html .chart-card,
+html .app.dark .chart-card {
+  max-width: none;
+  margin-top: var(--space-20);
+  padding: var(--space-20) var(--space-20) var(--space-16);
+  border: 0;
+  border-radius: var(--radius-l);
+  background: var(--surface-raised);
+}
+
+html .chart-title {
+  color: var(--ink);
+  font-size: var(--font-size-15);
+  font-weight: var(--weight-semibold);
+}
+
+html .chart-title small {
+  color: var(--faint-ink);
+  font-weight: var(--weight-regular);
+}
+
+html .read-chart-legend {
+  color: var(--muted-ink);
+  font-size: var(--font-size-13);
+}
+
+html .read-chart-legend i {
+  border-radius: 50%;
+}
+
+html .chart-gridline {
+  stroke: var(--hairline);
+}
+
+html .chart-data summary {
+  color: var(--accent);
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-medium);
+}
+
+html .callout {
+  gap: var(--space-12);
+  margin: var(--space-20) 0 var(--space-6);
+  padding: var(--space-14) var(--space-16);
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--info-surface);
+  color: var(--ink);
+  font-size: var(--font-size-15);
+  line-height: 1.65;
+}
+
+html .callout-mark {
+  color: var(--info);
+  font-size: var(--font-size-17);
+}
+
+html .callout strong {
+  color: var(--ink);
+  font-weight: var(--weight-semibold);
+}
+
+html .callout p {
+  color: var(--ink);
+}
+
+html .callout-warn {
+  background: var(--warning-surface);
+}
+
+html .callout-warn .callout-mark {
+  color: var(--warning);
+}
+
+html .callout-danger {
+  background: var(--danger-surface);
+}
+
+html .callout-danger .callout-mark {
+  color: var(--danger);
+}
+
+html .callout-success {
+  background: var(--success-surface);
+}
+
+html .callout-success .callout-mark {
+  color: var(--success);
+}
+
+html .timeline {
+  margin-top: var(--space-20);
+  border-top: 0;
+}
+
+html .timeline-item {
+  grid-template-columns: 84px 1fr;
+  min-height: 72px;
+}
+
+html .timeline-side {
+  padding-top: var(--space-14);
+  border-right: 2px solid var(--hairline);
+  color: var(--faint-ink);
+  font-family: var(--font-body);
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-semibold);
+}
+
+html .timeline-side i {
+  width: 12px;
+  height: 12px;
+  right: -7px;
+  border: 3px solid var(--paper);
+  background: var(--line);
+}
+
+html .timeline-side i.active {
+  background: var(--accent-fill);
+}
+
+html .timeline-copy {
+  padding-left: var(--space-20);
+}
+
+html .timeline-copy strong {
+  font-size: var(--font-size-15);
+}
+
+html .timeline-copy p {
+  color: var(--muted-ink);
+  font-size: var(--font-size-14);
+}
+
+html .idea-grid {
+  gap: var(--space-12);
+}
+
+html .idea-card,
+html .app.dark .idea-card {
+  min-height: 0;
+  padding: var(--space-18);
+  border: 0;
+  border-radius: var(--radius-l);
+  background: var(--surface-raised);
+}
+
+html .idea-card > span {
+  color: var(--faint-ink);
+  font-family: var(--font-body);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0;
+}
+
+html .idea-card h4 {
+  margin: var(--space-6) 0 var(--space-6);
+  font-family: var(--font-display);
+  font-size: var(--font-size-17);
+  font-weight: var(--weight-semibold);
+}
+
+html .idea-card p {
+  color: var(--muted-ink);
+  font-size: var(--font-size-14);
+}
+
+html table {
+  font-size: var(--font-size-14);
+}
+
+html th,
+html td {
+  padding: var(--space-10) var(--space-12);
+  border-bottom: 1px solid var(--hairline);
+}
+
+html th {
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+html td {
+  color: var(--ink);
+}
+
+html .table-scroll caption {
+  color: var(--faint-ink);
+  font-size: var(--font-size-13);
+}
+
+html .inline-change {
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body);
+}
+
+html .module-quote {
+  border-left: 3px solid var(--hairline);
+  color: var(--muted-ink);
+}
+
+html .document-image img,
+html .document-raw iframe {
+  border-radius: var(--radius-m);
+}
+
+html .document-raw iframe {
+  border: 1px solid var(--hairline);
+}
+
+html .doc-end {
+  color: var(--faint-ink);
+}
+
+html .doc-end span {
+  background: var(--hairline);
+}
+
+/* ---------- Highlights & located content ---------- */
+html .hcd-anchor-highlight,
+html .dark .hcd-anchor-highlight {
+  padding: 0 1px;
+  border-radius: var(--space-3);
+  background: var(--highlight);
+  color: var(--highlight-text);
+}
+
+html .app [data-hcd-location-active='true'],
+html .app [data-hcd-thread-active='true'] {
+  outline: 2px solid color-mix(in srgb, var(--accent-fill) 55%, transparent);
+  outline-offset: 6px;
+  border-radius: var(--radius-s);
+}
+
+/* ---------- Outline (table of contents) ---------- */
+html .outline-rail {
+  padding: var(--space-20) var(--space-10);
+  border-right: 0;
+  background: var(--transparent);
+}
+
+html .outline-heading {
+  padding: 0 var(--space-8) var(--space-10);
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-semibold);
+}
+
+html .outline-heading span,
+html .outline-version,
+html .outline-item > span {
+  font-family: var(--font-body);
+  font-variant-numeric: tabular-nums;
+}
+
+html .outline-item {
+  gap: var(--space-8);
+  padding: var(--space-6) var(--space-8);
+  border-radius: var(--radius-s);
+  color: var(--muted-ink);
+  font-size: var(--font-size-13);
+}
+
+html .outline-item:hover {
+  background: var(--fill);
+  color: var(--ink);
+}
+
+html .outline-item.active,
+html .app.dark .outline-item.active {
+  background: var(--fill-strong);
+  color: var(--ink);
+}
+
+html .outline-item > span {
+  color: var(--faint-ink);
+}
+
+html .outline-bottom {
+  border-top: 1px solid var(--hairline);
+  color: var(--faint-ink);
+}
+
+/* ---------- Editing chrome ---------- */
+html .edit-dock {
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-float);
+}
+
+html .edit-dock .button-primary {
+  background: var(--accent-fill);
+  color: var(--on-accent);
+}
+
+html .add-module {
+  border-radius: var(--radius-m);
+}
+
+/* ---------- Responsive ---------- */
+@media (min-width: 981px) and (max-width: 1599px) {
+  html .outline-rail.open {
+    top: calc(var(--topbar-height) + var(--document-toolbar-height) + var(--space-8));
+    height: auto;
+    max-height: calc(100dvh - var(--topbar-height) - var(--document-toolbar-height) - var(--space-24));
+    border-radius: var(--radius-l);
+    background: var(--paper);
+    box-shadow: var(--shadow-float);
+  }
+}
+
+@media (max-width: 1190px) {
+  html .app {
+    --document-toolbar-height: 86px;
+  }
+}
+
+@media (max-width: 980px) {
+  html .kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  html .document-page {
+    margin: 0;
+    padding: var(--space-28) var(--space-20) var(--space-58);
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  html .doc-title-block {
+    margin-bottom: var(--space-32);
+  }
+
+  html .module-title-row h2 {
+    font-size: var(--font-size-22);
+  }
+}

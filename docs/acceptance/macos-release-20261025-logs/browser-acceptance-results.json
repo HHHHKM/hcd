@@ -1,0 +1,1145 @@
+{
+  "date": "2026-10-24T18:20:40.909Z",
+  "browser": "155.0.8059.85",
+  "observations": [
+    {
+      "stage": "login/read",
+      "result": "passed"
+    },
+    {
+      "stage": "native word comment",
+      "quote": "已经",
+      "result": "passed"
+    },
+    {
+      "stage": "edit and submit",
+      "officialVersionBeforePublish": 1,
+      "result": "passed"
+    },
+    {
+      "stage": "owner review/publish",
+      "publishedVersion": 2,
+      "result": "passed"
+    },
+    {
+      "stage": "history comparison",
+      "result": "passed"
+    },
+    {
+      "stage": "guest-highlight",
+      "width": 360,
+      "theme": "light",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "guest-highlight",
+      "width": 805,
+      "theme": "light",
+      "viewport": 805,
+      "scrollWidth": 805,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "guest-highlight",
+      "width": 1440,
+      "theme": "light",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "guest-highlight",
+      "width": 360,
+      "theme": "dark",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "guest-highlight",
+      "width": 805,
+      "theme": "dark",
+      "viewport": 805,
+      "scrollWidth": 805,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "guest-highlight",
+      "width": 1440,
+      "theme": "dark",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "pinned guest B2",
+      "hiddenMemberRoot": true,
+      "hiddenLateMemberReply": true,
+      "guestThreadReplyVisible": true,
+      "version": 1,
+      "noCurrentVersion": true
+    },
+    {
+      "stage": "reading",
+      "width": 360,
+      "theme": "light",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "contentWidth": 320,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "View review",
+          "width": 89.171875,
+          "scrollWidth": 89,
+          "clientWidth": 89
+        },
+        {
+          "text": "More",
+          "width": 47.3125,
+          "scrollWidth": 47,
+          "clientWidth": 47
+        }
+      ]
+    },
+    {
+      "stage": "toolbar-menu",
+      "width": 360,
+      "theme": "light",
+      "menuItems": [
+        {
+          "text": "Export HTML",
+          "pointerReachable": true
+        },
+        {
+          "text": "Export ZIP",
+          "pointerReachable": true
+        },
+        {
+          "text": "Version history",
+          "pointerReachable": true
+        },
+        {
+          "text": "Members",
+          "pointerReachable": true
+        },
+        {
+          "text": "Import history",
+          "pointerReachable": true
+        },
+        {
+          "text": "AI tasks",
+          "pointerReachable": true
+        },
+        {
+          "text": "Share",
+          "pointerReachable": true
+        }
+      ]
+    },
+    {
+      "stage": "comparison",
+      "width": 360,
+      "theme": "light",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "View review",
+          "width": 89.171875,
+          "scrollWidth": 89,
+          "clientWidth": 89
+        },
+        {
+          "text": "More",
+          "width": 47.3125,
+          "scrollWidth": 47,
+          "clientWidth": 47
+        }
+      ]
+    },
+    {
+      "stage": "review",
+      "width": 360,
+      "theme": "light",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "contentWidth": 320,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "View review",
+          "width": 89.171875,
+          "scrollWidth": 89,
+          "clientWidth": 89
+        },
+        {
+          "text": "More",
+          "width": 47.3125,
+          "scrollWidth": 47,
+          "clientWidth": 47
+        }
+      ]
+    },
+    {
+      "stage": "settings",
+      "width": 360,
+      "theme": "light",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "reading",
+      "width": 805,
+      "theme": "light",
+      "viewport": 805,
+      "scrollWidth": 805,
+      "contentWidth": 465,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "Edit document",
+          "width": 117.015625,
+          "scrollWidth": 117,
+          "clientWidth": 117
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "toolbar-menu",
+      "width": 805,
+      "theme": "light",
+      "menuItems": [
+        {
+          "text": "Export HTML",
+          "pointerReachable": true
+        },
+        {
+          "text": "Export ZIP",
+          "pointerReachable": true
+        },
+        {
+          "text": "Version history",
+          "pointerReachable": true
+        },
+        {
+          "text": "Members",
+          "pointerReachable": true
+        },
+        {
+          "text": "Import history",
+          "pointerReachable": true
+        },
+        {
+          "text": "AI tasks",
+          "pointerReachable": true
+        }
+      ]
+    },
+    {
+      "stage": "comparison",
+      "width": 805,
+      "theme": "light",
+      "viewport": 805,
+      "scrollWidth": 805,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "review",
+      "width": 805,
+      "theme": "light",
+      "viewport": 805,
+      "scrollWidth": 805,
+      "contentWidth": 465,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "Edit document",
+          "width": 117.015625,
+          "scrollWidth": 117,
+          "clientWidth": 117
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "settings",
+      "width": 805,
+      "theme": "light",
+      "viewport": 805,
+      "scrollWidth": 805,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "reading",
+      "width": 1280,
+      "theme": "light",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "contentWidth": 694,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "Edit document",
+          "width": 117.015625,
+          "scrollWidth": 117,
+          "clientWidth": 117
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "reading",
+      "width": 1440,
+      "theme": "light",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "contentWidth": 810,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "Edit document",
+          "width": 117.015625,
+          "scrollWidth": 117,
+          "clientWidth": 117
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "toolbar-menu",
+      "width": 1440,
+      "theme": "light",
+      "menuItems": [
+        {
+          "text": "Export HTML",
+          "pointerReachable": true
+        },
+        {
+          "text": "Export ZIP",
+          "pointerReachable": true
+        },
+        {
+          "text": "Version history",
+          "pointerReachable": true
+        },
+        {
+          "text": "Members",
+          "pointerReachable": true
+        },
+        {
+          "text": "Import history",
+          "pointerReachable": true
+        },
+        {
+          "text": "AI tasks",
+          "pointerReachable": true
+        }
+      ]
+    },
+    {
+      "stage": "comparison",
+      "width": 1440,
+      "theme": "light",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "review",
+      "width": 1440,
+      "theme": "light",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "contentWidth": 810,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "Edit document",
+          "width": 117.015625,
+          "scrollWidth": 117,
+          "clientWidth": 117
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "settings",
+      "width": 1440,
+      "theme": "light",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "background": "rgb(245, 245, 247)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "reading",
+      "width": 360,
+      "theme": "dark",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "contentWidth": 320,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "View review",
+          "width": 89.171875,
+          "scrollWidth": 89,
+          "clientWidth": 89
+        },
+        {
+          "text": "More",
+          "width": 47.3125,
+          "scrollWidth": 47,
+          "clientWidth": 47
+        }
+      ]
+    },
+    {
+      "stage": "toolbar-menu",
+      "width": 360,
+      "theme": "dark",
+      "menuItems": [
+        {
+          "text": "Export HTML",
+          "pointerReachable": true
+        },
+        {
+          "text": "Export ZIP",
+          "pointerReachable": true
+        },
+        {
+          "text": "Version history",
+          "pointerReachable": true
+        },
+        {
+          "text": "Members",
+          "pointerReachable": true
+        },
+        {
+          "text": "Import history",
+          "pointerReachable": true
+        },
+        {
+          "text": "AI tasks",
+          "pointerReachable": true
+        },
+        {
+          "text": "Share",
+          "pointerReachable": true
+        }
+      ]
+    },
+    {
+      "stage": "comparison",
+      "width": 360,
+      "theme": "dark",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "View review",
+          "width": 89.171875,
+          "scrollWidth": 89,
+          "clientWidth": 89
+        },
+        {
+          "text": "More",
+          "width": 47.3125,
+          "scrollWidth": 47,
+          "clientWidth": 47
+        }
+      ]
+    },
+    {
+      "stage": "review",
+      "width": 360,
+      "theme": "dark",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "contentWidth": 320,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "View review",
+          "width": 89.171875,
+          "scrollWidth": 89,
+          "clientWidth": 89
+        },
+        {
+          "text": "More",
+          "width": 47.3125,
+          "scrollWidth": 47,
+          "clientWidth": 47
+        }
+      ]
+    },
+    {
+      "stage": "settings",
+      "width": 360,
+      "theme": "dark",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "reading",
+      "width": 805,
+      "theme": "dark",
+      "viewport": 805,
+      "scrollWidth": 805,
+      "contentWidth": 465,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "Edit document",
+          "width": 117.015625,
+          "scrollWidth": 117,
+          "clientWidth": 117
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "toolbar-menu",
+      "width": 805,
+      "theme": "dark",
+      "menuItems": [
+        {
+          "text": "Export HTML",
+          "pointerReachable": true
+        },
+        {
+          "text": "Export ZIP",
+          "pointerReachable": true
+        },
+        {
+          "text": "Version history",
+          "pointerReachable": true
+        },
+        {
+          "text": "Members",
+          "pointerReachable": true
+        },
+        {
+          "text": "Import history",
+          "pointerReachable": true
+        },
+        {
+          "text": "AI tasks",
+          "pointerReachable": true
+        }
+      ]
+    },
+    {
+      "stage": "comparison",
+      "width": 805,
+      "theme": "dark",
+      "viewport": 805,
+      "scrollWidth": 805,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "review",
+      "width": 805,
+      "theme": "dark",
+      "viewport": 805,
+      "scrollWidth": 805,
+      "contentWidth": 465,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clientWidth": 32
+        },
+        {
+          "text": "Edit document",
+          "width": 117.015625,
+          "scrollWidth": 117,
+          "clientWidth": 117
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "settings",
+      "width": 805,
+      "theme": "dark",
+      "viewport": 805,
+      "scrollWidth": 805,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "reading",
+      "width": 1280,
+      "theme": "dark",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "contentWidth": 694,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "Edit document",
+          "width": 117.015625,
+          "scrollWidth": 117,
+          "clientWidth": 117
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "reading",
+      "width": 1440,
+      "theme": "dark",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "contentWidth": 810,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "Edit document",
+          "width": 117.015625,
+          "scrollWidth": 117,
+          "clientWidth": 117
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "toolbar-menu",
+      "width": 1440,
+      "theme": "dark",
+      "menuItems": [
+        {
+          "text": "Export HTML",
+          "pointerReachable": true
+        },
+        {
+          "text": "Export ZIP",
+          "pointerReachable": true
+        },
+        {
+          "text": "Version history",
+          "pointerReachable": true
+        },
+        {
+          "text": "Members",
+          "pointerReachable": true
+        },
+        {
+          "text": "Import history",
+          "pointerReachable": true
+        },
+        {
+          "text": "AI tasks",
+          "pointerReachable": true
+        }
+      ]
+    },
+    {
+      "stage": "comparison",
+      "width": 1440,
+      "theme": "dark",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "review",
+      "width": 1440,
+      "theme": "dark",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "contentWidth": 810,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": [
+        {
+          "text": "Home",
+          "width": 35.765625,
+          "scrollWidth": 36,
+          "clientWidth": 36
+        },
+        {
+          "text": "Edit document",
+          "width": 117.015625,
+          "scrollWidth": 117,
+          "clientWidth": 117
+        },
+        {
+          "text": "Review & publish (0)",
+          "width": 154.078125,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        },
+        {
+          "text": "Share",
+          "width": 63.484375,
+          "scrollWidth": 63,
+          "clientWidth": 63
+        },
+        {
+          "text": "More",
+          "width": 59.3125,
+          "scrollWidth": 59,
+          "clientWidth": 59
+        }
+      ]
+    },
+    {
+      "stage": "settings",
+      "width": 1440,
+      "theme": "dark",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "background": "rgb(17, 17, 19)",
+      "primaryButtons": []
+    },
+    {
+      "stage": "change password / logout all",
+      "otherSessionRevokedOnPasswordChange": true,
+      "bothSessionsRevokedOnLogoutAll": true,
+      "newPasswordLogin": true
+    }
+  ],
+  "consoleMessages": [
+    "member: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "guest: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "other session: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "other session: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "member: Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ],
+  "pageErrors": [],
+  "blockedExternalRequests": 0,
+  "status": "passed"
+}

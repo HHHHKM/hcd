@@ -1,0 +1,150 @@
+.read-chart {
+  margin: var(--space-16) 0;
+}
+.read-chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.read-chart-svg text {
+  fill: var(--muted-ink);
+  font: var(--font-size-12) var(--font-body);
+}
+.chart-gridline {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.chart-zero {
+  stroke: var(--muted-ink);
+  stroke-width: 1;
+}
+.read-chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8) var(--space-15);
+  padding: 0;
+  list-style: none;
+  font-size: var(--font-size-12);
+}
+.read-chart-legend li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+.read-chart-legend i {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--space-2);
+}
+.chart-data {
+  margin-top: var(--space-15);
+  font-size: var(--font-size-12);
+  color: var(--muted-ink);
+}
+.chart-data summary {
+  cursor: pointer;
+  padding: var(--space-10) 0;
+  min-height: var(--space-44);
+}
+.chart-data-note {
+  font-size: var(--font-size-12);
+  color: var(--muted-ink);
+}
+.read-timeline {
+  list-style: none;
+  padding: 0;
+  display: grid;
+}
+.read-columns {
+  grid-template-columns: var(--column-widths);
+}
+.read-cards {
+  grid-template-columns: repeat(var(--card-count), minmax(0, 1fr));
+}
+.kpi-good small {
+  color: var(--success);
+}
+.kpi-bad small {
+  color: var(--danger);
+}
+.callout-warn {
+  border-left: 3px solid var(--danger);
+}
+.callout-danger {
+  border-left: 3px solid var(--danger);
+}
+.callout-success {
+  border-left: 3px solid var(--success);
+}
+.table-scroll caption {
+  text-align: left;
+  padding: var(--space-8) 0;
+  color: var(--muted-ink);
+}
+@media (max-width: 760px) {
+  .read-columns,
+  .read-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.document-image {
+  text-align: center;
+  margin: var(--space-20) auto;
+}
+.document-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: var(--space-6);
+}
+.document-image.image-width-small img {
+  max-width: 35%;
+}
+.document-image.image-width-normal img {
+  max-width: 75%;
+}
+.document-image figcaption {
+  font-size: var(--font-size-12);
+  color: var(--muted-ink);
+  margin-top: var(--space-8);
+}
+.image-upload .document-image img {
+  max-height: 250px;
+}
+.image-upload > label {
+  display: grid;
+  gap: var(--space-8);
+  font-size: var(--font-size-12);
+  margin: var(--space-12) 0;
+}
+
+.document-raw {
+  margin: var(--space-18) 0;
+}
+.document-raw iframe {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--space-8);
+  background: var(--surface);
+}
+.document-raw .text-link {
+  margin-top: var(--space-8);
+  font-size: var(--font-size-12);
+}
+
+.read-timeline,
+.read-columns,
+.read-cards {
+  min-width: 0;
+  gap: var(--space-12);
+}
+.image-upload > label {
+  display: block;
+  padding: var(--space-24);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-l);
+  background: var(--fill);
+}

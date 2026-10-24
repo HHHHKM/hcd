@@ -1,0 +1,29 @@
+.grouped-document-toolbar .breadcrumbs {
+  min-width: 0;
+}
+.grouped-document-toolbar .breadcrumbs b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.grouped-document-toolbar .document-actions {
+  flex: none;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  overflow: visible;
+}
+.grouped-document-toolbar .document-actions > button {
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .grouped-document-toolbar .document-actions {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+  .grouped-document-toolbar .document-actions > .version-pill {
+    margin-inline-end: auto;
+  }
+  .grouped-document-toolbar .document-actions .button {
+    padding-inline: var(--space-8);
+  }
+}

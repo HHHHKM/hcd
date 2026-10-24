@@ -1,0 +1,7 @@
+Command: pnpm exec tsx ../../../work/check-visual-code.ts
+Started UTC: 2026-10-24T17:55:10.716922+00:00
+Fixture run 1: exact stable code PASS
+Fixture run 2: exact stable code PASS
+
+Exit code: 0
+Ended UTC: 2026-10-24T17:55:12.486402+00:00

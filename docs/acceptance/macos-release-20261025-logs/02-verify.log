@@ -1,0 +1,1463 @@
+Command: pnpm verify
+Started UTC: 2026-10-24T17:46:05.280211+00:00
+$ pnpm lint && pnpm typecheck && pnpm test && pnpm build
+$ eslint packages/web/src src && node scripts/security-check.mjs && node scripts/check-contrast.mjs
+Security scan: no unsafe HTML rendering or eval in web source.
+WCAG AA: 27 text/background pairs passed in both light and dark themes.
+$ tsc --noEmit
+$ vitest run
+
+ RUN  v3.2.7 /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source
+
+ ✓ packages/cli/src/submission-plan.test.ts (15 tests) 95ms
+ ✓ packages/cli/src/submission-receipts.test.ts (28 tests) 1882ms
+   ✓ explicit receipt cancellation > survives process death before recovery completes and after withdrawal commits without issuing a new key  441ms
+   ✓ frozen native submission formats > reads and retries an existing large content receipt verbatim even if newer request limits would reject it  300ms
+ ✓ packages/server/test/app.test.ts (10 tests) 6791ms
+   ✓ HCD service > AT-19 does not create demo accounts unless seeding is explicitly enabled  733ms
+   ✓ HCD service > AT-11 requires a same-origin request marker for cookie mutations  605ms
+   ✓ HCD service > AT-11 responds with 404 when submission, preview, task, or comment records do not exist  542ms
+   ✓ HCD service > AT-11 requires submission author, current editor role, and PAT submit scope within the subject document for withdrawal  659ms
+   ✓ HCD service > AT-05 stores drafts and makes idempotent submissions that publish once  760ms
+   ✓ HCD service > AT-03 detects overlapping submissions and requires a revisioned resolution  850ms
+   ✓ HCD service > AT-09 sanitizes HTML imports and confirms them as an immutable import version  611ms
+   ✓ HCD service > AT-21 limits personal tokens to their read, comment, or submit scope  575ms
+   ✓ HCD service > AT-26 keeps AI off by default and routes requested tasks through owner approval  613ms
+   ✓ HCD service > AT-04 marks superseded previews stale and restores a historical snapshot through publish  843ms
+ ✓ packages/server/test/cli-auth.test.ts (12 tests) 7520ms
+   ✓ CLI device authorization > keeps the display code separate from secrets and approves a normal scoped PAT  621ms
+   ✓ CLI device authorization > repeats the same approved credential after a lost response without issuing duplicates  614ms
+   ✓ CLI device authorization > preserves the consent binding and same delivery credential across an application restart  703ms
+   ✓ CLI device authorization > AT-11 requires session review, rejects token approval and guards browser origins and CSRF  574ms
+   ✓ CLI device authorization > durably binds consent to the first user and exact session, including simultaneous reads  674ms
+   ✓ CLI device authorization > AT-11 validates scope, document and expiry selections before issuing any token  558ms
+   ✓ CLI device authorization > denies without minting a token and expires delivery secrets without revoking issued tokens  605ms
+   ✓ CLI device authorization > rate-limits both new device requests and early polling with retry hints  568ms
+   ✓ CLI device authorization > AT-21 enforces live PAT scopes, document allowlists, AI setting and membership  558ms
+   ✓ CLI device authorization > AT-21 rechecks reset, disabled account, revoked token and deleted approving session before redelivery  677ms
+   ✓ CLI device authorization > AT-21 revokes only the calling bearer, rejects targets, and remains usable after permissions disappear  783ms
+   ✓ CLI device authorization > AT-21 revokes an OAuth access token and its entire refresh family using the same self-only endpoint  582ms
+ ✓ packages/server/test/accounts-members.test.ts (8 tests) 5939ms
+   ✓ accounts and membership > AT-11 stores invite hashes and atomically redeems one-use seven-day invitations  786ms
+   ✓ accounts and membership > AT-11 replaces reset links and resets only the password while revoking old sessions  719ms
+   ✓ accounts and membership > AT-11 restricts administrator actions and immediately invalidates disabled users sessions and PATs  687ms
+   ✓ accounts and membership > AT-11 manages space members while protecting the last owner against deletion and demotion  650ms
+   ✓ accounts and membership > AT-11 lists inherited document roles and prevents member changes through non-owners or PATs  621ms
+   ✓ accounts and membership > AT-11 returns effective roles consistently in document and space lists after membership changes  663ms
+   ✓ accounts and membership > AT-11 requires ownership transfer before disabling the final active owner  641ms
+   ✓ administrator CLI invitations > AT-11 creates a bootstrap administrator and issues redeemable reset links without storing raw tokens  1171ms
+ ✓ packages/core/src/merge.test.ts (20 tests) 41ms
+ ❯ packages/server/test/concurrent-publication.test.ts (7 tests | 7 failed) 8558ms
+   × SQLite publication across independent HTTP workers > AT-12: competing open previews publish once and return PREVIEW_STALE to the loser 1600ms
+     → Error: listen EPERM: operation not permitted 127.0.0.1
+   × SQLite publication across independent HTTP workers > AT-05 returns the same committed version to simultaneous requests for one preview 1138ms
+     → Error: listen EPERM: operation not permitted 127.0.0.1
+   × SQLite publication across independent HTTP workers > AT-04: an open preview with an older head returns exactly PREVIEW_STALE without writes 1071ms
+     → Error: listen EPERM: operation not permitted 127.0.0.1
+   × SQLite publication across independent HTTP workers > AT-11 rechecks owner permission when membership changes before the publication lock 1082ms
+     → Error: listen EPERM: operation not permitted 127.0.0.1
+   × SQLite publication across independent HTTP workers > AT-11 rejects a session revoked after initial authorization without publication writes 1087ms
+     → Error: listen EPERM: operation not permitted 127.0.0.1
+   × SQLite publication across independent HTTP workers > AT-11 rejects 'disabled account' changed after initial authorization without publication writes 1438ms
+     → Error: listen EPERM: operation not permitted 127.0.0.1
+   × SQLite publication across independent HTTP workers > AT-11 rejects 'removed administrator status' changed after initial authorization without publication writes 1141ms
+     → Error: listen EPERM: operation not permitted 127.0.0.1
+ ✓ packages/core/src/changes.test.ts (19 tests) 233ms
+ ✓ packages/server/test/oauth.test.ts (18 tests) 9653ms
+   ✓ OAuth authorization and token lifecycle > AT-37 publishes trusted discovery metadata and MCP challenges without requiring cookies  637ms
+   ✓ OAuth authorization and token lifecycle > AT-37 validates clients, exact callbacks, PKCE, resources and scopes before redirecting  654ms
+   ✓ OAuth authorization and token lifecycle > AT-37 requires matching browser, session, CSRF marker, selected documents and one-use consent  585ms
+   ✓ OAuth authorization and token lifecycle > AT-37 binds codes to client, redirect, verifier and resource; refresh credentials never authenticate API/MCP  554ms
+   ✓ OAuth authorization and token lifecycle > AT-37 serializes concurrent code redemption and commits family revocation on replay  624ms
+   ✓ OAuth authorization and token lifecycle > AT-37 rotates refreshes, prevents scope escalation and revokes the whole family on concurrent reuse  563ms
+   ✓ OAuth authorization and token lifecycle > AT-37 never extends absolute authorization lifetime and rejects expired requests/codes  609ms
+   ✓ OAuth authorization and token lifecycle > AT-37 intersects document scope, current membership, AI switch and never allows owner actions  583ms
+   ✓ OAuth authorization and token lifecycle > AT-37 lists one authorization per family and revokes by personal settings or protocol  591ms
+   ✓ OAuth authorization and token lifecycle > AT-37 keeps private drafts out of token reads and preserves them when the client submits  599ms
+   ✓ OAuth authorization and token lifecycle > AT-37 rechecks OAuth credentials when serving an already issued signed asset URL  523ms
+   ✓ OAuth authorization and token lifecycle > AT-37 requires both AI-task and submit scope plus current role for task claims/completion  852ms
+   ✓ OAuth authorization and token lifecycle > AT-37 revokes access, refreshes and outstanding codes when a password is reset  592ms
+   ✓ OAuth authorization and token lifecycle > AT-37 does not resurrect authorizations when a disabled account is re-enabled  598ms
+   ✓ OAuth authorization and token lifecycle > AT-37 binds an inspected consent request to the signed-in user  604ms
+   ✓ OAuth authorization and token lifecycle > AT-37 supports cached client metadata documents with exact IDs and no redirects on fetch failure  481ms
+ ❯ packages/cli/src/mcp-relay.test.ts (11 tests | 11 failed) 10303ms
+   × mdoc SDK MCP relay > AT-30 A2 initializes MCP directly with a device-authorized base32 PAT 586ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × mdoc SDK MCP relay > AT-30 A2 relays an SDK tool call end to end using a device-authorized PAT 528ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × mdoc SDK MCP relay > AT-30 matches real SDK HTTP reads, tool errors and resources through the relay 545ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × mdoc SDK MCP relay > AT-30 executes HTML reads, comment replies and own-submission withdrawal through the SDK 479ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × mdoc SDK MCP relay > AT-30 runs AI task claims, linked submissions, completion, failure and read-only previews through the SDK relay 533ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × mdoc SDK MCP relay > AT-30 forwards resolve suggestions with their claim and preserves the human adoption boundary 521ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × mdoc SDK MCP relay > AT-30 submits strict operations and module HTML with stable receipts through the SDK 482ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × mdoc SDK MCP relay > AT-30 rechecks revoked credentials and keeps failures on one request from corrupting concurrent calls 512ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × mdoc SDK MCP relay > AT-30 works as a real stdio child process with clean JSON-RPC stdout and closes on EOF 601ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × mdoc SDK MCP relay > AT-30 fails initialization cleanly for revoked credentials 509ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × AT-30 pins every HTTP method and rejects redirect responses without leaking credentials 5004ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ✓ packages/server/test/comment-selection.test.ts (12 tests) 10648ms
+   ✓ comment selection integrity through the real API > AT-08 stores a marked Unicode table selection with UTF-16 ranges and keeps module/unanchored comments valid  877ms
+   ✓ comment selection integrity through the real API > AT-08 relocates ranges after publication and preserves text_changed/block_deleted/lost states and one lost notification  987ms
+   ✓ comment selection integrity through the real API > AT-08 uses exact context to select repeated marked text and preserves combining characters  895ms
+   ✓ comment selection integrity through the real API > AT-08 validates old selections in their actual source version before migrating or rejecting stale modules  890ms
+   ✓ comment selection integrity through the real API > AT-08 rejects fabricated fields, quotes, contexts and nodes without silently creating module comments  726ms
+   ✓ comment selection integrity through the real API > AT-11 enforces viewer, session, PAT scope, document restriction and AI gates before accepting selections  779ms
+   ✓ comment selection integrity through the real API > binds an AI request to the relocated module when a selected block moved after the reader loaded it  856ms
+   ✓ comment selection integrity through the real API > AT-32 limits verified guest selections to the exact snapshot exposed by a pinned share link  993ms
+   ✓ comment selection integrity through the real API > AT-32 projects published selections and their contexts into pinned v1 without changing stored v2 anchors  919ms
+   ✓ comment selection integrity through the real API > AT-32 strips unmatched future quotes, contexts and unavailable node IDs from public pinned responses while preserving only visible discussion bodies and guest replies  837ms
+   ✓ comment selection integrity through the real API > AT-32 does not invent a reverse location after publication has already removed a deleted block ID  864ms
+   ✓ comment selection integrity through the real API > AT-32 projects a newly created old-pin guest selection when the current-version share reads it  1025ms
+ ✓ packages/web/src/AnchorText.test.tsx (9 tests) 48ms
+ ✓ packages/web/src/CliAuth.test.tsx (14 tests) 31ms
+ ✓ packages/server/test/guests.test.ts (7 tests) 4275ms
+   ✓ verified guest sharing > AT-33 requires verification on every commenter resource and binds single-use codes and sessions to the exact link  668ms
+   ✓ verified guest sharing > AT-33 keeps failure counts through resends and process restarts and locks the email across links after five failures  632ms
+   ✓ verified guest sharing > AT-25 creates external comments and replies, strips member mentions and requires approval for guest AI requests  583ms
+   ✓ verified guest sharing > AT-33 invalidates challenges and sessions immediately when links expire or are revoked  506ms
+   ✓ verified guest sharing > AT-32 protects raw signed URLs with the guest session and rechecks session and link revocation at render time  749ms
+   ✓ verified guest sharing > AT-33 does not expose hidden comments, accepts only valid identity fields and expires challenges  630ms
+   ✓ AT-32 migrates legacy comment and AI authors without losing discussion state  506ms
+ ✓ packages/server/test/exports.test.ts (8 tests) 5333ms
+   ✓ durable document exports > AT-36 freezes a published snapshot and serves only signed attachment URLs on the render domain  674ms
+   ✓ durable document exports > AT-36 freezes clean pending changes, excludes an entire conflicting submission and enforces view-pending permission  663ms
+   ✓ durable document exports > AT-36 exports a reimportable ZIP and rejects obsolete pending-version combinations  770ms
+   ✓ durable document exports > AT-36 rechecks account, membership and originating PAT revocation before serving or processing  591ms
+   ✓ durable document exports > AT-36 bounds queue size, recovers an interrupted job and expires files and frozen content  592ms
+   ✓ durable document exports > AT-36 treats PDF responses as bounded binary artifacts and fails clearly without a configured exporter  801ms
+   ✓ durable document exports > AT-36 keeps only the current worker result when an expired PDF lease is reclaimed  612ms
+   ✓ durable document exports > AT-36 rejects cross-document assets and oversized PDF output, and cancels revoked access during rendering  629ms
+ ❯ packages/server/test/merge-acceptance.test.ts (6 tests | 6 failed) 3297ms
+   × collaborative merge acceptance through real HTTP > AT-01 publishes both authors’ changes to different paragraphs without changing the original version 609ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × collaborative merge acceptance through real HTTP > AT-02 / TM-3 marks separate edits in one paragraph as a same-field merge and publishes their combined text 477ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × collaborative merge acceptance through real HTTP > AT-03 / TM-2 refuses an unresolved overlap and publishes the correct keep_current decision 766ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × collaborative merge acceptance through real HTTP > AT-03 / TM-2 refuses an unresolved overlap and publishes the correct take_incoming decision 489ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × collaborative merge acceptance through real HTTP > AT-03 / TM-2 refuses an unresolved overlap and publishes the correct manual decision 516ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × collaborative merge acceptance through real HTTP > AT-07 restores into a new version, preserves history and pending work, and reevaluates that work against the restored head 439ms
+     → listen EPERM: operation not permitted 127.0.0.1
+ ✓ packages/server/test/mcp.test.ts (9 tests) 5757ms
+   ✓ stateless MCP HTTP transport > AT-30 B10 charges one HTTP request and one tool call without charging internal API reads  706ms
+   ✓ stateless MCP HTTP transport > AT-30 B10 external callers cannot forge the internal rate-limit bypass  552ms
+   ✓ stateless MCP HTTP transport > AT-21 requires a real PAT even for discovery and rejects foreign origins or cookie fallback  742ms
+   ✓ stateless MCP HTTP transport > AT-22 negotiates protocol, accepts notifications, supports batches and advertises no official-version mutations  570ms
+   ✓ stateless MCP HTTP transport > AT-30 reads official documents, modules, outlines, versions and comments without disclosing private drafts  578ms
+   ✓ stateless MCP HTTP transport > AT-22 persists comments and idempotent submissions through API scope checks without publishing  851ms
+   ✓ stateless MCP HTTP transport > AT-21 / AT-26 enforces document restrictions and the AI switch for every document operation  588ms
+   ✓ stateless MCP HTTP transport > AT-21 rechecks revoked, expired and disabled-user PATs on every request  628ms
+   ✓ stateless MCP HTTP transport > AT-30 validates transport, JSON-RPC envelopes, tool names and structured input  539ms
+ ✓ packages/core/src/spec-html-property.test.ts (1 test) 477ms
+   ✓ Spec HTML property acceptance > AT-13 round trips valid random documents containing every block type without changing their source  476ms
+ ✓ packages/server/test/snapshot-submissions.test.ts (7 tests) 5092ms
+   ✓ complete JSON submission compatibility > AT-05 stores permanent operations and preserves nested IDs and content through publication and retries  787ms
+   ✓ complete JSON submission compatibility > AT-05 replays an existing frozen CLI receipt after a lost response without assigning new IDs  678ms
+   ✓ complete JSON submission compatibility > merges same-anchor JSON insertions in creation order, including legacy stored snapshots  957ms
+   ✓ complete JSON submission compatibility > AT-03 returns operation conflicts for JSON edits and validates owner resolutions before publishing  736ms
+   ✓ complete JSON submission compatibility > rejects invalid references, duplicate IDs and unsupported changes without changing drafts or submissions  546ms
+   ✓ complete JSON submission compatibility > AT-27 keeps incompatible legacy snapshots intact, excludes them from exports and requires explicit discard  747ms
+   ✓ complete JSON submission compatibility > invalidates prior merge previews once during migration while preserving restores and immutable records  641ms
+ ✓ packages/server/test/render-origin.test.ts (6 tests) 1819ms
+   ✓ isolated raw rendering > AT-09 preserves static source privately and keeps raw HTML off the application origin  624ms
+   ✓ isolated raw rendering > AT-09 rechecks share revocation at render time and round-trips raw assets through ZIP  562ms
+   ✓ isolated raw rendering > AT-09 denies discarded preview URLs and makes malformed signatures fail closed  602ms
+ ✓ packages/server/test/change-presentation.test.ts (7 tests) 5371ms
+   ✓ saved change presentation > shows ordered original operations even when the final submission snapshot is unchanged  1080ms
+   ✓ saved change presentation > distinguishes original proposals and outcomes from actual candidate changes after whole-submission rollback  730ms
+   ✓ saved change presentation > records manual candidate text and preserves the saved comparison after publication changes the current version  753ms
+   ✓ saved change presentation > shows exclusion after a synthetic document-level drop even if earlier operation outcomes say applied  641ms
+   ✓ saved change presentation > handles legacy details, incompatible historical snapshots, and absent old preview presentation explicitly  692ms
+   ✓ saved change presentation > creates restore and historical comparisons from the chosen immutable snapshots  734ms
+   ✓ saved change presentation > does not reveal proposal detail to viewers or revoked token readers  740ms
+ ✓ packages/server/test/operation-review.test.ts (8 tests) 5821ms
+   ✓ operation review integration > AT-27 accepts and drops individual uncertain operations, persists outcomes and publishes only the chosen content  1026ms
+   ✓ operation review integration > AT-03 reveals the ordinary conflict after accepting identity, validates manual input and leaves unresolved submissions out of exports  727ms
+   ✓ operation review integration > AT-03 invalidates a prior downstream resolution when an earlier choice changes and blocks direct publish  696ms
+   ✓ operation review integration > AT-06 validates structural placement and restores deleted content through the owner API  758ms
+   ✓ operation review integration > AT-04 recomputes publication and refuses a changed saved candidate  646ms
+   ✓ operation review integration > rejects duplicate, oversized and no-longer-pending review selections  527ms
+   ✓ operation review integration > preserves insertion order across legacy full snapshots and operation submissions  711ms
+   ✓ operation review integration > invalidates open reviews once when upgrading from the previous merge schema  728ms
+ ✓ packages/web/src/VersionComparison.test.tsx (11 tests) 34ms
+ ❯ packages/cli/src/native-submission-integration.test.ts (4 tests | 4 failed) 2065ms
+   × native CLI submissions against the HCD API > AT-28 preserves identity and the frozen certain request through a lost response and newer invalid files 537ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × native CLI submissions against the HCD API > AT-28 preserves identity and the frozen uncertain request through a lost response and newer invalid files 537ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × native CLI submissions against the HCD API > AT-28 reuses a frozen legacy JSON request before the newer parser rejects its unchanged source files 510ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × native CLI submissions against the HCD API > AT-28 keeps a previewable working copy but rejects uncertain module reorders before creating a receipt or submission 480ms
+     → listen EPERM: operation not permitted 127.0.0.1
+ ✓ packages/server/test/ai-tasks.test.ts (24 tests) 18493ms
+   ✓ AI task leases, submissions and read-only previews > AT-25 auto-approves human editor requests, while commenter and token requests require human approval  787ms
+   ✓ AI task leases, submissions and read-only previews > AT-26 records AI-disabled requests as a system reply without creating a task  775ms
+   ✓ AI task leases, submissions and read-only previews > allows only one concurrent claim and conceals credentials from task readers  725ms
+   ✓ AI task leases, submissions and read-only previews > requires a linked submission and completes idempotently with one system reply and notification  702ms
+   ✓ AI task leases, submissions and read-only previews > AT-23 rejects task changes outside the approved scope: metadata  693ms
+   ✓ AI task leases, submissions and read-only previews > AT-23 rejects task changes outside the approved scope: unrelated module  683ms
+   ✓ AI task leases, submissions and read-only previews > AT-23 rejects task changes outside the approved scope: module reorder  722ms
+   ✓ AI task leases, submissions and read-only previews > AT-23 rejects task changes outside the approved scope: module deletion  656ms
+   ✓ AI task leases, submissions and read-only previews > AT-23 rejects task changes outside the approved scope: module insertion  648ms
+   ✓ AI task leases, submissions and read-only previews > AT-23 rejects task changes outside the approved scope: document ID  829ms
+   ✓ AI task leases, submissions and read-only previews > retains the claimed baseline after publication and refuses a caller-selected newer base  914ms
+   ✓ AI task leases, submissions and read-only previews > AT-24 expires leases, fences every late write, and stops after three attempts with durable audit history  629ms
+   ✓ AI task leases, submissions and read-only previews > rechecks AI, membership, scope and revocation on worker writes  664ms
+   ✓ AI task leases, submissions and read-only previews > prevents personal tokens from reading, replacing or deleting private browser drafts  820ms
+   ✓ AI task leases, submissions and read-only previews > validates task linkage on retries and rejects withdrawn work on completion  700ms
+   ✓ AI task leases, submissions and read-only previews > AT-22 computes and reads previews without changing stored reviews and denies mutation with preview scope  788ms
+   ✓ AI task leases, submissions and read-only previews > AT-29 requires a suggestion before resolve completion and human adoption never publishes  1144ms
+   ✓ AI task leases, submissions and read-only previews > AT-29 rejects a stale suggestion after revision changes  868ms
+   ✓ AI task leases, submissions and read-only previews > AT-29 rejects a stale suggestion after withdrawal changes  889ms
+   ✓ AI task leases, submissions and read-only previews > AT-29 rejects a stale suggestion after version changes  763ms
+   ✓ AI task leases, submissions and read-only previews > AT-29 rejects a stale suggestion after replacement preview changes  809ms
+   ✓ AI task leases, submissions and read-only previews > AT-29 does not hide invalid AI values behind other unresolved conflicts  839ms
+   ✓ AI task leases, submissions and read-only previews > limits cross-document task discovery to current AI scope and membership  670ms
+   ✓ AI task leases, submissions and read-only previews > AT-29 cannot reuse a suggestion after claim expiry and rejects invalid candidate values  775ms
+ ✓ packages/server/test/submission-input.test.ts (8 tests) 4785ms
+   ✓ operation and module HTML submissions > AT-05 strictly applies operations and returns identical generated IDs after retries and concurrent requests  744ms
+   ✓ operation and module HTML submissions > AT-05 preserves the original full-JSON normalized-hash retry contract for pre-migration submissions  519ms
+   ✓ operation and module HTML submissions > AT-27 rejects invalid before values, duplicate temporary IDs, mixed inputs and uncertain caller labels atomically  556ms
+   ✓ operation and module HTML submissions > AT-27 updates a single HTML module while retaining other modules and recovering a missing block ID  539ms
+   ✓ operation and module HTML submissions > AT-27 inserts new HTML modules in request order after a common anchor and deletes only explicit modules  623ms
+   ✓ operation and module HTML submissions > AT-27 rejects ambiguous module identity, foreign/duplicate nodes, multiple roots, scripts and unknown HTML  583ms
+   ✓ operation and module HTML submissions > AT-27 requires human confirmation of uncertain identity recovery before preview/export or publication  702ms
+   ✓ operation and module HTML submissions > AT-23 enforces AI task scope for operations even when an out-of-scope change is reverted in the same request  519ms
+ ✓ packages/server/test/pinned-comments.test.ts (2 tests) 1554ms
+   ✓ AT-32 B2 filters pinned threads and member replies by creation version while keeping every guest-thread reply  800ms
+   ✓ AT-32 B2 upgrades legacy comments using guest pins or their creation-time published version without losing data  753ms
+ ✓ packages/server/test/chart-module-html.test.ts (8 tests) 630ms
+   ✓ inert chart data in module HTML submissions > accepts chart changes through the API with exact retries and rejects malicious variants atomically  601ms
+ ✓ packages/server/test/share-links.test.ts (3 tests) 2121ms
+   ✓ read-only document sharing > AT-32 creates high-entropy one-time links, pins published versions and requires a document owner  832ms
+   ✓ read-only document sharing > AT-32 renders current versions, exposes only open discussions and revokes every route immediately  752ms
+   ✓ read-only document sharing > AT-32 rejects impossible pins, malformed inputs, unsupported commenter links, and expiry  536ms
+ ✓ packages/server/test/import-source.test.ts (5 tests) 2815ms
+   ✓ preserved imports and structured draft publication > returns the exact preserved HTML only as a non-renderable attachment  619ms
+   ✓ preserved imports and structured draft publication > AT-11 applies document authorization and scopes while denying every PAT access to raw originals  519ms
+   ✓ preserved imports and structured draft publication > saves every editable block, publishes through review, and leaves the original and v1 unchanged  666ms
+   ✓ preserved imports and structured draft publication > rejects nonexistent draft base versions and deletes discarded drafts  515ms
+   ✓ preserved imports and structured draft publication > AT-43 recognizes metric and timeline groups in ordinary HTML and reports excessive nesting  494ms
+ ✓ packages/server/test/security-mail.test.ts (4 tests) 1800ms
+   ✓ account security emails > AT-34 queues encrypted invitation secrets atomically, prioritizes them over notification backlogs and erases them after delivery  649ms
+   ✓ account security emails > uses the same public reset response for unknown, active, disabled and pending accounts with rate limits  636ms
+   ✓ account security emails > AT-34 cancels expired or replaced credentials and retries tampered encrypted payloads without leaking secrets  499ms
+ ✓ packages/core/src/diff-performance.test.ts (3 tests) 147ms
+ ✓ packages/server/test/archive.test.ts (5 tests) 1776ms
+   ✓ HCD archive import and export > AT-36 stages images, confirms atomically and preserves a complete export/reimport round trip  604ms
+   ✓ HCD archive import and export > AT-09 rejects mismatched module content and asset hashes without creating imports  563ms
+   ✓ HCD archive import and export > AT-11 rechecks permission at confirmation and prevents scoped tokens from reading imports  570ms
+ ✓ packages/core/src/snapshot-ops.test.ts (14 tests) 168ms
+ ✓ packages/server/test/b-auth.test.ts (7 tests) 4551ms
+   ✓ B3/B6/B7 account authentication fixes > B3 persists a three-per-hour email reset limit across app instances  660ms
+   ✓ B3/B6/B7 account authentication fixes > B3 adds durable reset counters to an old database without losing accounts or content  546ms
+   ✓ B3/B6/B7 account authentication fixes > B6 logs out every browser session while leaving personal tokens usable  573ms
+   ✓ B3/B6/B7 account authentication fixes > AT-11 B6 rejects bearer tokens for logout-all and enforces the write request guard  521ms
+   ✓ B3/B6/B7 account authentication fixes > B7 rejects an incorrect current password without changing credentials  652ms
+   ✓ B3/B6/B7 account authentication fixes > B7 counts wrong current passwords toward the existing login failure limit  852ms
+   ✓ B3/B6/B7 account authentication fixes > B7 keeps the current session, removes other sessions, and invalidates reset links after success  747ms
+ ✓ packages/server/test/assets.test.ts (3 tests) 1744ms
+   ✓ document image assets > AT-11 deduplicates content on disk while enforcing document and token access  620ms
+   ✓ document image assets > AT-09 rejects disguised images and oversized files and sanitizes SVG markup and references  498ms
+   ✓ document image assets > AT-36 publishes attached images through review, rejects cross-document references, and embeds bytes in HTML export  625ms
+ ❯ packages/cli/src/cancellation-integration.test.ts (2 tests | 2 failed) 871ms
+   × CLI cancellation with the HCD API > recovers a lost response and truthfully settles a pending submission 481ms
+     → listen EPERM: operation not permitted 127.0.0.1
+   × CLI cancellation with the HCD API > recovers a lost response and truthfully settles a published submission 389ms
+     → listen EPERM: operation not permitted 127.0.0.1
+ ✓ packages/server/test/outbox.test.ts (5 tests) 2390ms
+   ✓ transactional email outbox > AT-34 / AT-15 queues in the business transaction and renders localized, escaped messages without private payloads  542ms
+   ✓ transactional email outbox > AT-34 persists exponential retry times and stops after six failures without storing SMTP secrets  485ms
+   ✓ transactional email outbox > AT-34 leaves unconfigured mail untouched and cancels disabled, unauthorized or opted-out recipients  451ms
+   ✓ transactional email outbox > AT-34 recovers expired leases and prevents stale workers from overwriting a newer claim  431ms
+   ✓ transactional email outbox > AT-34 saves only the current user preferences, rejects unknown flags and disallows PAT changes  480ms
+ ❯ packages/cli/src/index.test.ts (7 tests | 2 failed) 10108ms
+   ✓ mdoc local sync > AT-28 creates stable, safe, unique module filenames 2ms
+   ✓ mdoc local sync > AT-28 detects changed, added, and deleted module files 78ms
+   ✓ mdoc local sync > AT-28 tracks renamed modules by ID, detects reorder-only changes and produces move operations 6ms
+   ✓ mdoc local sync > AT-28 assigns IDs to new nested blocks and refuses duplicate IDs instead of silently replacing identities 9ms
+   × AT-36 polls export jobs, preserves binary downloads and never forwards the PAT to the render URL 5007ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × AT-28 pull refuses unrelated files or local reorders, refreshes removed modules, and honors force 5003ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ AT-28 refuses a symlinked module instead of silently interpreting it as a deletion 2ms
+ ✓ packages/server/test/notifications.test.ts (3 tests) 1601ms
+   ✓ discussion notifications > AT-34 deduplicates mentions, excludes self and outsiders, and notifies active thread participants  577ms
+   ✓ discussion notifications > AT-34 isolates read state by user, validates requests, and denies PAT access to the inbox  526ms
+   ✓ discussion notifications > AT-34 requires current comment permission for deleting a prior comment and preserves a tombstone  497ms
+ ✓ packages/web/src/editor-model.test.ts (7 tests) 15ms
+ ✓ packages/server/test/digests.test.ts (4 tests) 1864ms
+   ✓ daily review summaries > AT-34 queues once per local day at the configured hour across restarts and aggregates all eligible documents  481ms
+   ✓ daily review summaries > AT-34 rechecks current permissions, pending status, preferences and disabled accounts at delivery  441ms
+   ✓ daily review summaries > AT-34 escapes titles, omits submission contents, localizes emails and expires stale summaries  449ms
+   ✓ daily review summaries > AT-34 respects the daily preference before scheduling and handles daylight saving repetition with one date key  493ms
+ ✓ packages/server/test/token-usage.test.ts (3 tests) 1475ms
+   ✓ B8 records token last-used time and IP once per minute  568ms
+   ✓ B8 upgrades existing token rows without losing token data  427ms
+   ✓ B8 writes token usage only after sixty seconds even across a calendar minute boundary  479ms
+ ✓ packages/server/test/maintenance.test.ts (3 tests) 1363ms
+   ✓ credential maintenance > removes expired sessions and attempts without touching content or active credentials  476ms
+   ✓ credential maintenance > erases consumed secrets but preserves in-flight leases and delivery audit records  422ms
+   ✓ credential maintenance > retains active lockouts and cooldowns while cleaning revoked guest credentials and expired identity caches  464ms
+ ❯ packages/web/src/E4-computed-polish.test.ts (5 tests | 5 skipped) 309ms
+   ↓ E4 rich editor focus has a visible outer ring and pressed controls retain accent in dark mode
+   ↓ E4 nested editor cards and tables use soft cards and row separators
+   ↓ E4 notification preferences remain operable switches with an empty-state card
+   ↓ E4 authorization scopes are check rows and supporting state surfaces remain rounded
+   ↓ E4 terminal code stays one exact text value and fits inside the identity card at narrow widths
+ ✓ packages/server/test/logging-auth-lifecycle.test.ts (4 tests) 2128ms
+   ✓ B5 records the cookie actor before logout deletes the session  581ms
+   ✓ B5 records the new session actor after accepting an invitation or reset link  488ms
+   ✓ B5 records the guest actor on first successful verification before a guest cookie exists  476ms
+   ✓ B5 uses LOG_LEVEL when explicitly configured and is silent by default in tests  583ms
+ ✓ packages/web/src/ChangeList.test.tsx (6 tests) 26ms
+ ✓ packages/core/src/diff-property.test.ts (1 test) 453ms
+   ✓ coupled structure diff properties > AT-14 round trips independent tables, charts and lists with reordered, moved, added and removed identities  452ms
+ ✓ packages/web/src/i18n.test.ts (4 tests) 204ms
+ ✓ packages/server/test/import-images.test.ts (3 tests) 1715ms
+   ✓ inline image import > AT-18 previews deduplicated inline images privately, preserves captions and exports after confirmation  644ms
+   ✓ inline image import > AT-09 sanitizes SVG and reports external, missing, invalid and unrelated asset references  535ms
+   ✓ inline image import > revokes preview assets when an import is discarded  536ms
+ ✓ packages/server/test/oauth-client.test.ts (4 tests) 13ms
+ ✓ packages/render/src/index.test.ts (3 tests) 24ms
+ ✓ packages/server/test/anchors.test.ts (1 test) 848ms
+   ✓ published comment anchors > AT-08 relocates on publish, records deleted/lost states, notifies once, and allows owner relocation  847ms
+ ✓ packages/core/src/ops.test.ts (6 tests) 9ms
+ ✓ packages/core/src/spec-html.test.ts (10 tests) 23ms
+ ✓ packages/cli/src/change-format.test.ts (7 tests) 633ms
+   ✓ runs real CLI diff commands with readable output and standalone JSON modes  632ms
+ ✓ packages/core/src/model.test.ts (11 tests) 18ms
+ ✓ packages/cli/src/credentials.test.ts (5 tests) 1116ms
+   ✓ private CLI credential storage > does not replace secrets while another process holds the credential lock  1067ms
+ ✓ packages/core/src/nested-list-ops.test.ts (3 tests) 12ms
+ ✓ packages/server/test/logging.test.ts (3 tests) 1568ms
+   ✓ B5 logs a route template without secrets, bodies or query strings  574ms
+   ✓ B5 never logs share or invite secrets and emits only one entry per request  501ms
+   ✓ B5 records the authenticated actor on the outer MCP request  490ms
+ ✓ packages/server/test/comment-permissions.test.ts (2 tests) 1286ms
+   ✓ AT-11 B9 lets an active participant resolve and reopen but rejects nonparticipants, deleted participation and viewers  672ms
+   ✓ AT-11 B9 requires explicit comment scope for tokens even when their owner or participant has submit scope  613ms
+ ✓ packages/web/src/BlockRead.test.tsx (4 tests) 28ms
+ ✓ packages/core/src/reconcile.test.ts (7 tests) 6ms
+ ✓ packages/web/src/E4-visual-polish.test.ts (5 tests) 4ms
+ ✓ packages/core/src/text.test.ts (7 tests) 7ms
+ ✓ packages/server/test/proxy.test.ts (7 tests) 1675ms
+   ✓ A1 proxy client login failures do not lock out another client  1163ms
+ ❯ packages/web/src/E4-notification-layout.test.ts (2 tests | 2 failed) 90ms
+   × E4 keeps notification header and pointer controls inside the viewport under the blurred topbar 54ms
+     → browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-GliEwD --remote-debugging-pipe --no-startup-window
+<launched> pid=45230
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-GliEwD --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=45230[22m
+[2m  - [pid=45230] <gracefully close start>[22m
+[2m  - [pid=45230] <kill>[22m
+[2m  - [pid=45230] <will force kill>[22m
+[2m  - [pid=45230] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=45230] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=45230] starting temporary directories cleanup[22m
+[2m  - [pid=45230] finished temporary directories cleanup[22m
+[2m  - [pid=45230] <gracefully close end>[22m
+
+   × E4 keeps the member menu inside a right-aligned discussion composer 36ms
+     → browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-9RDTOK --remote-debugging-pipe --no-startup-window
+<launched> pid=45233
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-9RDTOK --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=45233[22m
+[2m  - [pid=45233] <gracefully close start>[22m
+[2m  - [pid=45233] <kill>[22m
+[2m  - [pid=45233] <will force kill>[22m
+[2m  - [pid=45233] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=45233] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=45233] starting temporary directories cleanup[22m
+[2m  - [pid=45233] finished temporary directories cleanup[22m
+[2m  - [pid=45233] <gracefully close end>[22m
+
+ ✓ packages/core/src/diff.test.ts (3 tests) 10ms
+ ✓ packages/core/src/import-patterns.test.ts (4 tests) 5ms
+ ✓ packages/core/src/anchors.test.ts (4 tests) 4ms
+ ✓ packages/web/src/DiscussionThreads.test.tsx (3 tests) 19ms
+ ✓ packages/web/src/comment-location.test.ts (2 tests) 68ms
+ ❯ packages/web/src/reading-layout.test.ts (2 tests | 2 failed) 133ms
+   × C8 preserves at least 680px of reading text with desktop discussions open 68ms
+     → browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-V17t9Q --remote-debugging-pipe --no-startup-window
+<launched> pid=45251
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-V17t9Q --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=45251[22m
+[2m  - [pid=45251] <gracefully close start>[22m
+[2m  - [pid=45251] <kill>[22m
+[2m  - [pid=45251] <will force kill>[22m
+[2m  - [pid=45251] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=45251] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=45251] starting temporary directories cleanup[22m
+[2m  - [pid=45251] finished temporary directories cleanup[22m
+[2m  - [pid=45251] <gracefully close end>[22m
+
+   × C7 highlights guest quote text without adding a block outline in the browser 65ms
+     → browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-y1RAbg --remote-debugging-pipe --no-startup-window
+<launched> pid=45253
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-y1RAbg --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=45253[22m
+[2m  - [pid=45253] <gracefully close start>[22m
+[2m  - [pid=45253] <kill>[22m
+[2m  - [pid=45253] <will force kill>[22m
+[2m  - [pid=45253] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=45253] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=45253] starting temporary directories cleanup[22m
+[2m  - [pid=45253] finished temporary directories cleanup[22m
+[2m  - [pid=45253] <gracefully close end>[22m
+
+ ✓ packages/server/test/change-worker.test.ts (3 tests) 354ms
+ ✓ packages/exporter/src/app.test.ts (2 tests) 75ms
+ ✓ packages/web/src/BlockEditor.test.tsx (2 tests) 49ms
+ ✓ packages/web/src/design-tokens.test.ts (2 tests) 41ms
+ ✓ packages/server/test/mcp-list-scope.test.ts (1 test) 590ms
+   ✓ AT-21 B10 preserves document-read scope checks when listing documents without per-document reads  590ms
+ ✓ packages/web/src/inline-codec.test.ts (2 tests) 2ms
+ ✓ packages/server/test/rate-limit.test.ts (2 tests) 548ms
+   ✓ request limits > limits file operations across sessions and limits public share lookup requests  546ms
+ ✓ packages/web/src/web-structure.test.ts (1 test) 5ms
+ ✓ packages/web/src/app/error-translation.test.ts (2 tests) 2ms
+ ✓ packages/server/test/startup.test.ts (1 test) 2ms
+ ✓ packages/server/test/version-authors.test.ts (1 test) 609ms
+   ✓ B1 returns the author name in both version history APIs  609ms
+ ✓ packages/web/src/lint-rules.test.ts (1 test) 895ms
+   ✓ AT-09 C1 enforces unsafe HTML and hook-order ESLint rules at the frontend source boundary  894ms
+ ✓ packages/web/src/comment-selection-dom.test.tsx (13 tests) 192ms
+ ✓ packages/web/src/SharedDocument.test.tsx (22 tests) 421ms
+ ✓ packages/web/src/comment-selection.test.tsx (13 tests) 99ms
+ ✓ packages/server/test/history-performance.test.ts (9 tests) 15954ms
+   ✓ historical comparison performance > B4 keeps health responsive during 5000-paragraph comparison and caches its immutable result  2546ms
+   ✓ historical comparison performance > B4 keeps health responsive while preparing a large restore review presentation  2083ms
+   ✓ historical comparison performance > B4 rechecks document access after the compare worker finishes  2076ms
+   ✓ historical comparison performance > B4 rechecks document access after the restore worker finishes  2204ms
+   ✓ historical comparison performance > B4 rejects a revoked session after the compare worker finishes  2185ms
+   ✓ historical comparison performance > B4 rejects a revoked session after the restore worker finishes  2198ms
+   ✓ historical comparison performance > B4 rejects a revoked session after the prepare worker finishes  1078ms
+   ✓ historical comparison performance > B4 rejects a revoked session after the save worker finishes  992ms
+   ✓ historical comparison performance > B4 limits comparison to ten requests per user per minute independently of normal reads  591ms
+ ✓ packages/web/src/E4-danger-actions.test.tsx (4 tests) 56ms
+ ✓ packages/web/src/app/App-routing.test.tsx (11 tests) 536ms
+ ✓ packages/web/src/App-comment-selection.test.tsx (7 tests) 1591ms
+   ✓ responsive reading controls (synthetic DOM) > withholds title editing in phone settings and saves a retained desktop draft after resizing  998ms
+ ❯ packages/server/test/smtp.test.ts (2 tests | 1 failed) 5005ms
+   × SMTP transport > sends a notification only to the configured local SMTP fixture 5004ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ SMTP transport > requires both SMTP host and sender configuration 0ms
+ ✓ packages/web/src/App-toolbar.test.tsx (6 tests) 416ms
+ ✓ packages/web/src/app/App-route-gaps.test.tsx (7 tests) 289ms
+ ✓ packages/web/src/app/C2-route-timing.test.tsx (2 tests) 249ms
+ ✓ packages/web/src/PasswordSettings.test.tsx (4 tests) 50ms
+ ✓ packages/web/src/E1-hook-dependencies.test.tsx (3 tests) 55ms
+ ✓ packages/web/src/app/C2-space-routes.test.tsx (3 tests) 409ms
+ ✓ packages/web/src/DocumentToolbar.test.tsx (2 tests) 105ms
+ ✓ packages/web/src/App-outline-preference.test.tsx (2 tests) 245ms
+ ❯ packages/web/src/App-sidebar-layout.test.tsx (1 test | 1 failed) 121ms
+   × C8 shows compact sidebar navigation as fully visible named icons at 805px without clipped label text 121ms
+     → browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-7lYHwT --remote-debugging-pipe --no-startup-window
+<launched> pid=45368
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-7lYHwT --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=45368[22m
+[2m  - [pid=45368] <gracefully close start>[22m
+[2m  - [pid=45368] <kill>[22m
+[2m  - [pid=45368] <will force kill>[22m
+[2m  - [pid=45368] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=45368] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=45368] starting temporary directories cleanup[22m
+[2m  - [pid=45368] finished temporary directories cleanup[22m
+[2m  - [pid=45368] <gracefully close end>[22m
+
+ ✓ packages/web/src/LogoutAllSessions.test.tsx (3 tests) 36ms
+ ✓ packages/web/src/app/App-theme.test.tsx (2 tests) 160ms
+ ✓ packages/web/src/App-account-settings.test.tsx (3 tests) 220ms
+ ✓ packages/web/src/E4-display-markup.test.tsx (2 tests) 56ms
+ ✓ packages/web/src/DiscussionThreads-menu.test.tsx (1 test) 96ms
+ ✓ packages/web/src/Administration-i18n.test.tsx (1 test) 22ms
+ ✓ packages/web/src/DiscussionThreads-actions.test.tsx (2 tests) 69ms
+ ✓ packages/web/src/ShareLinks-i18n.test.tsx (3 tests) 29ms
+ ❯ packages/cli/src/device-auth-integration.test.ts (6 tests | 6 failed) 30032ms
+   × CLI device authorization over the real HTTP API > recovers a lost approved poll, saves one scoped credential privately and revokes it through logout 5017ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization over the real HTTP API > keeps the existing credential byte-for-byte when the device request is denied 5003ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization over the real HTTP API > exits an expired device request without issuing or writing a credential 5001ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization over the real HTTP API > retains failed revocations and protects a replacement login while an older logout is waiting 5003ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization over the real HTTP API > A2 rejects a malformed explicit PAT before contacting the account endpoint 5002ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization over the real HTTP API > does not expose credentials or terminal controls from a malicious account-validation error 5004ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/local-preview.test.ts (7 tests | 4 failed) 20236ms
+   ✓ local working-copy preview > renders an offline standalone document, marks it local, escapes markup and writes privately 17ms
+   × local working-copy preview > downloads assets once per identity, sanitizes raw content, embeds assets and never leaks the token to signed URLs 5007ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × local working-copy preview > rejects mime image responses and preserves the prior preview 5004ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × local working-copy preview > rejects oversized image responses and preserves the prior preview 5003ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × local working-copy preview > rejects redirect image responses and preserves the prior preview 5005ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ local working-copy preview > rejects symlinked preview metadata and requires credentials for referenced assets 7ms
+   ✓ local working-copy preview > runs mdoc preview --no-open against edited checkout files without a browser 192ms
+ ❯ packages/cli/src/device-login.test.ts (9 tests | 9 failed) 45025ms
+   × CLI device authorization transport > A2 rejects a device response whose PAT is not exactly 32 lowercase base32 characters 5005ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization transport > pins the server, displays only the public code, honors poll backoff and returns the approved credential 5003ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization transport > does not produce credentials after denied consent 5001ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization transport > does not produce credentials after expired consent 5002ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization transport > rejects foreign confirmation destinations before invoking the browser callback or polling 5003ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization transport > retries a dropped poll response with exactly the same secret and no duplicate start 5003ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization transport > cancels before another poll and never returns a partial credential 5002ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization transport > rejects redirects and malformed approvals without returning secrets 5002ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   × CLI device authorization transport > revokes only the current bearer credential and keeps failures explicit 5002ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/server/test/feishu.test.ts (11 tests | 9 failed) 90078ms
+   × Feishu integration delivery > AT-35 stores encrypted owner-only configuration without disclosing secrets and prevents arbitrary network destinations 10014ms
+     → Hook timed out in 10000ms.
+If this is a long-running hook, pass a timeout value as the last argument or configure it globally with "hookTimeout".
+     → Cannot read properties of undefined (reading 'close')
+   × Feishu integration delivery > AT-35 queues transactionally, signs webhook cards and deduplicates a mention across recipients 10004ms
+     → Hook timed out in 10000ms.
+If this is a long-running hook, pass a timeout value as the last argument or configure it globally with "hookTimeout".
+     → Cannot read properties of undefined (reading 'close')
+   × Feishu integration delivery > AT-35 cancels pending events when their configuration changes or source is no longer actionable 10001ms
+     → Hook timed out in 10000ms.
+If this is a long-running hook, pass a timeout value as the last argument or configure it globally with "hookTimeout".
+     → Cannot read properties of undefined (reading 'close')
+   × Feishu integration delivery > AT-35 maps private recipients by current email, caches identities for a day and rechecks membership before delivery 10005ms
+     → Hook timed out in 10000ms.
+If this is a long-running hook, pass a timeout value as the last argument or configure it globally with "hookTimeout".
+     → Cannot read properties of undefined (reading 'close')
+   × Feishu integration delivery > AT-35 treats HTTP 200 business errors as failures and persists bounded retries without upstream secret text 10002ms
+     → Hook timed out in 10000ms.
+If this is a long-running hook, pass a timeout value as the last argument or configure it globally with "hookTimeout".
+     → Cannot read properties of undefined (reading 'close')
+   × Feishu integration delivery > AT-35 does not send tampered ciphertext and sends test messages only through the explicit owner endpoint 10002ms
+     → Hook timed out in 10000ms.
+If this is a long-running hook, pass a timeout value as the last argument or configure it globally with "hookTimeout".
+     → Cannot read properties of undefined (reading 'close')
+   × Feishu integration delivery > AT-35 stops a private delivery when configuration or recipient changes while obtaining the token 10002ms
+     → Hook timed out in 10000ms.
+If this is a long-running hook, pass a timeout value as the last argument or configure it globally with "hookTimeout".
+     → Cannot read properties of undefined (reading 'close')
+   × Feishu integration delivery > AT-35 recovers an expired lease without letting the previous worker send or overwrite the new result 10002ms
+     → Hook timed out in 10000ms.
+If this is a long-running hook, pass a timeout value as the last argument or configure it globally with "hookTimeout".
+     → Cannot read properties of undefined (reading 'close')
+   × Feishu integration delivery > AT-35 queues AI requests for the group even without private notification recipients and deduplicates later notifications 10001ms
+     → Hook timed out in 10000ms.
+If this is a long-running hook, pass a timeout value as the last argument or configure it globally with "hookTimeout".
+     → Cannot read properties of undefined (reading 'close')
+   ✓ AT-35 uses the current Feishu token endpoint, disables redirects and rejects oversized responses 31ms
+   ✓ AT-35 fails closed for ambiguous contact lookup and selects the Lark API host 12ms
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/web/src/E4-computed-polish.test.ts [ packages/web/src/E4-computed-polish.test.ts ]
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-4wf48e --remote-debugging-pipe --no-startup-window
+<launched> pid=45169
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-4wf48e --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=45169[22m
+[2m  - [pid=45169] <gracefully close start>[22m
+[2m  - [pid=45169] <kill>[22m
+[2m  - [pid=45169] <will force kill>[22m
+[2m  - [pid=45169] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=45169] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=45169] starting temporary directories cleanup[22m
+[2m  - [pid=45169] finished temporary directories cleanup[22m
+[2m  - [pid=45169] <gracefully close end>[22m
+
+ ❯ packages/web/src/E4-computed-polish.test.ts:13:28
+     11| let browser: Browser;
+     12| beforeAll(async () => {
+     13|   browser = await chromium.launch({
+       |                            ^
+     14|     channel: existsSync(chromium.executablePath()) ? 'chromium' : 'chr…
+     15|     headless: true,
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/76]⎯
+
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 66 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  packages/cli/src/cancellation-integration.test.ts > CLI cancellation with the HCD API > recovers a lost response and truthfully settles a pending submission
+ FAIL  packages/cli/src/cancellation-integration.test.ts > CLI cancellation with the HCD API > recovers a lost response and truthfully settles a published submission
+ FAIL  packages/cli/src/mcp-relay.test.ts > mdoc SDK MCP relay > AT-30 A2 initializes MCP directly with a device-authorized base32 PAT
+ FAIL  packages/cli/src/mcp-relay.test.ts > mdoc SDK MCP relay > AT-30 A2 relays an SDK tool call end to end using a device-authorized PAT
+ FAIL  packages/cli/src/mcp-relay.test.ts > mdoc SDK MCP relay > AT-30 matches real SDK HTTP reads, tool errors and resources through the relay
+ FAIL  packages/cli/src/mcp-relay.test.ts > mdoc SDK MCP relay > AT-30 executes HTML reads, comment replies and own-submission withdrawal through the SDK
+ FAIL  packages/cli/src/mcp-relay.test.ts > mdoc SDK MCP relay > AT-30 runs AI task claims, linked submissions, completion, failure and read-only previews through the SDK relay
+ FAIL  packages/cli/src/mcp-relay.test.ts > mdoc SDK MCP relay > AT-30 forwards resolve suggestions with their claim and preserves the human adoption boundary
+ FAIL  packages/cli/src/mcp-relay.test.ts > mdoc SDK MCP relay > AT-30 submits strict operations and module HTML with stable receipts through the SDK
+ FAIL  packages/cli/src/mcp-relay.test.ts > mdoc SDK MCP relay > AT-30 rechecks revoked credentials and keeps failures on one request from corrupting concurrent calls
+ FAIL  packages/cli/src/mcp-relay.test.ts > mdoc SDK MCP relay > AT-30 works as a real stdio child process with clean JSON-RPC stdout and closes on EOF
+ FAIL  packages/cli/src/mcp-relay.test.ts > mdoc SDK MCP relay > AT-30 fails initialization cleanly for revoked credentials
+ FAIL  packages/cli/src/native-submission-integration.test.ts > native CLI submissions against the HCD API > AT-28 preserves identity and the frozen certain request through a lost response and newer invalid files
+ FAIL  packages/cli/src/native-submission-integration.test.ts > native CLI submissions against the HCD API > AT-28 preserves identity and the frozen uncertain request through a lost response and newer invalid files
+ FAIL  packages/cli/src/native-submission-integration.test.ts > native CLI submissions against the HCD API > AT-28 reuses a frozen legacy JSON request before the newer parser rejects its unchanged source files
+ FAIL  packages/cli/src/native-submission-integration.test.ts > native CLI submissions against the HCD API > AT-28 keeps a previewable working copy but rejects uncertain module reorders before creating a receipt or submission
+ FAIL  packages/server/test/merge-acceptance.test.ts > collaborative merge acceptance through real HTTP > AT-01 publishes both authors’ changes to different paragraphs without changing the original version
+ FAIL  packages/server/test/merge-acceptance.test.ts > collaborative merge acceptance through real HTTP > AT-02 / TM-3 marks separate edits in one paragraph as a same-field merge and publishes their combined text
+ FAIL  packages/server/test/merge-acceptance.test.ts > collaborative merge acceptance through real HTTP > AT-03 / TM-2 refuses an unresolved overlap and publishes the correct keep_current decision
+ FAIL  packages/server/test/merge-acceptance.test.ts > collaborative merge acceptance through real HTTP > AT-03 / TM-2 refuses an unresolved overlap and publishes the correct take_incoming decision
+ FAIL  packages/server/test/merge-acceptance.test.ts > collaborative merge acceptance through real HTTP > AT-03 / TM-2 refuses an unresolved overlap and publishes the correct manual decision
+ FAIL  packages/server/test/merge-acceptance.test.ts > collaborative merge acceptance through real HTTP > AT-07 restores into a new version, preserves history and pending work, and reevaluates that work against the restored head
+Error: listen EPERM: operation not permitted 127.0.0.1
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/76]⎯
+
+ FAIL  packages/cli/src/device-auth-integration.test.ts > CLI device authorization over the real HTTP API > recovers a lost approved poll, saves one scoped credential privately and revokes it through logout
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-auth-integration.test.ts:102:3
+    100| 
+    101| describe('CLI device authorization over the real HTTP API', () => {
+    102|   it('recovers a lost approved poll, saves one scoped credential priva…
+       |   ^
+    103|     const f = await fixture(); const flow = authorize(f, { loseFirstPo…
+    104|     await main(['login', f.origin, '--no-open']);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/76]⎯
+
+ FAIL  packages/cli/src/device-auth-integration.test.ts > CLI device authorization over the real HTTP API > keeps the existing credential byte-for-byte when the device request is denied
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-auth-integration.test.ts:123:3
+    121|   });
+    122| 
+    123|   it('keeps the existing credential byte-for-byte when the device requ…
+       |   ^
+    124|     const f = await fixture(); const old = await f.issueManualToken('E…
+    125|     await main(['login', f.origin, '--token', old]); const before = aw…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/76]⎯
+
+ FAIL  packages/cli/src/device-auth-integration.test.ts > CLI device authorization over the real HTTP API > exits an expired device request without issuing or writing a credential
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-auth-integration.test.ts:133:3
+    131|   });
+    132| 
+    133|   it('exits an expired device request without issuing or writing a cre…
+       |   ^
+    134|     const f = await fixture(); const flow = authorize(f, { outcome: 'e…
+    135|     await expect(main(['login', f.origin, '--no-open'])).rejects.toThr…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/76]⎯
+
+ FAIL  packages/cli/src/device-auth-integration.test.ts > CLI device authorization over the real HTTP API > retains failed revocations and protects a replacement login while an older logout is waiting
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-auth-integration.test.ts:142:3
+    140|   });
+    141| 
+    142|   it('retains failed revocations and protects a replacement login whil…
+       |   ^
+    143|     const f = await fixture(); const flow = authorize(f); await main([…
+    144|     const old = (await f.read()).servers[0]!; const before = await rea…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/76]⎯
+
+ FAIL  packages/cli/src/device-auth-integration.test.ts > CLI device authorization over the real HTTP API > A2 rejects a malformed explicit PAT before contacting the account endpoint
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-auth-integration.test.ts:167:3
+    165|   });
+    166| 
+    167|   it('A2 rejects a malformed explicit PAT before contacting the accoun…
+       |   ^
+    168|     const f = await fixture();
+    169|     const fetch = vi.spyOn(globalThis, 'fetch');
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/76]⎯
+
+ FAIL  packages/cli/src/device-auth-integration.test.ts > CLI device authorization over the real HTTP API > does not expose credentials or terminal controls from a malicious account-validation error
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-auth-integration.test.ts:175:3
+    173|   });
+    174| 
+    175|   it('does not expose credentials or terminal controls from a maliciou…
+       |   ^
+    176|     const f = await fixture(); f.controls.echoCredentialError = true;
+    177|     const token = `hcd_pat_${'fixture'.repeat(4)}abcd`; 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/76]⎯
+
+ FAIL  packages/cli/src/device-login.test.ts > CLI device authorization transport > A2 rejects a device response whose PAT is not exactly 32 lowercase base32 characters
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-login.test.ts:14:3
+     12| const start = (origin: string) => ({ code, pollToken, verifyUrl: `${or…
+     13| describe('CLI device authorization transport', () => {
+     14|   it('A2 rejects a device response whose PAT is not exactly 32 lowerca…
+       |   ^
+     15|     const f = await fixture((request, response, _body, origin) => resp…
+     16|     try { await expect(loginWithDevice({ server: f.origin, hostname: '…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/76]⎯
+
+ FAIL  packages/cli/src/device-login.test.ts > CLI device authorization transport > pins the server, displays only the public code, honors poll backoff and returns the approved credential
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-login.test.ts:19:3
+     17|     finally { await f.close(); }
+     18|   });
+     19|   it('pins the server, displays only the public code, honors poll back…
+       |   ^
+     20|     const waits: number[] = []; let polls = 0; let displayed: unknown;
+     21|     const f = await fixture((request, response, body, origin) => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/76]⎯
+
+ FAIL  packages/cli/src/device-login.test.ts > CLI device authorization transport > does not produce credentials after denied consent
+ FAIL  packages/cli/src/device-login.test.ts > CLI device authorization transport > does not produce credentials after expired consent
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-login.test.ts:34:41
+     32|     } finally { await f.close(); }
+     33|   });
+     34|   it.each(['denied', 'expired'] as const)('does not produce credential…
+       |                                         ^
+     35|     const f = await fixture((request, response, _body, origin) => resp…
+     36|     try { await expect(loginWithDevice({ server: f.origin, hostname: '…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/76]⎯
+
+ FAIL  packages/cli/src/device-login.test.ts > CLI device authorization transport > rejects foreign confirmation destinations before invoking the browser callback or polling
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-login.test.ts:39:3
+     37|     finally { await f.close(); }
+     38|   });
+     39|   it('rejects foreign confirmation destinations before invoking the br…
+       |   ^
+     40|     let called = false; const f = await fixture((_request, response, _…
+     41|     try { await expect(loginWithDevice({ server: f.origin, hostname: '…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/76]⎯
+
+ FAIL  packages/cli/src/device-login.test.ts > CLI device authorization transport > retries a dropped poll response with exactly the same secret and no duplicate start
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-login.test.ts:44:3
+     42|     finally { await f.close(); }
+     43|   });
+     44|   it('retries a dropped poll response with exactly the same secret and…
+       |   ^
+     45|     let polls = 0; let starts = 0; const f = await fixture((request, r…
+     46|       if (request.url?.endsWith('/start')) { starts++; response.end(JS…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/76]⎯
+
+ FAIL  packages/cli/src/device-login.test.ts > CLI device authorization transport > cancels before another poll and never returns a partial credential
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-login.test.ts:52:3
+     50|     finally { await f.close(); }
+     51|   });
+     52|   it('cancels before another poll and never returns a partial credenti…
+       |   ^
+     53|     const controller = new AbortController(); let polls = 0;
+     54|     const f = await fixture((request, response, _body, origin) => { if…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/76]⎯
+
+ FAIL  packages/cli/src/device-login.test.ts > CLI device authorization transport > rejects redirects and malformed approvals without returning secrets
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-login.test.ts:58:3
+     56|     finally { await f.close(); }
+     57|   });
+     58|   it('rejects redirects and malformed approvals without returning secr…
+       |   ^
+     59|     let mode = 'redirect'; const f = await fixture((request, response,…
+     60|       if (mode === 'redirect') { response.writeHead(302, { location: '…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/76]⎯
+
+ FAIL  packages/cli/src/device-login.test.ts > CLI device authorization transport > revokes only the current bearer credential and keeps failures explicit
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/device-login.test.ts:68:3
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[16/76]⎯
+
+ FAIL  packages/cli/src/index.test.ts > AT-36 polls export jobs, preserves binary downloads and never forwards the PAT to the render URL
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/index.test.ts:67:1
+     65| });
+     66| 
+     67| it('AT-36 polls export jobs, preserves binary downloads and never forw…
+       | ^
+     68|    'URL', async () => {
+     69|   const root = await mkdtemp(join(tmpdir(), 'hcd-cli-export-')); roots…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[17/76]⎯
+
+ FAIL  packages/cli/src/index.test.ts > AT-28 pull refuses unrelated files or local reorders, refreshes removed modules, and honors force
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/index.test.ts:88:1
+     86| 
+     87| 
+     88| it('AT-28 pull refuses unrelated files or local reorders, refreshes re…
+       | ^
+     89|    'force', async () => {
+     90|   const root = await mkdtemp(join(tmpdir(), 'hcd-cli-pull-')); roots.p…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[18/76]⎯
+
+ FAIL  packages/cli/src/local-preview.test.ts > local working-copy preview > downloads assets once per identity, sanitizes raw content, embeds assets and never leaks the token to signed URLs
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/local-preview.test.ts:31:3
+     29|   });
+     30| 
+     31|   it('downloads assets once per identity, sanitizes raw content, embed…
+       |   ^
+     32|     const root = await directory(); let origin = ''; let imageReads = …
+     33|     const server = createServer((request, response) => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[19/76]⎯
+
+ FAIL  packages/cli/src/local-preview.test.ts > local working-copy preview > rejects mime image responses and preserves the prior preview
+ FAIL  packages/cli/src/local-preview.test.ts > local working-copy preview > rejects oversized image responses and preserves the prior preview
+ FAIL  packages/cli/src/local-preview.test.ts > local working-copy preview > rejects redirect image responses and preserves the prior preview
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/local-preview.test.ts:59:53
+     57|   });
+     58| 
+     59|   it.each(['mime', 'oversized', 'redirect'] as const)('rejects %s imag…
+       |                                                     ^
+     60|     const root = await directory(); const original = await generateLoc…
+     61|     const server = createServer((_request, response) => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[20/76]⎯
+
+ FAIL  packages/cli/src/mcp-relay.test.ts > AT-30 pins every HTTP method and rejects redirect responses without leaking credentials
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/cli/src/mcp-relay.test.ts:185:1
+    183| });
+    184| 
+    185| it('AT-30 pins every HTTP method and rejects redirect responses withou…
+       | ^
+    186|   let destinationRequests = 0; const destination = createServer((_requ…
+    187|   await new Promise<void>((resolve) => destination.listen(0, '127.0.0.…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[21/76]⎯
+
+ FAIL  packages/server/test/concurrent-publication.test.ts > SQLite publication across independent HTTP workers > AT-12: competing open previews publish once and return PREVIEW_STALE to the loser
+ FAIL  packages/server/test/concurrent-publication.test.ts > SQLite publication across independent HTTP workers > AT-05 returns the same committed version to simultaneous requests for one preview
+ FAIL  packages/server/test/concurrent-publication.test.ts > SQLite publication across independent HTTP workers > AT-04: an open preview with an older head returns exactly PREVIEW_STALE without writes
+ FAIL  packages/server/test/concurrent-publication.test.ts > SQLite publication across independent HTTP workers > AT-11 rechecks owner permission when membership changes before the publication lock
+ FAIL  packages/server/test/concurrent-publication.test.ts > SQLite publication across independent HTTP workers > AT-11 rejects a session revoked after initial authorization without publication writes
+ FAIL  packages/server/test/concurrent-publication.test.ts > SQLite publication across independent HTTP workers > AT-11 rejects 'disabled account' changed after initial authorization without publication writes
+ FAIL  packages/server/test/concurrent-publication.test.ts > SQLite publication across independent HTTP workers > AT-11 rejects 'removed administrator status' changed after initial authorization without publication writes
+Error: Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Worker.received packages/server/test/concurrent-publication.test.ts:85:44
+     83|     const timer = setTimeout(() => finish(new Error(`Worker did not re…
+     84|     const received = (value: WorkerMessage) => {
+     85|       if (value.type === 'failure') finish(new Error(value.message));
+       |                                            ^
+     86|       else if (value.type === type) finish(undefined, value);
+     87|     };
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22/76]⎯
+
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 stores encrypted owner-only configuration without disclosing secrets and prevents arbitrary network destinations
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 queues transactionally, signs webhook cards and deduplicates a mention across recipients
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 cancels pending events when their configuration changes or source is no longer actionable
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 maps private recipients by current email, caches identities for a day and rechecks membership before delivery
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 treats HTTP 200 business errors as failures and persists bounded retries without upstream secret text
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 does not send tampered ciphertext and sends test messages only through the explicit owner endpoint
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 stops a private delivery when configuration or recipient changes while obtaining the token
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 recovers an expired lease without letting the previous worker send or overwrite the new result
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 queues AI requests for the group even without private notification recipients and deduplicates later notifications
+Error: Hook timed out in 10000ms.
+If this is a long-running hook, pass a timeout value as the last argument or configure it globally with "hookTimeout".
+ ❯ packages/server/test/feishu.test.ts:15:3
+     13|   let db: HcdDatabase; let app: FastifyInstance; let owner: string; le…
+     14|   let onRequest: ((call: RequestLog) => void | Promise<void>) | undefi…
+     15|   beforeEach(async () => {
+       |   ^
+     16|     db = openDatabase(':memory:'); calls = []; responseCode = 0; clock…
+     17|     server = createServer(async (request, response) => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[23/76]⎯
+
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 stores encrypted owner-only configuration without disclosing secrets and prevents arbitrary network destinations
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 queues transactionally, signs webhook cards and deduplicates a mention across recipients
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 cancels pending events when their configuration changes or source is no longer actionable
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 maps private recipients by current email, caches identities for a day and rechecks membership before delivery
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 treats HTTP 200 business errors as failures and persists bounded retries without upstream secret text
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 does not send tampered ciphertext and sends test messages only through the explicit owner endpoint
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 stops a private delivery when configuration or recipient changes while obtaining the token
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 recovers an expired lease without letting the previous worker send or overwrite the new result
+ FAIL  packages/server/test/feishu.test.ts > Feishu integration delivery > AT-35 queues AI requests for the group even without private notification recipients and deduplicates later notifications
+TypeError: Cannot read properties of undefined (reading 'close')
+ ❯ packages/server/test/feishu.test.ts:31:37
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[24/76]⎯
+
+ FAIL  packages/server/test/smtp.test.ts > SMTP transport > sends a notification only to the configured local SMTP fixture
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ packages/server/test/smtp.test.ts:8:3
+      6| 
+      7| describe('SMTP transport', () => {
+      8|   it('sends a notification only to the configured local SMTP fixture',…
+       |   ^
+      9|     const commands: string[] = []; let message = ''; const sockets = n…
+     10|     const server = createServer((socket) => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[25/76]⎯
+
+ FAIL  packages/web/src/App-sidebar-layout.test.tsx > C8 shows compact sidebar navigation as fully visible named icons at 805px without clipped label text
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-7lYHwT --remote-debugging-pipe --no-startup-window
+<launched> pid=45368
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-7lYHwT --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=45368[22m
+[2m  - [pid=45368] <gracefully close start>[22m
+[2m  - [pid=45368] <kill>[22m
+[2m  - [pid=45368] <will force kill>[22m
+[2m  - [pid=45368] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=45368] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=45368] starting temporary directories cleanup[22m
+[2m  - [pid=45368] finished temporary directories cleanup[22m
+[2m  - [pid=45368] <gracefully close end>[22m
+
+ ❯ packages/web/src/App-sidebar-layout.test.tsx:52:34
+     50| it('C8 shows compact sidebar navigation as fully visible named icons a…
+     51|   const markup = await appMarkup();
+     52|   const browser = await chromium.launch({
+       |                                  ^
+     53|     headless: true,
+     54|     channel: existsSync(chromium.executablePath()) ? 'chromium' : 'chr…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[26/76]⎯
+
+ FAIL  packages/web/src/E4-notification-layout.test.ts > E4 keeps notification header and pointer controls inside the viewport under the blurred topbar
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-GliEwD --remote-debugging-pipe --no-startup-window
+<launched> pid=45230
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-GliEwD --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=45230[22m
+[2m  - [pid=45230] <gracefully close start>[22m
+[2m  - [pid=45230] <kill>[22m
+[2m  - [pid=45230] <will force kill>[22m
+[2m  - [pid=45230] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=45230] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=45230] starting temporary directories cleanup[22m
+[2m  - [pid=45230] finished temporary directories cleanup[22m
+[2m  - [pid=45230] <gracefully close end>[22m
+
+ ❯ packages/web/src/E4-notification-layout.test.ts:13:34
+     11| 
+     12| it('E4 keeps notification header and pointer controls inside the viewp…
+     13|   const browser = await chromium.launch({
+       |                                  ^
+     14|     channel: existsSync(chromium.executablePath()) ? 'chromium' : 'chr…
+     15|     headless: true,
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[27/76]⎯
+
+ FAIL  packages/web/src/E4-notification-layout.test.ts > E4 keeps the member menu inside a right-aligned discussion composer
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-9RDTOK --remote-debugging-pipe --no-startup-window
+<launched> pid=45233
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-9RDTOK --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=45233[22m
+[2m  - [pid=45233] <gracefully close start>[22m
+[2m  - [pid=45233] <kill>[22m
+[2m  - [pid=45233] <will force kill>[22m
+[2m  - [pid=45233] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=45233] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=45233] starting temporary directories cleanup[22m
+[2m  - [pid=45233] finished temporary directories cleanup[22m
+[2m  - [pid=45233] <gracefully close end>[22m
+
+ ❯ packages/web/src/E4-notification-layout.test.ts:40:34
+     38| 
+     39| it('E4 keeps the member menu inside a right-aligned discussion compose…
+     40|   const browser = await chromium.launch({
+       |                                  ^
+     41|     channel: existsSync(chromium.executablePath()) ? 'chromium' : 'chr…
+     42|     headless: true,
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[28/76]⎯
+
+ FAIL  packages/web/src/reading-layout.test.ts > C8 preserves at least 680px of reading text with desktop discussions open
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-V17t9Q --remote-debugging-pipe --no-startup-window
+<launched> pid=45251
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-V17t9Q --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=45251[22m
+[2m  - [pid=45251] <gracefully close start>[22m
+[2m  - [pid=45251] <kill>[22m
+[2m  - [pid=45251] <will force kill>[22m
+[2m  - [pid=45251] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=45251] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=45251] starting temporary directories cleanup[22m
+[2m  - [pid=45251] finished temporary directories cleanup[22m
+[2m  - [pid=45251] <gracefully close end>[22m
+
+ ❯ packages/web/src/reading-layout.test.ts:13:34
+     11| 
+     12| it('C8 preserves at least 680px of reading text with desktop discussio…
+     13|   const browser = await chromium.launch({
+       |                                  ^
+     14|     headless: true,
+     15|     channel: existsSync(chromium.executablePath()) ? 'chromium' : 'chr…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[29/76]⎯
+
+ FAIL  packages/web/src/reading-layout.test.ts > C7 highlights guest quote text without adding a block outline in the browser
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-y1RAbg --remote-debugging-pipe --no-startup-window
+<launched> pid=45253
+Call log:
+[2m  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/nv/z4yxy9wx61bdb_l54vmygn2m0000gn/T/playwright_chromiumdev_profile-y1RAbg --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=45253[22m
+[2m  - [pid=45253] <gracefully close start>[22m
+[2m  - [pid=45253] <kill>[22m
+[2m  - [pid=45253] <will force kill>[22m
+[2m  - [pid=45253] exception while trying to kill process: Error: kill EPERM[22m
+[2m  - [pid=45253] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=45253] starting temporary directories cleanup[22m
+[2m  - [pid=45253] finished temporary directories cleanup[22m
+[2m  - [pid=45253] <gracefully close end>[22m
+
+ ❯ packages/web/src/reading-layout.test.ts:41:34
+     39| 
+     40| it('C7 highlights guest quote text without adding a block outline in t…
+     41|   const browser = await chromium.launch({
+       |                                  ^
+     42|     headless: true,
+     43|     channel: existsSync(chromium.executablePath()) ? 'chromium' : 'chr…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[30/76]⎯
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 23 unhandled errors during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/server/test/feishu.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "AT-35 stores encrypted owner-only configuration without disclosing secrets and prevents arbitrary network destinations". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/mcp-relay.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "AT-30 pins every HTTP method and rejects redirect responses without leaking credentials". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/server/test/feishu.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "AT-35 queues transactionally, signs webhook cards and deduplicates a mention across recipients". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/server/test/feishu.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "AT-35 cancels pending events when their configuration changes or source is no longer actionable". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/device-login.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "A2 rejects a device response whose PAT is not exactly 32 lowercase base32 characters". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/local-preview.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "rejects mime image responses and preserves the prior preview". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/device-login.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "pins the server, displays only the public code, honors poll backoff and returns the approved credential". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/server/test/feishu.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "AT-35 maps private recipients by current email, caches identities for a day and rechecks membership before delivery". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/local-preview.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "rejects oversized image responses and preserves the prior preview". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/server/test/smtp.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "sends a notification only to the configured local SMTP fixture". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/device-login.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "does not produce credentials after denied consent". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/local-preview.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "rejects redirect image responses and preserves the prior preview". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/device-login.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "does not produce credentials after expired consent". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/server/test/feishu.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "AT-35 treats HTTP 200 business errors as failures and persists bounded retries without upstream secret text". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/device-login.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "rejects foreign confirmation destinations before invoking the browser callback or polling". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/device-login.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "retries a dropped poll response with exactly the same secret and no duplicate start". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/server/test/feishu.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "AT-35 does not send tampered ciphertext and sends test messages only through the explicit owner endpoint". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/device-login.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "cancels before another poll and never returns a partial credential". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/device-login.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "rejects redirects and malformed approvals without returning secrets". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/server/test/feishu.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "AT-35 stops a private delivery when configuration or recipient changes while obtaining the token". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/cli/src/device-login.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "revokes only the current bearer credential and keeps failures explicit". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/server/test/feishu.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "AT-35 recovers an expired lease without letting the previous worker send or overwrite the new result". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:2306:21
+ ❯ listenInCluster node:net:2437:12
+ ❯ node:net:2666:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:90:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "packages/server/test/feishu.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "AT-35 queues AI requests for the group even without private notification recipients and deduplicates later notifications". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+
+ Test Files  15 failed | 99 passed (114)
+      Tests  66 failed | 615 passed | 5 skipped (686)
+     Errors  23 errors
+   Start at  01:46:13
+   Duration  90.76s (transform 2.07s, setup 0ms, collect 19.64s, tests 388.82s, environment 7.60s, prepare 4.40s)
+
+[ELIFECYCLE] Test failed. See above for more details.
+[ELIFECYCLE] Command failed with exit code 1.
+
+Exit code: 1
+Ended UTC: 2026-10-24T17:47:44.110297+00:00

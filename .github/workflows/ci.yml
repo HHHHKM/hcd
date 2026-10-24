@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4 # version comes from "packageManager" in package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # Several tests drive a real browser (layout, sidebar, notification menus).
+      - run: pnpm exec playwright install --with-deps chromium
+      # lint (ESLint, unsafe-render scan, contrast) -> typecheck -> tests -> production build
+      - run: pnpm verify
+  # The screenshot baselines in outputs/visual-baseline are macOS Google Chrome renders, so
+  # `pnpm test:visual` is intentionally not part of CI. Run it locally on a Mac.

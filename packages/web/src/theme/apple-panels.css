@@ -1,0 +1,616 @@
+/*
+ * Apple-inspired visual layer — inspector panel, discussion, review, history.
+ * The discussion rail is a floating inspector card; its tabs are a segmented
+ * control and every thread is a soft filled card.
+ */
+
+/* ---------- Inspector (right rail) ---------- */
+html .right-rail {
+  padding: 0 var(--space-14) var(--space-14);
+  border-left: 0;
+  background: var(--paper);
+}
+
+@media (min-width: 1200px) {
+  html .right-rail.open {
+    top: calc(var(--topbar-height) + var(--document-toolbar-height) + var(--space-8));
+    height: calc(100dvh - var(--topbar-height) - var(--document-toolbar-height) - var(--space-24));
+    margin: var(--space-8) var(--space-16) 0 0;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-card);
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1199px) {
+  html .right-rail.open {
+    top: calc(var(--topbar-height) + var(--document-toolbar-height) + var(--space-8));
+    right: var(--space-12);
+    height: calc(100dvh - var(--topbar-height) - var(--document-toolbar-height) - var(--space-20));
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-float);
+  }
+}
+
+@media (max-width: 980px) {
+  html .right-rail {
+    border-radius: var(--radius-xl) 0 0 var(--radius-xl);
+    box-shadow: var(--shadow-float);
+  }
+
+  html .right-rail .right-tabs {
+    background: var(--paper);
+  }
+}
+
+html .right-tabs {
+  height: auto;
+  min-height: 0;
+  margin: var(--space-14) 0 var(--space-8);
+  padding: 0;
+  gap: 0;
+  align-items: center;
+  border-bottom: 0;
+  background: var(--transparent);
+}
+
+html .right-tabs button:not(.right-tab-more) {
+  flex: 1 1 0;
+  height: 30px;
+  padding: 0 var(--space-10);
+  border-radius: 0;
+  background: var(--fill);
+  color: var(--muted-ink);
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-medium);
+}
+
+html .right-tabs button:first-child {
+  border-radius: var(--radius-s) 0 0 var(--radius-s);
+}
+
+html .right-tabs button:nth-child(2) {
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+}
+
+/* The selected segment sits inside a 2px ring of the control's fill. */
+html .right-tabs button.active:not(.right-tab-more) {
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: var(--weight-semibold);
+  box-shadow:
+    inset 0 0 0 2px var(--fill),
+    var(--shadow-card);
+}
+
+html .right-tabs button.active:after {
+  display: none;
+}
+
+html .right-tabs button span {
+  margin-left: var(--space-4);
+  color: var(--faint-ink);
+  font-family: var(--font-body);
+  font-variant-numeric: tabular-nums;
+}
+
+html .right-tabs .right-tab-more {
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  margin-left: var(--space-6);
+  padding: 0;
+  border-radius: 50%;
+  color: var(--faint-ink);
+}
+
+html .right-tabs .right-tab-more:hover {
+  background: var(--fill);
+  color: var(--ink);
+}
+
+html .discussion-context {
+  margin: var(--space-6) 0 var(--space-8);
+  padding: var(--space-10) var(--space-12);
+  gap: var(--space-10);
+  border-bottom: 0;
+  border-radius: var(--radius-m);
+  background: var(--accent-soft);
+}
+
+html .context-line {
+  display: none;
+}
+
+html .discussion-context small {
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0;
+}
+
+html .discussion-context b {
+  margin-top: var(--space-2);
+  color: var(--ink);
+  font-size: var(--font-size-14);
+}
+
+html .discussion-filter {
+  margin: var(--space-4) 0 var(--space-8);
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-semibold);
+}
+
+html .discussion-filter select {
+  height: 28px;
+  padding: 0 var(--space-8);
+  border: 0;
+  border-radius: var(--radius-s);
+  background-color: var(--fill);
+  color: var(--ink);
+  font-size: var(--font-size-13);
+}
+
+html .comment-list {
+  display: grid;
+  align-content: start;
+  gap: var(--space-8);
+  padding-bottom: var(--space-4);
+}
+
+html .comment-card,
+html .app.dark .comment-card {
+  padding: var(--space-14);
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--surface-raised);
+}
+
+html .comment-quote {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-4) var(--space-8);
+  border-left: 0;
+  border-radius: var(--radius-xs);
+  background: var(--highlight);
+  color: var(--highlight-text);
+  font-size: var(--font-size-13);
+}
+
+html .comment-card > .text-link {
+  margin: 0 0 var(--space-8);
+  font-size: var(--font-size-12);
+}
+
+html .comment-head {
+  gap: var(--space-8);
+}
+
+html .comment-head .avatar {
+  width: 26px;
+  height: 26px;
+  font-size: var(--font-size-12);
+}
+
+html .comment-head b {
+  color: var(--ink);
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-semibold);
+}
+
+html .comment-head small {
+  margin-top: var(--space-1);
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+}
+
+html .comment-text {
+  margin: var(--space-8) 0 0;
+  color: var(--ink);
+  font-size: var(--font-size-14);
+  line-height: 1.6;
+}
+
+html .discussion-reply {
+  margin-top: var(--space-12);
+  padding-left: var(--space-12);
+  border-left: 2px solid var(--hairline);
+}
+
+html .discussion-actions {
+  gap: var(--space-16);
+  margin-top: var(--space-10);
+}
+
+html .discussion-actions .text-link {
+  margin: 0;
+}
+
+html .comment-secondary-actions .action-menu-trigger {
+  height: 26px;
+  padding: 0 var(--space-8);
+  background: var(--transparent);
+  color: var(--faint-ink);
+}
+
+html .comment-secondary-actions .action-menu-trigger:hover {
+  background: var(--fill);
+  color: var(--ink);
+}
+
+html .comment-delete-confirm {
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--danger-surface);
+}
+
+html .comment-mention {
+  border-radius: var(--radius-xs);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+html .anchor-status {
+  border-left: 0;
+  border-radius: var(--radius-s);
+  background: var(--warning-surface);
+  color: var(--ink);
+}
+
+html .comment-composer,
+html .app.dark .comment-composer {
+  margin: var(--space-10) 0 0;
+  padding: var(--space-10) var(--space-12) var(--space-8);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-m);
+  background: var(--paper);
+  transition:
+    border-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+html .comment-composer:focus-within {
+  border-color: var(--focus-ring);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus-ring) 25%, transparent);
+}
+
+html .composer-avatar {
+  display: none;
+}
+
+html .comment-composer textarea {
+  min-height: 48px;
+  font-size: var(--font-size-14);
+}
+
+html .composer-actions {
+  padding-top: var(--space-4);
+  border-top: 0;
+}
+
+html .composer-actions .text-link,
+html .mention-button {
+  margin: 0;
+  color: var(--faint-ink);
+  font-family: var(--font-body);
+  font-size: var(--font-size-13);
+}
+
+html .send-button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent-fill);
+  color: var(--on-accent);
+}
+
+html .send-button:disabled {
+  opacity: 0.35;
+}
+
+html .discussion-form textarea {
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-m);
+  font-size: var(--font-size-14);
+}
+
+html .team-card,
+html .app.dark .team-card {
+  margin-top: var(--space-12);
+  padding-top: var(--space-12);
+  border-top: 1px solid var(--hairline);
+  background: var(--transparent);
+}
+
+html .team-card-heading {
+  color: var(--faint-ink);
+  font-weight: var(--weight-semibold);
+}
+
+html .team-person {
+  color: var(--muted-ink);
+  font-size: var(--font-size-13);
+}
+
+html .activity-date {
+  color: var(--faint-ink);
+  font-family: var(--font-body);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+html .activity-icon {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+html .activity-row a {
+  color: var(--accent);
+}
+
+/* ---------- Notifications ---------- */
+html .popover-head {
+  border-bottom: 1px solid var(--hairline);
+  font-weight: var(--weight-semibold);
+}
+
+html .popover-head span {
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+html .notification-item {
+  border-bottom: 1px solid var(--hairline);
+}
+
+html .notification-icon {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* ---------- Review & publish ---------- */
+html .review-progress {
+  padding: var(--space-18) 0 var(--space-14);
+  border-bottom: 1px solid var(--hairline);
+  color: var(--faint-ink);
+  font-family: var(--font-body);
+  font-size: var(--font-size-12);
+  font-variant-numeric: tabular-nums;
+}
+
+html .review-progress i {
+  background: var(--hairline);
+}
+
+html .submission-row {
+  min-height: 64px;
+  gap: var(--space-12);
+  border-bottom: 1px solid var(--hairline);
+}
+
+html .submission-row input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent-fill);
+}
+
+html .submission-info b {
+  font-size: var(--font-size-14);
+}
+
+html .submission-info small,
+html .submission-author small {
+  color: var(--faint-ink);
+}
+
+html .submission-author {
+  color: var(--muted-ink);
+  font-size: var(--font-size-13);
+}
+
+html .summary-check {
+  background: var(--success-surface);
+  color: var(--success);
+}
+
+html .preview-summary b {
+  font-size: var(--font-size-14);
+}
+
+html .conflict-card,
+html .app.dark .conflict-card {
+  padding: var(--space-16);
+  border: 1px solid color-mix(in srgb, var(--warning) 35%, transparent);
+  border-radius: var(--radius-l);
+  background: var(--warning-surface);
+}
+
+html .conflict-card.resolved {
+  border-color: var(--hairline);
+  background: var(--surface-raised);
+}
+
+html .conflict-label {
+  color: var(--warning);
+  font-family: var(--font-body);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+html .conflict-label span {
+  border-radius: 50%;
+  background: var(--paper);
+}
+
+html .conflict-card p {
+  color: var(--ink);
+  font-size: var(--font-size-13);
+}
+
+html .diff-compare div {
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--paper);
+}
+
+html .diff-compare small {
+  color: var(--faint-ink);
+  font-family: var(--font-body);
+  font-weight: var(--weight-semibold);
+}
+
+html .diff-compare span {
+  color: var(--ink);
+  font-size: var(--font-size-13);
+}
+
+html .conflict-actions button {
+  height: 32px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-medium);
+}
+
+html .conflict-actions button:hover {
+  background: var(--fill-hover);
+  color: var(--ink);
+}
+
+html .conflict-actions button.selected {
+  background: var(--accent-fill);
+  color: var(--on-accent);
+}
+
+html .change-tabs {
+  gap: var(--space-2);
+  padding: var(--space-2);
+  width: fit-content;
+  max-width: 100%;
+  border-radius: var(--radius-s);
+  background: var(--fill);
+}
+
+html .change-tabs button {
+  padding: var(--space-6) var(--space-12);
+  border: 0;
+  border-radius: var(--radius-xs);
+  color: var(--muted-ink);
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-medium);
+}
+
+html .change-tabs button[aria-pressed='true'] {
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: var(--shadow-card);
+}
+
+html .change-card {
+  border: 0;
+  border-radius: var(--radius-l);
+  background: var(--surface-raised);
+}
+
+html .change-list ins,
+html .change-links ins {
+  border-radius: var(--space-2);
+  background: var(--success-surface);
+  text-decoration-color: color-mix(in srgb, var(--success) 50%, transparent);
+}
+
+html .change-list del,
+html .change-links del {
+  border-radius: var(--space-2);
+  background: var(--danger-surface);
+}
+
+html .change-notice {
+  border-left: 0;
+  border-radius: var(--radius-s);
+  background: var(--warning-surface);
+}
+
+html .change-values > div {
+  border-radius: var(--radius-m);
+  background: var(--paper);
+}
+
+html .proposal-review,
+html .change-node {
+  border-top: 1px solid var(--hairline);
+}
+
+/* ---------- Version history ---------- */
+html .version-history-page,
+html .history-page {
+  width: min(100% - var(--space-32), 1040px);
+  margin: var(--space-8) auto var(--space-24);
+  padding: var(--space-40) var(--space-44);
+  border-radius: var(--radius-xl);
+  background: var(--paper);
+  box-shadow: var(--shadow-card);
+}
+
+html .version-history-heading h1,
+html .history-heading h1 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-32);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-display);
+}
+
+html .version-comparison h2,
+html .published-versions h2 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-20);
+  font-weight: var(--weight-semibold);
+}
+
+html .version-selectors select,
+html .dark .version-selectors select {
+  min-height: 36px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  background: var(--paper);
+}
+
+html .version-pair-metadata > div,
+html .dark .version-pair-metadata > div {
+  border-radius: var(--radius-m);
+  background: var(--surface-raised);
+}
+
+html .history-row {
+  border-bottom: 1px solid var(--hairline);
+}
+
+html .history-marker.current {
+  background: var(--success-surface);
+  color: var(--success);
+}
+
+html .version-snapshot-banner,
+html .dark .version-snapshot-banner {
+  border-left: 0;
+  border-radius: var(--radius-m);
+  background: var(--warning-surface);
+  color: var(--ink);
+}
+
+@media (max-width: 720px) {
+  html .version-history-page,
+  html .history-page {
+    width: 100%;
+    margin: 0;
+    padding: var(--space-24) var(--space-18);
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

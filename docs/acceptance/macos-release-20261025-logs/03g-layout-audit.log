@@ -1,0 +1,13 @@
+Command: pnpm exec tsx ../../../work/check-release-layout.ts
+Started UTC: 2026-10-24T17:59:31.621128+00:00
+locator.evaluate: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('.ai-tasks-modal')[22m
+
+    at <anonymous> (/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/check-release-layout.ts:25:52) {
+  log: [ "  - waiting for locator('.ai-tasks-modal')" ],
+  name: 'TimeoutError'
+}
+
+Exit code: 1
+Ended UTC: 2026-10-24T18:00:04.976582+00:00

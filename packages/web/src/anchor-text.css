@@ -1,0 +1,34 @@
+.hcd-anchor-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.kpi .hcd-anchor-text {
+  display: inline;
+  color: inherit;
+  font: inherit;
+  white-space: pre-wrap;
+  overflow: visible;
+  text-overflow: clip;
+}
+.timeline-side .hcd-anchor-text {
+  display: inline;
+  transform: none;
+}
+.hcd-anchor-highlight {
+  color: inherit;
+  background: var(--highlight);
+  border-radius: var(--space-2);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.dark .hcd-anchor-highlight {
+  background: var(--highlight);
+  color: var(--faint-ink);
+}
+@media (forced-colors: active) {
+  .hcd-anchor-highlight {
+    background: Highlight;
+    color: HighlightText;
+    forced-color-adjust: none;
+  }
+}

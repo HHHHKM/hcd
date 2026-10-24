@@ -1,0 +1,629 @@
+/*
+ * Apple-inspired visual layer — application chrome.
+ * Loaded last from styles.css. Selectors are prefixed with `html` so the layer
+ * wins over the legacy workspace rules and lazily loaded component CSS without
+ * depending on bundle order. Layout and behaviour stay in the original files;
+ * this layer only changes appearance. Colours and type come from tokens.css.
+ */
+
+html body {
+  background: var(--chrome);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html .app {
+  background: var(--chrome);
+  --document-toolbar-height: 56px;
+}
+
+html .app ::selection {
+  background: color-mix(in srgb, var(--accent-fill) 22%, transparent);
+}
+
+html .app :is(button, input, select, textarea, a, summary):focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--focus-ring) 45%, transparent);
+  outline-offset: 1px;
+}
+
+/* Inside the chrome the legacy "dark" tokens describe light, translucent surfaces. */
+html .topbar,
+html .left-sidebar {
+  --dark: var(--chrome);
+  --dark-2: var(--fill);
+  --dark-line: var(--hairline);
+  --on-dark: var(--ink);
+  --muted-on-dark: var(--faint-ink);
+}
+
+/* ---------- Top bar ---------- */
+html .topbar {
+  height: var(--topbar-height);
+  padding: 0 var(--space-16);
+  gap: var(--space-20);
+  background: var(--chrome-translucent);
+  -webkit-backdrop-filter: var(--blur-chrome);
+  backdrop-filter: var(--blur-chrome);
+  border-bottom: 1px solid var(--hairline);
+  color: var(--ink);
+}
+
+html .brand {
+  min-width: 156px;
+  gap: var(--space-8);
+  color: var(--ink);
+  font-size: var(--font-size-17);
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.03em;
+}
+
+html .brand-mark {
+  width: 20px;
+  height: 20px;
+  gap: var(--space-2);
+}
+
+html .brand-mark i {
+  width: 4px;
+  border-radius: var(--space-2);
+  background: var(--ink);
+  transform: none;
+}
+
+html .brand-mark i:nth-child(1) {
+  height: 9px;
+  opacity: 0.35;
+}
+
+html .brand-mark i:nth-child(2) {
+  height: 14px;
+  opacity: 0.6;
+}
+
+html .brand-mark i:nth-child(3) {
+  height: 19px;
+  opacity: 1;
+}
+
+html .brand-period {
+  color: var(--accent-fill);
+}
+
+html .topbar-context {
+  gap: var(--space-6);
+  color: var(--faint-ink);
+  font-size: var(--font-size-13);
+}
+
+html .topbar-context strong {
+  color: var(--ink);
+  font-weight: var(--weight-medium);
+}
+
+html .search-trigger,
+html .search-input {
+  width: min(100%, 360px);
+  height: 32px;
+  padding: 0 var(--space-10);
+  gap: var(--space-6);
+  border: 0;
+  border-radius: var(--radius-s);
+  background: var(--fill);
+  color: var(--ink);
+  font-size: var(--font-size-13);
+}
+
+html .search-input input {
+  font-size: var(--font-size-13);
+}
+
+html .search-input input::placeholder {
+  color: var(--faint-ink);
+}
+
+html .search-input:focus-within {
+  background: var(--paper);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus-ring) 35%, transparent);
+}
+
+html .topbar-actions {
+  gap: var(--space-6);
+}
+
+html .icon-button {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-s);
+  color: var(--muted-ink);
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+html .topbar .icon-button {
+  color: var(--muted-ink);
+}
+
+html .icon-button:hover {
+  background: var(--fill);
+  color: var(--ink);
+}
+
+html .notification-count {
+  background: var(--badge-fill);
+  color: var(--on-badge);
+  border: 2px solid var(--chrome);
+}
+
+html .language-button {
+  height: 32px;
+  padding: 0 var(--space-8);
+  border-radius: var(--radius-s);
+  color: var(--muted-ink);
+  font-size: var(--font-size-13);
+}
+
+html .language-button:hover {
+  background: var(--fill);
+}
+
+html .avatar {
+  border: 0;
+  font-weight: var(--weight-semibold);
+}
+
+html .profile {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  box-shadow: 0 0 0 1px var(--hairline);
+}
+
+html .avatar-blue {
+  background: var(--avatar-blue);
+}
+
+html .avatar-gold {
+  background: var(--avatar-gold);
+}
+
+/* ---------- Sidebar ---------- */
+html .app-frame {
+  min-height: calc(100vh - var(--topbar-height));
+}
+
+html .left-sidebar {
+  padding: var(--space-14) var(--space-10) var(--space-12);
+  border-top: 0;
+  border-right: 1px solid var(--hairline);
+  background: var(--chrome);
+}
+
+html .side-workspace {
+  gap: var(--space-10);
+  min-width: 0;
+  padding: var(--space-4) var(--space-6) var(--space-16);
+}
+
+html .side-workspace > div:not(.workspace-avatar) {
+  min-width: 0;
+}
+
+html .workspace-avatar {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  border-radius: var(--radius-s);
+  background: var(--ink);
+  color: var(--paper);
+  font-size: var(--font-size-13);
+}
+
+html .side-workspace strong,
+html .side-workspace span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+html .side-workspace strong {
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-semibold);
+}
+
+html .side-workspace span {
+  margin-top: var(--space-2);
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+}
+
+html .primary-nav {
+  margin-bottom: var(--space-14);
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+html .nav-item,
+html .space-item {
+  height: 30px;
+  gap: var(--space-8);
+  padding: 0 var(--space-8);
+  border-radius: var(--radius-s);
+  color: var(--ink);
+  font-size: var(--font-size-13);
+}
+
+html .nav-item svg,
+html .space-item > svg:first-child {
+  color: var(--accent-fill);
+}
+
+html .nav-item:hover,
+html .space-item:hover {
+  background: var(--fill);
+  color: var(--ink);
+}
+
+html .nav-item.active,
+html .space-item.selected {
+  background: var(--fill-strong);
+  box-shadow: none;
+  color: var(--ink);
+  font-weight: var(--weight-medium);
+}
+
+html .nav-count {
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+  font-variant-numeric: tabular-nums;
+}
+
+html .side-section {
+  margin: 0 0 var(--space-16);
+}
+
+html .section-label {
+  margin: 0 var(--space-8) var(--space-4);
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+html .section-label button {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-xs);
+  color: var(--faint-ink);
+}
+
+html .section-label button:hover {
+  background: var(--fill);
+  color: var(--ink);
+}
+
+html .space-square,
+html .doc-emoji {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-xs);
+  background: var(--fill);
+  color: var(--muted-ink);
+  font-size: var(--font-size-12);
+}
+
+html .space-item {
+  min-width: 0;
+}
+
+html .space-role {
+  margin-left: auto;
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+  white-space: nowrap;
+}
+
+html .doc-list-item {
+  gap: var(--space-8);
+  padding: var(--space-6) var(--space-8);
+  border-radius: var(--radius-s);
+  color: var(--ink);
+}
+
+html .doc-list-item:hover {
+  background: var(--fill);
+}
+
+html .doc-list-item.current {
+  background: var(--fill-strong);
+}
+
+html .doc-list-item b {
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-medium);
+}
+
+html .doc-list-item small {
+  margin-top: var(--space-1);
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+}
+
+html .doc-list-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent-fill);
+}
+
+html .template-button {
+  gap: var(--space-10);
+  padding: var(--space-12) var(--space-8) var(--space-6);
+  border-top: 1px solid var(--hairline);
+  color: var(--ink);
+}
+
+html .template-button b {
+  font-size: var(--font-size-13);
+}
+
+html .template-button small {
+  color: var(--faint-ink);
+}
+
+html .template-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-s);
+  background: var(--fill);
+  color: var(--accent-fill);
+}
+
+html .sidebar-footer {
+  padding: var(--space-12) var(--space-8) 0;
+  color: var(--faint-ink);
+}
+
+@media (min-width: 1440px) {
+  html .left-sidebar {
+    width: 224px;
+    flex-basis: 224px;
+  }
+}
+
+/* ---------- Document toolbar ---------- */
+html .document-toolbar {
+  top: var(--topbar-height);
+  height: var(--document-toolbar-height);
+  padding: 0 var(--space-24);
+  border-bottom: 0;
+  background: var(--chrome-translucent);
+  -webkit-backdrop-filter: var(--blur-chrome);
+  backdrop-filter: var(--blur-chrome);
+}
+
+html .breadcrumbs {
+  gap: var(--space-6);
+  color: var(--faint-ink);
+  font-size: var(--font-size-13);
+}
+
+html .breadcrumbs button {
+  color: var(--faint-ink);
+}
+
+html .breadcrumbs button:hover {
+  color: var(--ink);
+}
+
+html .breadcrumbs b {
+  color: var(--ink);
+  font-weight: var(--weight-semibold);
+}
+
+html .document-actions {
+  gap: var(--space-8);
+}
+
+html .document-actions .version-pill {
+  height: 26px;
+  padding: 0 var(--space-10);
+  border-radius: var(--radius-pill);
+  background: var(--fill);
+  color: var(--muted-ink);
+  font-size: var(--font-size-12);
+}
+
+html .outline-rail,
+html .right-rail {
+  top: calc(var(--topbar-height) + var(--document-toolbar-height));
+  height: calc(100dvh - var(--topbar-height) - var(--document-toolbar-height));
+}
+
+/* ---------- Buttons & links ---------- */
+html .button {
+  height: 32px;
+  gap: var(--space-6);
+  padding: 0 var(--space-14);
+  border: 0;
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-medium);
+  letter-spacing: -0.005em;
+  transition:
+    background var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+html .button:hover {
+  transform: none;
+}
+
+html .button:active {
+  transform: scale(0.98);
+}
+
+html .button-primary {
+  background: var(--accent-fill);
+  color: var(--on-accent);
+}
+
+html .button-primary:hover {
+  background: var(--accent-fill-hover);
+}
+
+html .button-soft {
+  border: 0;
+  background: var(--fill);
+  color: var(--ink);
+}
+
+html .button-soft:hover {
+  background: var(--fill-hover);
+}
+
+html .button-ink {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+html .button:disabled,
+html .button[aria-disabled='true'] {
+  opacity: var(--disabled-opacity);
+  cursor: default;
+}
+
+html .text-link {
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  color: var(--accent);
+  font-size: var(--font-size-13);
+  font-weight: var(--weight-medium);
+}
+
+html .text-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- Menus & popovers ---------- */
+html .action-menu-items,
+html .notification-popover,
+html .mention-options {
+  padding: var(--space-6);
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--paper);
+  box-shadow: var(--shadow-float);
+}
+
+html .action-menu-items button,
+html .mention-options button {
+  padding: var(--space-7) var(--space-10);
+  border-radius: var(--radius-xs);
+  color: var(--ink);
+  font-size: var(--font-size-13);
+}
+
+html .action-menu-items button:hover,
+html .action-menu-items button:focus-visible,
+html .mention-options button:hover {
+  background: var(--accent-fill);
+  color: var(--on-accent);
+  outline: none;
+}
+
+html .action-menu-items button.danger-action {
+  color: var(--danger);
+}
+
+html .action-menu-items button.danger-action:hover {
+  background: var(--danger);
+  color: var(--on-accent);
+}
+
+/* ---------- Dialogs, sheets, toasts ---------- */
+html .overlay {
+  background: var(--overlay);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(12px) saturate(140%);
+}
+
+html .review-modal {
+  padding: var(--space-28);
+  border-radius: var(--radius-xl);
+  background: var(--paper);
+  box-shadow: var(--shadow-sheet);
+}
+
+html .modal-eyebrow {
+  gap: var(--space-6);
+  color: var(--faint-ink);
+  font-family: var(--font-body);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+html .modal-top h2 {
+  margin: var(--space-6) 0 var(--space-4);
+  font-family: var(--font-display);
+  font-size: var(--font-size-28);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-display);
+}
+
+html .modal-top p {
+  color: var(--faint-ink);
+  font-size: var(--font-size-13);
+}
+
+html .modal-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--fill);
+  color: var(--muted-ink);
+}
+
+html .modal-close:hover {
+  background: var(--fill-hover);
+  color: var(--ink);
+}
+
+html .modal-footer {
+  gap: var(--space-10);
+  padding-top: var(--space-24);
+}
+
+html .toast {
+  padding: var(--space-10) var(--space-16);
+  border-radius: var(--radius-pill);
+  background: var(--dark);
+  color: var(--on-dark);
+  box-shadow: var(--shadow-float);
+  font-size: var(--font-size-13);
+}
+
+html .toggle-switch {
+  border-radius: var(--radius-pill);
+}
+
+@media (max-width: 980px) {
+  html .right-rail {
+    top: var(--topbar-height);
+    height: calc(100dvh - var(--topbar-height));
+  }
+}
+
+@media (max-width: 720px) {
+  html .topbar {
+    gap: var(--space-8);
+    padding: 0 var(--space-10);
+  }
+
+  html .document-toolbar {
+    padding-inline: var(--space-14);
+  }
+}

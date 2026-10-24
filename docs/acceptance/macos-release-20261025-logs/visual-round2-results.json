@@ -1,0 +1,2291 @@
+{
+  "config": {
+    "argv": [
+      "/Users/h/.local/store/v11/links/@/node/24.21.0/7c2af6d0211936cfaec99a95a53053dc7f0b6c530d8ccd7d2f853b9f3aa01498/node_modules/node/bin/node",
+      "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/node_modules/playwright/cli.js",
+      "test",
+      "-c",
+      "playwright.visual.config.ts"
+    ],
+    "configFile": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/playwright.visual.config.ts",
+    "rootDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/visual",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/E3-complete-visual-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.visual.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/outputs/E3-complete-visual-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/visual",
+        "snapshotDir": "/Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/outputs/hcd-release-20261025/source/visual",
+        "testIgnore": [],
+        "testMatch": "**/*.visual.ts",
+        "timeout": 30000,
+        "use": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome",
+          "baseURL": "http://127.0.0.1:4173",
+          "locale": "zh-CN",
+          "timezoneId": "Asia/Taipei",
+          "colorScheme": "light",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "outputs/E3-complete-visual-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "tsx scripts/visual-server.ts",
+      "url": "http://127.0.0.1:4173/healthz",
+      "reuseExistingServer": false,
+      "timeout": 30000,
+      "gracefulShutdown": {
+        "signal": "SIGTERM",
+        "timeout": 5000
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "import-upload.visual.ts",
+      "file": "import-upload.visual.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "E4 import upload surface 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1030,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:11:44.013Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "import-upload-computed-style",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjRUMTg6MTE6NDUuMTgzWiIsCiAgIndpZHRoIjogMTQ0MCwKICAidGhlbWUiOiAibGlnaHQiLAogICJtZWFzdXJlZCI6IHsKICAgICJ3aWR0aCI6IDUwNCwKICAgICJoZWlnaHQiOiA3NiwKICAgICJ4IjogNDY4LAogICAgInkiOiA0MTMuNSwKICAgICJib3JkZXJTdHlsZSI6ICJkYXNoZWQiLAogICAgImJvcmRlcldpZHRoIjogIjFweCIsCiAgICAiYm9yZGVyQ29sb3IiOiAicmdiKDIxMCwgMjEwLCAyMTUpIiwKICAgICJib3JkZXJSYWRpdXMiOiAiMTZweCIsCiAgICAiYmFja2dyb3VuZENvbG9yIjogInJnYmEoMTIwLCAxMjAsIDEyOCwgMC4xMikiLAogICAgInBhZGRpbmciOiAiMjRweCIsCiAgICAibWluSGVpZ2h0IjogIjM2cHgiLAogICAgImZvbnRTaXplIjogIjE0cHgiLAogICAgImV4cGVjdGVkUmFkaXVzIjogIjE2cHgiLAogICAgImV4cGVjdGVkRmlsbCI6ICIjNzg3ODgwMWYiLAogICAgImV4cGVjdGVkQmFja2dyb3VuZCI6ICJyZ2JhKDEyMCwgMTIwLCAxMjgsIDAuMTIpIiwKICAgICJ2aWV3cG9ydCI6IDE0NDAsCiAgICAic2Nyb2xsV2lkdGgiOiAxNDQwCiAgfSwKICAiZXh0ZXJuYWwiOiBbXSwKICAiZXJyb3JzIjogW10sCiAgInF1b3RhcyI6IFtdLAogICJyZXF1aXJlbWVudCI6ICJDT0RFWF9VSV9HVUlERS5tZCBFNCDCpzg6IGRhc2hlZCB1cGxvYWQgYXJlYSB3aXRoIGxhcmdlIHJhZGl1cyBhbmQgc2hhbGxvdyBmaWxsLiIsCiAgImZpeHR1cmUiOiAiUmVhbCBjcmVhdGVBcHAsIGRpc3Bvc2FibGUgU1FMaXRlLCBhY3R1YWwgZGlzdCBhbmQgaW5zdGFsbGVkIENocm9tZS4iCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20c46a0e3e6f6932d195-997d45fc5d86e7e06e68",
+          "file": "import-upload.visual.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "E4 import upload surface 390 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 851,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:11:45.323Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "import-upload-computed-style",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjRUMTg6MTE6NDYuMDY5WiIsCiAgIndpZHRoIjogMzkwLAogICJ0aGVtZSI6ICJsaWdodCIsCiAgIm1lYXN1cmVkIjogewogICAgIndpZHRoIjogMzEwLAogICAgImhlaWdodCI6IDc2LAogICAgIngiOiA0MCwKICAgICJ5IjogNDIyLjUsCiAgICAiYm9yZGVyU3R5bGUiOiAiZGFzaGVkIiwKICAgICJib3JkZXJXaWR0aCI6ICIxcHgiLAogICAgImJvcmRlckNvbG9yIjogInJnYigyMTAsIDIxMCwgMjE1KSIsCiAgICAiYm9yZGVyUmFkaXVzIjogIjE2cHgiLAogICAgImJhY2tncm91bmRDb2xvciI6ICJyZ2JhKDEyMCwgMTIwLCAxMjgsIDAuMTIpIiwKICAgICJwYWRkaW5nIjogIjI0cHgiLAogICAgIm1pbkhlaWdodCI6ICIzNnB4IiwKICAgICJmb250U2l6ZSI6ICIxNHB4IiwKICAgICJleHBlY3RlZFJhZGl1cyI6ICIxNnB4IiwKICAgICJleHBlY3RlZEZpbGwiOiAiIzc4Nzg4MDFmIiwKICAgICJleHBlY3RlZEJhY2tncm91bmQiOiAicmdiYSgxMjAsIDEyMCwgMTI4LCAwLjEyKSIsCiAgICAidmlld3BvcnQiOiAzOTAsCiAgICAic2Nyb2xsV2lkdGgiOiAzOTAKICB9LAogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlcXVpcmVtZW50IjogIkNPREVYX1VJX0dVSURFLm1kIEU0IMKnODogZGFzaGVkIHVwbG9hZCBhcmVhIHdpdGggbGFyZ2UgcmFkaXVzIGFuZCBzaGFsbG93IGZpbGwuIiwKICAiZml4dHVyZSI6ICJSZWFsIGNyZWF0ZUFwcCwgZGlzcG9zYWJsZSBTUUxpdGUsIGFjdHVhbCBkaXN0IGFuZCBpbnN0YWxsZWQgQ2hyb21lLiIKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20c46a0e3e6f6932d195-c362c426a8780dee7cb3",
+          "file": "import-upload.visual.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "E4 import upload surface 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 914,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:11:46.183Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "import-upload-computed-style",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjRUMTg6MTE6NDYuOTc5WiIsCiAgIndpZHRoIjogMTQ0MCwKICAidGhlbWUiOiAiZGFyayIsCiAgIm1lYXN1cmVkIjogewogICAgIndpZHRoIjogNTA0LAogICAgImhlaWdodCI6IDc2LAogICAgIngiOiA0NjgsCiAgICAieSI6IDQxMy41LAogICAgImJvcmRlclN0eWxlIjogImRhc2hlZCIsCiAgICAiYm9yZGVyV2lkdGgiOiAiMXB4IiwKICAgICJib3JkZXJDb2xvciI6ICJyZ2IoNzIsIDcyLCA3NCkiLAogICAgImJvcmRlclJhZGl1cyI6ICIxNnB4IiwKICAgICJiYWNrZ3JvdW5kQ29sb3IiOiAicmdiYSgxMTgsIDExOCwgMTI4LCAwLjI0KSIsCiAgICAicGFkZGluZyI6ICIyNHB4IiwKICAgICJtaW5IZWlnaHQiOiAiMzZweCIsCiAgICAiZm9udFNpemUiOiAiMTRweCIsCiAgICAiZXhwZWN0ZWRSYWRpdXMiOiAiMTZweCIsCiAgICAiZXhwZWN0ZWRGaWxsIjogIiM3Njc2ODAzZCIsCiAgICAiZXhwZWN0ZWRCYWNrZ3JvdW5kIjogInJnYmEoMTE4LCAxMTgsIDEyOCwgMC4yNCkiLAogICAgInZpZXdwb3J0IjogMTQ0MCwKICAgICJzY3JvbGxXaWR0aCI6IDE0NDAKICB9LAogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlcXVpcmVtZW50IjogIkNPREVYX1VJX0dVSURFLm1kIEU0IMKnODogZGFzaGVkIHVwbG9hZCBhcmVhIHdpdGggbGFyZ2UgcmFkaXVzIGFuZCBzaGFsbG93IGZpbGwuIiwKICAiZml4dHVyZSI6ICJSZWFsIGNyZWF0ZUFwcCwgZGlzcG9zYWJsZSBTUUxpdGUsIGFjdHVhbCBkaXN0IGFuZCBpbnN0YWxsZWQgQ2hyb21lLiIKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20c46a0e3e6f6932d195-7726f90173cd1a52bc1b",
+          "file": "import-upload.visual.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "title": "E4 import upload surface 390 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 789,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:11:47.104Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "import-upload-computed-style",
+                      "contentType": "application/json",
+                      "body": "ewogICJkYXRlIjogIjIwMjYtMTAtMjRUMTg6MTE6NDcuODMzWiIsCiAgIndpZHRoIjogMzkwLAogICJ0aGVtZSI6ICJkYXJrIiwKICAibWVhc3VyZWQiOiB7CiAgICAid2lkdGgiOiAzMTAsCiAgICAiaGVpZ2h0IjogNzYsCiAgICAieCI6IDQwLAogICAgInkiOiA0MjIuNSwKICAgICJib3JkZXJTdHlsZSI6ICJkYXNoZWQiLAogICAgImJvcmRlcldpZHRoIjogIjFweCIsCiAgICAiYm9yZGVyQ29sb3IiOiAicmdiKDcyLCA3MiwgNzQpIiwKICAgICJib3JkZXJSYWRpdXMiOiAiMTZweCIsCiAgICAiYmFja2dyb3VuZENvbG9yIjogInJnYmEoMTE4LCAxMTgsIDEyOCwgMC4yNCkiLAogICAgInBhZGRpbmciOiAiMjRweCIsCiAgICAibWluSGVpZ2h0IjogIjM2cHgiLAogICAgImZvbnRTaXplIjogIjE0cHgiLAogICAgImV4cGVjdGVkUmFkaXVzIjogIjE2cHgiLAogICAgImV4cGVjdGVkRmlsbCI6ICIjNzY3NjgwM2QiLAogICAgImV4cGVjdGVkQmFja2dyb3VuZCI6ICJyZ2JhKDExOCwgMTE4LCAxMjgsIDAuMjQpIiwKICAgICJ2aWV3cG9ydCI6IDM5MCwKICAgICJzY3JvbGxXaWR0aCI6IDM5MAogIH0sCiAgImV4dGVybmFsIjogW10sCiAgImVycm9ycyI6IFtdLAogICJxdW90YXMiOiBbXSwKICAicmVxdWlyZW1lbnQiOiAiQ09ERVhfVUlfR1VJREUubWQgRTQgwqc4OiBkYXNoZWQgdXBsb2FkIGFyZWEgd2l0aCBsYXJnZSByYWRpdXMgYW5kIHNoYWxsb3cgZmlsbC4iLAogICJmaXh0dXJlIjogIlJlYWwgY3JlYXRlQXBwLCBkaXNwb3NhYmxlIFNRTGl0ZSwgYWN0dWFsIGRpc3QgYW5kIGluc3RhbGxlZCBDaHJvbWUuIgp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "20c46a0e3e6f6932d195-feda42d7f6a9441448c6",
+          "file": "import-upload.visual.ts",
+          "line": 9,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "ui-surfaces.visual.ts",
+      "file": "ui-surfaces.visual.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "E4 component surfaces 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 83306,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "selection (1)",
+                      "duration": 260
+                    },
+                    {
+                      "title": "rich-editor (2)",
+                      "duration": 1222
+                    },
+                    {
+                      "title": "notifications (3)",
+                      "duration": 308
+                    },
+                    {
+                      "title": "notification-preferences (3)",
+                      "duration": 974
+                    },
+                    {
+                      "title": "share-modal (4)",
+                      "duration": 1019
+                    },
+                    {
+                      "title": "share-revoke (4)",
+                      "duration": 1063
+                    },
+                    {
+                      "title": "share-expired (4)",
+                      "duration": 182
+                    },
+                    {
+                      "title": "share-page (4)",
+                      "duration": 177
+                    },
+                    {
+                      "title": "mentions (5)",
+                      "duration": 330
+                    },
+                    {
+                      "title": "selection-summary (5)",
+                      "duration": 267
+                    },
+                    {
+                      "title": "admin-accounts (6)",
+                      "duration": 991
+                    },
+                    {
+                      "title": "admin-confirm (6)",
+                      "duration": 255
+                    },
+                    {
+                      "title": "integrations (6)",
+                      "duration": 980
+                    },
+                    {
+                      "title": "cli-consent (7)",
+                      "duration": 967
+                    },
+                    {
+                      "title": "oauth-consent (7)",
+                      "duration": 966
+                    },
+                    {
+                      "title": "forgot-password (7)",
+                      "duration": 149
+                    },
+                    {
+                      "title": "invite (7)",
+                      "duration": 153
+                    },
+                    {
+                      "title": "reset (7)",
+                      "duration": 150
+                    },
+                    {
+                      "title": "import-upload (8)",
+                      "duration": 189
+                    },
+                    {
+                      "title": "import-preview (8)",
+                      "duration": 284
+                    },
+                    {
+                      "title": "ai-tasks (8)",
+                      "duration": 1039
+                    },
+                    {
+                      "title": "ai-confirm (8)",
+                      "duration": 1048
+                    },
+                    {
+                      "title": "review (9)",
+                      "duration": 245
+                    },
+                    {
+                      "title": "review-preview (9)",
+                      "duration": 453
+                    },
+                    {
+                      "title": "submission-changes (9)",
+                      "duration": 1077
+                    },
+                    {
+                      "title": "submission-document (9)",
+                      "duration": 1134
+                    },
+                    {
+                      "title": "version-comparison (9)",
+                      "duration": 980
+                    },
+                    {
+                      "title": "reading-chart (10)",
+                      "duration": 187
+                    },
+                    {
+                      "title": "reading-timeline (10)",
+                      "duration": 205
+                    },
+                    {
+                      "title": "reading-columns (10)",
+                      "duration": 196
+                    },
+                    {
+                      "title": "reading-cards (10)",
+                      "duration": 210
+                    },
+                    {
+                      "title": "editing-blocks (10)",
+                      "duration": 62108
+                    },
+                    {
+                      "title": "editing-nested (10)",
+                      "duration": 1069
+                    },
+                    {
+                      "title": "settings-tokens (11)",
+                      "duration": 253
+                    },
+                    {
+                      "title": "settings-document (11)",
+                      "duration": 236
+                    },
+                    {
+                      "title": "global-error (11)",
+                      "duration": 196
+                    },
+                    {
+                      "title": "toast (11)",
+                      "duration": 303
+                    },
+                    {
+                      "title": "notification-empty (3)",
+                      "duration": 456
+                    }
+                  ],
+                  "startTime": "2026-10-24T18:11:47.903Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "surface-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlc3RyaWN0aW9ucyI6IFtdLAogICJub3RpZmljYXRpb25FbXB0eSI6ICJDaGVja2JveCBhbmQgbWFyay1yZWFkIGJ1dHRvbiBhcmUgZXhlcmNpc2VkIHdpdGggbm9ybWFsIHBvaW50ZXIgaW50ZXJhY3Rpb25zLiIKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52669bcfb36711a2a465-de40412fc155d5b5e6ce",
+          "file": "ui-surfaces.visual.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "E4 component surfaces 390 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 81786,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "selection (1)",
+                      "duration": 217
+                    },
+                    {
+                      "title": "rich-editor (2)",
+                      "duration": 1098
+                    },
+                    {
+                      "title": "notifications (3)",
+                      "duration": 224
+                    },
+                    {
+                      "title": "notification-preferences (3)",
+                      "duration": 933
+                    },
+                    {
+                      "title": "share-modal (4)",
+                      "duration": 960
+                    },
+                    {
+                      "title": "share-revoke (4)",
+                      "duration": 978
+                    },
+                    {
+                      "title": "share-expired (4)",
+                      "duration": 128
+                    },
+                    {
+                      "title": "share-page (4)",
+                      "duration": 141
+                    },
+                    {
+                      "title": "mentions (5)",
+                      "duration": 255
+                    },
+                    {
+                      "title": "selection-summary (5)",
+                      "duration": 264
+                    },
+                    {
+                      "title": "admin-accounts (6)",
+                      "duration": 940
+                    },
+                    {
+                      "title": "admin-confirm (6)",
+                      "duration": 966
+                    },
+                    {
+                      "title": "integrations (6)",
+                      "duration": 935
+                    },
+                    {
+                      "title": "cli-consent (7)",
+                      "duration": 931
+                    },
+                    {
+                      "title": "oauth-consent (7)",
+                      "duration": 914
+                    },
+                    {
+                      "title": "forgot-password (7)",
+                      "duration": 123
+                    },
+                    {
+                      "title": "invite (7)",
+                      "duration": 133
+                    },
+                    {
+                      "title": "reset (7)",
+                      "duration": 116
+                    },
+                    {
+                      "title": "import-upload (8)",
+                      "duration": 138
+                    },
+                    {
+                      "title": "import-preview (8)",
+                      "duration": 217
+                    },
+                    {
+                      "title": "ai-tasks (8)",
+                      "duration": 906
+                    },
+                    {
+                      "title": "ai-confirm (8)",
+                      "duration": 984
+                    },
+                    {
+                      "title": "review (9)",
+                      "duration": 164
+                    },
+                    {
+                      "title": "review-preview (9)",
+                      "duration": 404
+                    },
+                    {
+                      "title": "submission-changes (9)",
+                      "duration": 988
+                    },
+                    {
+                      "title": "submission-document (9)",
+                      "duration": 1045
+                    },
+                    {
+                      "title": "version-comparison (9)",
+                      "duration": 932
+                    },
+                    {
+                      "title": "reading-chart (10)",
+                      "duration": 157
+                    },
+                    {
+                      "title": "reading-timeline (10)",
+                      "duration": 155
+                    },
+                    {
+                      "title": "reading-columns (10)",
+                      "duration": 162
+                    },
+                    {
+                      "title": "reading-cards (10)",
+                      "duration": 148
+                    },
+                    {
+                      "title": "editing-blocks (10)",
+                      "duration": 62050
+                    },
+                    {
+                      "title": "editing-nested (10)",
+                      "duration": 1017
+                    },
+                    {
+                      "title": "settings-tokens (11)",
+                      "duration": 172
+                    },
+                    {
+                      "title": "settings-document (11)",
+                      "duration": 164
+                    },
+                    {
+                      "title": "global-error (11)",
+                      "duration": 160
+                    },
+                    {
+                      "title": "toast (11)",
+                      "duration": 224
+                    },
+                    {
+                      "title": "notification-empty (3)",
+                      "duration": 432
+                    }
+                  ],
+                  "startTime": "2026-10-24T18:13:11.216Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "surface-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlc3RyaWN0aW9ucyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAicmljaC1lZGl0b3IiLAogICAgICAid2lkdGgiOiAzOTAsCiAgICAgICJ0aGVtZSI6ICJsaWdodCIsCiAgICAgICJyZWFzb24iOiAiMzkwcHggc2NyZWVuc2hvdCByZXNpemVzIGEgZGVza3RvcC1vcGVuZWQgZWRpdG9yOyBmcmVzaCBtb2JpbGUgbmF2aWdhdGlvbiByZW1haW5zIHJlYWQtb25seS4iCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJlZGl0aW5nLWJsb2NrcyIsCiAgICAgICJ3aWR0aCI6IDM5MCwKICAgICAgInRoZW1lIjogImxpZ2h0IiwKICAgICAgInJlYXNvbiI6ICIzOTBweCBzY3JlZW5zaG90IHJlc2l6ZXMgYSBkZXNrdG9wLW9wZW5lZCBlZGl0b3I7IGZyZXNoIG1vYmlsZSBuYXZpZ2F0aW9uIHJlbWFpbnMgcmVhZC1vbmx5LiIKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImVkaXRpbmctbmVzdGVkIiwKICAgICAgIndpZHRoIjogMzkwLAogICAgICAidGhlbWUiOiAibGlnaHQiLAogICAgICAicmVhc29uIjogIjM5MHB4IHNjcmVlbnNob3QgcmVzaXplcyBhIGRlc2t0b3Atb3BlbmVkIGVkaXRvcjsgZnJlc2ggbW9iaWxlIG5hdmlnYXRpb24gcmVtYWlucyByZWFkLW9ubHkuIgogICAgfQogIF0sCiAgIm5vdGlmaWNhdGlvbkVtcHR5IjogIkNoZWNrYm94IGFuZCBtYXJrLXJlYWQgYnV0dG9uIGFyZSBleGVyY2lzZWQgd2l0aCBub3JtYWwgcG9pbnRlciBpbnRlcmFjdGlvbnMuIgp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52669bcfb36711a2a465-7a122f095935e8be1987",
+          "file": "ui-surfaces.visual.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "E4 component surfaces 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 82917,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "selection (1)",
+                      "duration": 257
+                    },
+                    {
+                      "title": "rich-editor (2)",
+                      "duration": 1174
+                    },
+                    {
+                      "title": "notifications (3)",
+                      "duration": 265
+                    },
+                    {
+                      "title": "notification-preferences (3)",
+                      "duration": 173
+                    },
+                    {
+                      "title": "share-modal (4)",
+                      "duration": 1035
+                    },
+                    {
+                      "title": "share-revoke (4)",
+                      "duration": 1047
+                    },
+                    {
+                      "title": "share-expired (4)",
+                      "duration": 140
+                    },
+                    {
+                      "title": "share-page (4)",
+                      "duration": 164
+                    },
+                    {
+                      "title": "mentions (5)",
+                      "duration": 300
+                    },
+                    {
+                      "title": "selection-summary (5)",
+                      "duration": 264
+                    },
+                    {
+                      "title": "admin-accounts (6)",
+                      "duration": 976
+                    },
+                    {
+                      "title": "admin-confirm (6)",
+                      "duration": 1031
+                    },
+                    {
+                      "title": "integrations (6)",
+                      "duration": 982
+                    },
+                    {
+                      "title": "cli-consent (7)",
+                      "duration": 975
+                    },
+                    {
+                      "title": "oauth-consent (7)",
+                      "duration": 966
+                    },
+                    {
+                      "title": "forgot-password (7)",
+                      "duration": 145
+                    },
+                    {
+                      "title": "invite (7)",
+                      "duration": 152
+                    },
+                    {
+                      "title": "reset (7)",
+                      "duration": 150
+                    },
+                    {
+                      "title": "import-upload (8)",
+                      "duration": 186
+                    },
+                    {
+                      "title": "import-preview (8)",
+                      "duration": 286
+                    },
+                    {
+                      "title": "ai-tasks (8)",
+                      "duration": 1038
+                    },
+                    {
+                      "title": "ai-confirm (8)",
+                      "duration": 1044
+                    },
+                    {
+                      "title": "review (9)",
+                      "duration": 229
+                    },
+                    {
+                      "title": "review-preview (9)",
+                      "duration": 472
+                    },
+                    {
+                      "title": "submission-changes (9)",
+                      "duration": 1053
+                    },
+                    {
+                      "title": "submission-document (9)",
+                      "duration": 1102
+                    },
+                    {
+                      "title": "version-comparison (9)",
+                      "duration": 958
+                    },
+                    {
+                      "title": "reading-chart (10)",
+                      "duration": 195
+                    },
+                    {
+                      "title": "reading-timeline (10)",
+                      "duration": 201
+                    },
+                    {
+                      "title": "reading-columns (10)",
+                      "duration": 211
+                    },
+                    {
+                      "title": "reading-cards (10)",
+                      "duration": 204
+                    },
+                    {
+                      "title": "editing-blocks (10)",
+                      "duration": 62092
+                    },
+                    {
+                      "title": "editing-nested (10)",
+                      "duration": 1078
+                    },
+                    {
+                      "title": "settings-tokens (11)",
+                      "duration": 260
+                    },
+                    {
+                      "title": "settings-document (11)",
+                      "duration": 236
+                    },
+                    {
+                      "title": "global-error (11)",
+                      "duration": 184
+                    },
+                    {
+                      "title": "toast (11)",
+                      "duration": 293
+                    },
+                    {
+                      "title": "notification-empty (3)",
+                      "duration": 445
+                    }
+                  ],
+                  "startTime": "2026-10-24T18:14:33.012Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "surface-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlc3RyaWN0aW9ucyI6IFtdLAogICJub3RpZmljYXRpb25FbXB0eSI6ICJDaGVja2JveCBhbmQgbWFyay1yZWFkIGJ1dHRvbiBhcmUgZXhlcmNpc2VkIHdpdGggbm9ybWFsIHBvaW50ZXIgaW50ZXJhY3Rpb25zLiIKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52669bcfb36711a2a465-29d6c94e4f259f9ea91c",
+          "file": "ui-surfaces.visual.ts",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "E4 component surfaces 390 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 80951,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "selection (1)",
+                      "duration": 217
+                    },
+                    {
+                      "title": "rich-editor (2)",
+                      "duration": 1098
+                    },
+                    {
+                      "title": "notifications (3)",
+                      "duration": 205
+                    },
+                    {
+                      "title": "notification-preferences (3)",
+                      "duration": 162
+                    },
+                    {
+                      "title": "share-modal (4)",
+                      "duration": 963
+                    },
+                    {
+                      "title": "share-revoke (4)",
+                      "duration": 966
+                    },
+                    {
+                      "title": "share-expired (4)",
+                      "duration": 130
+                    },
+                    {
+                      "title": "share-page (4)",
+                      "duration": 139
+                    },
+                    {
+                      "title": "mentions (5)",
+                      "duration": 252
+                    },
+                    {
+                      "title": "selection-summary (5)",
+                      "duration": 253
+                    },
+                    {
+                      "title": "admin-accounts (6)",
+                      "duration": 922
+                    },
+                    {
+                      "title": "admin-confirm (6)",
+                      "duration": 962
+                    },
+                    {
+                      "title": "integrations (6)",
+                      "duration": 936
+                    },
+                    {
+                      "title": "cli-consent (7)",
+                      "duration": 933
+                    },
+                    {
+                      "title": "oauth-consent (7)",
+                      "duration": 915
+                    },
+                    {
+                      "title": "forgot-password (7)",
+                      "duration": 122
+                    },
+                    {
+                      "title": "invite (7)",
+                      "duration": 118
+                    },
+                    {
+                      "title": "reset (7)",
+                      "duration": 117
+                    },
+                    {
+                      "title": "import-upload (8)",
+                      "duration": 137
+                    },
+                    {
+                      "title": "import-preview (8)",
+                      "duration": 233
+                    },
+                    {
+                      "title": "ai-tasks (8)",
+                      "duration": 943
+                    },
+                    {
+                      "title": "ai-confirm (8)",
+                      "duration": 964
+                    },
+                    {
+                      "title": "review (9)",
+                      "duration": 164
+                    },
+                    {
+                      "title": "review-preview (9)",
+                      "duration": 403
+                    },
+                    {
+                      "title": "submission-changes (9)",
+                      "duration": 1022
+                    },
+                    {
+                      "title": "submission-document (9)",
+                      "duration": 1049
+                    },
+                    {
+                      "title": "version-comparison (9)",
+                      "duration": 949
+                    },
+                    {
+                      "title": "reading-chart (10)",
+                      "duration": 152
+                    },
+                    {
+                      "title": "reading-timeline (10)",
+                      "duration": 155
+                    },
+                    {
+                      "title": "reading-columns (10)",
+                      "duration": 162
+                    },
+                    {
+                      "title": "reading-cards (10)",
+                      "duration": 170
+                    },
+                    {
+                      "title": "editing-blocks (10)",
+                      "duration": 62047
+                    },
+                    {
+                      "title": "editing-nested (10)",
+                      "duration": 1000
+                    },
+                    {
+                      "title": "settings-tokens (11)",
+                      "duration": 171
+                    },
+                    {
+                      "title": "settings-document (11)",
+                      "duration": 162
+                    },
+                    {
+                      "title": "global-error (11)",
+                      "duration": 128
+                    },
+                    {
+                      "title": "toast (11)",
+                      "duration": 221
+                    },
+                    {
+                      "title": "notification-empty (3)",
+                      "duration": 421
+                    }
+                  ],
+                  "startTime": "2026-10-24T18:15:55.936Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "surface-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJleHRlcm5hbCI6IFtdLAogICJlcnJvcnMiOiBbXSwKICAicXVvdGFzIjogW10sCiAgInJlc3RyaWN0aW9ucyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAicmljaC1lZGl0b3IiLAogICAgICAid2lkdGgiOiAzOTAsCiAgICAgICJ0aGVtZSI6ICJkYXJrIiwKICAgICAgInJlYXNvbiI6ICIzOTBweCBzY3JlZW5zaG90IHJlc2l6ZXMgYSBkZXNrdG9wLW9wZW5lZCBlZGl0b3I7IGZyZXNoIG1vYmlsZSBuYXZpZ2F0aW9uIHJlbWFpbnMgcmVhZC1vbmx5LiIKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImVkaXRpbmctYmxvY2tzIiwKICAgICAgIndpZHRoIjogMzkwLAogICAgICAidGhlbWUiOiAiZGFyayIsCiAgICAgICJyZWFzb24iOiAiMzkwcHggc2NyZWVuc2hvdCByZXNpemVzIGEgZGVza3RvcC1vcGVuZWQgZWRpdG9yOyBmcmVzaCBtb2JpbGUgbmF2aWdhdGlvbiByZW1haW5zIHJlYWQtb25seS4iCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJlZGl0aW5nLW5lc3RlZCIsCiAgICAgICJ3aWR0aCI6IDM5MCwKICAgICAgInRoZW1lIjogImRhcmsiLAogICAgICAicmVhc29uIjogIjM5MHB4IHNjcmVlbnNob3QgcmVzaXplcyBhIGRlc2t0b3Atb3BlbmVkIGVkaXRvcjsgZnJlc2ggbW9iaWxlIG5hdmlnYXRpb24gcmVtYWlucyByZWFkLW9ubHkuIgogICAgfQogIF0sCiAgIm5vdGlmaWNhdGlvbkVtcHR5IjogIkNoZWNrYm94IGFuZCBtYXJrLXJlYWQgYnV0dG9uIGFyZSBleGVyY2lzZWQgd2l0aCBub3JtYWwgcG9pbnRlciBpbnRlcmFjdGlvbnMuIgp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52669bcfb36711a2a465-a25324d6b1b31389b446",
+          "file": "ui-surfaces.visual.ts",
+          "line": 21,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "ui.visual.ts",
+      "file": "ui.visual.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "home 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 921,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:17.461Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-d4f47eb8027510203c4f",
+          "file": "ui.visual.ts",
+          "line": 4,
+          "column": 3
+        },
+        {
+          "title": "reading 1680 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1052,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:18.731Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-e737a4e5b2723cd8d181",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1039,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:19.791Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-1d14d3fcc69642037ce1",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 1280 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1016,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:20.838Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-45bb2aa45636149a16d1",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 805 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 978,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:21.861Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-01c3d1b8ec18ba1f9c8e",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 390 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 888,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:22.846Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-0d8f99b65f3a81af9a5d",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "edit 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1411,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:23.741Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-2f7dc7a8f8624cce2b83",
+          "file": "ui.visual.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "review 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1110,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:25.157Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-da97017142c5fe3b2004",
+          "file": "ui.visual.ts",
+          "line": 34,
+          "column": 3
+        },
+        {
+          "title": "history 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1364,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:26.276Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-87a4b22a68cf477523d0",
+          "file": "ui.visual.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "settings 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 890,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:27.647Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-3c0211036eaf904ae2bd",
+          "file": "ui.visual.ts",
+          "line": 48,
+          "column": 3
+        },
+        {
+          "title": "guest 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 995,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:28.544Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-254e39b749996344e464",
+          "file": "ui.visual.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "guest 390 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 890,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:29.546Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-17add5947cbe87272c56",
+          "file": "ui.visual.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "login 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 804,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:30.443Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-1d0a688e20a1ee933ebb",
+          "file": "ui.visual.ts",
+          "line": 65,
+          "column": 3
+        },
+        {
+          "title": "more menu 1440 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1085,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:31.255Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-e4e2e6896d967143d93f",
+          "file": "ui.visual.ts",
+          "line": 73,
+          "column": 5
+        },
+        {
+          "title": "more menu 360 light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 876,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:32.347Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-b47dad6cc1a7676691d7",
+          "file": "ui.visual.ts",
+          "line": 73,
+          "column": 5
+        },
+        {
+          "title": "home 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 875,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:33.230Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-54c2da8e113f3360acc5",
+          "file": "ui.visual.ts",
+          "line": 4,
+          "column": 3
+        },
+        {
+          "title": "reading 1680 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1074,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:34.112Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-5f484f09ee7145d89b6e",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1013,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:35.191Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-df1cb2ec53f0280f1db6",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 1280 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1037,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:36.212Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-a9664bad97780876adcc",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 805 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 978,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:37.258Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-0bc37ad850524fbeb20b",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "reading 390 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 924,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:38.245Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-a09f2ac7236d4eef5bbf",
+          "file": "ui.visual.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "edit 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1726,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:39.174Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-f0b0d696e8f69f116343",
+          "file": "ui.visual.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "title": "review 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1128,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:40.906Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-6c3a5388449a96e2383b",
+          "file": "ui.visual.ts",
+          "line": 34,
+          "column": 3
+        },
+        {
+          "title": "history 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1259,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:42.043Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-39796a3a258dffd6a120",
+          "file": "ui.visual.ts",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "title": "settings 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 965,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:43.309Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-ce93273d965c188caa87",
+          "file": "ui.visual.ts",
+          "line": 48,
+          "column": 3
+        },
+        {
+          "title": "guest 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1026,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:44.280Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-cff7029c6e548a43eabf",
+          "file": "ui.visual.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "guest 390 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 904,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:45.314Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-fc227277d9f6773e84f4",
+          "file": "ui.visual.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "login 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 821,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:46.225Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-7bfe8c255adf7cb80142",
+          "file": "ui.visual.ts",
+          "line": 65,
+          "column": 3
+        },
+        {
+          "title": "more menu 1440 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1078,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:47.055Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-bc7d93941e6a5f23bacf",
+          "file": "ui.visual.ts",
+          "line": 73,
+          "column": 5
+        },
+        {
+          "title": "more menu 360 dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 894,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T18:17:48.146Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "local-browser-audit",
+                      "contentType": "application/json",
+                      "body": "ewogICJibG9ja2VkRXh0ZXJuYWxSZXF1ZXN0cyI6IDAsCiAgInBhZ2VFcnJvcnMiOiBbXSwKICAicmF0ZUxpbWl0ZWRSZXF1ZXN0cyI6IFtdLAogICJleHRlcm5hbFJlcXVlc3RVUkxzIjogW10KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6164d477df3bcb90a27a-41956f3b54fdf30f3611",
+          "file": "ui.visual.ts",
+          "line": 73,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-24T18:11:42.729Z",
+    "duration": 366722.815,
+    "expected": 38,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

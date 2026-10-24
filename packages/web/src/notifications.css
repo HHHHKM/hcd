@@ -1,0 +1,189 @@
+.notification-bell {
+  position: relative;
+}
+.topbar:has(.notifications-modal) {
+  z-index: 50;
+}
+.topbar .overlay:has(.notifications-modal) {
+  min-height: 100dvh;
+  width: 100vw;
+}
+.notifications-modal .notification-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+.notification-count {
+  position: absolute;
+  top: -4px;
+  right: -7px;
+  background: var(--accent);
+  color: var(--faint-ink);
+  border: 2px solid var(--paper);
+  border-radius: var(--space-12);
+  padding: var(--space-1) var(--space-4);
+  font-size: var(--font-size-12);
+  min-width: 18px;
+}
+.notifications-modal {
+  width: min(650px, calc(100vw - 32px));
+}
+.notification-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-10);
+  padding: var(--space-12) var(--space-24);
+  border-bottom: 1px solid var(--line);
+  font-size: var(--font-size-12);
+}
+.notification-controls label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin-right: auto;
+}
+.notification-list {
+  list-style: none;
+  padding: 0 var(--space-24);
+  margin: 0;
+}
+.notification-list li {
+  position: relative;
+  border-bottom: 1px solid var(--hairline);
+  padding: var(--space-15) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+}
+/* The unread dot sits in the list gutter, so read and unread rows keep identical text alignment. */
+.notification-list li.unread::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: calc(-1 * var(--space-12));
+  top: calc(var(--space-15) + var(--space-8));
+  width: var(--space-6);
+  height: var(--space-6);
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+}
+.notification-item {
+  text-align: left;
+  display: grid;
+  gap: var(--space-6);
+  flex: 1;
+  min-width: 0;
+  color: var(--ink);
+}
+.notification-item strong {
+  font-size: var(--font-size-13);
+}
+.notification-item span,
+.notification-item p {
+  font-size: var(--font-size-12);
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.notification-item time,
+.notification-item small {
+  font-size: var(--font-size-12);
+  color: var(--muted-ink);
+}
+.notification-empty {
+  padding: var(--space-30);
+  margin: var(--space-20) var(--space-24);
+  border-radius: var(--radius-l);
+  background: var(--surface-raised);
+  text-align: center;
+  color: var(--muted-ink);
+  font-size: var(--font-size-13);
+}
+
+.notification-preferences fieldset {
+  border: 0;
+  padding: var(--space-16) 0;
+}
+/* Used by the notification preferences and the export dialog; both sit inside .create-modal, whose generic label rule is a column. */
+.create-modal .notification-preference-row {
+  display: flex;
+  flex-direction: row;
+}
+.notification-preference-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  padding: var(--space-8) 0;
+  background: var(--fill);
+  border-radius: var(--radius-s);
+  min-height: var(--space-44);
+  padding-inline: var(--space-12);
+}
+.notification-preference-row input {
+  width: auto;
+  margin: 0;
+}
+.notification-setup-note {
+  padding: var(--space-14);
+  background: var(--paper);
+  font-size: var(--font-size-13);
+  line-height: 1.6;
+}
+
+.notifications-modal .notification-item {
+  border-bottom: 0;
+}
+.notification-empty::before {
+  content: '✓';
+  display: grid;
+  place-items: center;
+  width: var(--space-44);
+  height: var(--space-44);
+  margin: 0 auto var(--space-12);
+  border-radius: var(--radius-m);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: var(--font-size-20);
+}
+.notification-preferences .notification-preference-row {
+  margin-block: var(--space-6);
+}
+.notification-preferences .notification-preference-row > span {
+  flex: 1;
+  order: -1;
+}
+.notification-preferences .notification-preference-row input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 22px;
+  min-height: 22px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--fill-strong);
+  cursor: pointer;
+}
+.notification-preferences .notification-preference-row input[type='checkbox']::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  inset: 3px auto auto 3px;
+  border-radius: var(--radius-pill);
+  background: var(--paper);
+  box-shadow: var(--shadow-card);
+}
+.notification-preferences .notification-preference-row input[type='checkbox']:checked {
+  background: var(--accent-fill);
+}
+.notification-preferences .notification-preference-row input[type='checkbox']:checked::before {
+  left: 19px;
+}
+.notification-preferences .notification-preference-row input[type='checkbox']:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+.notification-preferences .notification-preference-row input[type='checkbox']:disabled {
+  opacity: var(--disabled-opacity);
+  cursor: not-allowed;
+}

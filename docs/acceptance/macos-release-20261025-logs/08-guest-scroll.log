@@ -1,0 +1,11 @@
+Command: pnpm exec tsx scripts/acceptance-guest-scroll.ts
+Started UTC: 2026-10-24T18:26:11.381496+00:00
+{"scenario":{"width":1440,"height":1000,"theme":"light"},"measured":{"quote":{"top":382.09375,"bottom":400.09375,"height":18},"target":{"top":382.09375,"bottom":428.5625,"height":46.46875},"headerBottom":52,"viewport":{"width":1440,"height":1000},"scrollY":0,"focus":"hcd-anchor-text","scrolling":{"element":"HTML","top":0}}}
+{"scenario":{"width":360,"height":1000,"theme":"light"},"measured":{"quote":{"top":352.796875,"bottom":370.796875,"height":18},"target":{"top":324.328125,"bottom":399.265625,"height":74.9375},"headerBottom":52,"viewport":{"width":360,"height":1000},"scrollY":0,"focus":"hcd-anchor-text","scrolling":{"element":"HTML","top":0}}}
+{"scenario":{"width":1440,"height":1000,"theme":"light"},"measured":{"quote":{"top":382.09375,"bottom":400.09375,"height":18},"target":{"top":382.09375,"bottom":428.5625,"height":46.46875},"headerBottom":52,"viewport":{"width":1440,"height":1000},"scrollY":0,"focus":"hcd-anchor-text","scrolling":{"element":"HTML","top":0}}}
+{"scenario":{"width":360,"height":1000,"theme":"dark"},"measured":{"quote":{"top":352.796875,"bottom":370.796875,"height":18},"target":{"top":324.328125,"bottom":399.265625,"height":74.9375},"headerBottom":52,"viewport":{"width":360,"height":1000},"scrollY":0,"focus":"hcd-anchor-text","scrolling":{"element":"HTML","top":0}}}
+{"scenario":{"width":1440,"height":1000,"theme":"dark"},"measured":{"quote":{"top":382.09375,"bottom":400.09375,"height":18},"target":{"top":382.09375,"bottom":428.5625,"height":46.46875},"headerBottom":52,"viewport":{"width":1440,"height":1000},"scrollY":0,"focus":"hcd-anchor-text","scrolling":{"element":"HTML","top":0}}}
+C7 guest quote visibility: PASS (5 real Chrome viewport/theme scenarios).
+
+Exit code: 0
+Ended UTC: 2026-10-24T18:26:20.990408+00:00

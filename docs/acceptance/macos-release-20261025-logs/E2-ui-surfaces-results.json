@@ -1,0 +1,6140 @@
+{
+  "browser": "155.0.8059.85",
+  "date": "2026-10-24T18:26:07.857Z",
+  "status": "passed",
+  "observations": [
+    {
+      "name": "selection",
+      "group": 1,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-selection-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 613.1953125,
+        "y": 918.8125,
+        "width": 213.609375,
+        "height": 65.1875,
+        "color": "rgb(66, 66, 69)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "980px",
+        "boxShadow": "rgba(0, 0, 0, 0.12) 0px 10px 34px 0px, rgba(0, 0, 0, 0.07) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "40"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "rich-editor",
+      "group": 2,
+      "width": 1440,
+      "theme": "light",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-rich-editor-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 301,
+        "y": 466.1875,
+        "width": 776,
+        "height": 45.90625,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(120, 120, 128, 0.12)",
+        "borderRadius": "8px 8px 0px 0px",
+        "boxShadow": "rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0.04) 0px 2px 12px 0px",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "提交修改",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 1
+    },
+    {
+      "name": "notifications",
+      "group": 3,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-notifications-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 297.90625,
+        "width": 564,
+        "height": 529.171875,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "notification-preferences",
+      "group": 3,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-notification-preferences-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 410,
+        "y": 120,
+        "width": 620,
+        "height": 760,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-modal",
+      "group": 4,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-share-modal-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 380,
+        "y": 221,
+        "width": 680,
+        "height": 558,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-revoke",
+      "group": 4,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-share-revoke-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 726.375,
+        "y": 678.5,
+        "width": 281.625,
+        "height": 81,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(120, 120, 128, 0.12)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-expired",
+      "group": 4,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-share-expired-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 360,
+        "y": 202,
+        "width": 720,
+        "height": 107,
+        "color": "rgb(66, 66, 69)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "16px",
+        "boxShadow": "rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0.04) 0px 2px 12px 0px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-page",
+      "group": 4,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-share-page-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 250,
+        "y": 0,
+        "width": 940,
+        "height": 3215.40625,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0.04) 0px 2px 12px 0px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "mentions",
+      "group": 5,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-mentions-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 1181,
+        "y": 500.359375,
+        "width": 200,
+        "height": 240,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "12px",
+        "boxShadow": "rgba(0, 0, 0, 0.12) 0px 10px 34px 0px, rgba(0, 0, 0, 0.07) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "10"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "selection-summary",
+      "group": 5,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-selection-summary-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 1181,
+        "y": 653.203125,
+        "width": 216,
+        "height": 125.796875,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(120, 120, 128, 0.12)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "admin-accounts",
+      "group": 6,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-admin-accounts-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 295,
+        "y": 120,
+        "width": 850,
+        "height": 760,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "admin-confirm",
+      "group": 6,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-admin-confirm-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 836.953125,
+        "y": 559,
+        "width": 256.046875,
+        "height": 56,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(120, 120, 128, 0.12)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "integrations",
+      "group": 6,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-integrations-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 347,
+        "y": 314,
+        "width": 746,
+        "height": 514.109375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(245, 245, 247)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "cli-consent",
+      "group": 7,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-cli-consent-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 422,
+        "y": 661.515625,
+        "width": 596,
+        "height": 271.390625,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "oauth-consent",
+      "group": 7,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-oauth-consent-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 520,
+        "y": 0,
+        "width": 400,
+        "height": 1219.375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "forgot-password",
+      "group": 7,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-forgot-password-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 520,
+        "y": 312.09375,
+        "width": 400,
+        "height": 375.796875,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "invite",
+      "group": 7,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-invite-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 520,
+        "y": 188.203125,
+        "width": 400,
+        "height": 623.59375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reset",
+      "group": 7,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-reset-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 520,
+        "y": 188.203125,
+        "width": 400,
+        "height": 623.59375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "import-upload",
+      "group": 8,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-import-upload-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 440,
+        "y": 257.5,
+        "width": 560,
+        "height": 485,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "import-preview",
+      "group": 8,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-import-preview-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 468,
+        "y": 328.40625,
+        "width": 504,
+        "height": 447.1875,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "ai-tasks",
+      "group": 8,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-ai-tasks-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 295,
+        "width": 564,
+        "height": 501,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "ai-confirm",
+      "group": 8,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-ai-confirm-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 454,
+        "y": 678.890625,
+        "width": 532,
+        "height": 117.5,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(120, 120, 128, 0.12)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "review",
+      "group": 9,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-review-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 403,
+        "width": 564,
+        "height": 276,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "review-preview",
+      "group": 9,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-review-preview-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 120,
+        "width": 564,
+        "height": 968.296875,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "submission-changes",
+      "group": 9,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-submission-changes-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 474.390625,
+        "width": 564,
+        "height": 168,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "submission-document",
+      "group": 9,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-submission-document-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 279.796875,
+        "width": 564,
+        "height": 600,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "version-comparison",
+      "group": 9,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-version-comparison-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 356,
+        "y": 630.09375,
+        "width": 952,
+        "height": 168,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-chart",
+      "group": 10,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-reading-chart-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 501.8125,
+        "width": 810,
+        "height": 497.890625,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(245, 245, 247)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-timeline",
+      "group": 10,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-reading-timeline-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 397.859375,
+        "width": 730,
+        "height": 204.75,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-columns",
+      "group": 10,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-reading-columns-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 469.609375,
+        "width": 810,
+        "height": 60.46875,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-cards",
+      "group": 10,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-reading-cards-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 443.078125,
+        "width": 810,
+        "height": 114.640625,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "editing-blocks",
+      "group": 10,
+      "width": 1440,
+      "theme": "light",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-editing-blocks-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 0,
+        "width": 810,
+        "height": 7062.84375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "提交修改",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "editing-nested",
+      "group": 10,
+      "width": 1440,
+      "theme": "light",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-editing-nested-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 0,
+        "width": 810,
+        "height": 7062.84375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "提交修改",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "settings-tokens",
+      "group": 11,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-settings-tokens-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 468,
+        "y": 748,
+        "width": 504,
+        "height": 104,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "settings-document",
+      "group": 11,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-settings-document-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 468,
+        "y": 821,
+        "width": 504,
+        "height": 59,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(245, 245, 247)",
+        "borderRadius": "6px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "global-error",
+      "group": 11,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-global-error-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 1311,
+        "y": 125,
+        "width": 107,
+        "height": 36,
+        "color": "rgb(215, 0, 21)",
+        "background": "rgb(255, 242, 241)",
+        "borderRadius": "12px",
+        "boxShadow": "rgba(0, 0, 0, 0.12) 0px 10px 34px 0px, rgba(0, 0, 0, 0.07) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "25"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "toast",
+      "group": 11,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-toast-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 637,
+        "y": 938,
+        "width": 166,
+        "height": 39,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(29, 29, 31)",
+        "borderRadius": "980px",
+        "boxShadow": "rgba(0, 0, 0, 0.12) 0px 10px 34px 0px, rgba(0, 0, 0, 0.07) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "70"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "notification-empty",
+      "group": 3,
+      "width": 1440,
+      "theme": "light",
+      "screenshot": "E2-notification-empty-1440-light.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 462,
+        "y": 495.5,
+        "width": 516,
+        "height": 134,
+        "color": "rgb(66, 66, 69)",
+        "background": "rgb(245, 245, 247)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "selection",
+      "group": 1,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-selection-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 88.1953125,
+        "y": 918.8125,
+        "width": 213.609375,
+        "height": 65.1875,
+        "color": "rgb(66, 66, 69)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "980px",
+        "boxShadow": "rgba(0, 0, 0, 0.12) 0px 10px 34px 0px, rgba(0, 0, 0, 0.07) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "40"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "rich-editor",
+      "group": 2,
+      "width": 390,
+      "theme": "light",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-rich-editor-390-light.png",
+      "status": "not-applicable-mobile-editor",
+      "viewport": 390,
+      "scrollWidth": 427,
+      "targetUnavailable": true,
+      "mobileEditingRestriction": true
+    },
+    {
+      "name": "notifications",
+      "group": 3,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-notifications-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 280.515625,
+        "width": 310,
+        "height": 563.953125,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "notification-preferences",
+      "group": 3,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-notification-preferences-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 12,
+        "y": 85.5,
+        "width": 366,
+        "height": 829,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-modal",
+      "group": 4,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-share-modal-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 16,
+        "y": 177.5,
+        "width": 358,
+        "height": 645,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-revoke",
+      "group": 4,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-share-revoke-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 131.296875,
+        "y": 722,
+        "width": 190.703125,
+        "height": 81,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(120, 120, 128, 0.12)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-expired",
+      "group": 4,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-share-expired-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 0,
+        "y": 202,
+        "width": 390,
+        "height": 107,
+        "color": "rgb(66, 66, 69)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "16px",
+        "boxShadow": "rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0.04) 0px 2px 12px 0px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-page",
+      "group": 4,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-share-page-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 3561.59375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "mentions",
+      "group": 5,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-mentions-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 51,
+        "y": 414.96875,
+        "width": 280,
+        "height": 240,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "12px",
+        "boxShadow": "rgba(0, 0, 0, 0.12) 0px 10px 34px 0px, rgba(0, 0, 0, 0.07) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "10"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "selection-summary",
+      "group": 5,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-selection-summary-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 51,
+        "y": 591.96875,
+        "width": 312,
+        "height": 125.796875,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(120, 120, 128, 0.12)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "admin-accounts",
+      "group": 6,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-admin-accounts-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 16,
+        "y": 12,
+        "width": 358,
+        "height": 976,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "admin-confirm",
+      "group": 6,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-admin-confirm-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 68,
+        "y": 672,
+        "width": 254,
+        "height": 90,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(120, 120, 128, 0.12)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "integrations",
+      "group": 6,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-integrations-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 68,
+        "y": 361,
+        "width": 254,
+        "height": 575.28125,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(245, 245, 247)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "cli-consent",
+      "group": 7,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-cli-consent-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 56,
+        "y": 655.109375,
+        "width": 278,
+        "height": 271.390625,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "oauth-consent",
+      "group": 7,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-oauth-consent-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 24,
+        "y": 0,
+        "width": 342,
+        "height": 1232.375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "forgot-password",
+      "group": 7,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-forgot-password-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 24,
+        "y": 300.203125,
+        "width": 342,
+        "height": 399.59375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "invite",
+      "group": 7,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-invite-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 24,
+        "y": 188.203125,
+        "width": 342,
+        "height": 623.59375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reset",
+      "group": 7,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-reset-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 24,
+        "y": 188.203125,
+        "width": 342,
+        "height": 623.59375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "import-upload",
+      "group": 8,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-import-upload-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 12,
+        "y": 248.5,
+        "width": 366,
+        "height": 503,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(255, 255, 255)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.18) 0px 28px 80px 0px, rgba(0, 0, 0, 0.08) 0px 6px 20px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "import-preview",
+      "group": 8,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-import-preview-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 327.8125,
+        "width": 310,
+        "height": 466.375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "ai-tasks",
+      "group": 8,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-ai-tasks-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 230.296875,
+        "width": 310,
+        "height": 648.390625,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "ai-confirm",
+      "group": 8,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-ai-confirm-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 56,
+        "y": 761.390625,
+        "width": 278,
+        "height": 143,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(120, 120, 128, 0.12)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "review",
+      "group": 9,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-review-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 317,
+        "width": 310,
+        "height": 448,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "review-preview",
+      "group": 9,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-review-preview-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 12,
+        "width": 310,
+        "height": 1077.09375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "submission-changes",
+      "group": 9,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-submission-changes-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 461.796875,
+        "width": 310,
+        "height": 214,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "submission-document",
+      "group": 9,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-submission-document-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 274.796875,
+        "width": 310,
+        "height": 600,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "version-comparison",
+      "group": 9,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-version-comparison-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 18,
+        "y": 392.984375,
+        "width": 354,
+        "height": 214,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-chart",
+      "group": 10,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-reading-chart-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 20,
+        "y": 704.5,
+        "width": 350,
+        "height": 294.71875,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(245, 245, 247)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-timeline",
+      "group": 10,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-reading-timeline-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 20,
+        "y": 397.375,
+        "width": 350,
+        "height": 204.75,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-columns",
+      "group": 10,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-reading-columns-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 20,
+        "y": 434.125,
+        "width": 350,
+        "height": 130.9375,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-cards",
+      "group": 10,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-reading-cards-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 20,
+        "y": 379.0625,
+        "width": 350,
+        "height": 241.28125,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "editing-blocks",
+      "group": 10,
+      "width": 390,
+      "theme": "light",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-editing-blocks-390-light.png",
+      "status": "not-applicable-mobile-editor",
+      "viewport": 390,
+      "scrollWidth": 427,
+      "targetUnavailable": true,
+      "mobileEditingRestriction": true
+    },
+    {
+      "name": "editing-nested",
+      "group": 10,
+      "width": 390,
+      "theme": "light",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-editing-nested-390-light.png",
+      "status": "not-applicable-mobile-editor",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "targetUnavailable": true,
+      "mobileEditingRestriction": true
+    },
+    {
+      "name": "settings-tokens",
+      "group": 11,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-settings-tokens-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 856,
+        "width": 310,
+        "height": 104,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "settings-document",
+      "group": 11,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-settings-document-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 714,
+        "width": 310,
+        "height": 59,
+        "color": "rgb(29, 29, 31)",
+        "background": "rgb(245, 245, 247)",
+        "borderRadius": "6px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "global-error",
+      "group": 11,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-global-error-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 258,
+        "y": 106,
+        "width": 124,
+        "height": 62,
+        "color": "rgb(215, 0, 21)",
+        "background": "rgb(255, 242, 241)",
+        "borderRadius": "12px",
+        "boxShadow": "rgba(0, 0, 0, 0.12) 0px 10px 34px 0px, rgba(0, 0, 0, 0.07) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "25"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "toast",
+      "group": 11,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-toast-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 103,
+        "y": 913,
+        "width": 184,
+        "height": 64,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(29, 29, 31)",
+        "borderRadius": "980px",
+        "boxShadow": "rgba(0, 0, 0, 0.12) 0px 10px 34px 0px, rgba(0, 0, 0, 0.07) 0px 2px 8px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px",
+        "zIndex": "70"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "notification-empty",
+      "group": 3,
+      "width": 390,
+      "theme": "light",
+      "screenshot": "E2-notification-empty-390-light.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 64,
+        "y": 495.5,
+        "width": 262,
+        "height": 134,
+        "color": "rgb(66, 66, 69)",
+        "background": "rgb(245, 245, 247)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "selection",
+      "group": 1,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-selection-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 613.1953125,
+        "y": 918.8125,
+        "width": 213.609375,
+        "height": 65.1875,
+        "color": "rgb(209, 209, 214)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "980px",
+        "boxShadow": "rgba(0, 0, 0, 0.6) 0px 12px 40px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "40"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "rich-editor",
+      "group": 2,
+      "width": 1440,
+      "theme": "dark",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-rich-editor-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 301,
+        "y": 466.1875,
+        "width": 776,
+        "height": 45.90625,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(118, 118, 128, 0.24)",
+        "borderRadius": "8px 8px 0px 0px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "提交修改",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 1
+    },
+    {
+      "name": "notifications",
+      "group": 3,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-notifications-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 297.90625,
+        "width": 564,
+        "height": 529.171875,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "notification-preferences",
+      "group": 3,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-notification-preferences-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 410,
+        "y": 120,
+        "width": 620,
+        "height": 760,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-modal",
+      "group": 4,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-share-modal-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 380,
+        "y": 221,
+        "width": 680,
+        "height": 558,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-revoke",
+      "group": 4,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-share-revoke-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 726.375,
+        "y": 678.5,
+        "width": 281.625,
+        "height": 81,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(118, 118, 128, 0.24)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-expired",
+      "group": 4,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-share-expired-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 360,
+        "y": 202,
+        "width": 720,
+        "height": 107,
+        "color": "rgb(209, 209, 214)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "16px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-page",
+      "group": 4,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-share-page-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 250,
+        "y": 0,
+        "width": 940,
+        "height": 3215.40625,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "mentions",
+      "group": 5,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-mentions-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 1181,
+        "y": 500.359375,
+        "width": 200,
+        "height": 240,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "12px",
+        "boxShadow": "rgba(0, 0, 0, 0.6) 0px 12px 40px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "10"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "selection-summary",
+      "group": 5,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-selection-summary-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 1181,
+        "y": 653.203125,
+        "width": 216,
+        "height": 125.796875,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(118, 118, 128, 0.24)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "admin-accounts",
+      "group": 6,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-admin-accounts-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 295,
+        "y": 120,
+        "width": 850,
+        "height": 760,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "admin-confirm",
+      "group": 6,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-admin-confirm-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 836.953125,
+        "y": 559,
+        "width": 256.046875,
+        "height": 56,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(118, 118, 128, 0.24)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "integrations",
+      "group": 6,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-integrations-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 347,
+        "y": 314,
+        "width": 746,
+        "height": 514.109375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(44, 44, 46)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "cli-consent",
+      "group": 7,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-cli-consent-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 422,
+        "y": 661.515625,
+        "width": 596,
+        "height": 271.390625,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "oauth-consent",
+      "group": 7,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-oauth-consent-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 520,
+        "y": 0,
+        "width": 400,
+        "height": 1219.375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "forgot-password",
+      "group": 7,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-forgot-password-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 520,
+        "y": 312.09375,
+        "width": 400,
+        "height": 375.796875,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "invite",
+      "group": 7,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-invite-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 520,
+        "y": 188.203125,
+        "width": 400,
+        "height": 623.59375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reset",
+      "group": 7,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-reset-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 520,
+        "y": 188.203125,
+        "width": 400,
+        "height": 623.59375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "import-upload",
+      "group": 8,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-import-upload-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 440,
+        "y": 257.5,
+        "width": 560,
+        "height": 485,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "import-preview",
+      "group": 8,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-import-preview-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 468,
+        "y": 328.40625,
+        "width": 504,
+        "height": 447.1875,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "ai-tasks",
+      "group": 8,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-ai-tasks-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 295,
+        "width": 564,
+        "height": 501,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "ai-confirm",
+      "group": 8,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-ai-confirm-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 454,
+        "y": 678.890625,
+        "width": 532,
+        "height": 117.5,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(118, 118, 128, 0.24)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "review",
+      "group": 9,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-review-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 403,
+        "width": 564,
+        "height": 276,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "review-preview",
+      "group": 9,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-review-preview-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 120,
+        "width": 564,
+        "height": 968.296875,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "submission-changes",
+      "group": 9,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-submission-changes-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 474.390625,
+        "width": 564,
+        "height": 168,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "submission-document",
+      "group": 9,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-submission-document-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 438,
+        "y": 279.796875,
+        "width": 564,
+        "height": 600,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "version-comparison",
+      "group": 9,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-version-comparison-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 356,
+        "y": 630.09375,
+        "width": 952,
+        "height": 168,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-chart",
+      "group": 10,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-reading-chart-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 501.8125,
+        "width": 810,
+        "height": 497.890625,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(44, 44, 46)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-timeline",
+      "group": 10,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-reading-timeline-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 397.859375,
+        "width": 730,
+        "height": 204.75,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-columns",
+      "group": 10,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-reading-columns-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 469.609375,
+        "width": 810,
+        "height": 60.46875,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-cards",
+      "group": 10,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-reading-cards-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 443.078125,
+        "width": 810,
+        "height": 114.640625,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "editing-blocks",
+      "group": 10,
+      "width": 1440,
+      "theme": "dark",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-editing-blocks-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 0,
+        "width": 810,
+        "height": 7062.84375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "提交修改",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "editing-nested",
+      "group": 10,
+      "width": 1440,
+      "theme": "dark",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-editing-nested-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 284,
+        "y": 0,
+        "width": 810,
+        "height": 7062.84375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "提交修改",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（0）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "settings-tokens",
+      "group": 11,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-settings-tokens-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 468,
+        "y": 748,
+        "width": 504,
+        "height": 104,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "settings-document",
+      "group": 11,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-settings-document-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 468,
+        "y": 821,
+        "width": 504,
+        "height": 59,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(17, 17, 19)",
+        "borderRadius": "6px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "global-error",
+      "group": 11,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-global-error-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 1311,
+        "y": 125,
+        "width": 107,
+        "height": 36,
+        "color": "rgb(255, 105, 97)",
+        "background": "rgb(58, 29, 28)",
+        "borderRadius": "12px",
+        "boxShadow": "rgba(0, 0, 0, 0.6) 0px 12px 40px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "25"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "toast",
+      "group": 11,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-toast-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 637,
+        "y": 938,
+        "width": 166,
+        "height": 39,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "980px",
+        "boxShadow": "rgba(0, 0, 0, 0.6) 0px 12px 40px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "70"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "notification-empty",
+      "group": 3,
+      "width": 1440,
+      "theme": "dark",
+      "screenshot": "E2-notification-empty-1440-dark.png",
+      "status": "captured",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "target": {
+        "x": 462,
+        "y": 495.5,
+        "width": 516,
+        "height": 134,
+        "color": "rgb(209, 209, 214)",
+        "background": "rgb(44, 44, 46)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "编辑文档",
+          "width": 80,
+          "scrollWidth": 80,
+          "clipped": false
+        },
+        {
+          "text": "审核发布（4）",
+          "width": 114,
+          "scrollWidth": 114,
+          "clipped": false
+        },
+        {
+          "text": "分享",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 54,
+          "scrollWidth": 54,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "selection",
+      "group": 1,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-selection-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 88.1953125,
+        "y": 918.8125,
+        "width": 213.609375,
+        "height": 65.1875,
+        "color": "rgb(209, 209, 214)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "980px",
+        "boxShadow": "rgba(0, 0, 0, 0.6) 0px 12px 40px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "40"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "rich-editor",
+      "group": 2,
+      "width": 390,
+      "theme": "dark",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-rich-editor-390-dark.png",
+      "status": "not-applicable-mobile-editor",
+      "viewport": 390,
+      "scrollWidth": 427,
+      "targetUnavailable": true,
+      "mobileEditingRestriction": true
+    },
+    {
+      "name": "notifications",
+      "group": 3,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-notifications-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 280.515625,
+        "width": 310,
+        "height": 563.953125,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "notification-preferences",
+      "group": 3,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-notification-preferences-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 12,
+        "y": 85.5,
+        "width": 366,
+        "height": 829,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-modal",
+      "group": 4,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-share-modal-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 16,
+        "y": 177.5,
+        "width": 358,
+        "height": 645,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-revoke",
+      "group": 4,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-share-revoke-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 131.296875,
+        "y": 722,
+        "width": 190.703125,
+        "height": 81,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(118, 118, 128, 0.24)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-expired",
+      "group": 4,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-share-expired-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 0,
+        "y": 202,
+        "width": 390,
+        "height": 107,
+        "color": "rgb(209, 209, 214)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "16px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "share-page",
+      "group": 4,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-share-page-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 3561.59375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "mentions",
+      "group": 5,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-mentions-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 51,
+        "y": 414.96875,
+        "width": 280,
+        "height": 240,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "12px",
+        "boxShadow": "rgba(0, 0, 0, 0.6) 0px 12px 40px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "10"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "selection-summary",
+      "group": 5,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-selection-summary-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 51,
+        "y": 591.96875,
+        "width": 312,
+        "height": 125.796875,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(118, 118, 128, 0.24)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "admin-accounts",
+      "group": 6,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-admin-accounts-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 16,
+        "y": 12,
+        "width": 358,
+        "height": 976,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "admin-confirm",
+      "group": 6,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-admin-confirm-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 68,
+        "y": 672,
+        "width": 254,
+        "height": 90,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(118, 118, 128, 0.24)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "integrations",
+      "group": 6,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-integrations-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 68,
+        "y": 361,
+        "width": 254,
+        "height": 575.28125,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(44, 44, 46)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "cli-consent",
+      "group": 7,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-cli-consent-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 56,
+        "y": 655.109375,
+        "width": 278,
+        "height": 271.390625,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "oauth-consent",
+      "group": 7,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-oauth-consent-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 24,
+        "y": 0,
+        "width": 342,
+        "height": 1232.375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "forgot-password",
+      "group": 7,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-forgot-password-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 24,
+        "y": 300.203125,
+        "width": 342,
+        "height": 399.59375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "invite",
+      "group": 7,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-invite-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 24,
+        "y": 188.203125,
+        "width": 342,
+        "height": 623.59375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reset",
+      "group": 7,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-reset-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 24,
+        "y": 188.203125,
+        "width": 342,
+        "height": 623.59375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "import-upload",
+      "group": 8,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-import-upload-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 12,
+        "y": 248.5,
+        "width": 366,
+        "height": 503,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "20px",
+        "boxShadow": "rgba(0, 0, 0, 0.7) 0px 30px 90px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "import-preview",
+      "group": 8,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-import-preview-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 327.8125,
+        "width": 310,
+        "height": 466.375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "ai-tasks",
+      "group": 8,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-ai-tasks-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 230.296875,
+        "width": 310,
+        "height": 648.390625,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "ai-confirm",
+      "group": 8,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-ai-confirm-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 56,
+        "y": 761.390625,
+        "width": 278,
+        "height": 143,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(118, 118, 128, 0.24)",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "review",
+      "group": 9,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-review-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 317,
+        "width": 310,
+        "height": 448,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "review-preview",
+      "group": 9,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-review-preview-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 12,
+        "width": 310,
+        "height": 1077.09375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "submission-changes",
+      "group": 9,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-submission-changes-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 461.796875,
+        "width": 310,
+        "height": 214,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "submission-document",
+      "group": 9,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-submission-document-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 274.796875,
+        "width": 310,
+        "height": 600,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "version-comparison",
+      "group": 9,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-version-comparison-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 18,
+        "y": 392.984375,
+        "width": 354,
+        "height": 214,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-chart",
+      "group": 10,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-reading-chart-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 20,
+        "y": 704.5,
+        "width": 350,
+        "height": 294.71875,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(44, 44, 46)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-timeline",
+      "group": 10,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-reading-timeline-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 20,
+        "y": 397.375,
+        "width": 350,
+        "height": 204.75,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-columns",
+      "group": 10,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-reading-columns-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 20,
+        "y": 434.125,
+        "width": 350,
+        "height": 130.9375,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "reading-cards",
+      "group": 10,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-reading-cards-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 20,
+        "y": 379.0625,
+        "width": 350,
+        "height": 241.28125,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "editing-blocks",
+      "group": 10,
+      "width": 390,
+      "theme": "dark",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-editing-blocks-390-dark.png",
+      "status": "not-applicable-mobile-editor",
+      "viewport": 390,
+      "scrollWidth": 427,
+      "targetUnavailable": true,
+      "mobileEditingRestriction": true
+    },
+    {
+      "name": "editing-nested",
+      "group": 10,
+      "width": 390,
+      "theme": "dark",
+      "note": "390px screenshot resizes a desktop-opened editor; fresh mobile navigation remains read-only.",
+      "screenshot": "E2-editing-nested-390-dark.png",
+      "status": "not-applicable-mobile-editor",
+      "viewport": 390,
+      "scrollWidth": 427,
+      "targetUnavailable": true,
+      "mobileEditingRestriction": true
+    },
+    {
+      "name": "settings-tokens",
+      "group": 11,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-settings-tokens-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 856,
+        "width": 310,
+        "height": 104,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "settings-document",
+      "group": 11,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-settings-document-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 40,
+        "y": 714,
+        "width": 310,
+        "height": 59,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(17, 17, 19)",
+        "borderRadius": "6px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "global-error",
+      "group": 11,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-global-error-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 258,
+        "y": 106,
+        "width": 124,
+        "height": 62,
+        "color": "rgb(255, 105, 97)",
+        "background": "rgb(58, 29, 28)",
+        "borderRadius": "12px",
+        "boxShadow": "rgba(0, 0, 0, 0.6) 0px 12px 40px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "25"
+      },
+      "buttons": [],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "toast",
+      "group": 11,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-toast-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 103,
+        "y": 913,
+        "width": 184,
+        "height": 64,
+        "color": "rgb(245, 245, 247)",
+        "background": "rgb(28, 28, 30)",
+        "borderRadius": "980px",
+        "boxShadow": "rgba(0, 0, 0, 0.6) 0px 12px 40px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px",
+        "zIndex": "70"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    },
+    {
+      "name": "notification-empty",
+      "group": 3,
+      "width": 390,
+      "theme": "dark",
+      "screenshot": "E2-notification-empty-390-dark.png",
+      "status": "captured",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "target": {
+        "x": 64,
+        "y": 495.5,
+        "width": 262,
+        "height": 134,
+        "color": "rgb(209, 209, 214)",
+        "background": "rgb(44, 44, 46)",
+        "borderRadius": "16px",
+        "boxShadow": "none",
+        "zIndex": "auto"
+      },
+      "buttons": [
+        {
+          "text": "首页",
+          "width": 26,
+          "scrollWidth": 26,
+          "clipped": false
+        },
+        {
+          "text": "☰",
+          "width": 32,
+          "scrollWidth": 32,
+          "clipped": false
+        },
+        {
+          "text": "查看审核",
+          "width": 68,
+          "scrollWidth": 68,
+          "clipped": false
+        },
+        {
+          "text": "更多",
+          "width": 42,
+          "scrollWidth": 42,
+          "clipped": false
+        }
+      ],
+      "legacyRichEditorNodes": 0,
+      "nativeTiptapNodes": 0
+    }
+  ],
+  "issues": [],
+  "runtimeErrors": [],
+  "consoleMessages": [
+    "1440/light: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "1440/light: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "1440/light: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "390/light: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "390/light: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "390/light: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "1440/dark: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "1440/dark: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "1440/dark: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "390/dark: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "390/dark: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "390/dark: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "blockedExternalRequests": 0,
+  "fixture": "Real createApp + disposable SQLite + actual dist + installed Chrome; only database fixtures and local email sink.",
+  "mobileEditor": "Actual desktop editing state resized to 390px. Fresh mobile editing is intentionally unavailable."
+}

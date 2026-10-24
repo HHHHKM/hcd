@@ -1,0 +1,84 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: hcd:local
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      TRUST_PROXY: ${TRUST_PROXY:-172.28.0.0/24}
+      DATA_DIR: /data
+      WEB_ROOT: /app/dist
+      APP_URL: ${APP_URL:?Set APP_URL in deploy/.env}
+      RENDER_HOST: ${RENDER_HOST:?Set RENDER_HOST in deploy/.env}
+      SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY in deploy/.env}
+      HCD_SEED_DEMO: ${HCD_SEED_DEMO:-0}
+      EXPORTER_URL: http://exporter:4000
+    networks: [default, export_private]
+    depends_on:
+      exporter:
+        condition: service_healthy
+    volumes:
+      - hcd_data:/data
+    expose:
+      - "3000"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3
+
+  exporter:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.exporter
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs: [/tmp]
+    shm_size: 256mb
+    networks: [export_private]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4000/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      start_period: 20s
+      retries: 3
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      app:
+        condition: service_healthy
+    environment:
+      APP_HOST: ${APP_HOST:?Set APP_HOST in deploy/.env}
+      RENDER_HOST: ${RENDER_HOST:?Set RENDER_HOST in deploy/.env}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.28.0.0/24
+  export_private:
+    internal: true
+
+volumes:
+  hcd_data: {}
+  caddy_data: {}
+  caddy_config: {}

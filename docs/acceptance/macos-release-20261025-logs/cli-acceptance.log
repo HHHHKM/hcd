@@ -1,0 +1,6 @@
+2026-10-24T18:26:22.082Z Fresh temporary SQLite database and loopback HTTP application started.
+2026-10-24T18:26:22.429Z Actual pnpm mdoc login requested device authorization; no --token or HCD_TOKEN was supplied.
+2026-10-24T18:26:24.068Z Real Chrome 155.0.8059.85: signed in, matched the terminal code, selected read scope + one document, approved.
+2026-10-24T18:26:25.456Z Device poll completed; CLI saved a 32-base32 hcd_pat_ token with file mode 0600. Credential values omitted.
+2026-10-24T18:26:25.686Z Actual CLI mcp stdio child initialized (hcd-mdoc); tools/list returned 20 tools; read_document succeeded.
+2026-10-24T18:26:26.080Z Closed MCP/browser/HTTP processes and removed the temporary database, browser context, and CLI credential profile.

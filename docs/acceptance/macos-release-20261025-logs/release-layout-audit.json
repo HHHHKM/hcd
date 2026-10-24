@@ -1,0 +1,261 @@
+{
+  "browser": "155.0.8059.85",
+  "observations": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "mentions": {
+        "closed": {
+          "scrollY": 0,
+          "scrollWidth": 1440,
+          "doc": {
+            "x": 240,
+            "y": 146,
+            "width": 898,
+            "height": 3171.734375
+          },
+          "composer": {
+            "x": 1168,
+            "y": 670.359375,
+            "width": 242,
+            "height": 103
+          }
+        },
+        "opened": {
+          "scrollY": 0,
+          "scrollWidth": 1440,
+          "doc": {
+            "x": 240,
+            "y": 146,
+            "width": 898,
+            "height": 3171.734375
+          },
+          "composer": {
+            "x": 1168,
+            "y": 670.359375,
+            "width": 242,
+            "height": 103
+          }
+        },
+        "menu": {
+          "x": 1181,
+          "y": 500.359375,
+          "width": 200,
+          "height": 240
+        }
+      },
+      "ai": {
+        "scrollable": [
+          {
+            "className": "ai-task-list",
+            "clientHeight": 501,
+            "scrollHeight": 572
+          }
+        ]
+      },
+      "prefs": {
+        "direction": "row",
+        "width": 38,
+        "height": 22
+      },
+      "token": {
+        "x": 468,
+        "y": 1135,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "mentions": {
+        "closed": {
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "doc": {
+            "x": 0,
+            "y": 216.796875,
+            "width": 390,
+            "height": 3462.609375
+          },
+          "composer": {
+            "x": 38,
+            "y": 580.96875,
+            "width": 338,
+            "height": 107
+          }
+        },
+        "opened": {
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "doc": {
+            "x": 0,
+            "y": 216.796875,
+            "width": 390,
+            "height": 3462.609375
+          },
+          "composer": {
+            "x": 38,
+            "y": 580.96875,
+            "width": 338,
+            "height": 107
+          }
+        },
+        "menu": {
+          "x": 51,
+          "y": 414.96875,
+          "width": 280,
+          "height": 240
+        }
+      },
+      "ai": {
+        "scrollable": [
+          {
+            "className": "ai-task-list",
+            "clientHeight": 648,
+            "scrollHeight": 648
+          }
+        ]
+      },
+      "prefs": {
+        "direction": "row",
+        "width": 38,
+        "height": 22
+      },
+      "token": {
+        "x": 40,
+        "y": 983,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "mentions": {
+        "closed": {
+          "scrollY": 0,
+          "scrollWidth": 1440,
+          "doc": {
+            "x": 240,
+            "y": 146,
+            "width": 898,
+            "height": 3171.734375
+          },
+          "composer": {
+            "x": 1168,
+            "y": 670.359375,
+            "width": 242,
+            "height": 103
+          }
+        },
+        "opened": {
+          "scrollY": 0,
+          "scrollWidth": 1440,
+          "doc": {
+            "x": 240,
+            "y": 146,
+            "width": 898,
+            "height": 3171.734375
+          },
+          "composer": {
+            "x": 1168,
+            "y": 670.359375,
+            "width": 242,
+            "height": 103
+          }
+        },
+        "menu": {
+          "x": 1181,
+          "y": 500.359375,
+          "width": 200,
+          "height": 240
+        }
+      },
+      "ai": {
+        "scrollable": [
+          {
+            "className": "ai-task-list",
+            "clientHeight": 501,
+            "scrollHeight": 572
+          }
+        ]
+      },
+      "prefs": {
+        "direction": "row",
+        "width": 38,
+        "height": 22
+      },
+      "token": {
+        "x": 468,
+        "y": 1135,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "mentions": {
+        "closed": {
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "doc": {
+            "x": 0,
+            "y": 216.796875,
+            "width": 390,
+            "height": 3462.609375
+          },
+          "composer": {
+            "x": 38,
+            "y": 580.96875,
+            "width": 338,
+            "height": 107
+          }
+        },
+        "opened": {
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "doc": {
+            "x": 0,
+            "y": 216.796875,
+            "width": 390,
+            "height": 3462.609375
+          },
+          "composer": {
+            "x": 38,
+            "y": 580.96875,
+            "width": 338,
+            "height": 107
+          }
+        },
+        "menu": {
+          "x": 51,
+          "y": 414.96875,
+          "width": 280,
+          "height": 240
+        }
+      },
+      "ai": {
+        "scrollable": [
+          {
+            "className": "ai-task-list",
+            "clientHeight": 648,
+            "scrollHeight": 648
+          }
+        ]
+      },
+      "prefs": {
+        "direction": "row",
+        "width": 38,
+        "height": 22
+      },
+      "token": {
+        "x": 40,
+        "y": 983,
+        "width": 16,
+        "height": 16
+      }
+    }
+  ]
+}

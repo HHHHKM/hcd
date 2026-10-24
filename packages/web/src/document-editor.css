@@ -1,0 +1,85 @@
+.structured-document-editor .module-body {
+  min-width: 0;
+}
+.structured-document-editor .module-title-row {
+  margin-bottom: var(--space-8);
+}
+.structure-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-6);
+  margin: var(--space-6) 0 var(--space-12);
+  font-size: var(--font-size-12);
+  color: var(--muted-ink);
+}
+.structure-actions button {
+  padding: var(--space-5) var(--space-8);
+  border: 1px solid var(--line);
+  border-radius: var(--space-4);
+  color: var(--ink);
+  background: var(--paper);
+}
+.structure-actions button:hover {
+  background: var(--warm-paper);
+}
+.structure-actions button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.structure-actions .structure-delete {
+  color: var(--danger);
+}
+.structure-index {
+  margin-right: auto;
+  font-variant-numeric: tabular-nums;
+}
+.editable-block {
+  border: 1px solid var(--line);
+  border-radius: var(--space-8);
+  padding: var(--space-10) var(--space-12) var(--space-16);
+  margin: var(--space-16) 0;
+  min-width: 0;
+}
+.draft-history-controls {
+  display: flex;
+  gap: var(--space-5);
+}
+.editor-feedback {
+  font-size: var(--font-size-12);
+  line-height: 1.6;
+  padding: var(--space-10) var(--space-12);
+  border-left: 3px solid var(--accent);
+  background: var(--warm-paper);
+}
+.structured-document-editor input:focus-visible,
+.structured-document-editor button:focus-visible,
+.structured-document-editor select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+@media (max-width: 760px) {
+  .editable-block {
+    padding: var(--space-8);
+  }
+  .structure-actions {
+    gap: var(--space-4);
+  }
+  .document-page {
+    padding-left: var(--space-20);
+    padding-right: var(--space-20);
+  }
+}
+
+.document-editor-fields {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.document-editor-fields:disabled {
+  opacity: 0.65;
+}
+.edit-dock {
+  flex-wrap: wrap;
+}

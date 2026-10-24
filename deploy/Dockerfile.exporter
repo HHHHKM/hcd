@@ -1,0 +1,11 @@
+# Keep this tag synchronized with the exact playwright dependency in package.json.
+FROM mcr.microsoft.com/playwright:v1.64.1-noble
+ENV NODE_ENV=production PORT=4000 PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+WORKDIR /app
+RUN corepack enable && corepack prepare pnpm@11.25.0 --activate
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --prod=false --frozen-lockfile --ignore-scripts
+COPY packages/exporter ./packages/exporter
+USER pwuser
+EXPOSE 4000
+CMD ["./node_modules/.bin/tsx", "packages/exporter/src/main.ts"]

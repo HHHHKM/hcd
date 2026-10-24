@@ -1,0 +1,9 @@
+Command: pnpm exec tsx ../../../work/check-release-layout.ts
+Started UTC: 2026-10-24T18:00:13.606410+00:00
+Actual layout 1440 light: PASS
+Actual layout 390 light: PASS
+Actual layout 1440 dark: PASS
+Actual layout 390 dark: PASS
+
+Exit code: 0
+Ended UTC: 2026-10-24T18:00:26.065578+00:00

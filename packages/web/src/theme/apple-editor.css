@@ -1,0 +1,226 @@
+/*
+ * Apple-inspired visual layer — structured editor (edit mode):
+ * block cards, inline field editors, structure actions and the title field.
+ */
+
+html .edit-mode-note {
+  margin: 0 0 var(--space-20);
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+}
+
+html .edit-live-dot {
+  background: var(--success);
+}
+
+/* Title field keeps the document-title voice while editing. */
+html .doc-title-block .doc-title-edit,
+html .app.dark .doc-title-block .doc-title-edit {
+  min-height: 56px;
+  padding: var(--space-6) var(--space-14);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: var(--font-size-30);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-display);
+}
+
+/* Structure actions: quiet pill buttons instead of boxed controls. */
+html .structure-actions {
+  gap: var(--space-4);
+  margin: var(--space-8) 0 var(--space-12);
+  color: var(--faint-ink);
+}
+
+html .structure-actions button,
+html .block-editor button:not(.be-inline-preview),
+html .be-actions button {
+  height: 26px;
+  padding: 0 var(--space-10);
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--fill);
+  color: var(--ink);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-medium);
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+html .structure-actions button:hover:not(:disabled),
+html .block-editor button:not(.be-inline-preview):hover:not(:disabled),
+html .be-actions button:hover:not(:disabled) {
+  background: var(--fill-hover);
+}
+
+html .structure-actions button:disabled,
+html .block-editor button:disabled {
+  opacity: var(--disabled-opacity);
+}
+
+html .structure-actions .structure-delete {
+  color: var(--danger);
+}
+
+html .structure-index {
+  color: var(--faint-ink);
+  font-weight: var(--weight-semibold);
+}
+
+/* Each block is a soft card that lights up while focused. */
+html .editable-block {
+  margin: var(--space-12) 0;
+  padding: var(--space-8) var(--space-16) var(--space-16);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-m);
+  background: var(--paper);
+  transition:
+    border-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+html .editable-block:focus-within {
+  border-color: color-mix(in srgb, var(--focus-ring) 45%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus-ring) 14%, transparent);
+}
+
+html .be-type {
+  color: var(--faint-ink);
+  font-size: var(--font-size-12);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0;
+}
+
+html .be-field > span {
+  color: var(--muted-ink);
+  font-weight: var(--weight-medium);
+}
+
+html .be-field input,
+html .be-field select,
+html .be-picker {
+  min-height: 36px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: var(--font-size-14);
+}
+
+html .block-editor .be-inline-preview {
+  min-height: 42px;
+  padding: var(--space-10) var(--space-12);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: var(--font-size-14);
+  line-height: 1.6;
+  transition: border-color var(--duration-fast) var(--ease-standard);
+}
+
+html .block-editor .be-inline-preview:hover {
+  border-color: color-mix(in srgb, var(--focus-ring) 45%, transparent);
+}
+
+html :is(.be-field input, .be-field select, .be-picker, .structured-document-editor input):focus-visible,
+html .block-editor .be-inline-preview:focus-visible {
+  border-color: var(--focus-ring);
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus-ring) 30%, transparent);
+}
+
+/* "+ Add block" picker reads as a tinted action, not a form field. */
+html .be-picker {
+  width: auto;
+  min-width: 180px;
+  margin-top: var(--space-8);
+  padding: 0 var(--space-14);
+  border-color: var(--transparent);
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: var(--weight-semibold);
+  cursor: pointer;
+}
+
+html .be-rich-toolbar {
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 1px solid var(--line);
+  border-bottom: 0;
+  border-radius: var(--radius-s) var(--radius-s) 0 0;
+  background: var(--surface-raised);
+}
+
+html .be-rich-toolbar button[aria-pressed='true'] {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+html .be-rich-toolbar input {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  background: var(--paper);
+}
+
+html .be-inline-content {
+  border: 1px solid var(--line);
+  border-radius: 0 0 var(--radius-s) var(--radius-s);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: var(--font-size-14);
+}
+
+html .be-inline-content:focus {
+  border-color: var(--focus-ring);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus-ring) 20%, transparent);
+}
+
+html .editor-feedback {
+  border-left: 0;
+  border-radius: var(--radius-s);
+  background: var(--info-surface);
+  color: var(--ink);
+}
+
+html .add-paragraph,
+html .add-module,
+html .app.dark .add-paragraph,
+html .app.dark .add-module {
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-m);
+  color: var(--accent);
+  font-weight: var(--weight-medium);
+}
+
+html .add-paragraph:hover,
+html .add-module:hover,
+html .app.dark .add-paragraph:hover,
+html .app.dark .add-module:hover {
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+html .app.dark .rich-editor,
+html .app.dark .rich-toolbar {
+  background: var(--paper);
+}
+
+html .app.dark .rich-toolbar button {
+  color: var(--muted-ink);
+}
+
+@media (max-width: 760px) {
+  html .editable-block {
+    padding: var(--space-8) var(--space-10) var(--space-12);
+  }
+
+  html .doc-title-block .doc-title-edit,
+  html .app.dark .doc-title-block .doc-title-edit {
+    font-size: var(--font-size-24);
+  }
+}

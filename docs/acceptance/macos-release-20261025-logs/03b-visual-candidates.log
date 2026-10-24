@@ -1,0 +1,226 @@
+Command: pnpm exec playwright test -c /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates.config.ts --update-snapshots
+Started UTC: 2026-10-24T17:50:26.004713+00:00
+
+Running 38 tests using 1 worker
+
+  ✓   1 visual/import-upload.visual.ts:9:3 › E4 import upload surface 1440 light (1.0s)
+  ✓   2 visual/import-upload.visual.ts:9:3 › E4 import upload surface 390 light (790ms)
+  ✓   3 visual/import-upload.visual.ts:9:3 › E4 import upload surface 1440 dark (819ms)
+  ✓   4 visual/import-upload.visual.ts:9:3 › E4 import upload surface 390 dark (804ms)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-selection-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-rich-editor-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notifications-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notification-preferences-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-modal-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-revoke-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-expired-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-page-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-mentions-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-selection-summary-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-admin-accounts-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-admin-confirm-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-integrations-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-cli-consent-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-oauth-consent-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-forgot-password-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-invite-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reset-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-import-upload-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-import-preview-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-ai-tasks-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-ai-confirm-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-review-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-review-preview-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-submission-changes-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-submission-document-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-version-comparison-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-chart-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-timeline-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-columns-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-cards-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-editing-blocks-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-editing-nested-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-settings-tokens-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-settings-document-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-global-error-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-toast-1440-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notification-empty-1440-light.png, writing actual.
+  ✓   5 visual/ui-surfaces.visual.ts:21:3 › E4 component surfaces 1440 light (1.5m)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-selection-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notifications-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notification-preferences-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-modal-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-revoke-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-expired-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-page-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-mentions-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-selection-summary-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-admin-accounts-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-admin-confirm-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-integrations-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-cli-consent-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-oauth-consent-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-forgot-password-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-invite-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reset-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-import-upload-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-import-preview-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-ai-tasks-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-ai-confirm-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-review-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-review-preview-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-submission-changes-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-submission-document-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-version-comparison-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-chart-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-timeline-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-columns-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-cards-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-settings-tokens-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-settings-document-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-global-error-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-toast-390-light.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notification-empty-390-light.png, writing actual.
+  ✓   6 visual/ui-surfaces.visual.ts:21:3 › E4 component surfaces 390 light (1.4m)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-selection-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-rich-editor-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notifications-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notification-preferences-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-modal-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-revoke-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-expired-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-page-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-mentions-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-selection-summary-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-admin-accounts-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-admin-confirm-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-integrations-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-cli-consent-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-oauth-consent-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-forgot-password-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-invite-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reset-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-import-upload-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-import-preview-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-ai-tasks-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-ai-confirm-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-review-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-review-preview-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-submission-changes-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-submission-document-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-version-comparison-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-chart-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-timeline-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-columns-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-cards-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-editing-blocks-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-editing-nested-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-settings-tokens-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-settings-document-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-global-error-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-toast-1440-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notification-empty-1440-dark.png, writing actual.
+  ✓   7 visual/ui-surfaces.visual.ts:21:3 › E4 component surfaces 1440 dark (1.5m)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-selection-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notifications-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notification-preferences-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-modal-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-revoke-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-expired-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-share-page-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-mentions-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-selection-summary-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-admin-accounts-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-admin-confirm-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-integrations-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-cli-consent-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-oauth-consent-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-forgot-password-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-invite-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reset-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-import-upload-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-import-preview-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-ai-tasks-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-ai-confirm-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-review-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-review-preview-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-submission-changes-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-submission-document-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-version-comparison-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-chart-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-timeline-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-columns-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-reading-cards-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-settings-tokens-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-settings-document-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-global-error-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-toast-390-dark.png, writing actual.
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/surface-notification-empty-390-dark.png, writing actual.
+  ✓   8 visual/ui-surfaces.visual.ts:21:3 › E4 component surfaces 390 dark (1.4m)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/home-1440-light.png, writing actual.
+  ✓   9 visual/ui.visual.ts:4:3 › home 1440 light (1.1s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/reading-1680-light.png, writing actual.
+  ✓  10 visual/ui.visual.ts:11:5 › reading 1680 light (1.3s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/reading-1440-light.png, writing actual.
+  ✓  11 visual/ui.visual.ts:11:5 › reading 1440 light (1.3s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/reading-1280-light.png, writing actual.
+  ✓  12 visual/ui.visual.ts:11:5 › reading 1280 light (1.3s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/reading-805-light.png, writing actual.
+  ✓  13 visual/ui.visual.ts:11:5 › reading 805 light (1.1s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/reading-390-light.png, writing actual.
+  ✓  14 visual/ui.visual.ts:11:5 › reading 390 light (1.1s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/edit-1440-light.png, writing actual.
+  ✓  15 visual/ui.visual.ts:26:3 › edit 1440 light (1.8s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/review-1440-light.png, writing actual.
+  ✓  16 visual/ui.visual.ts:34:3 › review 1440 light (1.3s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/history-1440-light.png, writing actual.
+  ✓  17 visual/ui.visual.ts:41:3 › history 1440 light (1.5s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/settings-1440-light.png, writing actual.
+  ✓  18 visual/ui.visual.ts:48:3 › settings 1440 light (1.0s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/guest-1440-light.png, writing actual.
+  ✓  19 visual/ui.visual.ts:55:5 › guest 1440 light (1.2s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/guest-390-light.png, writing actual.
+  ✓  20 visual/ui.visual.ts:55:5 › guest 390 light (1.1s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/login-1440-light.png, writing actual.
+  ✓  21 visual/ui.visual.ts:65:3 › login 1440 light (992ms)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/more-1440-light.png, writing actual.
+  ✓  22 visual/ui.visual.ts:73:5 › more menu 1440 light (1.2s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/more-360-light.png, writing actual.
+  ✓  23 visual/ui.visual.ts:73:5 › more menu 360 light (1.1s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/home-1440-dark.png, writing actual.
+  ✓  24 visual/ui.visual.ts:4:3 › home 1440 dark (1.0s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/reading-1680-dark.png, writing actual.
+  ✓  25 visual/ui.visual.ts:11:5 › reading 1680 dark (1.2s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/reading-1440-dark.png, writing actual.
+  ✓  26 visual/ui.visual.ts:11:5 › reading 1440 dark (1.2s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/reading-1280-dark.png, writing actual.
+  ✓  27 visual/ui.visual.ts:11:5 › reading 1280 dark (1.2s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/reading-805-dark.png, writing actual.
+  ✓  28 visual/ui.visual.ts:11:5 › reading 805 dark (1.2s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/reading-390-dark.png, writing actual.
+  ✓  29 visual/ui.visual.ts:11:5 › reading 390 dark (1.0s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/edit-1440-dark.png, writing actual.
+  ✓  30 visual/ui.visual.ts:26:3 › edit 1440 dark (2.0s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/review-1440-dark.png, writing actual.
+  ✓  31 visual/ui.visual.ts:34:3 › review 1440 dark (1.4s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/history-1440-dark.png, writing actual.
+  ✓  32 visual/ui.visual.ts:41:3 › history 1440 dark (1.4s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/settings-1440-dark.png, writing actual.
+  ✓  33 visual/ui.visual.ts:48:3 › settings 1440 dark (1.0s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/guest-1440-dark.png, writing actual.
+  ✓  34 visual/ui.visual.ts:55:5 › guest 1440 dark (1.2s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/guest-390-dark.png, writing actual.
+  ✓  35 visual/ui.visual.ts:55:5 › guest 390 dark (1.1s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/login-1440-dark.png, writing actual.
+  ✓  36 visual/ui.visual.ts:65:3 › login 1440 dark (992ms)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/more-1440-dark.png, writing actual.
+  ✓  37 visual/ui.visual.ts:73:5 › more menu 1440 dark (1.2s)
+A snapshot doesn't exist at /Users/h/Documents/Codex/2026-10-25/codex-hcd-release-20261025-zip-diff/work/visual-candidates/more-360-dark.png, writing actual.
+  ✓  38 visual/ui.visual.ts:73:5 › more menu 360 dark (1.1s)
+
+  Slow test file: visual/ui-surfaces.visual.ts (5.8m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  38 passed (6.5m)
+
+Exit code: 0
+Ended UTC: 2026-10-24T17:56:59.106640+00:00

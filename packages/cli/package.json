@@ -1,0 +1,9 @@
+{
+  "name": "@hcd/cli",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "bin": { "mdoc": "./src/index.ts" }
+}

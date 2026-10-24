@@ -1,0 +1,182 @@
+[
+  {
+    "file": "edit-1440-light.png",
+    "error": "62777 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "guest-1440-light.png",
+    "error": "56982 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "guest-390-light.png",
+    "error": "8936 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "more-1440-light.png",
+    "error": "68905 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "more-360-light.png",
+    "error": "8936 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "reading-1280-light.png",
+    "error": "49348 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "reading-1440-light.png",
+    "error": "68905 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "reading-1680-light.png",
+    "error": "78215 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "reading-390-light.png",
+    "error": "10859 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "reading-805-light.png",
+    "error": "20687 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "review-1440-light.png",
+    "error": "68905 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "surface-ai-confirm-1440-dark.png",
+    "error": "13382 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "surface-ai-confirm-1440-light.png",
+    "error": "13642 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "surface-ai-confirm-390-dark.png",
+    "error": "16912 pixels (ratio 0.05 of all image pixels) are different."
+  },
+  {
+    "file": "surface-ai-confirm-390-light.png",
+    "error": "65094 pixels (ratio 0.17 of all image pixels) are different."
+  },
+  {
+    "file": "surface-ai-tasks-1440-dark.png",
+    "error": "15004 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "surface-ai-tasks-1440-light.png",
+    "error": "15292 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "surface-ai-tasks-390-dark.png",
+    "error": "16408 pixels (ratio 0.05 of all image pixels) are different."
+  },
+  {
+    "file": "surface-ai-tasks-390-light.png",
+    "error": "49568 pixels (ratio 0.13 of all image pixels) are different."
+  },
+  {
+    "file": "surface-cli-consent-1440-dark.png",
+    "error": "17901 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "surface-cli-consent-1440-light.png",
+    "error": "17877 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "surface-cli-consent-390-dark.png",
+    "error": "15776 pixels (ratio 0.05 of all image pixels) are different."
+  },
+  {
+    "file": "surface-cli-consent-390-light.png",
+    "error": "15685 pixels (ratio 0.05 of all image pixels) are different."
+  },
+  {
+    "file": "surface-mentions-390-dark.png",
+    "error": "986 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "surface-mentions-390-light.png",
+    "error": "1103 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "surface-notification-preferences-1440-dark.png",
+    "error": "14333 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "surface-notification-preferences-1440-light.png",
+    "error": "14730 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "surface-notification-preferences-390-dark.png",
+    "error": "23109 pixels (ratio 0.06 of all image pixels) are different."
+  },
+  {
+    "file": "surface-notification-preferences-390-light.png",
+    "error": "67828 pixels (ratio 0.18 of all image pixels) are different."
+  },
+  {
+    "file": "surface-notifications-1440-dark.png",
+    "error": "5665 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "surface-notifications-1440-light.png",
+    "error": "5648 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "surface-notifications-390-dark.png",
+    "error": "5800 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "surface-notifications-390-light.png",
+    "error": "5781 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "surface-oauth-consent-390-dark.png",
+    "error": "2048 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "surface-oauth-consent-390-light.png",
+    "error": "1726 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "surface-reading-chart-1440-light.png",
+    "error": "92183 pixels (ratio 0.07 of all image pixels) are different."
+  },
+  {
+    "file": "surface-settings-tokens-1440-dark.png",
+    "error": "16922 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "surface-settings-tokens-1440-light.png",
+    "error": "11329 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "surface-settings-tokens-390-dark.png",
+    "error": "15513 pixels (ratio 0.04 of all image pixels) are different."
+  },
+  {
+    "file": "surface-settings-tokens-390-light.png",
+    "error": "11892 pixels (ratio 0.04 of all image pixels) are different."
+  },
+  {
+    "file": "surface-share-page-1440-light.png",
+    "error": "5494 pixels (ratio 0.01 of all image pixels) are different."
+  },
+  {
+    "file": "surface-toast-1440-dark.png",
+    "error": "29779 pixels (ratio 0.03 of all image pixels) are different."
+  },
+  {
+    "file": "surface-toast-1440-light.png",
+    "error": "24333 pixels (ratio 0.02 of all image pixels) are different."
+  },
+  {
+    "file": "surface-toast-390-dark.png",
+    "error": "24324 pixels (ratio 0.07 of all image pixels) are different."
+  },
+  {
+    "file": "surface-toast-390-light.png",
+    "error": "20821 pixels (ratio 0.06 of all image pixels) are different."
+  }
+]

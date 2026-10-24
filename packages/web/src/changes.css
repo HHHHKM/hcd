@@ -1,0 +1,163 @@
+.change-tabs {
+  display: flex;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+  margin: var(--space-16) 0;
+}
+.change-tabs button {
+  border: 1px solid var(--border, var(--line));
+  border-radius: var(--space-6);
+  background: var(--transparent);
+  padding: var(--space-8) var(--space-12);
+  color: inherit;
+  cursor: pointer;
+}
+.change-tabs button[aria-pressed='true'] {
+  background: var(--accent-soft, var(--paper));
+  border-color: var(--accent, var(--line));
+}
+.change-tabs button:focus-visible,
+.change-card button:focus-visible {
+  outline: 2px solid var(--accent, var(--focus-ring));
+  outline-offset: 3px;
+}
+.change-list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.change-card {
+  border: 1px solid var(--border, var(--line));
+  border-radius: var(--space-8);
+  padding: var(--space-16);
+  margin: var(--space-12) 0;
+  overflow-wrap: anywhere;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 150px;
+}
+.change-heading {
+  display: flex;
+  gap: var(--space-12);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.change-heading small,
+.change-count,
+.change-outcome {
+  color: var(--text-muted, var(--muted-ink));
+}
+.change-count {
+  font-size: var(--font-size-13);
+}
+.change-outcome,
+.change-notice {
+  font-size: var(--font-size-13);
+}
+.change-notice {
+  border-left: 3px solid var(--danger);
+  padding: var(--space-8) var(--space-12);
+  background: var(--accent-soft, var(--paper));
+}
+.change-text {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  margin: var(--space-12) 0;
+}
+.change-list ins,
+.change-links ins {
+  background: var(--surface-raised);
+  color: var(--success);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+.change-list del,
+.change-links del {
+  background: var(--surface-raised);
+  color: var(--danger);
+  text-decoration: line-through;
+}
+.change-list ins,
+.change-list del {
+  box-decoration-break: clone;
+}
+.change-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  margin: var(--space-12) 0;
+  white-space: pre-wrap;
+}
+.change-values > div {
+  padding: var(--space-10);
+  background: var(--surface-alt, var(--paper));
+  border-radius: var(--space-6);
+}
+.change-values small {
+  display: block;
+  margin-bottom: var(--space-6);
+}
+.change-position p {
+  margin: var(--space-6) 0;
+  font-size: var(--font-size-13);
+}
+.change-node {
+  border-top: 1px solid var(--border, var(--line));
+  margin-top: var(--space-12);
+  padding-top: var(--space-12);
+  max-height: 440px;
+  overflow: auto;
+}
+.change-node dl {
+  margin: 0;
+}
+.change-node dd {
+  margin: var(--space-4) 0 var(--space-12);
+}
+.change-empty {
+  color: var(--text-muted, var(--muted-ink));
+  font-size: var(--font-size-13);
+}
+.change-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: var(--space-negative-1);
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.proposal-review {
+  border-top: 1px solid var(--border, var(--line));
+  padding: var(--space-12) 0;
+}
+.proposal-review summary {
+  cursor: pointer;
+  padding: var(--space-8) 0;
+}
+.proposal-review summary small {
+  display: block;
+  margin-top: var(--space-4);
+}
+.review-change-intro {
+  font-size: var(--font-size-13);
+  line-height: 1.6;
+}
+.review-presentation {
+  margin-bottom: var(--space-20);
+}
+.change-links {
+  font-size: var(--font-size-12);
+  overflow-wrap: anywhere;
+}
+@media (max-width: 640px) {
+  .change-values {
+    grid-template-columns: 1fr;
+  }
+  .change-card {
+    padding: var(--space-12);
+  }
+}
+
+.change-empty { border-radius: var(--radius-l); background: var(--surface-raised); padding: var(--space-20); text-align: center; }
